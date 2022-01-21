@@ -4,6 +4,8 @@
 #include "../main.h"
 
 
+extern SPI_HandleTypeDef sd_hspi;
+
 #define W25QXX_SPI              
 
 #ifdef SD_USE_SPI
@@ -34,5 +36,7 @@
 void hal_sd_init();
 void hal_sd_enable(void);
 void hal_sd_disable(void);
+uint8_t hal_sd_read_byte(void);
+uint8_t hal_sd_read_write_byte(uint8_t data);
 
 #endif

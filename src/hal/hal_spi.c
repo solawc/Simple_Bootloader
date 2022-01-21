@@ -61,6 +61,11 @@ void hal_sd_disable(void) {
     HAL_GPIO_WritePin(SD_SPI_CS_PORT, SD_SPI_CS_PIN, GPIO_PIN_SET);
 }
 
+uint8_t hal_sd_read_write_byte(uint8_t data) {
+    uint8_t rxdata = 0;
+    HAL_SPI_TransmitReceive(&sd_hspi, &data, &rxdata, 1, 1000);
+    return rxdata;
+}
 
 void hal_sd_init(void) {
     sd_spi_pin_init();      // set gpio init
