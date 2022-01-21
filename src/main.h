@@ -17,6 +17,9 @@
 
 #include "hal/hal.h"
 #include "hal/hal_uart.h"
+#include "hal/hal_spi.h"
+
+#include "external_device/SD/sdcard.h"
 
 
 #endif /* main.h */ 

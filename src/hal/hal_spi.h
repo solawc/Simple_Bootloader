@@ -20,14 +20,19 @@
     #define SD_DET_PORT         GPIOC
     #define SD_DET_PIN          GPIO_PIN_13
 
-    #define _SD_GPIO_CLK_ENABLE()     __HAL_RCC_GPIOB_CLK_ENABLE()\
-                                      __HAL_RCC_GPIOC_CLK_ENABLE()\
-                                      __HAL_RCC_SPI_CLK_ENABLE()
+    #define _SD_GPIO_CLK_ENABLE()     __HAL_RCC_GPIOB_CLK_ENABLE();\
+                                      __HAL_RCC_GPIOC_CLK_ENABLE();\
+                                      __HAL_RCC_SPI2_CLK_ENABLE()
 #endif
 
 #endif
 
 
 
+
+
+void hal_sd_init();
+void hal_sd_enable(void);
+void hal_sd_disable(void);
 
 #endif

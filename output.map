@@ -99,6 +99,7 @@ errno               0x4               c:/users/sola/.platformio/packages/toolcha
 uwTick              0x4               .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal.o
 pFlash              0x20              .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_flash.o
 hal_info            0x4               .pio\build\STM32F401_BL\src\hal\hal.o
+sd_hspi             0x58              .pio\build\STM32F401_BL\src\hal\hal_spi.o
 
 Discarded input sections
 
@@ -2623,15 +2624,28 @@ Discarded input sections
  .comment       0x00000000       0x7f .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_ll_utils.o
  .ARM.attributes
                 0x00000000       0x33 .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_ll_utils.o
+ .text          0x00000000        0x0 .pio\build\STM32F401_BL\src\external_device\SD\sdcard.o
+ .data          0x00000000        0x0 .pio\build\STM32F401_BL\src\external_device\SD\sdcard.o
+ .bss           0x00000000        0x0 .pio\build\STM32F401_BL\src\external_device\SD\sdcard.o
+ .comment       0x00000000       0x7f .pio\build\STM32F401_BL\src\external_device\SD\sdcard.o
+ .ARM.attributes
+                0x00000000       0x33 .pio\build\STM32F401_BL\src\external_device\SD\sdcard.o
  .text          0x00000000        0x0 .pio\build\STM32F401_BL\src\hal\hal.o
  .data          0x00000000        0x0 .pio\build\STM32F401_BL\src\hal\hal.o
  .bss           0x00000000        0x0 .pio\build\STM32F401_BL\src\hal\hal.o
  .text          0x00000000        0x0 .pio\build\STM32F401_BL\src\hal\hal_spi.o
  .data          0x00000000        0x0 .pio\build\STM32F401_BL\src\hal\hal_spi.o
  .bss           0x00000000        0x0 .pio\build\STM32F401_BL\src\hal\hal_spi.o
+ .text.hal_sd_enable
+                0x00000000       0x10 .pio\build\STM32F401_BL\src\hal\hal_spi.o
+ .text.hal_sd_disable
+                0x00000000       0x10 .pio\build\STM32F401_BL\src\hal\hal_spi.o
+ .text.hal_sd_init
+                0x00000000       0xe0 .pio\build\STM32F401_BL\src\hal\hal_spi.o
  .comment       0x00000000       0x7f .pio\build\STM32F401_BL\src\hal\hal_spi.o
  .ARM.attributes
                 0x00000000       0x33 .pio\build\STM32F401_BL\src\hal\hal_spi.o
+ COMMON         0x00000000       0x58 .pio\build\STM32F401_BL\src\hal\hal_spi.o
  .text          0x00000000        0x0 .pio\build\STM32F401_BL\src\hal\hal_uart.o
  .data          0x00000000        0x0 .pio\build\STM32F401_BL\src\hal\hal_uart.o
  .bss           0x00000000        0x0 .pio\build\STM32F401_BL\src\hal\hal_uart.o
@@ -2956,6 +2970,7 @@ LOAD .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_ll_tim.o
 LOAD .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_ll_usart.o
 LOAD .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_ll_usb.o
 LOAD .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_ll_utils.o
+LOAD .pio\build\STM32F401_BL\src\external_device\SD\sdcard.o
 LOAD .pio\build\STM32F401_BL\src\hal\hal.o
 LOAD .pio\build\STM32F401_BL\src\hal\hal_spi.o
 LOAD .pio\build\STM32F401_BL\src\hal\hal_uart.o

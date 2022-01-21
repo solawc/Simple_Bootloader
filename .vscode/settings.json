@@ -9,6 +9,7 @@
         "hal.h": "c",
         "bl_config.h": "c",
         "stm32_f401rc_hal_system.h": "c",
-        "hal_spi.h": "c"
+        "hal_spi.h": "c",
+        "sdcard.h": "c"
     }
 }
