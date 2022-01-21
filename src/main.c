@@ -8,7 +8,11 @@ int main() {
 
     hal_uart_init();        // init uart 
 
+    hal_info.is_has_sd_disk = SD_Initialize();
+
     printf_info();          // print debug info
+
+    
     
     HAL_Delay(500);
 

@@ -35,7 +35,7 @@ static void sd_spi_pin_init(void) {
 static void sd_spi_init(void) {
 
     sd_hspi.Instance = SD_CARD_SPI;
-    sd_hspi.Init.BaudRatePrescaler = SD_SPI_SPEED;
+    sd_hspi.Init.BaudRatePrescaler = SD_SPI_LOW_SPEED;
     sd_hspi.Init.CLKPhase = SPI_PHASE_1EDGE;
     sd_hspi.Init.CLKPolarity = SPI_POLARITY_LOW;
     sd_hspi.Init.CRCCalculation = SPI_CRCCALCULATION_DISABLE;

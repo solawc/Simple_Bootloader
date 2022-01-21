@@ -9,7 +9,7 @@ typedef struct {
     bool is_has_u_disk;
     bool is_has_sd_disk;
 }hal_info_t;
-
+extern hal_info_t hal_info;
 
 
 void printf_info(void);
