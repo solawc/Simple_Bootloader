@@ -7,16 +7,16 @@
 
 // Enabled bootload if you want know debug info.
 #define BL_DEBUG_MODE
+#ifdef BL_DEBUG_MODE
+#define DEBUG_SWITCH        1
+#endif
 
-// set bootload address 
-#define BL_STAR_ADDR           0X00                         // Bootload star address
-#define BL_END_ADDR            ((uint32_t)0x08008000)       // Bootload end address
-#define BL_SIZE                BL_END_ADDR                  // Bootload size
-
+// set bootload address   
+#define BL_END_ADDR            ((uint32_t)0x8008000)       // Bootload end address
 #define APP_STAR_ADDR          BL_END_ADDR                  // Jump to this addr to star app
 
 // Enabled W25qxx if need to write pic and font.
-#define HAS_W25QXX_ON_BOARD
+//#define HAS_W25QXX_ON_BOARD
 
 // Enabled SD Card, SD_USE_SPI use SPI mode, SD_USE_SDIO use SDIO mode.
 #define HAS_SD_ON_BOARD

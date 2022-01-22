@@ -2,6 +2,8 @@
 
 int main() {
 
+    nvic_set_vector_table(NVIC_VectTab_FLASH, 0x0000);
+
     HAL_Init();        
 
     SYSTEM_INIT();          // set system clock
@@ -11,8 +13,6 @@ int main() {
     hal_info.is_has_sd_disk = SD_Initialize();
 
     printf_info();          // print debug info
-
-    HAL_Delay(500);
 
     update_check();
 

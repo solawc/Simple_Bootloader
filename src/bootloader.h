@@ -1,5 +1,5 @@
-#ifndef __bootload_h
-#define __bootload_h
+#ifndef __bootloader_h
+#define __bootloader_h
 
 #include "main.h"
 
@@ -16,6 +16,7 @@
 
 
 void bl_jump_to_app(uint32_t sect,uint32_t Msp,uint32_t reset);
+void nvic_set_vector_table(uint32_t NVIC_VectTab, uint32_t Offset);
 void update_check(void);
 
 #endif /* __bootload_h */ 

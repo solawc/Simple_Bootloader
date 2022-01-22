@@ -8,7 +8,6 @@
 
 UART_HandleTypeDef debug_uart;
 
-
 void hal_uart_gpio_init(void) {
 
 	GPIO_InitTypeDef GPIO_InitStruct = {0};
@@ -43,7 +42,6 @@ void hal_uart_init(void) {
     	Error_Handler();
   	}
 }
-
 
 #ifdef __CC_ARM
 int fputc(int ch,FILE *f)

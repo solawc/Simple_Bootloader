@@ -1,4 +1,4 @@
-#include "bootload.h"
+#include "bootloader.h"
 
 void nvic_set_vector_table(uint32_t NVIC_VectTab, uint32_t Offset) {
 
@@ -30,7 +30,7 @@ void bl_jump_to_app(uint32_t sect,uint32_t Msp,uint32_t reset) {
     /* Step 2. set beep */
 
     /* Step 3. DeInit SPI, Systick */
-    // hal_sd_deinit();
+    hal_sd_deinit();
 
     SysTick->CTRL &= ~ SysTick_CTRL_ENABLE_Msk;
 
@@ -54,6 +54,7 @@ void update_check(void) {
     printf("bootload jump to app\n");
 
     msp = *((uint32_t *)(APP_STAR_ADDR));
+
 	reset = *((uint32_t *)(APP_STAR_ADDR + 4));
 
     bl_jump_to_app(BL_END_ADDR, msp, reset);
