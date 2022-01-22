@@ -12,13 +12,11 @@ int main() {
 
     printf_info();          // print debug info
 
-    
-    
     HAL_Delay(500);
 
-    while(1){
+    update_check();
 
-    };
+    while(1){ };
 }
 
 

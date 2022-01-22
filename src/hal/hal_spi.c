@@ -72,6 +72,12 @@ void hal_sd_init(void) {
     sd_spi_init();          // set spi init
 }
 
+void hal_sd_deinit(void) {
+
+    _SD_GPIO_CLK_DISABLE();
+    HAL_SPI_DeInit(&sd_hspi);
+}
+
 
 
 

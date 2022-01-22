@@ -22,9 +22,13 @@ extern SPI_HandleTypeDef sd_hspi;
     #define SD_DET_PORT         GPIOC
     #define SD_DET_PIN          GPIO_PIN_13
 
-    #define _SD_GPIO_CLK_ENABLE()     __HAL_RCC_GPIOB_CLK_ENABLE();\
-                                      __HAL_RCC_GPIOC_CLK_ENABLE();\
-                                      __HAL_RCC_SPI2_CLK_ENABLE()
+    #define _SD_GPIO_CLK_ENABLE()   __HAL_RCC_GPIOB_CLK_ENABLE();\
+                                    __HAL_RCC_GPIOC_CLK_ENABLE();\
+                                    __HAL_RCC_SPI2_CLK_ENABLE()
+
+    #define _SD_GPIO_CLK_DISABLE()  __HAL_RCC_GPIOB_CLK_DISABLE();\
+                                    __HAL_RCC_GPIOC_CLK_DISABLE();\
+                                    __HAL_RCC_SPI2_CLK_DISABLE()
 #endif
 
 #endif
@@ -34,6 +38,7 @@ extern SPI_HandleTypeDef sd_hspi;
 
 
 void hal_sd_init();
+void hal_sd_deinit(void);
 void hal_sd_enable(void);
 void hal_sd_disable(void);
 uint8_t hal_sd_read_byte(void);

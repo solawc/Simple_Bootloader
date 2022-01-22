@@ -3,15 +3,17 @@
 
 // set bootload version num
 #define BOOTLOAD_VERSION        "V0.0.1"
-#define BOOTLOAD_DATE           "2022-01-21"
+#define BOOTLOAD_DATE           "2022-01-22"
 
 // Enabled bootload if you want know debug info.
 #define BL_DEBUG_MODE
 
 // set bootload address 
-#define BL_STAR_ADDR           0X00                 // Bootload star address
-#define BL_END_ADDR            0X8000               // Bootload end address
-#define BL_SIZE                BL_END_ADDR          // Bootload size
+#define BL_STAR_ADDR           0X00                         // Bootload star address
+#define BL_END_ADDR            ((uint32_t)0x08008000)       // Bootload end address
+#define BL_SIZE                BL_END_ADDR                  // Bootload size
+
+#define APP_STAR_ADDR          BL_END_ADDR                  // Jump to this addr to star app
 
 // Enabled W25qxx if need to write pic and font.
 #define HAS_W25QXX_ON_BOARD

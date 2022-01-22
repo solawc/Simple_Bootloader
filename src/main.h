@@ -20,6 +20,12 @@
 #include "hal/hal_spi.h"
 
 #include "external_device/SD/sdcard.h"
+#include "bootload.h"
 
+
+
+
+
+void IO_test(void);
 
 #endif /* main.h */ 

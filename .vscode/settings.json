@@ -10,6 +10,10 @@
         "bl_config.h": "c",
         "stm32_f401rc_hal_system.h": "c",
         "hal_spi.h": "c",
-        "sdcard.h": "c"
+        "sdcard.h": "c",
+        "mid_fatfs.h": "c",
+        "stm32f4xx_hal_sd.h": "c",
+        "ff.h": "c",
+        "bootload.h": "c"
     }
 }
