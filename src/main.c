@@ -1,6 +1,11 @@
 #include "main.h"
 
+
+FFOBJID fs;
+
 int main() {
+
+    FRESULT fs_res;
 
     nvic_set_vector_table(NVIC_VectTab_FLASH, 0x0000);
 
@@ -14,9 +19,13 @@ int main() {
 
     printf_info();          // print debug info
 
+    fs_res = f_mount(fs.fs,"0:",1);
+
+    DEBUG_PRINT("FS get:%d", fs_res);
+
     update_check();
 
-    while(1){ };
+    while(1) {};
 }
 
 

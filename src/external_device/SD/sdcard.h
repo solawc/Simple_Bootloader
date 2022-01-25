@@ -66,4 +66,7 @@ typedef struct {
 
 uint8_t SD_Initialize(void);
 
+uint8_t SD_ReadDisk(uint8_t*buf,uint32_t sector,uint8_t cnt);
+uint8_t SD_WriteDisk(uint8_t*buf,uint32_t sector,uint8_t cnt);
+
 #endif

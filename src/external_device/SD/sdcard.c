@@ -2,6 +2,8 @@
 
 uint8_t  SD_Type=0;
 
+#define BLOCK_SIZE    512
+
 void set_sd_spi_speed(uint8_t SPI_BaudRatePrescaler) {
 
     sd_hspi.Init.BaudRatePrescaler = SD_SPI_LOW_SPEED;

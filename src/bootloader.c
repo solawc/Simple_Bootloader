@@ -1,11 +1,20 @@
 #include "bootloader.h"
+#include "core_cm4.h"
 
+/* only support cortex-M */
 void nvic_set_vector_table(uint32_t NVIC_VectTab, uint32_t Offset) {
 
     /* Check the parameters */
     assert_param(IS_NVIC_VECTTAB(NVIC_VectTab));
     assert_param(IS_NVIC_OFFSET(Offset)); 
     SCB->VTOR = NVIC_VectTab | (Offset & (uint32_t)0x1FFFFF80);
+}
+
+/* only support cortex-M */
+void bl_reset_systick(void) {
+
+    /* Disable systick */
+    SysTick->CTRL &= ~ SysTick_CTRL_ENABLE_Msk;
 }
 
 /*
@@ -57,7 +66,7 @@ void update_check(void) {
 
 	reset = *((uint32_t *)(APP_STAR_ADDR + 4));
 
-    bl_jump_to_app(BL_END_ADDR, msp, reset);
+    bl_jump_to_app(APP_STAR_ADDR, msp, reset);
 }
 
 

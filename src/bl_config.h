@@ -3,22 +3,24 @@
 
 // set bootload version num
 #define BOOTLOAD_VERSION        "V0.0.1"
-#define BOOTLOAD_DATE           "2022-01-22"
+#define BOOTLOAD_DATE           "2022-01-25"
+#define BOARD_NAME              "ZNP Robin Nano_DW V2.0"
 
-// Enabled bootload if you want know debug info.
+/* Enabled bootload if you want know debug info. */
 #define BL_DEBUG_MODE
 #ifdef BL_DEBUG_MODE
 #define DEBUG_SWITCH        1
 #endif
 
 // set bootload address   
-#define BL_END_ADDR            ((uint32_t)0x8008000)       // Bootload end address
-#define APP_STAR_ADDR          BL_END_ADDR                  // Jump to this addr to star app
+#define BL_END_ADDR             ((uint32_t)0x8007fff)       // Bootload end address
+#define APP_STAR_ADDR           ((uint32_t)0x8008000)       // Jump to this addr to star app
+#define BL_OFFSET               0X8000                      // Set bootloader offset       
 
-// Enabled W25qxx if need to write pic and font.
+/* Enabled W25qxx if need to write pic and font. */
 //#define HAS_W25QXX_ON_BOARD
 
-// Enabled SD Card, SD_USE_SPI use SPI mode, SD_USE_SDIO use SDIO mode.
+/* Enabled SD Card, SD_USE_SPI use SPI mode, SD_USE_SDIO use SDIO mode. */
 #define HAS_SD_ON_BOARD
 #ifdef HAS_SD_ON_BOARD
 
