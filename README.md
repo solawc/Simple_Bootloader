@@ -2,7 +2,7 @@
 
 ## 一、描述
 
-这个bootload起初是为STM32F401RC设计的bootload，为的是用于为ZNP的设计的主板上，原程序是在IAR上进行编译的，现改造在使用Vscode进行编译下载，并且开源出来。
+这个bootload起初是为STM32F401RC设计的bootload，原程序是在IAR上进行编译的，现改造在使用Vscode进行编译下载，并且开源出来。
 
 ## 二、主要适配的功能
 
