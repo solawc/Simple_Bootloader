@@ -252,7 +252,10 @@ uint8_t SD_Initialize(void)
 	// SD_SPI_SpeedHigh();//高速
     set_sd_spi_speed(SD_SPI_SPEED);
     
-	if(SD_Type)return 0;
+	if(SD_Type) {
+		DEBUG_PRINT("SD Init succeed");
+		return 0;
+	}
 	else if(r1)return r1; 	   
 	return 0xaa;//其他错误
 }

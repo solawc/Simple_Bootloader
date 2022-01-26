@@ -15,6 +15,7 @@
         "stm32f4xx_hal_sd.h": "c",
         "ff.h": "c",
         "bootload.h": "c",
-        "bootloader.h": "c"
+        "bootloader.h": "c",
+        "diskio.h": "c"
     }
 }

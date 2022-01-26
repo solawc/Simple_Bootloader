@@ -1,8 +1,9 @@
 #include "main.h"
 
 
-FFOBJID fs;
-
+FATFS fs;
+FIL fil;
+FRESULT fr;
 int main() {
 
     FRESULT fs_res;
@@ -15,13 +16,24 @@ int main() {
 
     hal_uart_init();        // init uart 
 
-    hal_info.is_has_sd_disk = SD_Initialize();
+    // hal_info.is_has_sd_disk = SD_Initialize();
+    // if(hal_info.is_has_sd_disk != 0) {
+    //     DEBUG_PRINT("SD Init Fail");
+    //     DEBUG_PRINT("error code:%d",hal_info.is_has_sd_disk);
+    // }
 
     printf_info();          // print debug info
 
-    fs_res = f_mount(fs.fs,"0:",1);
-
+    f_mount(&fs,"0:",1);
     DEBUG_PRINT("FS get:%d", fs_res);
+
+    fr = f_open(&fil, "0:/123.txt", FA_READ | FA_WRITE);
+    if (fr) {
+        DEBUG_PRINT("open fail\n");
+        DEBUG_PRINT("error code:%d", fr);
+    }else{  
+        DEBUG_PRINT("open succeed\n");
+    }
 
     update_check();
 

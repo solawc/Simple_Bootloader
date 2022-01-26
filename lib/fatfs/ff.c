@@ -6980,3 +6980,10 @@ FRESULT f_setcp (
 }
 #endif	/* FF_CODE_PAGE == 0 */
 
+DWORD get_fattime (void) {
+
+
+	return 0;
+}
+ 
+

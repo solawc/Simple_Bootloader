@@ -26,7 +26,6 @@ typedef struct {
 extern hal_info_t hal_info;
 
 
-
 void printf_info(void);
 
 #endif

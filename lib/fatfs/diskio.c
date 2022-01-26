@@ -17,6 +17,7 @@
 // #define DEV_USB		2	/* Example: Map USB MSD to physical drive 2 */
 
 #define SD_BLOCKSIZE 512
+#define FLASH_SECTOR_SIZE 	512
 
 /*-----------------------------------------------------------------------*/
 /* Get Drive Status                                                      */
@@ -41,7 +42,8 @@ DSTATUS disk_status (
 		// result = MMC_disk_status();
 
 		// translate the reslut code here
-		stat &= ~STA_NOINIT;
+		stat = RES_OK;
+		
 		return stat;
 
 	// case DEV_USB :
@@ -65,8 +67,7 @@ DSTATUS disk_initialize (
 )
 {
 	DSTATUS stat;
-	int result;
-
+	int result = 0;
 	switch (pdrv) {
 	// case DEV_RAM :
 	// 	result = RAM_disk_initialize();
@@ -78,11 +79,21 @@ DSTATUS disk_initialize (
 	case DEV_MMC :
 		// result = MMC_disk_initialize();
 
-		stat &= ~STA_NOINIT;
+		result = SD_Initialize();	//SD卡初始化 
 
 		// translate the reslut code here
-
+		if (result == 0)
+		{	
+			DEBUG_PRINT("SD Init succeed");
+			stat = RES_OK;
+		}else {
+			DEBUG_PRINT("SD Init fail");
+			DEBUG_PRINT("error code: %d", stat);
+			stat = RES_ERROR;
+		}
+		
 		return stat;
+	break;
 
 	// case DEV_USB :
 	// 	result = USB_disk_initialize();
@@ -108,8 +119,6 @@ DRESULT disk_read (
 )
 {
 	DRESULT res;
-	int result;
-
 	switch (pdrv) {
 	// case DEV_RAM :
 	// 	// translate the arguments here
@@ -126,10 +135,15 @@ DRESULT disk_read (
 		// result = MMC_disk_read(buff, sector, count);
 
 		res = SD_ReadDisk(buff, sector, count);
-
+		while(res)//读出错
+		{
+			SD_Initialize();	//重新初始化SD卡
+			res = SD_ReadDisk(buff,sector,count);	
+		}
 		// translate the reslut code here
-
-		return res;
+		if(res == 0x00) return RES_OK;
+		else return RES_ERROR;
+	break;
 
 	// case DEV_USB :
 	// 	// translate the arguments here
@@ -160,8 +174,6 @@ DRESULT disk_write (
 )
 {
 	DRESULT res;
-	int result;
-
 	switch (pdrv) {
 	// case DEV_RAM :
 	// 	// translate the arguments here
@@ -175,10 +187,13 @@ DRESULT disk_write (
 	case DEV_MMC :
 		// translate the arguments here
 
-		res = SD_WriteDisk(buff, sector, count);
-
+		res= SD_WriteDisk((uint8_t*)buff,sector,count);
+		while(res)//写出错
+		{
+			SD_Initialize();	//重新初始化SD卡
+			res = SD_WriteDisk((uint8_t*)buff,sector,count);	
+		}
 		// translate the reslut code here
-
 		return res;
 
 	// case DEV_USB :
@@ -208,8 +223,6 @@ DRESULT disk_ioctl (
 )
 {
 	DRESULT res;
-	int result;
-
 	switch (pdrv) {
 	// case DEV_RAM :
 
@@ -225,14 +238,17 @@ DRESULT disk_ioctl (
 
 			case CTRL_SYNC: res = RES_OK; break;
 			case GET_SECTOR_SIZE:
+				*(DWORD*)buff = 512; 
 				res = RES_OK;
 			break;
 
 			case GET_BLOCK_SIZE:
+				*(WORD*)buff = 8;
 				res = RES_OK;
 				break;
 
 			case GET_SECTOR_COUNT:
+				*(DWORD*)buff = SD_GetSectorCount();
 				res = RES_OK;
 				break;
 			

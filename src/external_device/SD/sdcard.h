@@ -3,7 +3,7 @@
 
 #include "../../main.h"
 
-#define SD_SPI_SPEED        SPI_BAUDRATEPRESCALER_4
+#define SD_SPI_SPEED        SPI_BAUDRATEPRESCALER_8
 
 #define SD_SPI_LOW_SPEED    SPI_BAUDRATEPRESCALER_128
 
@@ -68,5 +68,5 @@ uint8_t SD_Initialize(void);
 
 uint8_t SD_ReadDisk(uint8_t*buf,uint32_t sector,uint8_t cnt);
 uint8_t SD_WriteDisk(uint8_t*buf,uint32_t sector,uint8_t cnt);
-
+uint32_t SD_GetSectorCount(void);
 #endif
