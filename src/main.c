@@ -41,11 +41,12 @@ int main() {
 
     if(!hal_sd.sd_get_status()) {
         fs_res = f_mount(&fs,"1:",1);
-        if(fs_res == 0) DEBUG_PRINT("SD mount succeed");   
+        if(fs_res == 0) DEBUG_PRINT("SD mount succeed");  
+        hal_sd.is_has_sd = 1; 
     }else{
+        hal_sd.is_has_sd = 0; 
         DEBUG_PRINT("No SD Inser");
     }
-    
     update_check();
 
     while(1) {};

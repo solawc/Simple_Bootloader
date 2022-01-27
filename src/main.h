@@ -5,6 +5,7 @@
 #include "stdbool.h"
 #include "stdio.h"
 #include "stdlib.h"
+#include "string.h"
 
 /* MCU HAL Lib */
 #ifdef STM32F4xx
@@ -22,15 +23,15 @@
 #include "hal/hal.h"
 #include "hal/hal_uart.h"
 #include "hal/hal_spi.h"
+#include "hal/hal_flash.h"
 #include "external_device/SD/sdcard.h"
-
 // Fatfs 
 #include "ff.h"
 
 
 
 
-
+FRESULT open_append();
 
 void IO_test(void);
 

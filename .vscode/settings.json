@@ -16,6 +16,7 @@
         "ff.h": "c",
         "bootload.h": "c",
         "bootloader.h": "c",
-        "diskio.h": "c"
+        "diskio.h": "c",
+        "hal_flash.h": "c"
     }
 }

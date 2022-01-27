@@ -12,6 +12,12 @@
 
 #define IS_NVIC_OFFSET(OFFSET)          ((OFFSET) < 0x000FFFFF)
 
+#define FW_NAME_SIZE                     30
+#define READ_FILE_PAGE_SIZE             ((uint16_t)0x400)  
+
+
+
+
  typedef struct {
     uint8_t (*hal_erase_flash)(void);
     uint8_t (*hal_write_flash_bin)(void);       // 写入.bin的固件

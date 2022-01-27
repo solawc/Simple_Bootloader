@@ -53,3 +53,13 @@ void Error_Handler(void)
   }
   /* USER CODE END Error_Handler_Debug */
 }
+
+uint8_t hal_get_flash_sector(uint32_t addr) {
+
+  if(addr<ADDR_FLASH_SECTOR_1)return FLASH_SECTOR_0;
+  else if(addr<ADDR_FLASH_SECTOR_2)return FLASH_SECTOR_1;
+  else if(addr<ADDR_FLASH_SECTOR_3)return FLASH_SECTOR_2;
+  else if(addr<ADDR_FLASH_SECTOR_4)return FLASH_SECTOR_3;
+  else if(addr<ADDR_FLASH_SECTOR_5)return FLASH_SECTOR_4;
+  else return FLASH_SECTOR_5;
+}
