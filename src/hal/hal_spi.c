@@ -72,10 +72,51 @@ void hal_sd_init(void) {
     sd_spi_init();          // set spi init
 }
 
+void hal_sd_set_speed(uint32_t SPI_BaudRatePrescaler) {
+    sd_hspi.Init.BaudRatePrescaler = SPI_BaudRatePrescaler;
+    HAL_SPI_Init(&sd_hspi);
+    __HAL_SPI_ENABLE(&sd_hspi);
+}
+
 void hal_sd_deinit(void) {
 
     _SD_GPIO_CLK_DISABLE();
     HAL_SPI_DeInit(&sd_hspi);
+}
+
+uint8_t hal_sd_det_read(void) {
+
+    if(GPIO_PIN_RESET == HAL_GPIO_ReadPin(SD_DET_PORT, SD_DET_PIN)) { return 0; }
+    else return 1;
+}
+
+uint32_t hal_sd_spi_speed_get(SPI_HandleTypeDef *hspi) {
+
+    uint16_t get_clk = (HAL_RCC_GetHCLKFreq() / 1000000) / 2; 
+
+    uint8_t sd_spi_min_clk_div = get_clk / 8;       // 8兆需要高分频
+    uint8_t sd_spi_max_clk_div = get_clk / 12;
+
+    if((sd_spi_max_clk_div>=2) && (sd_spi_min_clk_div<4)) return SPI_BAUDRATEPRESCALER_2;
+    else if((sd_spi_max_clk_div>=4) && (sd_spi_min_clk_div<8))  return SPI_BAUDRATEPRESCALER_4;
+    else if((sd_spi_max_clk_div>=8) && (sd_spi_min_clk_div<16))  return SPI_BAUDRATEPRESCALER_8;
+    else if((sd_spi_max_clk_div>=16) && (sd_spi_min_clk_div<32))  return SPI_BAUDRATEPRESCALER_16;
+    else if((sd_spi_max_clk_div>=32) && (sd_spi_min_clk_div<64))  return SPI_BAUDRATEPRESCALER_32;
+    else    return SPI_BAUDRATEPRESCALER_256;
+}
+
+void hal_sd_register(void) {    
+
+    hal_sd.sd_init = hal_sd_init;
+    hal_sd.sd_trans_receive_data = hal_sd_read_write_byte;
+    hal_sd.sd_trans_enable = hal_sd_enable;
+    hal_sd.sd_trans_disable = hal_sd_disable;
+    hal_sd.sd_set_speed = hal_sd_set_speed;
+    hal_sd.sd_get_status = hal_sd_det_read;
+    hal_sd.sd_trans_speed = hal_sd_spi_speed_get(&sd_hspi);
+    hal_sd.sd_slow_speed = SPI_BAUDRATEPRESCALER_256;
+
+    hal_sd.sd_init();
 }
 
 

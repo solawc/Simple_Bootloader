@@ -28,10 +28,9 @@ DSTATUS disk_status (
 )
 {
 	DSTATUS stat = STA_NOINIT;
-	int result;
-
 	switch (pdrv) {
 	// case DEV_RAM :
+	
 	// 	result = RAM_disk_status();
 
 	// 	// translate the reslut code here
@@ -47,6 +46,7 @@ DSTATUS disk_status (
 		return stat;
 
 	// case DEV_USB :
+
 	// 	result = USB_disk_status();
 
 	// 	// translate the reslut code here
@@ -84,17 +84,16 @@ DSTATUS disk_initialize (
 		// translate the reslut code here
 		if (result == 0)
 		{	
-			DEBUG_PRINT("SD Init succeed");
 			stat = RES_OK;
+			DEBUG_PRINT("SD Init succeed");
 		}else {
+			stat = RES_ERROR;
 			DEBUG_PRINT("SD Init fail");
 			DEBUG_PRINT("error code: %d", stat);
-			stat = RES_ERROR;
 		}
-		
 		return stat;
-	break;
 
+	break;
 	// case DEV_USB :
 	// 	result = USB_disk_initialize();
 

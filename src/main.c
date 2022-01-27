@@ -1,9 +1,28 @@
 #include "main.h"
 
-
+/* From FATFS demo */
 FATFS fs;
 FIL fil;
 FRESULT fr;
+
+FRESULT open_append (
+    FIL* fp,            /* [OUT] File object to create */
+    const char* path    /* [IN]  File name to be opened */
+)
+{
+    FRESULT fr;
+
+    /* Opens an existing file. If not exist, creates a new file. */
+    fr = f_open(fp, path, FA_WRITE | FA_OPEN_ALWAYS);
+    if (fr == FR_OK) {
+        /* Seek to end of the file to append data */
+        fr = f_lseek(fp, f_size(fp));
+        if (fr != FR_OK)
+            f_close(fp);
+    }
+    return fr;
+}
+
 int main() {
 
     FRESULT fs_res;
@@ -16,25 +35,17 @@ int main() {
 
     hal_uart_init();        // init uart 
 
-    // hal_info.is_has_sd_disk = SD_Initialize();
-    // if(hal_info.is_has_sd_disk != 0) {
-    //     DEBUG_PRINT("SD Init Fail");
-    //     DEBUG_PRINT("error code:%d",hal_info.is_has_sd_disk);
-    // }
+    hal_sd_register();      // register sd
 
     printf_info();          // print debug info
 
-    f_mount(&fs,"0:",1);
-    DEBUG_PRINT("FS get:%d", fs_res);
-
-    fr = f_open(&fil, "0:/123.txt", FA_READ | FA_WRITE);
-    if (fr) {
-        DEBUG_PRINT("open fail\n");
-        DEBUG_PRINT("error code:%d", fr);
-    }else{  
-        DEBUG_PRINT("open succeed\n");
+    if(!hal_sd.sd_get_status()) {
+        fs_res = f_mount(&fs,"1:",1);
+        if(fs_res == 0) DEBUG_PRINT("SD mount succeed");   
+    }else{
+        DEBUG_PRINT("No SD Inser");
     }
-
+    
     update_check();
 
     while(1) {};

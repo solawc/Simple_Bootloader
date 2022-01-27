@@ -1,31 +1,25 @@
 #include "sdcard.h"
 
 uint8_t  SD_Type=0;
-
-#define BLOCK_SIZE    512
-
-void set_sd_spi_speed(uint8_t SPI_BaudRatePrescaler) {
-
-    sd_hspi.Init.BaudRatePrescaler = SD_SPI_LOW_SPEED;
-    HAL_SPI_Init(&sd_hspi);
-    __HAL_SPI_ENABLE(&sd_hspi);
-}
+hal_sd_t hal_sd;
 
 uint8_t sd_wait_ready(void)
 {
 	uint32_t t=0;
 	do
-	{
-		if(hal_sd_read_write_byte(0XFF)==0XFF) return 0;
+	{	
+		if(hal_sd.sd_trans_receive_data(0XFF)==0XFF) return 0;
 		t++;		  	
 	}while(t<0XFFFFFF);
 	return 1;
 }
 
+
+
 void SD_DisSelect(void)
 {
 	hal_sd_disable();
- 	hal_sd_read_write_byte(0xff);//提供额外的8个时钟
+ 	hal_sd.sd_trans_receive_data(0xff);//提供额外的8个时钟
 }
 
 uint8_t SD_Select(void)
@@ -43,7 +37,7 @@ uint8_t SD_Select(void)
 uint8_t SD_GetResponse_skyblue(uint8_t Response)
 {
 	uint16_t Count=0xFFFF;//等待次数	   						  
-	while ((hal_sd_read_write_byte (0XFF)!= Response)&&Count)Count--;//等待得到准确的回应  	  
+	while ((hal_sd.sd_trans_receive_data (0XFF)!= Response)&&Count)Count--;//等待得到准确的回应  	  
 	if (Count==0)return MSD_RESPONSE_FAILURE;//得到回应失败   
 	else return MSD_RESPONSE_NO_ERROR;//正确回应
 }
@@ -57,12 +51,12 @@ uint8_t SD_RecvData(uint8_t*buf, uint16_t len)
 	if(SD_GetResponse_skyblue(0xFE))return 1;//等待SD卡发回数据起始令牌0xFE
     while(len--)//开始接收数据
     {
-        *buf= hal_sd_read_write_byte(0xFF);
+        *buf= hal_sd.sd_trans_receive_data(0xFF);
         buf++;
     }
     //下面是2个伪CRC（dummy CRC）
-    hal_sd_read_write_byte(0xFF);
-    hal_sd_read_write_byte(0xFF);									  					    
+    hal_sd.sd_trans_receive_data(0xFF);
+    hal_sd.sd_trans_receive_data(0xFF);									  					    
     return 0;//读取成功
 }
 
@@ -74,13 +68,13 @@ uint8_t SD_SendBlock(uint8_t*buf,uint8_t cmd)
 {	
 	uint16_t t;		  	  
 	if(sd_wait_ready())return 1;//等待准备失效
-	hal_sd_read_write_byte(cmd);
+	hal_sd.sd_trans_receive_data(cmd);
 	if(cmd!=0XFD)//不是结束指令
 	{
-		for(t=0;t<512;t++)hal_sd_read_write_byte(buf[t]);//提高速度,减少函数传参时间
-	    hal_sd_read_write_byte(0xFF);//忽略crc
-	    hal_sd_read_write_byte(0xFF);
-		t=hal_sd_read_write_byte(0xFF);//接收响应
+		for(t=0;t<512;t++)hal_sd.sd_trans_receive_data(buf[t]);//提高速度,减少函数传参时间
+	    hal_sd.sd_trans_receive_data(0xFF);//忽略crc
+	    hal_sd.sd_trans_receive_data(0xFF);
+		t=hal_sd.sd_trans_receive_data(0xFF);//接收响应
 		if((t&0x1F)!=0x05)return 2;//响应错误									  					    
 	}						 									  					    
     return 0;//写入成功
@@ -102,19 +96,19 @@ uint8_t SD_SendCmd_skyblue(uint8_t cmd, uint32_t arg, uint8_t crc)
 	if(SD_Select()) return 0XFF;//片选失效 
 
 	//发送
-    hal_sd_read_write_byte(cmd | 0x40);//分别写入命令
-    hal_sd_read_write_byte(arg >> 24);
-    hal_sd_read_write_byte(arg >> 16);
-    hal_sd_read_write_byte(arg >> 8);
-    hal_sd_read_write_byte(arg);	  
-    hal_sd_read_write_byte(crc); 
-	if(cmd==CMD12) hal_sd_read_write_byte(0xff);//Skip a stuff byte when stop reading
+    hal_sd.sd_trans_receive_data(cmd | 0x40);//分别写入命令
+    hal_sd.sd_trans_receive_data(arg >> 24);
+    hal_sd.sd_trans_receive_data(arg >> 16);
+    hal_sd.sd_trans_receive_data(arg >> 8);
+    hal_sd.sd_trans_receive_data(arg);	  
+    hal_sd.sd_trans_receive_data(crc); 
+	if(cmd==CMD12) hal_sd.sd_trans_receive_data(0xff);//Skip a stuff byte when stop reading
 
     //等待响应，或超时退出
 	Retry=0X1F;
 	do
 	{
-		r1 = hal_sd_read_write_byte(0xFF);
+		r1 = hal_sd.sd_trans_receive_data(0xFF);
 	}while((r1&0X80) && Retry--);	 
 	//返回状态值
     return r1;
@@ -192,7 +186,7 @@ uint8_t SD_Initialize(void)
 
     hal_sd_init();      // 初始化为低速模式
 
- 	for( i= 0; i < 10; i++) hal_sd_read_write_byte(0XFF);//发送最少74个脉冲
+ 	for( i= 0; i < 10; i++) hal_sd.sd_trans_receive_data(0XFF);//发送最少74个脉冲
 
 	retry=20;
 
@@ -207,7 +201,7 @@ uint8_t SD_Initialize(void)
 	{
 		if(SD_SendCmd_skyblue(CMD8,0x1AA,0x87)==1)//SD V2.0
 		{
-			for(i=0;i<4;i++)buf[i]=hal_sd_read_write_byte(0XFF);	//Get trailing return value of R7 resp
+			for(i=0;i<4;i++)buf[i]=hal_sd.sd_trans_receive_data(0XFF);	//Get trailing return value of R7 resp
 			if(buf[2]==0X01 && buf[3]==0XAA)//卡是否支持2.7~3.6V
 			{
 				retry=0XFFFE;
@@ -218,7 +212,7 @@ uint8_t SD_Initialize(void)
 				}while(r1 && retry--);
 				if(retry&&SD_SendCmd_skyblue(CMD58,0,0X01)==0)//鉴别SD2.0卡版本开始
 				{
-					for(i=0;i<4;i++)buf[i]=hal_sd_read_write_byte(0XFF);//得到OCR值
+					for(i=0;i<4;i++)buf[i]=hal_sd.sd_trans_receive_data(0XFF);//得到OCR值
 					if(buf[0]&0x40)SD_Type=SD_TYPE_V2HC;    //检查CCS
 					else SD_Type=SD_TYPE_V2;   
 				}
@@ -249,14 +243,16 @@ uint8_t SD_Initialize(void)
 		}
 	}
 	SD_DisSelect();//取消片选
-	// SD_SPI_SpeedHigh();//高速
-    set_sd_spi_speed(SD_SPI_SPEED);
+
+	hal_sd.sd_set_speed(hal_sd.sd_trans_speed);
     
 	if(SD_Type) {
-		DEBUG_PRINT("SD Init succeed");
 		return 0;
 	}
-	else if(r1)return r1; 	   
+	else if(r1) {
+		return r1;
+	}
+
 	return 0xaa;//其他错误
 }
 

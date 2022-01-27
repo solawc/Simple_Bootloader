@@ -3,10 +3,23 @@
 
 #include "../../main.h"
 
-#define SD_SPI_SPEED        SPI_BAUDRATEPRESCALER_8
+/*
+ * How to select sd speed?
+ * 1. SD support 12M/s or 48M/s
+ * but we use SPI to driver SDCard, so the speed
+ * will be slow, when we need to init sd to begein,
+ * you must set SPI_BAUDRATEPRESCALER_256 at STM32,
+ * or if you use NXP or other MCU, for example TI or
+ * HC32, or AT32, you just set the most slow speed.
+ * 
+ * 2. When the spi need to trans data to sdcard, the 
+ * speed need to set between 8M/s and 12M/s, is SD_SPI_SPEED
+ *
+*/
+#define SD_SPI_SPEED            SPI_BAUDRATEPRESCALER_4         
+#define SD_SPI_LOW_SPEED        SPI_BAUDRATEPRESCALER_256
 
-#define SD_SPI_LOW_SPEED    SPI_BAUDRATEPRESCALER_128
-
+/* This is need to send a data to begein SPI, is a empty cmd*/
 #define SD_DUMMY_BYTE       0xFF
 
 /* SD卡类型定义 */
@@ -55,18 +68,21 @@
 
 typedef struct {
 
-    uint8_t SD_type;                     /* 描述SD卡类型 */
-
-    void (*sdcard_init)(void);
-
-    uint8_t (*get_sd_status)(void);
-
+    uint8_t sd_type;                                /* 描述SD卡类型 */
+    uint32_t sd_trans_speed;
+    uint32_t sd_slow_speed;
+    void    (*sd_set_speed)(uint32_t );
+    void    (*sd_init)(void);                        
+    uint8_t (*sd_get_status)(void);
+    uint8_t (*sd_trans_receive_data)(uint8_t );
+    void    (*sd_trans_enable)(void);
+    void    (*sd_trans_disable)(void);
 }hal_sd_t;
-
+extern hal_sd_t hal_sd;
 
 uint8_t SD_Initialize(void);
-
 uint8_t SD_ReadDisk(uint8_t*buf,uint32_t sector,uint8_t cnt);
 uint8_t SD_WriteDisk(uint8_t*buf,uint32_t sector,uint8_t cnt);
 uint32_t SD_GetSectorCount(void);
+
 #endif
