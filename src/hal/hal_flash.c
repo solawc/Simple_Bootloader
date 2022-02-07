@@ -37,6 +37,7 @@ uint8_t hal_flash_erase(void) {
 
 
 void hal_flash_write(uint32_t addr ,uint16_t *buff, uint32_t num) {
+    
     FLASH_EraseInitTypeDef FlashEraseInit;
 	HAL_StatusTypeDef FlashStatus=HAL_OK;
     uint32_t SectorError=0;
