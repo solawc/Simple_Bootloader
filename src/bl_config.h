@@ -2,9 +2,21 @@
 #define __bl_config_h
 
 // set bootload version num
-#define BOOTLOAD_VERSION        "V0.0.1"
-#define BOOTLOAD_DATE           "2022-01-25"
+#define BOOTLOAD_VERSION        "V0.1"
+#define BOOTLOAD_DATE           "2022-02-28"
 #define BOARD_NAME              "ZNP Robin Nano_DW V2.0"
+
+#ifndef MCU_FREQ
+#define MCU_FREQ        F_CPU
+#endif
+
+#ifndef MCU_RAM
+#define MCU_RAM         64*1024     // default for STM32F401RC, is 64k RAM 
+#endif
+
+#ifndef MCU_FLASH
+#define MCU_FLASH       256*1024    // default for STM32F401RC is 256k Flash
+#endif
 
 /* Enabled bootload if you want know debug info. */
 #define BL_DEBUG_MODE

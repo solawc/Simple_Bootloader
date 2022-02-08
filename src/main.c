@@ -1,30 +1,9 @@
 #include "main.h"
 
-/* From FATFS demo */
-FATFS fs;
-FIL fil;
-FRESULT fr;
 
-FRESULT open_append (
-    FIL* fp,            /* [OUT] File object to create */
-    const char* path    /* [IN]  File name to be opened */
-)
-{
-    FRESULT fr;
+int main(void) {
 
-    /* Opens an existing file. If not exist, creates a new file. */
-    fr = f_open(fp, path, FA_WRITE | FA_OPEN_ALWAYS);
-    if (fr == FR_OK) {
-        /* Seek to end of the file to append data */
-        fr = f_lseek(fp, f_size(fp));
-        if (fr != FR_OK)
-            f_close(fp);
-    }
-    return fr;
-}
-
-int main() {
-
+    FATFS fs;
     FRESULT fs_res;
 
     nvic_set_vector_table(NVIC_VectTab_FLASH, 0x0000);
@@ -33,20 +12,24 @@ int main() {
 
     SYSTEM_INIT();          // set system clock
 
+    printf_info_init();
+
     hal_uart_init();        // init uart 
 
     hal_sd_register();      // register sd
 
-    printf_info();          // print debug info
-
     if(!hal_sd.sd_get_status()) {
         fs_res = f_mount(&fs,"1:",1);
-        if(fs_res == 0) DEBUG_PRINT("SD mount succeed");  
-        hal_sd.is_has_sd = 1; 
+        if(fs_res == FR_OK){
+            hal_sd.is_has_sd = 1;
+        }else {
+             hal_sd.is_has_sd = 0;
+        }
     }else{
         hal_sd.is_has_sd = 0; 
-        DEBUG_PRINT("No SD Inser");
     }
+
+    printf_info();          // print debug info
     
     /*
      *             * Why is there a delay here? *
@@ -65,6 +48,7 @@ int main() {
 
     update_check();
 
+    /* Never into here */ 
     while(1) {};
 }
 

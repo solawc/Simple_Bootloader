@@ -4,28 +4,37 @@
 #include "../main.h"
 #include "stdbool.h"
 
-#ifndef MCU_FREQ
-#define MCU_FREQ        F_CPU
-#endif
 
-#ifndef MCU_RAM
-#define MCU_RAM         64*1024     // default for STM32F401RC, is 64k RAM 
-#endif
+/*
+ * bit_flag 
+                --------------------------------------------------------------------------------
+ * 0   0    0   |      0    |       0        |      0        |      0        |      0          |
+ *              | bit_erase | bit_wait_finsh | bit_open_file | bit_uploading | bit_read_finish |
+ *              |           |                |               |               |                 |
+ *              --------------------------------------------------------------------------------
+*/
 
-#ifndef MCU_FLASH
-#define MCU_FLASH       256*1024    // default for STM32F401RC is 256k Flash
-#endif
-#define MCU_NAME        
+typedef struct {
+    uint8_t bit_erase:1;
+    uint8_t bit_wait_finsh:1;
+    uint8_t bit_open_file:1;
+    uint8_t bit_uploading:1;
+    uint8_t bit_read_finish:1;
+    uint8_t bit_flag;
+}hal_flag_t;
+extern hal_flag_t hal_flag;
 
 typedef struct {
     uint16_t mcu_freq;
     uint16_t mcu_size;
+    uint16_t bl_size;
+    uint16_t app_size;
     bool is_has_u_disk;
-    bool is_has_sd_disk;
 }hal_info_t;
 extern hal_info_t hal_info;
 
 
 void printf_info(void);
-
+void printf_info_init(void);
+void printf_result_info(void);
 #endif

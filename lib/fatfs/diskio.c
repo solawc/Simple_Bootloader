@@ -85,7 +85,6 @@ DSTATUS disk_initialize (
 		if (result == 0)
 		{	
 			stat = RES_OK;
-			DEBUG_PRINT("SD Init succeed");
 		}else {
 			stat = RES_ERROR;
 			DEBUG_PRINT("SD Init fail");

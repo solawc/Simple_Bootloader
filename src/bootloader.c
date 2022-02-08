@@ -55,7 +55,6 @@ void bl_write_flash(void) {
 
     // FRESULT fr;
     FIL fil;
-
     Address = APP_STAR_ADDR;
     
     while(1) {
@@ -80,14 +79,15 @@ void bl_write_flash(void) {
 		Address += READ_FILE_PAGE_SIZE;
 
         if(br < READ_FILE_PAGE_SIZE) {
-
-            DEBUG_PRINT("File had read finish");
+            
+            // DEBUG_PRINT("br size:%d", br);
+            // DEBUG_PRINT("File had read finish");
+            hal_flag.bit_read_finish = 1;
 
             break;
         }; 
     }
-
-    DEBUG_PRINT("FW size:%ldk", fw_size_count);
+    DEBUG_PRINT("Upload size:%ldk", fw_size_count);
 }
 
 uint8_t bl_open_update_file(void) {
@@ -105,14 +105,19 @@ uint8_t bl_open_update_file(void) {
 
     if(fr == FR_OK) {
 
+        // hal_sd.fw_file_size = f_size(&fil);
+
+        hal_sd.fw_file_size = fil.obj.objsize;
         bl_erase_flash();
 
-        DEBUG_PRINT("open FW succeed");
+        // DEBUG_PRINT("open FW succeed");
+        hal_flag.bit_open_file = 1;
         
         return 0;
     }else {
 
-        DEBUG_PRINT("open FW fail");
+        // DEBUG_PRINT("open FW fail");
+        hal_flag.bit_open_file = 0;
 
         return 1;
     }
@@ -135,11 +140,6 @@ void bl_jump_to_app(uint32_t sect, uint32_t Msp, uint32_t reset_msp) {
     uint32_t base;
     uint32_t offset;
 
-    /* Step 1. Update flash */
-    // mks_update_flash();
-    /* Step 2. set beep */
-
-    /* Step 3. DeInit SPI, Systick */
     hal_sd_deinit();
 
     SysTick->CTRL &= ~ SysTick_CTRL_ENABLE_Msk;
@@ -158,6 +158,8 @@ void bl_jump_to_app(uint32_t sect, uint32_t Msp, uint32_t reset_msp) {
 
 void jump_without_update(void) {
 
+    printf_result_info();
+
     msp = *((uint32_t *)(APP_STAR_ADDR));
 
 	reset = *((uint32_t *)(APP_STAR_ADDR + 4));
@@ -169,7 +171,7 @@ void jump_without_update(void) {
 void jump_with_update() {
 
     bl_write_flash();
-    DEBUG_PRINT("bootload jump to app");
+    printf_result_info();
     bl_jump_to_app(APP_STAR_ADDR, msp, reset);
 }
 
@@ -181,13 +183,14 @@ void update_check(void) {
 
     if(is_need_update == 0) 
     {   
-        DEBUG_PRINT("Updating file");
+        // DEBUG_PRINT("Updating file");
+        hal_flag.bit_uploading = 1;
 
         jump_with_update();
     }
     else  // open file fail or no fw file
-    {
-        DEBUG_PRINT("bootload jump to app");
+    {   
+        hal_flag.bit_uploading = 0;
         jump_without_update();
     }
 }

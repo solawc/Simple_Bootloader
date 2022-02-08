@@ -17,17 +17,21 @@ uint8_t hal_flash_erase(void) {
 
     if(HAL_FLASHEx_Erase(&bl_flash, &SectorError)!=HAL_OK) 
     {
-        DEBUG_PRINT("erase flase error");
+        // DEBUG_PRINT("erase flase error");
+        hal_flag.bit_erase = 0;
     }else {
-        DEBUG_PRINT("erase flase Succeed");
+        // DEBUG_PRINT("erase flase Succeed");
+        hal_flag.bit_erase = 1;
     }
 
     FlashStatus = FLASH_WaitForLastOperation(FLASH_WAITETIME);
 
     if(FlashStatus == HAL_OK) {
-        DEBUG_PRINT("wait finsh succeed");
+        // DEBUG_PRINT("wait finsh succeed");
+        hal_flag.bit_wait_finsh = 1;
     }else {
-        DEBUG_PRINT("wait fail, error code:%d", FlashStatus);
+        hal_flag.bit_wait_finsh = 0;
+        // DEBUG_PRINT("wait fail, error code:%d", FlashStatus);
     }
 
     HAL_FLASH_Lock();
