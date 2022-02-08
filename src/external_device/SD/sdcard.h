@@ -16,7 +16,7 @@
  * speed need to set between 8M/s and 12M/s, is SD_SPI_SPEED
  *
 */
-#define SD_SPI_SPEED            SPI_BAUDRATEPRESCALER_4         
+#define SD_SPI_SPEED            SPI_BAUDRATEPRESCALER_2       
 #define SD_SPI_LOW_SPEED        SPI_BAUDRATEPRESCALER_256
 
 /* This is need to send a data to begein SPI, is a empty cmd*/
@@ -63,8 +63,6 @@
 #define MSD_ADDRESS_ERROR          0x20
 #define MSD_PARAMETER_ERROR        0x40
 #define MSD_RESPONSE_FAILURE       0xFF
-
-
 
 typedef struct {
 

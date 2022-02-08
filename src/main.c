@@ -47,6 +47,22 @@ int main() {
         hal_sd.is_has_sd = 0; 
         DEBUG_PRINT("No SD Inser");
     }
+    
+    /*
+     *             * Why is there a delay here? *
+     * Because after the MCU is initialized and started, 
+     * maybe due to hardware reasons, 
+     * it needs to wait for the clock to stabilize. 
+     * The initialization is actually very fast, 
+     * but the stabilization process is relatively long. 
+     * You have no way of knowing if the SD card is already 
+     * clock stabilized, even if it initializes normally 
+     * and hangs normally on FATFS.
+     * So I put a 500ms delay in this place, maybe it's too long, 
+     * but it's enough to make sure it's stable
+    */
+    HAL_Delay(500);
+
     update_check();
 
     while(1) {};

@@ -147,8 +147,6 @@ Discarded input sections
                 0x00000000       0x2c .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal.o
  .text.HAL_GetTickFreq
                 0x00000000        0xc .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal.o
- .text.HAL_Delay
-                0x00000000       0x28 .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal.o
  .text.HAL_SuspendTick
                 0x00000000       0x10 .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal.o
  .text.HAL_ResumeTick
@@ -3775,7 +3773,7 @@ LOAD c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/.
                 0x08000000                g_pfnVectors
                 0x08000194                . = ALIGN (0x4)
 
-.text           0x080001a0     0x4fc4
+.text           0x080001a0     0x4ff0
                 0x080001a0                . = ALIGN (0x4)
  *(.text)
  .text          0x080001a0       0x40 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/crtbegin.o
@@ -3805,663 +3803,668 @@ LOAD c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/.
  .text.HAL_GetTick
                 0x0800061c        0xc .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal.o
                 0x0800061c                HAL_GetTick
+ .text.HAL_Delay
+                0x08000628       0x28 .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal.o
+                0x08000628                HAL_Delay
  .text.HAL_NVIC_SetPriorityGrouping
-                0x08000628       0x24 .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_cortex.o
-                0x08000628                HAL_NVIC_SetPriorityGrouping
+                0x08000650       0x24 .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_cortex.o
+                0x08000650                HAL_NVIC_SetPriorityGrouping
  .text.HAL_NVIC_SetPriority
-                0x0800064c       0x68 .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_cortex.o
-                0x0800064c                HAL_NVIC_SetPriority
+                0x08000674       0x68 .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_cortex.o
+                0x08000674                HAL_NVIC_SetPriority
  .text.HAL_SYSTICK_Config
-                0x080006b4       0x2c .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_cortex.o
-                0x080006b4                HAL_SYSTICK_Config
+                0x080006dc       0x2c .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_cortex.o
+                0x080006dc                HAL_SYSTICK_Config
  .text.FLASH_Program_DoubleWord
-                0x080006e0       0x2c .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_flash.o
+                0x08000708       0x2c .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_flash.o
  .text.FLASH_Program_Word
-                0x0800070c       0x24 .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_flash.o
+                0x08000734       0x24 .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_flash.o
  .text.FLASH_Program_HalfWord
-                0x08000730       0x24 .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_flash.o
+                0x08000758       0x24 .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_flash.o
  .text.FLASH_Program_Byte
-                0x08000754       0x20 .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_flash.o
+                0x0800077c       0x20 .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_flash.o
  .text.FLASH_SetErrorCode
-                0x08000774       0xa8 .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_flash.o
+                0x0800079c       0xa8 .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_flash.o
  .text.HAL_FLASH_Unlock
-                0x0800081c       0x30 .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_flash.o
-                0x0800081c                HAL_FLASH_Unlock
+                0x08000844       0x30 .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_flash.o
+                0x08000844                HAL_FLASH_Unlock
  .text.HAL_FLASH_Lock
-                0x0800084c       0x14 .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_flash.o
-                0x0800084c                HAL_FLASH_Lock
+                0x08000874       0x14 .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_flash.o
+                0x08000874                HAL_FLASH_Lock
  .text.FLASH_WaitForLastOperation
-                0x08000860       0x64 .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_flash.o
-                0x08000860                FLASH_WaitForLastOperation
+                0x08000888       0x64 .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_flash.o
+                0x08000888                FLASH_WaitForLastOperation
  .text.HAL_FLASH_Program
-                0x080008c4       0x80 .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_flash.o
-                0x080008c4                HAL_FLASH_Program
+                0x080008ec       0x80 .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_flash.o
+                0x080008ec                HAL_FLASH_Program
  .text.FLASH_MassErase
-                0x08000944       0x24 .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_flash_ex.o
+                0x0800096c       0x24 .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_flash_ex.o
  .text.FLASH_Erase_Sector
-                0x08000968       0x54 .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_flash_ex.o
-                0x08000968                FLASH_Erase_Sector
+                0x08000990       0x54 .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_flash_ex.o
+                0x08000990                FLASH_Erase_Sector
  .text.FLASH_FlushCaches
-                0x080009bc       0x60 .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_flash_ex.o
-                0x080009bc                FLASH_FlushCaches
+                0x080009e4       0x60 .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_flash_ex.o
+                0x080009e4                FLASH_FlushCaches
  .text.HAL_FLASHEx_Erase
-                0x08000a1c       0x94 .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_flash_ex.o
-                0x08000a1c                HAL_FLASHEx_Erase
+                0x08000a44       0x94 .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_flash_ex.o
+                0x08000a44                HAL_FLASHEx_Erase
  .text.HAL_GPIO_Init
-                0x08000ab0      0x1b0 .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_gpio.o
-                0x08000ab0                HAL_GPIO_Init
+                0x08000ad8      0x1b0 .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_gpio.o
+                0x08000ad8                HAL_GPIO_Init
  .text.HAL_GPIO_ReadPin
-                0x08000c60        0xe .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_gpio.o
-                0x08000c60                HAL_GPIO_ReadPin
+                0x08000c88        0xe .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_gpio.o
+                0x08000c88                HAL_GPIO_ReadPin
  .text.HAL_GPIO_WritePin
-                0x08000c6e        0xc .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_gpio.o
-                0x08000c6e                HAL_GPIO_WritePin
- *fill*         0x08000c7a        0x2 
+                0x08000c96        0xc .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_gpio.o
+                0x08000c96                HAL_GPIO_WritePin
+ *fill*         0x08000ca2        0x2 
  .text.HAL_RCC_OscConfig
-                0x08000c7c      0x3f8 .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_rcc.o
-                0x08000c7c                HAL_RCC_OscConfig
+                0x08000ca4      0x3f8 .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_rcc.o
+                0x08000ca4                HAL_RCC_OscConfig
  .text.HAL_RCC_GetSysClockFreq
-                0x08001074       0xd8 .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_rcc.o
-                0x08001074                HAL_RCC_GetSysClockFreq
+                0x0800109c       0xd8 .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_rcc.o
+                0x0800109c                HAL_RCC_GetSysClockFreq
  .text.HAL_RCC_ClockConfig
-                0x0800114c      0x160 .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_rcc.o
-                0x0800114c                HAL_RCC_ClockConfig
+                0x08001174      0x160 .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_rcc.o
+                0x08001174                HAL_RCC_ClockConfig
  .text.HAL_RCC_GetHCLKFreq
-                0x080012ac        0xc .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_rcc.o
-                0x080012ac                HAL_RCC_GetHCLKFreq
+                0x080012d4        0xc .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_rcc.o
+                0x080012d4                HAL_RCC_GetHCLKFreq
  .text.HAL_RCC_GetPCLK1Freq
-                0x080012b8       0x20 .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_rcc.o
-                0x080012b8                HAL_RCC_GetPCLK1Freq
+                0x080012e0       0x20 .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_rcc.o
+                0x080012e0                HAL_RCC_GetPCLK1Freq
  .text.HAL_RCC_GetPCLK2Freq
-                0x080012d8       0x20 .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_rcc.o
-                0x080012d8                HAL_RCC_GetPCLK2Freq
+                0x08001300       0x20 .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_rcc.o
+                0x08001300                HAL_RCC_GetPCLK2Freq
  .text.SPI_WaitFlagStateUntilTimeout
-                0x080012f8       0xd0 .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_spi.o
+                0x08001320       0xd0 .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_spi.o
  .text.SPI_EndRxTxTransaction
-                0x080013c8       0x68 .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_spi.o
+                0x080013f0       0x68 .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_spi.o
  .text.HAL_SPI_MspInit
-                0x08001430        0x2 .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_spi.o
-                0x08001430                HAL_SPI_MspInit
+                0x08001458        0x2 .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_spi.o
+                0x08001458                HAL_SPI_MspInit
  .text.HAL_SPI_Init
-                0x08001432       0xca .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_spi.o
-                0x08001432                HAL_SPI_Init
+                0x0800145a       0xca .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_spi.o
+                0x0800145a                HAL_SPI_Init
  .text.HAL_SPI_MspDeInit
-                0x080014fc        0x2 .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_spi.o
-                0x080014fc                HAL_SPI_MspDeInit
+                0x08001524        0x2 .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_spi.o
+                0x08001524                HAL_SPI_MspDeInit
  .text.HAL_SPI_DeInit
-                0x080014fe       0x2c .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_spi.o
-                0x080014fe                HAL_SPI_DeInit
+                0x08001526       0x2c .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_spi.o
+                0x08001526                HAL_SPI_DeInit
  .text.HAL_SPI_TransmitReceive
-                0x0800152a      0x2de .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_spi.o
-                0x0800152a                HAL_SPI_TransmitReceive
+                0x08001552      0x2de .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_spi.o
+                0x08001552                HAL_SPI_TransmitReceive
  .text.UART_SetConfig
-                0x08001808      0x134 .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_uart.o
+                0x08001830      0x134 .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_uart.o
  .text.UART_WaitOnFlagUntilTimeout
-                0x0800193c       0x7e .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_uart.o
+                0x08001964       0x7e .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_uart.o
  .text.HAL_UART_MspInit
-                0x080019ba        0x2 .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_uart.o
-                0x080019ba                HAL_UART_MspInit
+                0x080019e2        0x2 .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_uart.o
+                0x080019e2                HAL_UART_MspInit
  .text.HAL_UART_Init
-                0x080019bc       0x5e .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_uart.o
-                0x080019bc                HAL_UART_Init
+                0x080019e4       0x5e .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_uart.o
+                0x080019e4                HAL_UART_Init
  .text.HAL_UART_Transmit
-                0x08001a1a       0xda .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_uart.o
-                0x08001a1a                HAL_UART_Transmit
+                0x08001a42       0xda .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_uart.o
+                0x08001a42                HAL_UART_Transmit
  .text.nvic_set_vector_table
-                0x08001af4       0x14 .pio\build\STM32F401_BL\src\bootloader.o
-                0x08001af4                nvic_set_vector_table
+                0x08001b1c       0x14 .pio\build\STM32F401_BL\src\bootloader.o
+                0x08001b1c                nvic_set_vector_table
  .text.bl_erase_flash
-                0x08001b08        0x8 .pio\build\STM32F401_BL\src\bootloader.o
-                0x08001b08                bl_erase_flash
+                0x08001b30        0x8 .pio\build\STM32F401_BL\src\bootloader.o
+                0x08001b30                bl_erase_flash
  .text.bufferSet
-                0x08001b10       0x10 .pio\build\STM32F401_BL\src\bootloader.o
-                0x08001b10                bufferSet
+                0x08001b38       0x10 .pio\build\STM32F401_BL\src\bootloader.o
+                0x08001b38                bufferSet
  .text.bl_write_flash
-                0x08001b20       0xc8 .pio\build\STM32F401_BL\src\bootloader.o
-                0x08001b20                bl_write_flash
+                0x08001b48       0xb8 .pio\build\STM32F401_BL\src\bootloader.o
+                0x08001b48                bl_write_flash
  .text.bl_open_update_file
-                0x08001be8       0x78 .pio\build\STM32F401_BL\src\bootloader.o
-                0x08001be8                bl_open_update_file
+                0x08001c00       0x78 .pio\build\STM32F401_BL\src\bootloader.o
+                0x08001c00                bl_open_update_file
  .text.bl_jump_to_app
-                0x08001c60       0x38 .pio\build\STM32F401_BL\src\bootloader.o
-                0x08001c60                bl_jump_to_app
+                0x08001c78       0x38 .pio\build\STM32F401_BL\src\bootloader.o
+                0x08001c78                bl_jump_to_app
  .text.jump_without_update
-                0x08001c98       0x28 .pio\build\STM32F401_BL\src\bootloader.o
-                0x08001c98                jump_without_update
+                0x08001cb0       0x28 .pio\build\STM32F401_BL\src\bootloader.o
+                0x08001cb0                jump_without_update
  .text.jump_with_update
-                0x08001cc0       0x24 .pio\build\STM32F401_BL\src\bootloader.o
-                0x08001cc0                jump_with_update
+                0x08001cd8       0x30 .pio\build\STM32F401_BL\src\bootloader.o
+                0x08001cd8                jump_with_update
  .text.update_check
-                0x08001ce4       0x2c .pio\build\STM32F401_BL\src\bootloader.o
-                0x08001ce4                update_check
+                0x08001d08       0x2c .pio\build\STM32F401_BL\src\bootloader.o
+                0x08001d08                update_check
  .text.sd_wait_ready
-                0x08001d10       0x28 .pio\build\STM32F401_BL\src\external_device\SD\sdcard.o
-                0x08001d10                sd_wait_ready
+                0x08001d34       0x28 .pio\build\STM32F401_BL\src\external_device\SD\sdcard.o
+                0x08001d34                sd_wait_ready
  .text.SD_DisSelect
-                0x08001d38       0x14 .pio\build\STM32F401_BL\src\external_device\SD\sdcard.o
-                0x08001d38                SD_DisSelect
+                0x08001d5c       0x14 .pio\build\STM32F401_BL\src\external_device\SD\sdcard.o
+                0x08001d5c                SD_DisSelect
  .text.SD_Select
-                0x08001d4c       0x1a .pio\build\STM32F401_BL\src\external_device\SD\sdcard.o
-                0x08001d4c                SD_Select
- *fill*         0x08001d66        0x2 
+                0x08001d70       0x1a .pio\build\STM32F401_BL\src\external_device\SD\sdcard.o
+                0x08001d70                SD_Select
+ *fill*         0x08001d8a        0x2 
  .text.SD_GetResponse_skyblue
-                0x08001d68       0x2c .pio\build\STM32F401_BL\src\external_device\SD\sdcard.o
-                0x08001d68                SD_GetResponse_skyblue
+                0x08001d8c       0x2c .pio\build\STM32F401_BL\src\external_device\SD\sdcard.o
+                0x08001d8c                SD_GetResponse_skyblue
  .text.SD_RecvData
-                0x08001d94       0x40 .pio\build\STM32F401_BL\src\external_device\SD\sdcard.o
-                0x08001d94                SD_RecvData
+                0x08001db8       0x40 .pio\build\STM32F401_BL\src\external_device\SD\sdcard.o
+                0x08001db8                SD_RecvData
  .text.SD_SendBlock
-                0x08001dd4       0x5c .pio\build\STM32F401_BL\src\external_device\SD\sdcard.o
-                0x08001dd4                SD_SendBlock
+                0x08001df8       0x5c .pio\build\STM32F401_BL\src\external_device\SD\sdcard.o
+                0x08001df8                SD_SendBlock
  .text.SD_SendCmd_skyblue
-                0x08001e30       0x70 .pio\build\STM32F401_BL\src\external_device\SD\sdcard.o
-                0x08001e30                SD_SendCmd_skyblue
+                0x08001e54       0x70 .pio\build\STM32F401_BL\src\external_device\SD\sdcard.o
+                0x08001e54                SD_SendCmd_skyblue
  .text.SD_Initialize
-                0x08001ea0      0x1b4 .pio\build\STM32F401_BL\src\external_device\SD\sdcard.o
-                0x08001ea0                SD_Initialize
+                0x08001ec4      0x1b4 .pio\build\STM32F401_BL\src\external_device\SD\sdcard.o
+                0x08001ec4                SD_Initialize
  .text.SD_ReadDisk
-                0x08002054       0x6c .pio\build\STM32F401_BL\src\external_device\SD\sdcard.o
-                0x08002054                SD_ReadDisk
+                0x08002078       0x6c .pio\build\STM32F401_BL\src\external_device\SD\sdcard.o
+                0x08002078                SD_ReadDisk
  .text.SD_WriteDisk
-                0x080020c0       0x88 .pio\build\STM32F401_BL\src\external_device\SD\sdcard.o
-                0x080020c0                SD_WriteDisk
+                0x080020e4       0x88 .pio\build\STM32F401_BL\src\external_device\SD\sdcard.o
+                0x080020e4                SD_WriteDisk
  .text.printf_info
-                0x08002148       0xa4 .pio\build\STM32F401_BL\src\hal\hal.o
-                0x08002148                printf_info
+                0x0800216c       0xa4 .pio\build\STM32F401_BL\src\hal\hal.o
+                0x0800216c                printf_info
  .text.hal_flash_erase
-                0x080021ec       0x80 .pio\build\STM32F401_BL\src\hal\hal_flash.o
-                0x080021ec                hal_flash_erase
+                0x08002210       0x80 .pio\build\STM32F401_BL\src\hal\hal_flash.o
+                0x08002210                hal_flash_erase
  .text.hal_flash_write
-                0x0800226c       0x3e .pio\build\STM32F401_BL\src\hal\hal_flash.o
-                0x0800226c                hal_flash_write
- *fill*         0x080022aa        0x2 
+                0x08002290       0x3e .pio\build\STM32F401_BL\src\hal\hal_flash.o
+                0x08002290                hal_flash_write
+ *fill*         0x080022ce        0x2 
  .text.hal_sd_enable
-                0x080022ac       0x14 .pio\build\STM32F401_BL\src\hal\hal_spi.o
-                0x080022ac                hal_sd_enable
+                0x080022d0       0x14 .pio\build\STM32F401_BL\src\hal\hal_spi.o
+                0x080022d0                hal_sd_enable
  .text.hal_sd_disable
-                0x080022c0       0x14 .pio\build\STM32F401_BL\src\hal\hal_spi.o
-                0x080022c0                hal_sd_disable
+                0x080022e4       0x14 .pio\build\STM32F401_BL\src\hal\hal_spi.o
+                0x080022e4                hal_sd_disable
  .text.hal_sd_read_write_byte
-                0x080022d4       0x30 .pio\build\STM32F401_BL\src\hal\hal_spi.o
-                0x080022d4                hal_sd_read_write_byte
+                0x080022f8       0x30 .pio\build\STM32F401_BL\src\hal\hal_spi.o
+                0x080022f8                hal_sd_read_write_byte
  .text.sd_spi_pin_init
-                0x08002304       0x98 .pio\build\STM32F401_BL\src\hal\hal_spi.o
+                0x08002328       0x98 .pio\build\STM32F401_BL\src\hal\hal_spi.o
  .text.hal_sd_set_speed
-                0x0800239c       0x1c .pio\build\STM32F401_BL\src\hal\hal_spi.o
-                0x0800239c                hal_sd_set_speed
+                0x080023c0       0x1c .pio\build\STM32F401_BL\src\hal\hal_spi.o
+                0x080023c0                hal_sd_set_speed
  .text.sd_spi_init
-                0x080023b8       0x50 .pio\build\STM32F401_BL\src\hal\hal_spi.o
+                0x080023dc       0x50 .pio\build\STM32F401_BL\src\hal\hal_spi.o
  .text.hal_sd_init
-                0x08002408        0xc .pio\build\STM32F401_BL\src\hal\hal_spi.o
-                0x08002408                hal_sd_init
+                0x0800242c        0xc .pio\build\STM32F401_BL\src\hal\hal_spi.o
+                0x0800242c                hal_sd_init
  .text.hal_sd_det_read
-                0x08002414       0x14 .pio\build\STM32F401_BL\src\hal\hal_spi.o
-                0x08002414                hal_sd_det_read
+                0x08002438       0x14 .pio\build\STM32F401_BL\src\hal\hal_spi.o
+                0x08002438                hal_sd_det_read
  .text.hal_sd_deinit
-                0x08002428       0x2c .pio\build\STM32F401_BL\src\hal\hal_spi.o
-                0x08002428                hal_sd_deinit
+                0x0800244c       0x2c .pio\build\STM32F401_BL\src\hal\hal_spi.o
+                0x0800244c                hal_sd_deinit
  .text.hal_sd_spi_speed_get
-                0x08002454       0x68 .pio\build\STM32F401_BL\src\hal\hal_spi.o
-                0x08002454                hal_sd_spi_speed_get
+                0x08002478       0x68 .pio\build\STM32F401_BL\src\hal\hal_spi.o
+                0x08002478                hal_sd_spi_speed_get
  .text.hal_sd_register
-                0x080024bc       0x50 .pio\build\STM32F401_BL\src\hal\hal_spi.o
-                0x080024bc                hal_sd_register
+                0x080024e0       0x50 .pio\build\STM32F401_BL\src\hal\hal_spi.o
+                0x080024e0                hal_sd_register
  .text.hal_uart_gpio_init
-                0x0800250c       0x6c .pio\build\STM32F401_BL\src\hal\hal_uart.o
-                0x0800250c                hal_uart_gpio_init
+                0x08002530       0x6c .pio\build\STM32F401_BL\src\hal\hal_uart.o
+                0x08002530                hal_uart_gpio_init
  .text.hal_uart_init
-                0x08002578       0x38 .pio\build\STM32F401_BL\src\hal\hal_uart.o
-                0x08002578                hal_uart_init
- .text._write   0x080025b0       0x18 .pio\build\STM32F401_BL\src\hal\hal_uart.o
-                0x080025b0                _write
- .text.main     0x080025c8       0x6c .pio\build\STM32F401_BL\src\main.o
-                0x080025c8                main
+                0x0800259c       0x38 .pio\build\STM32F401_BL\src\hal\hal_uart.o
+                0x0800259c                hal_uart_init
+ .text._write   0x080025d4       0x18 .pio\build\STM32F401_BL\src\hal\hal_uart.o
+                0x080025d4                _write
+ .text.main     0x080025ec       0x74 .pio\build\STM32F401_BL\src\main.o
+                0x080025ec                main
  .text.SysTick_Handler
-                0x08002634        0x8 .pio\build\STM32F401_BL\src\main.o
-                0x08002634                SysTick_Handler
+                0x08002660        0x8 .pio\build\STM32F401_BL\src\main.o
+                0x08002660                SysTick_Handler
  .text.Error_Handler
-                0x0800263c        0x4 .pio\build\STM32F401_BL\src\mcu\stm32_f401rc_hal_system.o
-                0x0800263c                Error_Handler
+                0x08002668        0x4 .pio\build\STM32F401_BL\src\mcu\stm32_f401rc_hal_system.o
+                0x08002668                Error_Handler
  .text.hal_stm32f401_system_init
-                0x08002640       0xa4 .pio\build\STM32F401_BL\src\mcu\stm32_f401rc_hal_system.o
-                0x08002640                hal_stm32f401_system_init
+                0x0800266c       0xa4 .pio\build\STM32F401_BL\src\mcu\stm32_f401rc_hal_system.o
+                0x0800266c                hal_stm32f401_system_init
  .text.hal_get_flash_sector
-                0x080026e4       0x44 .pio\build\STM32F401_BL\src\mcu\stm32_f401rc_hal_system.o
-                0x080026e4                hal_get_flash_sector
- .text.ld_word  0x08002728        0xa .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
+                0x08002710       0x44 .pio\build\STM32F401_BL\src\mcu\stm32_f401rc_hal_system.o
+                0x08002710                hal_get_flash_sector
+ .text.ld_word  0x08002754        0xa .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
  .text.ld_dword
-                0x08002732       0x16 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
- .text.st_word  0x08002748        0x8 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
+                0x0800275e       0x16 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
+ .text.st_word  0x08002774        0x8 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
  .text.st_dword
-                0x08002750       0x14 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
- .text.dbc_1st  0x08002764        0x4 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
- .text.dbc_2nd  0x08002768        0x4 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
+                0x0800277c       0x14 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
+ .text.dbc_1st  0x08002790        0x4 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
+ .text.dbc_2nd  0x08002794        0x4 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
  .text.chk_lock
-                0x0800276c       0x74 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
+                0x08002798       0x74 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
  .text.enq_lock
-                0x080027e0       0x20 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
+                0x0800280c       0x20 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
  .text.inc_lock
-                0x08002800       0xa4 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
+                0x0800282c       0xa4 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
  .text.dec_lock
-                0x080028a4       0x40 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
+                0x080028d0       0x40 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
  .text.clear_lock
-                0x080028e4       0x38 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
+                0x08002910       0x38 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
  .text.clst2sect
-                0x0800291c       0x18 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
+                0x08002948       0x18 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
  .text.clmt_clust
-                0x08002934       0x22 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
+                0x08002960       0x22 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
  .text.ld_clust
-                0x08002956       0x26 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
+                0x08002982       0x26 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
  .text.st_clust
-                0x0800297c       0x26 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
- *fill*         0x080029a2        0x2 
- .text.put_lfn  0x080029a4       0x78 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
- .text.sum_sfn  0x08002a1c       0x1c .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
+                0x080029a8       0x26 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
+ *fill*         0x080029ce        0x2 
+ .text.put_lfn  0x080029d0       0x78 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
+ .text.sum_sfn  0x08002a48       0x1c .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
  .text.get_ldnumber
-                0x08002a38       0x56 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
+                0x08002a64       0x56 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
  .text.validate
-                0x08002a8e       0x48 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
+                0x08002aba       0x48 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
  .text.sync_window
-                0x08002ad6       0x50 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
+                0x08002b02       0x50 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
  .text.move_window
-                0x08002b26       0x34 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
- *fill*         0x08002b5a        0x2 
+                0x08002b52       0x34 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
+ *fill*         0x08002b86        0x2 
  .text.check_fs
-                0x08002b5c       0xd4 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
+                0x08002b88       0xd4 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
  .text.find_volume
-                0x08002c30       0x70 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
+                0x08002c5c       0x70 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
  .text.mount_volume
-                0x08002ca0      0x2b4 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
- .text.put_fat  0x08002f54      0x10a .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
- .text.get_fat  0x0800305e       0xd0 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
- .text.dir_sdi  0x0800312e       0xa2 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
+                0x08002ccc      0x2b4 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
+ .text.put_fat  0x08002f80      0x10a .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
+ .text.get_fat  0x0800308a       0xd0 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
+ .text.dir_sdi  0x0800315a       0xa2 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
  .text.create_chain
-                0x080031d0      0x104 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
+                0x080031fc      0x104 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
  .text.remove_chain
-                0x080032d4       0x88 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
+                0x08003300       0x88 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
  .text.dir_clear
-                0x0800335c       0x52 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
+                0x08003388       0x52 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
  .text.dir_next
-                0x080033ae       0xc6 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
+                0x080033da       0xc6 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
  .text.dir_alloc
-                0x08003474       0x50 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
+                0x080034a0       0x50 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
  .text.tchar2uni
-                0x080034c4       0x48 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
+                0x080034f0       0x48 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
  .text.create_name
-                0x0800350c      0x248 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
- .text.cmp_lfn  0x08003754       0xa4 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
+                0x08003538      0x248 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
+ .text.cmp_lfn  0x08003780       0xa4 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
  .text.dir_find
-                0x080037f8       0xe6 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
+                0x08003824       0xe6 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
  .text.follow_path
-                0x080038de       0x8c .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
+                0x0800390a       0x8c .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
  .text.gen_numname
-                0x0800396a       0xba .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
+                0x08003996       0xba .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
  .text.dir_register
-                0x08003a24      0x148 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
- .text.f_mount  0x08003b6c       0x58 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
-                0x08003b6c                f_mount
- .text.f_read   0x08003bc4      0x18c .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
-                0x08003bc4                f_read
+                0x08003a50      0x148 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
+ .text.f_mount  0x08003b98       0x58 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
+                0x08003b98                f_mount
+ .text.f_read   0x08003bf0      0x18c .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
+                0x08003bf0                f_read
  .text.get_fattime
-                0x08003d50        0x4 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
-                0x08003d50                get_fattime
- .text.f_open   0x08003d54      0x242 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
-                0x08003d54                f_open
- *fill*         0x08003f96        0x2 
+                0x08003d7c        0x4 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
+                0x08003d7c                get_fattime
+ .text.f_open   0x08003d80      0x242 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
+                0x08003d80                f_open
+ *fill*         0x08003fc2        0x2 
  .text.ff_uni2oem
-                0x08003f98       0x40 .pio\build\STM32F401_BL\lib475\libfatfs.a(ffunicode.o)
-                0x08003f98                ff_uni2oem
+                0x08003fc4       0x40 .pio\build\STM32F401_BL\lib475\libfatfs.a(ffunicode.o)
+                0x08003fc4                ff_uni2oem
  .text.ff_oem2uni
-                0x08003fd8       0x2c .pio\build\STM32F401_BL\lib475\libfatfs.a(ffunicode.o)
-                0x08003fd8                ff_oem2uni
+                0x08004004       0x2c .pio\build\STM32F401_BL\lib475\libfatfs.a(ffunicode.o)
+                0x08004004                ff_oem2uni
  .text.ff_wtoupper
-                0x08004004       0x9c .pio\build\STM32F401_BL\lib475\libfatfs.a(ffunicode.o)
-                0x08004004                ff_wtoupper
+                0x08004030       0x9c .pio\build\STM32F401_BL\lib475\libfatfs.a(ffunicode.o)
+                0x08004030                ff_wtoupper
  .text.disk_status
-                0x080040a0        0xc .pio\build\STM32F401_BL\lib475\libfatfs.a(diskio.o)
-                0x080040a0                disk_status
+                0x080040cc        0xc .pio\build\STM32F401_BL\lib475\libfatfs.a(diskio.o)
+                0x080040cc                disk_status
  .text.disk_initialize
-                0x080040ac       0x40 .pio\build\STM32F401_BL\lib475\libfatfs.a(diskio.o)
-                0x080040ac                disk_initialize
+                0x080040d8       0x40 .pio\build\STM32F401_BL\lib475\libfatfs.a(diskio.o)
+                0x080040d8                disk_initialize
  .text.disk_read
-                0x080040ec       0x30 .pio\build\STM32F401_BL\lib475\libfatfs.a(diskio.o)
-                0x080040ec                disk_read
+                0x08004118       0x30 .pio\build\STM32F401_BL\lib475\libfatfs.a(diskio.o)
+                0x08004118                disk_read
  .text.disk_write
-                0x0800411c       0x30 .pio\build\STM32F401_BL\lib475\libfatfs.a(diskio.o)
-                0x0800411c                disk_write
+                0x08004148       0x30 .pio\build\STM32F401_BL\lib475\libfatfs.a(diskio.o)
+                0x08004148                disk_write
  .text.__libc_init_array
-                0x0800414c       0x48 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-init.o)
-                0x0800414c                __libc_init_array
- .text.memcmp   0x08004194       0x1e c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-memcmp.o)
-                0x08004194                memcmp
- .text.memcpy   0x080041b2       0x16 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-memcpy-stub.o)
-                0x080041b2                memcpy
- .text.memset   0x080041c8       0x10 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-memset.o)
-                0x080041c8                memset
- .text.printf   0x080041d8       0x30 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-printf.o)
-                0x080041d8                iprintf
-                0x080041d8                printf
- .text._puts_r  0x08004208       0xb8 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-puts.o)
-                0x08004208                _puts_r
- .text.puts     0x080042c0       0x10 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-puts.o)
-                0x080042c0                puts
- .text.strchr   0x080042d0       0x1a c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-strchr.o)
-                0x080042d0                strchr
- .text.strcpy   0x080042ea       0x10 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-strcpy.o)
-                0x080042ea                strcpy
- *fill*         0x080042fa        0x2 
+                0x08004178       0x48 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-init.o)
+                0x08004178                __libc_init_array
+ .text.memcmp   0x080041c0       0x1e c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-memcmp.o)
+                0x080041c0                memcmp
+ .text.memcpy   0x080041de       0x16 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-memcpy-stub.o)
+                0x080041de                memcpy
+ .text.memset   0x080041f4       0x10 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-memset.o)
+                0x080041f4                memset
+ .text.printf   0x08004204       0x30 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-printf.o)
+                0x08004204                iprintf
+                0x08004204                printf
+ .text._puts_r  0x08004234       0xb8 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-puts.o)
+                0x08004234                _puts_r
+ .text.puts     0x080042ec       0x10 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-puts.o)
+                0x080042ec                puts
+ .text.strchr   0x080042fc       0x1a c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-strchr.o)
+                0x080042fc                strchr
+ .text.strcpy   0x08004316       0x10 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-strcpy.o)
+                0x08004316                strcpy
+ *fill*         0x08004326        0x2 
  .text.__swbuf_r
-                0x080042fc       0xa4 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-wbuf.o)
-                0x080042fc                __swbuf_r
+                0x08004328       0xa4 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-wbuf.o)
+                0x08004328                __swbuf_r
  .text.__swsetup_r
-                0x080043a0       0xdc c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-wsetup.o)
-                0x080043a0                __swsetup_r
+                0x080043cc       0xdc c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-wsetup.o)
+                0x080043cc                __swsetup_r
  .text.__sflush_r
-                0x0800447c      0x10c c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-fflush.o)
-                0x0800447c                __sflush_r
+                0x080044a8      0x10c c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-fflush.o)
+                0x080044a8                __sflush_r
  .text._fflush_r
-                0x08004588       0x54 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-fflush.o)
-                0x08004588                _fflush_r
- .text.std      0x080045dc       0x48 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-findfp.o)
+                0x080045b4       0x54 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-fflush.o)
+                0x080045b4                _fflush_r
+ .text.std      0x08004608       0x48 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-findfp.o)
  .text._cleanup_r
-                0x08004624        0xc c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-findfp.o)
-                0x08004624                _cleanup_r
+                0x08004650        0xc c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-findfp.o)
+                0x08004650                _cleanup_r
  .text.__sfmoreglue
-                0x08004630       0x2c c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-findfp.o)
-                0x08004630                __sfmoreglue
- .text.__sinit  0x0800465c       0x60 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-findfp.o)
-                0x0800465c                __sinit
- .text.__sfp    0x080046bc       0x78 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-findfp.o)
-                0x080046bc                __sfp
+                0x0800465c       0x2c c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-findfp.o)
+                0x0800465c                __sfmoreglue
+ .text.__sinit  0x08004688       0x60 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-findfp.o)
+                0x08004688                __sinit
+ .text.__sfp    0x080046e8       0x78 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-findfp.o)
+                0x080046e8                __sfp
  .text._fwalk_reent
-                0x08004734       0x3c c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-fwalk.o)
-                0x08004734                _fwalk_reent
+                0x08004760       0x3c c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-fwalk.o)
+                0x08004760                _fwalk_reent
  .text.__swhatbuf_r
-                0x08004770       0x48 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-makebuf.o)
-                0x08004770                __swhatbuf_r
+                0x0800479c       0x48 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-makebuf.o)
+                0x0800479c                __swhatbuf_r
  .text.__smakebuf_r
-                0x080047b8       0x80 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-makebuf.o)
-                0x080047b8                __smakebuf_r
- .text._free_r  0x08004838       0x9c c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-nano-freer.o)
-                0x08004838                _free_r
+                0x080047e4       0x80 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-makebuf.o)
+                0x080047e4                __smakebuf_r
+ .text._free_r  0x08004864       0x9c c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-nano-freer.o)
+                0x08004864                _free_r
  .text._malloc_r
-                0x080048d4       0xb4 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-nano-mallocr.o)
-                0x080048d4                _malloc_r
+                0x08004900       0xb4 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-nano-mallocr.o)
+                0x08004900                _malloc_r
  .text.__sfputc_r
-                0x08004988       0x2a c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-nano-vfprintf.o)
+                0x080049b4       0x2a c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-nano-vfprintf.o)
  .text.__sfputs_r
-                0x080049b2       0x24 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-nano-vfprintf.o)
-                0x080049b2                __sfputs_r
- *fill*         0x080049d6        0x2 
+                0x080049de       0x24 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-nano-vfprintf.o)
+                0x080049de                __sfputs_r
+ *fill*         0x08004a02        0x2 
  .text._vfprintf_r
-                0x080049d8      0x228 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-nano-vfprintf.o)
-                0x080049d8                _vfprintf_r
-                0x080049d8                _vfiprintf_r
+                0x08004a04      0x228 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-nano-vfprintf.o)
+                0x08004a04                _vfprintf_r
+                0x08004a04                _vfiprintf_r
  .text._printf_common
-                0x08004c00       0xea c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-nano-vfprintf_i.o)
-                0x08004c00                _printf_common
- *fill*         0x08004cea        0x2 
+                0x08004c2c       0xea c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-nano-vfprintf_i.o)
+                0x08004c2c                _printf_common
+ *fill*         0x08004d16        0x2 
  .text._printf_i
-                0x08004cec      0x224 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-nano-vfprintf_i.o)
-                0x08004cec                _printf_i
- .text._sbrk_r  0x08004f10       0x20 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-sbrkr.o)
-                0x08004f10                _sbrk_r
- .text.__sread  0x08004f30       0x22 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-stdio.o)
-                0x08004f30                __sread
+                0x08004d18      0x224 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-nano-vfprintf_i.o)
+                0x08004d18                _printf_i
+ .text._sbrk_r  0x08004f3c       0x20 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-sbrkr.o)
+                0x08004f3c                _sbrk_r
+ .text.__sread  0x08004f5c       0x22 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-stdio.o)
+                0x08004f5c                __sread
  .text.__swrite
-                0x08004f52       0x38 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-stdio.o)
-                0x08004f52                __swrite
- .text.__sseek  0x08004f8a       0x24 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-stdio.o)
-                0x08004f8a                __sseek
+                0x08004f7e       0x38 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-stdio.o)
+                0x08004f7e                __swrite
+ .text.__sseek  0x08004fb6       0x24 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-stdio.o)
+                0x08004fb6                __sseek
  .text.__sclose
-                0x08004fae        0x8 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-stdio.o)
-                0x08004fae                __sclose
- *fill*         0x08004fb6        0x2 
+                0x08004fda        0x8 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-stdio.o)
+                0x08004fda                __sclose
+ *fill*         0x08004fe2        0x2 
  .text._write_r
-                0x08004fb8       0x24 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-writer.o)
-                0x08004fb8                _write_r
+                0x08004fe4       0x24 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-writer.o)
+                0x08004fe4                _write_r
  .text._close_r
-                0x08004fdc       0x20 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-closer.o)
-                0x08004fdc                _close_r
+                0x08005008       0x20 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-closer.o)
+                0x08005008                _close_r
  .text._fstat_r
-                0x08004ffc       0x24 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-fstatr.o)
-                0x08004ffc                _fstat_r
+                0x08005028       0x24 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-fstatr.o)
+                0x08005028                _fstat_r
  .text._isatty_r
-                0x08005020       0x20 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-isattyr.o)
-                0x08005020                _isatty_r
+                0x0800504c       0x20 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-isattyr.o)
+                0x0800504c                _isatty_r
  .text._lseek_r
-                0x08005040       0x24 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-lseekr.o)
-                0x08005040                _lseek_r
+                0x0800506c       0x24 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-lseekr.o)
+                0x0800506c                _lseek_r
  .text.__malloc_lock
-                0x08005064        0x2 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-mlock.o)
-                0x08005064                __malloc_lock
+                0x08005090        0x2 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-mlock.o)
+                0x08005090                __malloc_lock
  .text.__malloc_unlock
-                0x08005066        0x2 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-mlock.o)
-                0x08005066                __malloc_unlock
- .text._read_r  0x08005068       0x24 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-readr.o)
-                0x08005068                _read_r
- .text._close   0x0800508c       0x10 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libnosys.a(close.o)
-                0x0800508c                _close
- .text._fstat   0x0800509c       0x10 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libnosys.a(fstat.o)
-                0x0800509c                _fstat
- .text._isatty  0x080050ac       0x10 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libnosys.a(isatty.o)
-                0x080050ac                _isatty
- .text._lseek   0x080050bc       0x10 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libnosys.a(lseek.o)
-                0x080050bc                _lseek
- .text._read    0x080050cc       0x10 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libnosys.a(read.o)
-                0x080050cc                _read
- .text._sbrk    0x080050dc       0x1c c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libnosys.a(sbrk.o)
-                0x080050dc                _sbrk
+                0x08005092        0x2 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-mlock.o)
+                0x08005092                __malloc_unlock
+ .text._read_r  0x08005094       0x24 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-readr.o)
+                0x08005094                _read_r
+ .text._close   0x080050b8       0x10 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libnosys.a(close.o)
+                0x080050b8                _close
+ .text._fstat   0x080050c8       0x10 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libnosys.a(fstat.o)
+                0x080050c8                _fstat
+ .text._isatty  0x080050d8       0x10 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libnosys.a(isatty.o)
+                0x080050d8                _isatty
+ .text._lseek   0x080050e8       0x10 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libnosys.a(lseek.o)
+                0x080050e8                _lseek
+ .text._read    0x080050f8       0x10 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libnosys.a(read.o)
+                0x080050f8                _read
+ .text._sbrk    0x08005108       0x1c c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libnosys.a(sbrk.o)
+                0x08005108                _sbrk
  .text.Reset_Handler
-                0x080050f8       0x50 .pio\build\STM32F401_BL\libFrameworkCMSISDevice.a(startup_stm32f401xc.o)
-                0x080050f8                Reset_Handler
+                0x08005124       0x50 .pio\build\STM32F401_BL\libFrameworkCMSISDevice.a(startup_stm32f401xc.o)
+                0x08005124                Reset_Handler
  .text.Default_Handler
-                0x08005148        0x2 .pio\build\STM32F401_BL\libFrameworkCMSISDevice.a(startup_stm32f401xc.o)
-                0x08005148                RTC_Alarm_IRQHandler
-                0x08005148                EXTI2_IRQHandler
-                0x08005148                DebugMon_Handler
-                0x08005148                SPI4_IRQHandler
-                0x08005148                TIM1_CC_IRQHandler
-                0x08005148                DMA2_Stream5_IRQHandler
-                0x08005148                HardFault_Handler
-                0x08005148                DMA1_Stream5_IRQHandler
-                0x08005148                PVD_IRQHandler
-                0x08005148                SDIO_IRQHandler
-                0x08005148                TAMP_STAMP_IRQHandler
-                0x08005148                PendSV_Handler
-                0x08005148                NMI_Handler
-                0x08005148                EXTI3_IRQHandler
-                0x08005148                TIM1_UP_TIM10_IRQHandler
-                0x08005148                I2C3_ER_IRQHandler
-                0x08005148                EXTI0_IRQHandler
-                0x08005148                I2C2_EV_IRQHandler
-                0x08005148                DMA1_Stream2_IRQHandler
-                0x08005148                FPU_IRQHandler
-                0x08005148                UsageFault_Handler
-                0x08005148                DMA2_Stream2_IRQHandler
-                0x08005148                SPI1_IRQHandler
-                0x08005148                TIM1_BRK_TIM9_IRQHandler
-                0x08005148                DMA2_Stream3_IRQHandler
-                0x08005148                USART6_IRQHandler
-                0x08005148                DMA2_Stream0_IRQHandler
-                0x08005148                TIM4_IRQHandler
-                0x08005148                I2C1_EV_IRQHandler
-                0x08005148                DMA1_Stream6_IRQHandler
-                0x08005148                DMA1_Stream1_IRQHandler
-                0x08005148                TIM3_IRQHandler
-                0x08005148                RCC_IRQHandler
-                0x08005148                Default_Handler
-                0x08005148                EXTI15_10_IRQHandler
-                0x08005148                ADC_IRQHandler
-                0x08005148                DMA1_Stream7_IRQHandler
-                0x08005148                TIM5_IRQHandler
-                0x08005148                DMA2_Stream7_IRQHandler
-                0x08005148                I2C3_EV_IRQHandler
-                0x08005148                EXTI9_5_IRQHandler
-                0x08005148                RTC_WKUP_IRQHandler
-                0x08005148                SPI2_IRQHandler
-                0x08005148                MemManage_Handler
-                0x08005148                DMA1_Stream0_IRQHandler
-                0x08005148                SVC_Handler
-                0x08005148                EXTI4_IRQHandler
-                0x08005148                WWDG_IRQHandler
-                0x08005148                TIM2_IRQHandler
-                0x08005148                OTG_FS_WKUP_IRQHandler
-                0x08005148                TIM1_TRG_COM_TIM11_IRQHandler
-                0x08005148                EXTI1_IRQHandler
-                0x08005148                USART2_IRQHandler
-                0x08005148                I2C2_ER_IRQHandler
-                0x08005148                DMA2_Stream1_IRQHandler
-                0x08005148                FLASH_IRQHandler
-                0x08005148                DMA2_Stream4_IRQHandler
-                0x08005148                BusFault_Handler
-                0x08005148                USART1_IRQHandler
-                0x08005148                OTG_FS_IRQHandler
-                0x08005148                SPI3_IRQHandler
-                0x08005148                DMA1_Stream4_IRQHandler
-                0x08005148                I2C1_ER_IRQHandler
-                0x08005148                DMA2_Stream6_IRQHandler
-                0x08005148                DMA1_Stream3_IRQHandler
+                0x08005174        0x2 .pio\build\STM32F401_BL\libFrameworkCMSISDevice.a(startup_stm32f401xc.o)
+                0x08005174                RTC_Alarm_IRQHandler
+                0x08005174                EXTI2_IRQHandler
+                0x08005174                DebugMon_Handler
+                0x08005174                SPI4_IRQHandler
+                0x08005174                TIM1_CC_IRQHandler
+                0x08005174                DMA2_Stream5_IRQHandler
+                0x08005174                HardFault_Handler
+                0x08005174                DMA1_Stream5_IRQHandler
+                0x08005174                PVD_IRQHandler
+                0x08005174                SDIO_IRQHandler
+                0x08005174                TAMP_STAMP_IRQHandler
+                0x08005174                PendSV_Handler
+                0x08005174                NMI_Handler
+                0x08005174                EXTI3_IRQHandler
+                0x08005174                TIM1_UP_TIM10_IRQHandler
+                0x08005174                I2C3_ER_IRQHandler
+                0x08005174                EXTI0_IRQHandler
+                0x08005174                I2C2_EV_IRQHandler
+                0x08005174                DMA1_Stream2_IRQHandler
+                0x08005174                FPU_IRQHandler
+                0x08005174                UsageFault_Handler
+                0x08005174                DMA2_Stream2_IRQHandler
+                0x08005174                SPI1_IRQHandler
+                0x08005174                TIM1_BRK_TIM9_IRQHandler
+                0x08005174                DMA2_Stream3_IRQHandler
+                0x08005174                USART6_IRQHandler
+                0x08005174                DMA2_Stream0_IRQHandler
+                0x08005174                TIM4_IRQHandler
+                0x08005174                I2C1_EV_IRQHandler
+                0x08005174                DMA1_Stream6_IRQHandler
+                0x08005174                DMA1_Stream1_IRQHandler
+                0x08005174                TIM3_IRQHandler
+                0x08005174                RCC_IRQHandler
+                0x08005174                Default_Handler
+                0x08005174                EXTI15_10_IRQHandler
+                0x08005174                ADC_IRQHandler
+                0x08005174                DMA1_Stream7_IRQHandler
+                0x08005174                TIM5_IRQHandler
+                0x08005174                DMA2_Stream7_IRQHandler
+                0x08005174                I2C3_EV_IRQHandler
+                0x08005174                EXTI9_5_IRQHandler
+                0x08005174                RTC_WKUP_IRQHandler
+                0x08005174                SPI2_IRQHandler
+                0x08005174                MemManage_Handler
+                0x08005174                DMA1_Stream0_IRQHandler
+                0x08005174                SVC_Handler
+                0x08005174                EXTI4_IRQHandler
+                0x08005174                WWDG_IRQHandler
+                0x08005174                TIM2_IRQHandler
+                0x08005174                OTG_FS_WKUP_IRQHandler
+                0x08005174                TIM1_TRG_COM_TIM11_IRQHandler
+                0x08005174                EXTI1_IRQHandler
+                0x08005174                USART2_IRQHandler
+                0x08005174                I2C2_ER_IRQHandler
+                0x08005174                DMA2_Stream1_IRQHandler
+                0x08005174                FLASH_IRQHandler
+                0x08005174                DMA2_Stream4_IRQHandler
+                0x08005174                BusFault_Handler
+                0x08005174                USART1_IRQHandler
+                0x08005174                OTG_FS_IRQHandler
+                0x08005174                SPI3_IRQHandler
+                0x08005174                DMA1_Stream4_IRQHandler
+                0x08005174                I2C1_ER_IRQHandler
+                0x08005174                DMA2_Stream6_IRQHandler
+                0x08005174                DMA1_Stream3_IRQHandler
  .text.SystemInit
-                0x0800514a        0x2 .pio\build\STM32F401_BL\libFrameworkCMSISDevice.a(system_stm32f4xx.o)
-                0x0800514a                SystemInit
+                0x08005176        0x2 .pio\build\STM32F401_BL\libFrameworkCMSISDevice.a(system_stm32f4xx.o)
+                0x08005176                SystemInit
  *(.glue_7)
- .glue_7        0x0800514c        0x0 linker stubs
+ .glue_7        0x08005178        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x0800514c        0x0 linker stubs
+ .glue_7t       0x08005178        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x0800514c        0x0 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/crtbegin.o
+ .eh_frame      0x08005178        0x0 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/crtbegin.o
  *(.init)
- .init          0x0800514c        0x4 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/crti.o
-                0x0800514c                _init
- .init          0x08005150        0x8 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/crtn.o
+ .init          0x08005178        0x4 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/crti.o
+                0x08005178                _init
+ .init          0x0800517c        0x8 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/crtn.o
  *(.fini)
- .fini          0x08005158        0x4 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/crti.o
-                0x08005158                _fini
- .fini          0x0800515c        0x8 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/crtn.o
-                0x08005164                . = ALIGN (0x4)
-                0x08005164                _etext = .
+ .fini          0x08005184        0x4 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/crti.o
+                0x08005184                _fini
+ .fini          0x08005188        0x8 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/crtn.o
+                0x08005190                . = ALIGN (0x4)
+                0x08005190                _etext = .
 
-.vfp11_veneer   0x08005164        0x0
- .vfp11_veneer  0x08005164        0x0 linker stubs
+.vfp11_veneer   0x08005190        0x0
+ .vfp11_veneer  0x08005190        0x0 linker stubs
 
-.v4_bx          0x08005164        0x0
- .v4_bx         0x08005164        0x0 linker stubs
+.v4_bx          0x08005190        0x0
+ .v4_bx         0x08005190        0x0 linker stubs
 
-.iplt           0x08005164        0x0
- .iplt          0x08005164        0x0 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/crtbegin.o
+.iplt           0x08005190        0x0
+ .iplt          0x08005190        0x0 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/crtbegin.o
 
-.rodata         0x08005164      0x874
-                0x08005164                . = ALIGN (0x4)
+.rodata         0x08005190      0x858
+                0x08005190                . = ALIGN (0x4)
  *(.rodata)
  *(.rodata*)
  .rodata.bl_open_update_file.str1.4
-                0x08005164       0x43 .pio\build\STM32F401_BL\src\bootloader.o
- *fill*         0x080051a7        0x1 
+                0x08005190       0x43 .pio\build\STM32F401_BL\src\bootloader.o
+ *fill*         0x080051d3        0x1 
  .rodata.bl_write_flash.str1.4
-                0x080051a8       0x63 .pio\build\STM32F401_BL\src\bootloader.o
- *fill*         0x0800520b        0x1 
+                0x080051d4       0x47 .pio\build\STM32F401_BL\src\bootloader.o
+ *fill*         0x0800521b        0x1 
+ .rodata.jump_with_update.str1.4
+                0x0800521c       0x27 .pio\build\STM32F401_BL\src\bootloader.o
+ *fill*         0x08005243        0x1 
  .rodata.str1.4
-                0x0800520c       0x28 .pio\build\STM32F401_BL\src\bootloader.o
+                0x08005244       0x28 .pio\build\STM32F401_BL\src\bootloader.o
  .rodata.update_check.str1.4
-                0x08005234       0x47 .pio\build\STM32F401_BL\src\bootloader.o
- *fill*         0x0800527b        0x1 
+                0x0800526c       0x20 .pio\build\STM32F401_BL\src\bootloader.o
  .rodata.printf_info.str1.4
-                0x0800527c       0xfa .pio\build\STM32F401_BL\src\hal\hal.o
- *fill*         0x08005376        0x2 
+                0x0800528c       0xfa .pio\build\STM32F401_BL\src\hal\hal.o
+ *fill*         0x08005386        0x2 
  .rodata.hal_flash_erase.str1.4
-                0x08005378       0x9f .pio\build\STM32F401_BL\src\hal\hal_flash.o
- *fill*         0x08005417        0x1 
+                0x08005388       0x9f .pio\build\STM32F401_BL\src\hal\hal_flash.o
+ *fill*         0x08005427        0x1 
  .rodata.main.str1.4
-                0x08005418       0x46 .pio\build\STM32F401_BL\src\main.o
- *fill*         0x0800545e        0x2 
- .rodata.ExCvt  0x08005460       0x80 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
+                0x08005428       0x46 .pio\build\STM32F401_BL\src\main.o
+ *fill*         0x0800546e        0x2 
+ .rodata.ExCvt  0x08005470       0x80 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
  .rodata.LfnOfs
-                0x080054e0        0xd .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
- *fill*         0x080054ed        0x3 
+                0x080054f0        0xd .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
+ *fill*         0x080054fd        0x3 
  .rodata.check_fs.str1.4
-                0x080054f0        0x9 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
- *fill*         0x080054f9        0x3 
+                0x08005500        0x9 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
+ *fill*         0x08005509        0x3 
  .rodata.create_name.str1.4
-                0x080054fc       0x13 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
- *fill*         0x0800550f        0x1 
+                0x0800550c       0x13 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
+ *fill*         0x0800551f        0x1 
  .rodata.cvt1.4389
-                0x08005510      0x1f2 .pio\build\STM32F401_BL\lib475\libfatfs.a(ffunicode.o)
- *fill*         0x08005702        0x2 
+                0x08005520      0x1f2 .pio\build\STM32F401_BL\lib475\libfatfs.a(ffunicode.o)
+ *fill*         0x08005712        0x2 
  .rodata.cvt2.4390
-                0x08005704       0xbc .pio\build\STM32F401_BL\lib475\libfatfs.a(ffunicode.o)
- .rodata.uc437  0x080057c0      0x100 .pio\build\STM32F401_BL\lib475\libfatfs.a(ffunicode.o)
+                0x08005714       0xbc .pio\build\STM32F401_BL\lib475\libfatfs.a(ffunicode.o)
+ .rodata.uc437  0x080057d0      0x100 .pio\build\STM32F401_BL\lib475\libfatfs.a(ffunicode.o)
  .rodata.disk_initialize.str1.4
-                0x080058c0       0x68 .pio\build\STM32F401_BL\lib475\libfatfs.a(diskio.o)
+                0x080058d0       0x68 .pio\build\STM32F401_BL\lib475\libfatfs.a(diskio.o)
                                  0x65 (size before relaxing)
  .rodata._global_impure_ptr
-                0x08005928        0x4 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-impure.o)
-                0x08005928                _global_impure_ptr
+                0x08005938        0x4 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-impure.o)
+                0x08005938                _global_impure_ptr
  .rodata.__sf_fake_stderr
-                0x0800592c       0x20 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-findfp.o)
-                0x0800592c                __sf_fake_stderr
+                0x0800593c       0x20 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-findfp.o)
+                0x0800593c                __sf_fake_stderr
  .rodata.__sf_fake_stdin
-                0x0800594c       0x20 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-findfp.o)
-                0x0800594c                __sf_fake_stdin
+                0x0800595c       0x20 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-findfp.o)
+                0x0800595c                __sf_fake_stdin
  .rodata.__sf_fake_stdout
-                0x0800596c       0x20 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-findfp.o)
-                0x0800596c                __sf_fake_stdout
+                0x0800597c       0x20 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-findfp.o)
+                0x0800597c                __sf_fake_stdout
  .rodata._vfprintf_r.str1.1
-                0x0800598c       0x11 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-nano-vfprintf.o)
+                0x0800599c       0x11 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-nano-vfprintf.o)
  .rodata._printf_i.str1.1
-                0x0800599d       0x22 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-nano-vfprintf_i.o)
- *fill*         0x080059bf        0x1 
+                0x080059ad       0x22 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-nano-vfprintf_i.o)
+ *fill*         0x080059cf        0x1 
  .rodata.AHBPrescTable
-                0x080059c0       0x10 .pio\build\STM32F401_BL\libFrameworkCMSISDevice.a(system_stm32f4xx.o)
-                0x080059c0                AHBPrescTable
+                0x080059d0       0x10 .pio\build\STM32F401_BL\libFrameworkCMSISDevice.a(system_stm32f4xx.o)
+                0x080059d0                AHBPrescTable
  .rodata.APBPrescTable
-                0x080059d0        0x8 .pio\build\STM32F401_BL\libFrameworkCMSISDevice.a(system_stm32f4xx.o)
-                0x080059d0                APBPrescTable
-                0x080059d8                . = ALIGN (0x4)
+                0x080059e0        0x8 .pio\build\STM32F401_BL\libFrameworkCMSISDevice.a(system_stm32f4xx.o)
+                0x080059e0                APBPrescTable
+                0x080059e8                . = ALIGN (0x4)
 
-.ARM.extab      0x080059d8        0x0
-                0x080059d8                . = ALIGN (0x4)
+.ARM.extab      0x080059e8        0x0
+                0x080059e8                . = ALIGN (0x4)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x080059d8                . = ALIGN (0x4)
+                0x080059e8                . = ALIGN (0x4)
 
-.ARM            0x080059d8        0x8
-                0x080059d8                . = ALIGN (0x4)
-                0x080059d8                __exidx_start = .
+.ARM            0x080059e8        0x8
+                0x080059e8                . = ALIGN (0x4)
+                0x080059e8                __exidx_start = .
  *(.ARM.exidx*)
- .ARM.exidx     0x080059d8        0x8 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m\libgcc.a(_udivmoddi4.o)
-                0x080059e0                __exidx_end = .
-                0x080059e0                . = ALIGN (0x4)
+ .ARM.exidx     0x080059e8        0x8 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m\libgcc.a(_udivmoddi4.o)
+                0x080059f0                __exidx_end = .
+                0x080059f0                . = ALIGN (0x4)
 
-.rel.dyn        0x080059e0        0x0
- .rel.iplt      0x080059e0        0x0 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/crtbegin.o
+.rel.dyn        0x080059f0        0x0
+ .rel.iplt      0x080059f0        0x0 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/crtbegin.o
 
-.preinit_array  0x080059e0        0x0
-                0x080059e0                . = ALIGN (0x4)
-                0x080059e0                PROVIDE (__preinit_array_start, .)
+.preinit_array  0x080059f0        0x0
+                0x080059f0                . = ALIGN (0x4)
+                0x080059f0                PROVIDE (__preinit_array_start, .)
  *(.preinit_array*)
-                0x080059e0                PROVIDE (__preinit_array_end, .)
-                0x080059e0                . = ALIGN (0x4)
+                0x080059f0                PROVIDE (__preinit_array_end, .)
+                0x080059f0                . = ALIGN (0x4)
 
-.init_array     0x080059e0        0x4
-                0x080059e0                . = ALIGN (0x4)
-                0x080059e0                PROVIDE (__init_array_start, .)
+.init_array     0x080059f0        0x4
+                0x080059f0                . = ALIGN (0x4)
+                0x080059f0                PROVIDE (__init_array_start, .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array*)
- .init_array    0x080059e0        0x4 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/crtbegin.o
-                0x080059e4                PROVIDE (__init_array_end, .)
-                0x080059e4                . = ALIGN (0x4)
+ .init_array    0x080059f0        0x4 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/crtbegin.o
+                0x080059f4                PROVIDE (__init_array_end, .)
+                0x080059f4                . = ALIGN (0x4)
 
-.fini_array     0x080059e4        0x4
-                0x080059e4                . = ALIGN (0x4)
+.fini_array     0x080059f4        0x4
+                0x080059f4                . = ALIGN (0x4)
                 [!provide]                PROVIDE (__fini_array_start, .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x080059e4        0x4 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/crtbegin.o
+ .fini_array    0x080059f4        0x4 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/crtbegin.o
                 [!provide]                PROVIDE (__fini_array_end, .)
-                0x080059e8                . = ALIGN (0x4)
-                0x080059e8                _sidata = LOADADDR (.data)
+                0x080059f8                . = ALIGN (0x4)
+                0x080059f8                _sidata = LOADADDR (.data)
 
-.data           0x20000000       0x7c load address 0x080059e8
+.data           0x20000000       0x7c load address 0x080059f8
                 0x20000000                . = ALIGN (0x4)
                 0x20000000                _sdata = .
  *(.data)
@@ -4494,11 +4497,11 @@ LOAD c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/.
                 0x2000007c                . = ALIGN (0x4)
                 0x2000007c                _edata = .
 
-.igot.plt       0x2000007c        0x0 load address 0x08005a64
+.igot.plt       0x2000007c        0x0 load address 0x08005a74
  .igot.plt      0x2000007c        0x0 c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/crtbegin.o
                 0x2000007c                . = ALIGN (0x4)
 
-.bss            0x2000007c      0xa74 load address 0x08005a64
+.bss            0x2000007c      0xa74 load address 0x08005a74
                 0x2000007c                _sbss = .
                 0x2000007c                __bss_start__ = _sbss
  *(.bss)
@@ -4562,7 +4565,7 @@ LOAD c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/.
                 0x20000af0                __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x20000af0      0x600 load address 0x08005a64
+                0x20000af0      0x600 load address 0x08005a74
                 0x20000af0                . = ALIGN (0x8)
                 0x20000af0                PROVIDE (end, .)
                 [!provide]                PROVIDE (_end, .)
@@ -4708,7 +4711,7 @@ LOAD c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/.
                 0x00000b39       0x1e c:/users/sola/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/crtn.o
 OUTPUT(.pio\build\STM32F401_BL\firmware.elf elf32-littlearm)
 
-.debug_info     0x00000000    0x1bcca
+.debug_info     0x00000000    0x1bcea
  .debug_info    0x00000000      0x976 .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal.o
  .debug_info    0x00000976      0xef2 .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_cortex.o
  .debug_info    0x00001868      0x79e .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_flash.o
@@ -4723,13 +4726,13 @@ OUTPUT(.pio\build\STM32F401_BL\firmware.elf elf32-littlearm)
  .debug_info    0x0000ddb7     0x1423 .pio\build\STM32F401_BL\src\hal\hal_flash.o
  .debug_info    0x0000f1da     0x180f .pio\build\STM32F401_BL\src\hal\hal_spi.o
  .debug_info    0x000109e9     0x15fa .pio\build\STM32F401_BL\src\hal\hal_uart.o
- .debug_info    0x00011fe3     0x16d1 .pio\build\STM32F401_BL\src\main.o
- .debug_info    0x000136b4     0x1b5e .pio\build\STM32F401_BL\src\mcu\stm32_f401rc_hal_system.o
- .debug_info    0x00015212     0x4f68 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
- .debug_info    0x0001a17a      0x26b .pio\build\STM32F401_BL\lib475\libfatfs.a(ffunicode.o)
- .debug_info    0x0001a3e5     0x14e8 .pio\build\STM32F401_BL\lib475\libfatfs.a(diskio.o)
- .debug_info    0x0001b8cd       0x22 .pio\build\STM32F401_BL\libFrameworkCMSISDevice.a(startup_stm32f401xc.o)
- .debug_info    0x0001b8ef      0x3db .pio\build\STM32F401_BL\libFrameworkCMSISDevice.a(system_stm32f4xx.o)
+ .debug_info    0x00011fe3     0x16f1 .pio\build\STM32F401_BL\src\main.o
+ .debug_info    0x000136d4     0x1b5e .pio\build\STM32F401_BL\src\mcu\stm32_f401rc_hal_system.o
+ .debug_info    0x00015232     0x4f68 .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
+ .debug_info    0x0001a19a      0x26b .pio\build\STM32F401_BL\lib475\libfatfs.a(ffunicode.o)
+ .debug_info    0x0001a405     0x14e8 .pio\build\STM32F401_BL\lib475\libfatfs.a(diskio.o)
+ .debug_info    0x0001b8ed       0x22 .pio\build\STM32F401_BL\libFrameworkCMSISDevice.a(startup_stm32f401xc.o)
+ .debug_info    0x0001b90f      0x3db .pio\build\STM32F401_BL\libFrameworkCMSISDevice.a(system_stm32f4xx.o)
 
 .debug_abbrev   0x00000000     0x3255
  .debug_abbrev  0x00000000      0x215 .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal.o
@@ -4842,7 +4845,7 @@ OUTPUT(.pio\build\STM32F401_BL\firmware.elf elf32-littlearm)
  .debug_ranges  0x00000c28       0x20 .pio\build\STM32F401_BL\libFrameworkCMSISDevice.a(startup_stm32f401xc.o)
  .debug_ranges  0x00000c48       0x18 .pio\build\STM32F401_BL\libFrameworkCMSISDevice.a(system_stm32f4xx.o)
 
-.debug_line     0x00000000     0x921b
+.debug_line     0x00000000     0x9221
  .debug_line    0x00000000      0x50a .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal.o
  .debug_line    0x0000050a      0x554 .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_cortex.o
  .debug_line    0x00000a5e      0x537 .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal_flash.o
@@ -4857,13 +4860,13 @@ OUTPUT(.pio\build\STM32F401_BL\firmware.elf elf32-littlearm)
  .debug_line    0x000056d8      0x4dc .pio\build\STM32F401_BL\src\hal\hal_flash.o
  .debug_line    0x00005bb4      0x59c .pio\build\STM32F401_BL\src\hal\hal_spi.o
  .debug_line    0x00006150      0x4af .pio\build\STM32F401_BL\src\hal\hal_uart.o
- .debug_line    0x000065ff      0x4aa .pio\build\STM32F401_BL\src\main.o
- .debug_line    0x00006aa9      0x4fc .pio\build\STM32F401_BL\src\mcu\stm32_f401rc_hal_system.o
- .debug_line    0x00006fa5     0x179e .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
- .debug_line    0x00008743      0x1c9 .pio\build\STM32F401_BL\lib475\libfatfs.a(ffunicode.o)
- .debug_line    0x0000890c      0x514 .pio\build\STM32F401_BL\lib475\libfatfs.a(diskio.o)
- .debug_line    0x00008e20       0xe6 .pio\build\STM32F401_BL\libFrameworkCMSISDevice.a(startup_stm32f401xc.o)
- .debug_line    0x00008f06      0x315 .pio\build\STM32F401_BL\libFrameworkCMSISDevice.a(system_stm32f4xx.o)
+ .debug_line    0x000065ff      0x4b0 .pio\build\STM32F401_BL\src\main.o
+ .debug_line    0x00006aaf      0x4fc .pio\build\STM32F401_BL\src\mcu\stm32_f401rc_hal_system.o
+ .debug_line    0x00006fab     0x179e .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)
+ .debug_line    0x00008749      0x1c9 .pio\build\STM32F401_BL\lib475\libfatfs.a(ffunicode.o)
+ .debug_line    0x00008912      0x514 .pio\build\STM32F401_BL\lib475\libfatfs.a(diskio.o)
+ .debug_line    0x00008e26       0xe6 .pio\build\STM32F401_BL\libFrameworkCMSISDevice.a(startup_stm32f401xc.o)
+ .debug_line    0x00008f0c      0x315 .pio\build\STM32F401_BL\libFrameworkCMSISDevice.a(system_stm32f4xx.o)
 
 .debug_str      0x00000000     0x3edf
  .debug_str     0x00000000      0x9f3 .pio\build\STM32F401_BL\FrameworkHALDriver\Src\stm32f4xx_hal.o
@@ -4895,7 +4898,7 @@ OUTPUT(.pio\build\STM32F401_BL\firmware.elf elf32-littlearm)
  .debug_str     0x00003741       0x34 .pio\build\STM32F401_BL\src\hal\hal_uart.o
                                 0xef5 (size before relaxing)
  .debug_str     0x00003775       0x60 .pio\build\STM32F401_BL\src\main.o
-                                0xfea (size before relaxing)
+                                0xff4 (size before relaxing)
  .debug_str     0x000037d5       0x3d .pio\build\STM32F401_BL\src\mcu\stm32_f401rc_hal_system.o
                                0x1462 (size before relaxing)
  .debug_str     0x00003812      0x54d .pio\build\STM32F401_BL\lib475\libfatfs.a(ff.o)

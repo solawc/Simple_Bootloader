@@ -87,8 +87,7 @@ void bl_write_flash(void) {
         }; 
     }
 
-    DEBUG_PRINT("FW size:%dk", fw_size_count);
-    DEBUG_PRINT("reset:%d", reset);
+    DEBUG_PRINT("FW size:%ldk", fw_size_count);
 }
 
 uint8_t bl_open_update_file(void) {
@@ -170,7 +169,7 @@ void jump_without_update(void) {
 void jump_with_update() {
 
     bl_write_flash();
-
+    DEBUG_PRINT("bootload jump to app");
     bl_jump_to_app(APP_STAR_ADDR, msp, reset);
 }
 
@@ -188,10 +187,9 @@ void update_check(void) {
     }
     else  // open file fail or no fw file
     {
+        DEBUG_PRINT("bootload jump to app");
         jump_without_update();
     }
-
-    DEBUG_PRINT("bootload jump to app");
 }
 
 
