@@ -49,6 +49,8 @@ void bufferSet(uint8_t* pBuffer, uint8_t data, uint16_t BufferLength)
   }
 }
 
+uint32_t fw_size_count = 0;
+
 void bl_write_flash(void) {
 
     // FRESULT fr;
@@ -62,16 +64,18 @@ void bl_write_flash(void) {
 
         f_read(&fil, file_read_buff, READ_FILE_PAGE_SIZE, &br);
 
+        fw_size_count++;
+
         if(msp == 0 && reset == 0)
         {
             msp = *((uint32_t *)(file_read_buff));
 
-            reset = *((uint32_t *)(file_read_buff+4));
+            reset = *((uint32_t *)(file_read_buff + 4));
         }
 
         hlfP = (uint16_t *)file_read_buff;
 
-        hal_flash_write(Address, hlfP, READ_FILE_PAGE_SIZE/2 );
+        hal_flash_write(Address, hlfP, READ_FILE_PAGE_SIZE / 2 );
 
 		Address += READ_FILE_PAGE_SIZE;
 
@@ -82,6 +86,9 @@ void bl_write_flash(void) {
             break;
         }; 
     }
+
+    DEBUG_PRINT("FW size:%dk", fw_size_count);
+    DEBUG_PRINT("reset:%d", reset);
 }
 
 uint8_t bl_open_update_file(void) {
@@ -163,6 +170,8 @@ void jump_without_update(void) {
 void jump_with_update() {
 
     bl_write_flash();
+
+    bl_jump_to_app(APP_STAR_ADDR, msp, reset);
 }
 
 void update_check(void) {

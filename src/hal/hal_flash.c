@@ -38,9 +38,9 @@ uint8_t hal_flash_erase(void) {
 
 void hal_flash_write(uint32_t addr ,uint16_t *buff, uint32_t num) {
     
-    FLASH_EraseInitTypeDef FlashEraseInit;
+    // FLASH_EraseInitTypeDef FlashEraseInit;
 	HAL_StatusTypeDef FlashStatus=HAL_OK;
-    uint32_t SectorError=0;
+    // uint32_t SectorError=0;
 	uint32_t addrx=0;
 	uint32_t endaddr=0;	
     HAL_StatusTypeDef status;
@@ -49,21 +49,21 @@ void hal_flash_write(uint32_t addr ,uint16_t *buff, uint32_t num) {
 
     HAL_FLASH_Unlock();             //解锁	
 
-    addrx=addr;				//写入的起始地址
+    addrx = addr;				//写入的起始地址
 
-	endaddr = addr+num*2;	//写入的结束地
+	endaddr = addr + num*2;	//写入的结束地
 
 	if(FlashStatus==HAL_OK)
 	{
-		 while(addr < endaddr)//写数据
+		 while(addrx < endaddr)//写数据
 		 {
-            status = HAL_FLASH_Program(FLASH_TYPEPROGRAM_HALFWORD, addr, *buff);
+            status = HAL_FLASH_Program(FLASH_TYPEPROGRAM_HALFWORD, addrx, *buff);
 
 			if(status != HAL_OK)//写入数据
 			{ 
 				break;	//写入异常
 			}
-			addr+=2;
+			addrx += 2;
 			buff++;
 		}  
 	}
