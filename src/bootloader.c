@@ -53,7 +53,6 @@ uint32_t fw_size_count = 0;
 
 void bl_write_flash(void) {
 
-    // FRESULT fr;
     FIL fil;
     Address = APP_STAR_ADDR;
     
@@ -79,9 +78,7 @@ void bl_write_flash(void) {
 		Address += READ_FILE_PAGE_SIZE;
 
         if(br < READ_FILE_PAGE_SIZE) {
-            
-            // DEBUG_PRINT("br size:%d", br);
-            // DEBUG_PRINT("File had read finish");
+
             hal_flag.bit_read_finish = 1;
 
             break;
@@ -90,10 +87,12 @@ void bl_write_flash(void) {
     DEBUG_PRINT("Upload size:%ldk", fw_size_count);
 }
 
+
+
 uint8_t bl_open_update_file(void) {
 
-    FRESULT fr;
     FIL fil;
+    FRESULT fr;
 
     memset(hal_bl.fw_name_buf, 0, sizeof(hal_bl.fw_name_buf));
     memset(old_name_buff, 0, sizeof(hal_bl.fw_old_name_buf));
@@ -104,23 +103,24 @@ uint8_t bl_open_update_file(void) {
     fr = f_open(&fil, hal_bl.fw_name_buf,  FA_READ|FA_WRITE);
 
     if(fr == FR_OK) {
-
-        // hal_sd.fw_file_size = f_size(&fil);
-
         hal_sd.fw_file_size = fil.obj.objsize;
         bl_erase_flash();
-
-        // DEBUG_PRINT("open FW succeed");
         hal_flag.bit_open_file = 1;
         
         return 0;
     }else {
-
-        // DEBUG_PRINT("open FW fail");
         hal_flag.bit_open_file = 0;
-
         return 1;
     }
+}
+
+void bl_rename_file(void) {
+
+    FIL fil;
+
+    f_close(&fil);
+    f_unlink(hal_bl.fw_old_name_buf);
+    f_rename(hal_bl.fw_name_buf, hal_bl.fw_old_name_buf);
 }
 
 
@@ -171,6 +171,7 @@ void jump_without_update(void) {
 void jump_with_update() {
 
     bl_write_flash();
+    bl_rename_file();
     printf_result_info();
     bl_jump_to_app(APP_STAR_ADDR, msp, reset);
 }
