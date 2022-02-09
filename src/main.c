@@ -16,6 +16,11 @@ int main(void) {
 
     hal_uart_init();        // init uart 
 
+#ifdef LCD_DGUS_DWIN
+    lcd_dgus_init();        // init dgus uart
+    jump_to_rst();          // reset dwin dispaly
+#endif
+
     hal_sd_register();      // register sd
 
     if(!hal_sd.sd_get_status()) {
@@ -28,9 +33,9 @@ int main(void) {
     }else{
         hal_sd.is_has_sd = 0; 
     }
-
-    printf_info();          // print debug info
     
+    printf_info();          // print debug info
+     
     /*
      *             * Why is there a delay here? *
      * Because after the MCU is initialized and started, 

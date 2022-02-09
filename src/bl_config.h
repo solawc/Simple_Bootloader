@@ -18,6 +18,10 @@
 #define MCU_FLASH       256*1024    // default for STM32F401RC is 256k Flash
 #endif
 
+#ifndef BL_SIZE
+#define BL_SIZE         32*1024
+#endif
+
 /* Enabled bootload if you want know debug info. */
 #define BL_DEBUG_MODE
 #ifdef BL_DEBUG_MODE
@@ -31,6 +35,9 @@
 
 /* Enabled W25qxx if need to write pic and font. */
 //#define HAS_W25QXX_ON_BOARD
+
+/* Enabled mother board test mode */
+#define USE_TEST_MODE
 
 /* Enabled SD Card, SD_USE_SPI use SPI mode, SD_USE_SDIO use SDIO mode. */
 #define HAS_SD_ON_BOARD
@@ -46,5 +53,9 @@
     #endif // SD_USE_SPI
 #endif // HAS_SD_ON_BOARD
 
+/* Enabled and settings LCD type */
+#define LCD_DGUS_DWIN           // use 5A A5 type 
+// #define LCD_FSMA_TFT            // use FSMC to driver LCD
+// #define LCD_SPI_TS              // use SPI to driver LCD
 
 #endif

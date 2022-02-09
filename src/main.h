@@ -25,6 +25,7 @@
 #include "hal/hal_spi.h"
 #include "hal/hal_flash.h"
 #include "external_device/SD/sdcard.h"
+#include "external_device//LCD/lcd_dgus.h"
 // Fatfs 
 #include "ff.h"
 

@@ -93,6 +93,7 @@ uint8_t bl_open_update_file(void) {
 
     FIL fil;
     FRESULT fr;
+    uint32_t file_size = 0;
 
     memset(hal_bl.fw_name_buf, 0, sizeof(hal_bl.fw_name_buf));
     memset(old_name_buff, 0, sizeof(hal_bl.fw_old_name_buf));
@@ -101,6 +102,10 @@ uint8_t bl_open_update_file(void) {
     strcpy(hal_bl.fw_old_name_buf, FW_OLD_FILE_SD);    
 
     fr = f_open(&fil, hal_bl.fw_name_buf,  FA_READ|FA_WRITE);
+
+    file_size = fil.obj.objsize;
+
+    if(file_size > (MCU_FLASH-BL_SIZE)) return 1;
 
     if(fr == FR_OK) {
         hal_sd.fw_file_size = fil.obj.objsize;
@@ -140,6 +145,10 @@ void bl_jump_to_app(uint32_t sect, uint32_t Msp, uint32_t reset_msp) {
     uint32_t base;
     uint32_t offset;
 
+#ifdef LCD_DGUS_DWIN
+    jump_to_star();
+#endif
+
     hal_sd_deinit();
 
     SysTick->CTRL &= ~ SysTick_CTRL_ENABLE_Msk;
@@ -170,6 +179,10 @@ void jump_without_update(void) {
 
 void jump_with_update() {
 
+#ifdef LCD_DGUS_DWIN
+    jump_into_boot_screen();
+#endif
+
     bl_write_flash();
     bl_rename_file();
     printf_result_info();
@@ -182,16 +195,13 @@ void update_check(void) {
 
     is_need_update = bl_open_update_file();
 
-    if(is_need_update == 0) 
-    {   
-        // DEBUG_PRINT("Updating file");
+    if(is_need_update == 0) {
+            
         hal_flag.bit_uploading = 1;
-
         jump_with_update();
     }
-    else  // open file fail or no fw file
-    {   
-        hal_flag.bit_uploading = 0;
+    else   {        
+        hal_flag.bit_uploading = 0;     // open file fail or no fw file
         jump_without_update();
     }
 }

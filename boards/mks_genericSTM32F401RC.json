@@ -39,7 +39,9 @@
         "jlink",
         "cmsis-dap",
         "blackmagic",
-        "mbed"
+        "mbed",
+        "dfu",
+        "serial"
       ]
     },
     "url": "https://www.st.com/en/microcontrollers-microprocessors/stm32f401rc.html",
