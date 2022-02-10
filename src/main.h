@@ -16,7 +16,7 @@
     #endif
 
     #ifdef STM32F407xx
-        #include "mcu/stm32_f401rc_hal_system.h"
+        #include "mcu/stm32_f407_hal_system.h"
     #endif
 #endif
 

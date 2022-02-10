@@ -27,9 +27,14 @@ void Error_Handler(void)
 
 uint8_t hal_get_flash_sector(uint32_t addr) {
 
-
-
-    
+  if(addr<ADDR_FLASH_SECTOR_1)return FLASH_SECTOR_0;
+  else if(addr<ADDR_FLASH_SECTOR_2)return FLASH_SECTOR_1;
+  else if(addr<ADDR_FLASH_SECTOR_3)return FLASH_SECTOR_2;
+  else if(addr<ADDR_FLASH_SECTOR_4)return FLASH_SECTOR_3;
+  else if(addr<ADDR_FLASH_SECTOR_5)return FLASH_SECTOR_4;
+  else if(addr<ADDR_FLASH_SECTOR_5)return FLASH_SECTOR_5;
+  else if(addr<ADDR_FLASH_SECTOR_6)return FLASH_SECTOR_7;
+  else return FLASH_SECTOR_7;
 }
 
 #endif

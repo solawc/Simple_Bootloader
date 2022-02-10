@@ -2,9 +2,16 @@
 #define __bl_config_h
 
 // set bootload version num
+
+#define CUSTOM_BOARD_NAME
+
 #define BOOTLOAD_VERSION        "V0.1"
 #define BOOTLOAD_DATE           "2022-02-28"
+#ifndef CUSTOM_BOARD_NAME
+#define BOARD_NAME              "MKS MotherBoard"
+#else 
 #define BOARD_NAME              "ZNP Robin Nano_DW V2.0"
+#endif
 
 #ifndef MCU_FREQ
 #define MCU_FREQ        F_CPU
@@ -63,5 +70,4 @@
 // #define LCD_DGUS_DWIN           // use 5A A5 type 
 // #define LCD_FSMA_TFT            // use FSMC to driver LCD
 // #define LCD_SPI_TS              // use SPI to driver LCD
-
 #endif
