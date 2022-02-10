@@ -29,9 +29,15 @@
 #endif
 
 // set bootload address   
+#ifndef BL_END_ADDR
 #define BL_END_ADDR             ((uint32_t)0x8007fff)       // Bootload end address
+#endif
+#ifndef APP_STAR_ADDR
 #define APP_STAR_ADDR           ((uint32_t)0x8008000)       // Jump to this addr to star app
-#define BL_OFFSET               0X8000                      // Set bootloader offset       
+#endif
+#ifndef BL_OFFSET
+#define BL_OFFSET               ((uint32_t)0X8000)          // Set bootloader offset      
+#endif 
 
 /* Enabled W25qxx if need to write pic and font. */
 //#define HAS_W25QXX_ON_BOARD
@@ -54,7 +60,7 @@
 #endif // HAS_SD_ON_BOARD
 
 /* Enabled and settings LCD type */
-#define LCD_DGUS_DWIN           // use 5A A5 type 
+// #define LCD_DGUS_DWIN           // use 5A A5 type 
 // #define LCD_FSMA_TFT            // use FSMC to driver LCD
 // #define LCD_SPI_TS              // use SPI to driver LCD
 

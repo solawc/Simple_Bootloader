@@ -1,6 +1,5 @@
 #include "main.h"
 
-
 int main(void) {
 
     FATFS fs;
@@ -18,6 +17,7 @@ int main(void) {
 
 #ifdef LCD_DGUS_DWIN
     lcd_dgus_init();        // init dgus uart
+    HAL_Delay(2000);        // wait for dwin display setup
     jump_to_rst();          // reset dwin dispaly
 #endif
 

@@ -112,12 +112,10 @@ void dgus_write_int8_value(uint16_t adr, uint8_t value) {
     dgus_writeVariable(adr, (void*)(&value), sizeof(int8_t), false);
 }
 
-
 void dgus_reques_screen(uint8_t screen) {
     const unsigned char gotoscreen[] = { 0x5A, 0x01, (unsigned char) (screen >> 8U), (unsigned char) (screen & 0xFFU) };
     dgus_writeVariable(0x84, gotoscreen, sizeof(gotoscreen), false);
 }
-
 
 void dgus_go_to_screen(uint8_t screen) {
     dgus_reques_screen(screen);

@@ -8,9 +8,14 @@
 #include "string.h"
 
 /* MCU HAL Lib */
+
 #ifdef STM32F4xx
-#include "stm32f4xx_hal.h"
+    #include "stm32f4xx_hal.h"
     #ifdef STM32F401xC
+        #include "mcu/stm32_f401rc_hal_system.h"
+    #endif
+
+    #ifdef STM32F407xx
         #include "mcu/stm32_f401rc_hal_system.h"
     #endif
 #endif

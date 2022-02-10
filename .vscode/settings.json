@@ -19,6 +19,7 @@
         "diskio.h": "c",
         "hal_flash.h": "c",
         "hal_test.h": "c",
-        "lcd_dgus.h": "c"
+        "lcd_dgus.h": "c",
+        "stm32_f407_hal_system.h": "c"
     }
 }

@@ -1,0 +1,45 @@
+{
+    "build": {
+      "core": "stm32",
+      "cpu": "cortex-m4",
+      "extra_flags": "-DSTM32F407xx -DSTM32F4xx",
+      "f_cpu": "168000000L",
+      "framework_extra_flags": {
+        "arduino": "-D__CORTEX_SC=0"
+      },
+      "mcu": "stm32f407vet6",
+      "product_line": "STM32F407xx",
+      "variant": "STM32F4xx/F407V(E-G)T_F417V(E-G)T"
+    },
+    "debug": {
+      "default_tools": [
+        "jlink"
+      ],
+      "jlink_device": "STM32F407VE",
+      "onboard_tools": [
+        "stlink"
+      ],
+      "openocd_target": "stm32f4x",
+      "svd_path": "STM32F40x.svd"
+    },
+    "frameworks": [
+      "arduino",
+      "cmsis",
+      "stm32cube"
+    ],
+    "name": "STM32F407VE (192k RAM. 512k Flash)",
+    "upload": {
+      "maximum_ram_size": 131072,
+      "maximum_size": 514288,
+      "protocol": "jlink",
+      "protocols": [
+        "stlink",
+        "jlink",
+        "cmsis-dap",
+        "dfu"
+      ]
+    },
+    "url": "http://www.st.com/en/microcontrollers/stm32f407ve.html",
+    "vendor": "Generic"
+  }
+  

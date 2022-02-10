@@ -1,5 +1,7 @@
 #include "mcu/stm32_f401rc_hal_system.h"
 
+#ifdef STM32F401xC
+
 void hal_stm32f401_system_init(void) {
 
     RCC_OscInitTypeDef RCC_OscInitStruct = {0};
@@ -63,3 +65,5 @@ uint8_t hal_get_flash_sector(uint32_t addr) {
   else if(addr<ADDR_FLASH_SECTOR_5)return FLASH_SECTOR_4;
   else return FLASH_SECTOR_5;
 }
+
+#endif

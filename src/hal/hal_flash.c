@@ -17,21 +17,17 @@ uint8_t hal_flash_erase(void) {
 
     if(HAL_FLASHEx_Erase(&bl_flash, &SectorError)!=HAL_OK) 
     {
-        // DEBUG_PRINT("erase flase error");
         hal_flag.bit_erase = 0;
     }else {
-        // DEBUG_PRINT("erase flase Succeed");
         hal_flag.bit_erase = 1;
     }
 
     FlashStatus = FLASH_WaitForLastOperation(FLASH_WAITETIME);
 
     if(FlashStatus == HAL_OK) {
-        // DEBUG_PRINT("wait finsh succeed");
         hal_flag.bit_wait_finsh = 1;
     }else {
         hal_flag.bit_wait_finsh = 0;
-        // DEBUG_PRINT("wait fail, error code:%d", FlashStatus);
     }
 
     HAL_FLASH_Lock();
@@ -39,12 +35,9 @@ uint8_t hal_flash_erase(void) {
     return 0;
 }
 
-
 void hal_flash_write(uint32_t addr ,uint16_t *buff, uint32_t num) {
-    
-    // FLASH_EraseInitTypeDef FlashEraseInit;
+
 	HAL_StatusTypeDef FlashStatus=HAL_OK;
-    // uint32_t SectorError=0;
 	uint32_t addrx=0;
 	uint32_t endaddr=0;	
     HAL_StatusTypeDef status;
@@ -55,7 +48,7 @@ void hal_flash_write(uint32_t addr ,uint16_t *buff, uint32_t num) {
 
     addrx = addr;				//写入的起始地址
 
-	endaddr = addr + num*2;	//写入的结束地
+	endaddr = addr + num * 2;	//写入的结束地
 
 	if(FlashStatus==HAL_OK)
 	{
