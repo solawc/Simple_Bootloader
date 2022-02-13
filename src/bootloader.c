@@ -3,16 +3,21 @@
 
 hal_bootloader_t hal_bl;
 
+
+/*              Size 
+ * SD_MOUNT: 4
+ * FW_NEW_TYPE:5
+ * FW_OLD_TYPE:5
+ * FW_NAME: default:14
+ * FW_NAME_SIZE = 4+5+5+14 = 28
+*/
 const char *SD_MOUNT = "1:/";
 const char *FW_NAME  = "ZNP_ROBIN_DW";
 const char *FW_NEW_TYPE  = ".bin";
 const char *FW_OLD_TYPE  = ".CUR";
 
-// const char *FW_FILE_SD        = "1:/ZNP_ROBIN_DW.bin";
-// const char *FW_OLD_FILE_SD    = "1:/ZNP_ROBIN_DW.CUR";
-
-char firmware_name_buff[FW_NAME_SIZE];
-char old_name_buff[FW_NAME_SIZE];
+// char firmware_name_buff[FW_NAME_SIZE];
+// char old_name_buff[FW_NAME_SIZE];
 
 uint32_t msp = 0;
 uint32_t reset = 0;
@@ -20,7 +25,10 @@ UINT br;
 
 uint32_t EraseCounter = 0x00, Address = 0x00;//擦除计数，擦除地址
 
+// uint8_t file_read_buff[1024];  // 用于装载读取回来的固件
 uint8_t file_read_buff[1024];  // 用于装载读取回来的固件
+
+
 uint16_t *hlfP = (uint16_t *)file_read_buff;
 
 /* only support cortex-M */
@@ -101,7 +109,7 @@ uint8_t bl_open_update_file(void) {
     uint32_t file_size = 0;
 
     memset(hal_bl.fw_name_buf, 0, sizeof(hal_bl.fw_name_buf));
-    memset(old_name_buff, 0, sizeof(hal_bl.fw_old_name_buf));
+    // memset(old_name_buff, 0, sizeof(hal_bl.fw_old_name_buf));
 
     // strcpy(hal_bl.fw_name_buf, FW_FILE_SD);
     // strcpy(hal_bl.fw_old_name_buf, FW_OLD_FILE_SD);
@@ -110,9 +118,9 @@ uint8_t bl_open_update_file(void) {
     strcat(hal_bl.fw_name_buf, FW_NAME);
     strcat(hal_bl.fw_name_buf, FW_NEW_TYPE);
 
-    strcpy(hal_bl.fw_old_name_buf, SD_MOUNT);
-    strcat(hal_bl.fw_old_name_buf, FW_NAME);
-    strcat(hal_bl.fw_old_name_buf, FW_OLD_TYPE);
+    // strcpy(hal_bl.fw_old_name_buf, SD_MOUNT);
+    // strcat(hal_bl.fw_old_name_buf, FW_NAME);
+    // strcat(hal_bl.fw_old_name_buf, FW_OLD_TYPE);
 
     fr = f_open(&fil, hal_bl.fw_name_buf,  FA_READ|FA_WRITE);
 
@@ -132,13 +140,22 @@ uint8_t bl_open_update_file(void) {
     }
 }
 
+
 void bl_rename_file(void) {
 
-    FIL fil;
+    FIL fil;    
+    char old_name_str[FW_NAME_SIZE];
 
     f_close(&fil);
-    f_unlink(hal_bl.fw_old_name_buf);
-    f_rename(hal_bl.fw_name_buf, hal_bl.fw_old_name_buf);
+
+    strcpy(old_name_str, SD_MOUNT);
+    strcat(old_name_str, FW_NAME);
+    strcat(old_name_str, FW_OLD_TYPE);
+    f_unlink(old_name_str);
+    f_rename(hal_bl.fw_name_buf, old_name_str);
+
+    // f_unlink(hal_bl.fw_old_name_buf);
+    // f_rename(hal_bl.fw_name_buf, hal_bl.fw_old_name_buf);
 }
 
 
@@ -187,7 +204,6 @@ void jump_without_update(void) {
 	reset = *((uint32_t *)(APP_STAR_ADDR + 4));
 
     bl_jump_to_app(APP_STAR_ADDR, msp, reset);
-
 }
 
 void jump_with_update() {

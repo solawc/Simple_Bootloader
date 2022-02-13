@@ -2,7 +2,6 @@
 
 FLASH_EraseInitTypeDef bl_flash;
 
-
 uint8_t hal_flash_erase(void) {
 
     uint32_t SectorError=0;
