@@ -3,8 +3,13 @@
 
 hal_bootloader_t hal_bl;
 
-const char *FW_FILE_SD        = "1:/ZNP_ROBIN_DW.bin";
-const char *FW_OLD_FILE_SD    = "1:/ZNP_ROBIN_DW.CUR";
+const char *SD_MOUNT = "1:/";
+const char *FW_NAME  = "ZNP_ROBIN_DW";
+const char *FW_NEW_TYPE  = ".bin";
+const char *FW_OLD_TYPE  = ".CUR";
+
+// const char *FW_FILE_SD        = "1:/ZNP_ROBIN_DW.bin";
+// const char *FW_OLD_FILE_SD    = "1:/ZNP_ROBIN_DW.CUR";
 
 char firmware_name_buff[FW_NAME_SIZE];
 char old_name_buff[FW_NAME_SIZE];
@@ -98,8 +103,16 @@ uint8_t bl_open_update_file(void) {
     memset(hal_bl.fw_name_buf, 0, sizeof(hal_bl.fw_name_buf));
     memset(old_name_buff, 0, sizeof(hal_bl.fw_old_name_buf));
 
-    strcpy(hal_bl.fw_name_buf, FW_FILE_SD);
-    strcpy(hal_bl.fw_old_name_buf, FW_OLD_FILE_SD);    
+    // strcpy(hal_bl.fw_name_buf, FW_FILE_SD);
+    // strcpy(hal_bl.fw_old_name_buf, FW_OLD_FILE_SD);
+
+    strcpy(hal_bl.fw_name_buf, SD_MOUNT);
+    strcat(hal_bl.fw_name_buf, FW_NAME);
+    strcat(hal_bl.fw_name_buf, FW_NEW_TYPE);
+
+    strcpy(hal_bl.fw_old_name_buf, SD_MOUNT);
+    strcat(hal_bl.fw_old_name_buf, FW_NAME);
+    strcat(hal_bl.fw_old_name_buf, FW_OLD_TYPE);
 
     fr = f_open(&fil, hal_bl.fw_name_buf,  FA_READ|FA_WRITE);
 

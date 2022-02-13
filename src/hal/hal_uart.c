@@ -47,13 +47,13 @@ void hal_uart_init(void) {
 int fputc(int ch,FILE *f)
 {
     uint32_t temp = ch;
-    HAL_UART_Transmit(&debug_uart, (uint8_t *)&temp, 1, 1000);        //huart3是串口的句柄
+    HAL_UART_Transmit(&debug_uart, (uint8_t *)&temp, 1, 1000);    
     return ch;
 }
 #else 
 int _write(int fd, char *ptr, int len)
 {	
-	HAL_UART_Transmit(&debug_uart, (uint8_t *)ptr, len, 1000);        //huart3是串口的句柄
+	HAL_UART_Transmit(&debug_uart, (uint8_t *)ptr, len, 1000);    
 	return len;
 }
 #endif
