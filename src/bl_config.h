@@ -6,7 +6,7 @@
 // #define CUSTOM_BOARD_NAME
 
 #define BOOTLOAD_VERSION        "V0.1"
-#define BOOTLOAD_DATE           "2022-02-28"
+#define BOOTLOAD_DATE           "2022-02-13"
 #ifndef CUSTOM_BOARD_NAME
 
 #ifdef MKS_BOARD_NAME
@@ -20,19 +20,19 @@
 #endif
 
 #ifndef MCU_FREQ
-#define MCU_FREQ        F_CPU
+#define MCU_FREQ                F_CPU
 #endif
 
 #ifndef MCU_RAM
-#define MCU_RAM         64*1024     // default for STM32F401RC, is 64k RAM 
+#define MCU_RAM                 64*1024     // default for STM32F401RC, is 64k RAM 
 #endif
 
 #ifndef MCU_FLASH
-#define MCU_FLASH       256*1024    // default for STM32F401RC is 256k Flash
+#define MCU_FLASH               256*1024    // default for STM32F401RC is 256k Flash
 #endif
 
 #ifndef BL_SIZE
-#define BL_SIZE         32*1024
+#define BL_SIZE                 32*1024
 #endif
 
 /* Enabled bootload if you want know debug info. */
