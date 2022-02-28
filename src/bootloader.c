@@ -3,8 +3,12 @@
 
 hal_bootloader_t hal_bl;
 
-const char *FW_FILE_SD        = "1:/ZNP_ROBIN_DW.bin";
-const char *FW_OLD_FILE_SD    = "1:/ZNP_ROBIN_DW.CUR";
+// const char *FW_FILE_SD        = "1:/ZNP_ROBIN_DW.bin";
+// const char *FW_OLD_FILE_SD    = "1:/ZNP_ROBIN_DW.CUR";
+const char *FW_FILE_SD        = BL_NAME;
+const char *FW_OLD_FILE_SD    = BL_OLD_NAME;
+
+
 
 char firmware_name_buff[FW_NAME_SIZE];
 char old_name_buff[FW_NAME_SIZE];
@@ -86,8 +90,6 @@ void bl_write_flash(void) {
     }
     DEBUG_PRINT("Upload size:%ldk", fw_size_count);
 }
-
-
 
 uint8_t bl_open_update_file(void) {
 

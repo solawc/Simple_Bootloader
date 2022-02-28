@@ -2,6 +2,9 @@
 
 #ifdef STM32F401xC
 
+
+
+
 void hal_stm32f401_system_init(void) {
 
     RCC_OscInitTypeDef RCC_OscInitStruct = {0};

@@ -3,12 +3,18 @@
 
 // set bootload version num
 
-#define CUSTOM_BOARD_NAME
+// #define CUSTOM_BOARD_NAME
 
 #define BOOTLOAD_VERSION        "V0.1"
 #define BOOTLOAD_DATE           "2022-02-28"
 #ifndef CUSTOM_BOARD_NAME
-#define BOARD_NAME              "MKS MotherBoard"
+
+#ifdef MKS_BOARD_NAME
+    #define BOARD_NAME              MKS_BOARD_NAME
+#else
+    #define BOARD_NAME              "MKS MotherBoard"
+#endif
+
 #else 
 #define BOARD_NAME              "ZNP Robin Nano_DW V2.0"
 #endif

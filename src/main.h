@@ -13,6 +13,11 @@
     #include "stm32f4xx_hal.h"
     #ifdef STM32F401xC
         #include "mcu/stm32_f401rc_hal_system.h"
+        #ifdef ST_MKS_E3
+            #include "mcu/pins_map/pins_robin_e3.h"
+        #elif defined(ST_MKS_E3D)
+            #include "mcu/pins_map/pins_robin_e3d.h"
+        #endif
     #endif
 
     #ifdef STM32F407xx
