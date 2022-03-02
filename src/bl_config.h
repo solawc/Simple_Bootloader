@@ -5,8 +5,8 @@
 
 // #define CUSTOM_BOARD_NAME
 
-#define BOOTLOAD_VERSION        "V0.1"
-#define BOOTLOAD_DATE           "2022-02-13"
+#define BOOTLOAD_VERSION        "V0.2"
+#define BOOTLOAD_DATE           "2022-03-02"
 #ifndef CUSTOM_BOARD_NAME
 
 #ifdef MKS_BOARD_NAME

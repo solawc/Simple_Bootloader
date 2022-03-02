@@ -12,6 +12,7 @@ extern SPI_HandleTypeDef sd_hspi;
     #define SD_CARD_SPI         SPI2
 
     #ifdef SD_CARD_SPI
+    
     #ifndef BOARD_SD_MISO_PORT
         #define SD_SPI_MISO_PORT    GPIOB
         #define SD_SPI_MISO_PIN     GPIO_PIN_14

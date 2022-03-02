@@ -3,8 +3,8 @@
 
 #define MKS_BOARD_NAME      "Robin E3 v2.0"
 
-#define BL_NAME             "1:/ROBIN_E3.bin"
-#define BL_OLD_NAME         "1:/ROBIN_E3.CUR"
+#define BL_NAME             "1:/ROBIN_E3_V2.bin"
+#define BL_OLD_NAME         "1:/ROBIN_E3_V2.CUR"
 
 #define BOARD_SD_SCK_PORT   GPIOB
 #define BOARD_SD_SCK_PIN    GPIO_PIN_13
