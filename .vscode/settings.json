@@ -22,6 +22,7 @@
         "lcd_dgus.h": "c",
         "stm32_f407_hal_system.h": "c",
         "pins_robin_e3.h": "c",
-        "pins_robin_e3d.h": "c"
+        "pins_robin_e3d.h": "c",
+        "pins_znp_robin_nano_dw.h": "c"
     }
 }
