@@ -3,6 +3,7 @@
 int main(void) {
 
     FATFS fs;
+    
     FRESULT fs_res;
 
     nvic_set_vector_table(NVIC_VectTab_FLASH, 0x0000);

@@ -3,8 +3,20 @@
 
 hal_bootloader_t hal_bl;
 
-const char *FW_FILE_SD        = "1:/ZNP_ROBIN_DW.bin";
-const char *FW_OLD_FILE_SD    = "1:/ZNP_ROBIN_DW.CUR";
+
+
+
+#ifndef BL_NAME
+const char *FW_FILE_SD        = "1:/ROBIN_E3D_V2.bin";
+#else 
+const char *FW_FILE_SD        = BL_NAME;
+#endif
+
+#ifndef BL_OLD_NAME
+const char *FW_OLD_FILE_SD    = "1:/ROBIN_E3D_V2.CUR";
+#else
+const char *FW_OLD_FILE_SD    = BL_OLD_NAME;
+#endif
 
 char firmware_name_buff[FW_NAME_SIZE];
 char old_name_buff[FW_NAME_SIZE];
@@ -205,5 +217,3 @@ void update_check(void) {
         jump_without_update();
     }
 }
-
-

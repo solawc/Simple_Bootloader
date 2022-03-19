@@ -12,7 +12,7 @@ const uint8_t DGUS_CMD_READVAR = 0x83;
 
 uint8_t DGUS_RST_SCREEN = 0;
 uint8_t DGUS_STAT_SCREEN = 1;
-uint8_t DGUS_BOOT_SCREEN = 60;
+uint8_t DGUS_BOOT_SCREEN = 92;
 
 
 static void lcd_dgus_uart_gpio_init(void) {
