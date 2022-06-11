@@ -4,6 +4,7 @@
 #ifdef STM32F401xC
 
 #include "../main.h"
+#include "core_cm4.h"
 
 /* Must settings */
 #define MCU_RAM         (64     *1024)
@@ -23,7 +24,10 @@
 
 /**************************************************************************************/
 
-#define SYSTEM_INIT()           hal_stm32f401_system_init()
+#define SYSTEM_INIT()               hal_stm32f401_system_init()
+
+#define COMMON_FLASH_ERASE()        hal_flash_erase()
+#define COMMON_FLASH_WRITE(A,B,C)   hal_flash_write(A,B,C)
 
 void hal_stm32f401_system_init(void);
 void Error_Handler(void);

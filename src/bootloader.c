@@ -1,9 +1,8 @@
 #include "bootloader.h"
-#include "core_cm4.h"
+// #include "core_cm4.h"
+// #include "core_cm0plus.h"
 
 hal_bootloader_t hal_bl;
-
-
 
 
 #ifndef BL_NAME
@@ -48,7 +47,7 @@ void bl_reset_systick(void) {
 
 void bl_erase_flash(void) {
 
-    hal_flash_erase();
+    COMMON_FLASH_ERASE();
 }
 
 
@@ -85,7 +84,7 @@ void bl_write_flash(void) {
 
         hlfP = (uint16_t *)file_read_buff;
 
-        hal_flash_write(Address, hlfP, READ_FILE_PAGE_SIZE / 2 );
+        COMMON_FLASH_WRITE(Address, hlfP, READ_FILE_PAGE_SIZE / 2);
 
 		Address += READ_FILE_PAGE_SIZE;
 

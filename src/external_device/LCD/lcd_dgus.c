@@ -84,7 +84,7 @@ void dgus_writeVariable(uint16_t adr, const void *values, uint8_t valueslen, boo
     dgus_write_header(adr, DGUS_CMD_WRITEVAR, valueslen);
 
     while (valueslen--) {
-    char x;
+    char x = 0;
     if (!strend) x = *myvalues++;
     if ((isstr && !x) || strend) {
       strend = true;
