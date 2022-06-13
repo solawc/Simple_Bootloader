@@ -35,9 +35,9 @@ int main(void) {
         hal_sd.is_has_sd = 0; 
     }
     
-    printf_info();          // print debug info
+    printf_info(); 
      
-    /*
+    /**************************************************************
      *             * Why is there a delay here? *
      * Because after the MCU is initialized and started, 
      * maybe due to hardware reasons, 
@@ -49,7 +49,7 @@ int main(void) {
      * and hangs normally on FATFS.
      * So I put a 500ms delay in this place, maybe it's too long, 
      * but it's enough to make sure it's stable
-    */
+    **************************************************************/
     HAL_Delay(500);
 
     update_check();
@@ -59,13 +59,13 @@ int main(void) {
 }
 
 
-/*
+/**************************************************************
  * Author:sola
  * Fix time:2022-01-20
  * Describe:
- * This is for the tick of the HAL library, using Systick's interrupt 
- * to perform the count
-*/
+ * This is for the tick of the HAL library, 
+ * using Systick's interrupt to perform the count
+**************************************************************/
 void SysTick_Handler(void)
 {
     HAL_IncTick();
