@@ -10,7 +10,7 @@ static void sd_spi_pin_init(void) {
 
     _SD_GPIO_CLK_ENABLE();                          // Enable SPI and GPIO Clock
 
-    SPI_GPIO_Init.Alternate = BOARD_SD_GPIO_AF; // GPIO_AF5_SPI2;
+    SPI_GPIO_Init.Alternate = BOARD_SD_GPIO_AF;     // GPIO_AF5_SPI2; 
     SPI_GPIO_Init.Mode = GPIO_MODE_AF_PP;
     SPI_GPIO_Init.Pin = SD_SPI_MISO_PIN|
                         SD_SPI_MOSI_PIN|
@@ -113,7 +113,7 @@ void hal_sd_register(void) {
     hal_sd.sd_trans_disable = hal_sd_disable;
     hal_sd.sd_set_speed = hal_sd_set_speed;
     hal_sd.sd_get_status = hal_sd_det_read;
-    hal_sd.sd_trans_speed = hal_sd_spi_speed_get(&sd_hspi);
+    hal_sd.sd_trans_speed = SPI_BAUDRATEPRESCALER_4; // hal_sd_spi_speed_get(&sd_hspi);
     hal_sd.sd_slow_speed = SPI_BAUDRATEPRESCALER_256;
 
     hal_sd.sd_init();

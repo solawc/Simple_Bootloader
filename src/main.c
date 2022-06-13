@@ -1,5 +1,8 @@
 #include "main.h"
 
+
+FIL fil;
+
 int main(void) {
 
     FATFS fs;
@@ -69,4 +72,13 @@ int main(void) {
 void SysTick_Handler(void)
 {
     HAL_IncTick();
+    // USART2_IRQn
+}
+
+void HardFault_Handler(void) {
+
+    while(1) {
+
+
+    }
 }

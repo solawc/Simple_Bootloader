@@ -47,7 +47,7 @@
 // Fatfs 
 #include "ff.h"
 
-
+extern FIL fil;
 
 
 FRESULT open_append();

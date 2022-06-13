@@ -4,6 +4,14 @@
 
 hal_bootloader_t hal_bl;
 
+#ifdef STM32G0xx
+typedef uint64_t _FLASH_SIZE_TYPE;
+#define SIZE_DIV    8
+#else 
+typedef uint32_t _FLASH_SIZE_TYPE;
+#define SIZE_DIV    2
+#endif
+
 
 #ifndef BL_NAME
 const char *FW_FILE_SD        = "1:/ROBIN_E3D_V2.bin";
@@ -22,12 +30,15 @@ char old_name_buff[FW_NAME_SIZE];
 
 uint32_t msp = 0;
 uint32_t reset = 0;
-UINT br;
+// UINT br;
 
 uint32_t EraseCounter = 0x00, Address = 0x00;//擦除计数，擦除地址
 
 uint8_t file_read_buff[1024];  // 用于装载读取回来的固件
-uint16_t *hlfP = (uint16_t *)file_read_buff;
+
+// uint16_t *hlfP = (uint16_t *)file_read_buff;
+// uint64_t *hlfP = (uint64_t *)file_read_buff;
+_FLASH_SIZE_TYPE *hlfP = (_FLASH_SIZE_TYPE *)file_read_buff;
 
 /* only support cortex-M */
 void nvic_set_vector_table(uint32_t NVIC_VectTab, uint32_t Offset) {
@@ -64,9 +75,10 @@ uint32_t fw_size_count = 0;
 
 void bl_write_flash(void) {
 
-    FIL fil;
+    // FIL fil;
     Address = APP_STAR_ADDR;
-    
+    UINT br;
+
     while(1) {
 
         bufferSet(file_read_buff, 0xff, READ_FILE_PAGE_SIZE);
@@ -82,9 +94,9 @@ void bl_write_flash(void) {
             reset = *((uint32_t *)(file_read_buff + 4));
         }
 
-        hlfP = (uint16_t *)file_read_buff;
+        hlfP = (uint64_t *)file_read_buff;
 
-        COMMON_FLASH_WRITE(Address, hlfP, READ_FILE_PAGE_SIZE / 2);
+        COMMON_FLASH_WRITE(Address, hlfP, READ_FILE_PAGE_SIZE / SIZE_DIV);
 
 		Address += READ_FILE_PAGE_SIZE;
 
@@ -102,7 +114,7 @@ void bl_write_flash(void) {
 
 uint8_t bl_open_update_file(void) {
 
-    FIL fil;
+    // FIL fil;
     FRESULT fr;
     uint32_t file_size = 0;
 
@@ -122,7 +134,6 @@ uint8_t bl_open_update_file(void) {
         hal_sd.fw_file_size = fil.obj.objsize;
         bl_erase_flash();
         hal_flag.bit_open_file = 1;
-        
         return 0;
     }else {
         hal_flag.bit_open_file = 0;
@@ -132,8 +143,7 @@ uint8_t bl_open_update_file(void) {
 
 void bl_rename_file(void) {
 
-    FIL fil;
-
+    // FIL fil;
     f_close(&fil);
     f_unlink(hal_bl.fw_old_name_buf);
     f_rename(hal_bl.fw_name_buf, hal_bl.fw_old_name_buf);
@@ -207,7 +217,6 @@ void update_check(void) {
     is_need_update = bl_open_update_file();
 
     if(is_need_update == 0) {
-            
         hal_flag.bit_uploading = 1;
         jump_with_update();
     }
