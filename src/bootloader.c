@@ -36,8 +36,6 @@ uint32_t EraseCounter = 0x00, Address = 0x00;//擦除计数，擦除地址
 
 uint8_t file_read_buff[1024];  // 用于装载读取回来的固件
 
-// uint16_t *hlfP = (uint16_t *)file_read_buff;
-// uint64_t *hlfP = (uint64_t *)file_read_buff;
 _FLASH_SIZE_TYPE *hlfP = (_FLASH_SIZE_TYPE *)file_read_buff;
 
 /* only support cortex-M */
@@ -58,10 +56,21 @@ void bl_reset_systick(void) {
 
 void bl_erase_flash(void) {
 
+    /* A define at pins_xxx.h */
     COMMON_FLASH_ERASE();
 }
 
-
+/****************************************************************************
+ * Why not use memset() ?
+ * After a certain period of testing, memset can achieve the same effect, 
+ * but when memset is executed, the array is not completely written to 0xff, 
+ * which may cause the data to be wrong. The effect is that the motherboard 
+ * cannot be powered on, and the running firmware is not completely correct.
+ * 
+ * Therefore, it is relatively stable to use the for loop to realize this 
+ * emptying function. Maybe different microcontrollers will have different 
+ * differences.
+ * *************************************************************************/
 void bufferSet(uint8_t* pBuffer, uint8_t data, uint16_t BufferLength)
 {
   uint16_t i;
@@ -80,6 +89,8 @@ void bl_write_flash(void) {
     UINT br;
 
     uint16_t persen = 0;
+
+    printf("[DEBUG]hal_sd.fw_file_size=%d\n",hal_sd.fw_file_size);
 
     while(1) {
 
@@ -108,7 +119,7 @@ void bl_write_flash(void) {
 
             break;
         };
-        printf("Update..[%d]\n", (fw_size_count*100)/(hal_sd.fw_file_size/1024)); 
+        printf("Update..[%d]\n", (int)((fw_size_count*100)/(hal_sd.fw_file_size/1024))); 
     }
     DEBUG_PRINT("Upload size:%ldk", fw_size_count);
 }

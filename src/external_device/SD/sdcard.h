@@ -70,7 +70,7 @@ typedef struct {
     uint32_t sd_trans_speed;
     uint32_t sd_slow_speed;
 
-    uint16_t fw_file_size;   
+    uint32_t fw_file_size;   
     uint8_t sd_type;                                /* 描述SD卡类型 */
     uint8_t is_has_sd;                              /* 0:no, 1: have */
 
