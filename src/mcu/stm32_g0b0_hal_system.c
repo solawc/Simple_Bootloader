@@ -121,7 +121,7 @@ void hal_flash_write(uint32_t addr ,uint64_t *buff, uint32_t num) {
           break;	//写入异常
         }
         addrx += 8;
-        buff  += 2;
+        buff++;
 		}  
 	}
 	HAL_FLASH_Lock();           //上锁

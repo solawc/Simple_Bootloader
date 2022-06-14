@@ -6,7 +6,7 @@ hal_bootloader_t hal_bl;
 
 #ifdef STM32G0xx
 typedef uint64_t _FLASH_SIZE_TYPE;
-#define SIZE_DIV    8
+#define SIZE_DIV    4
 #else 
 typedef uint32_t _FLASH_SIZE_TYPE;
 #define SIZE_DIV    2
@@ -75,9 +75,11 @@ uint32_t fw_size_count = 0;
 
 void bl_write_flash(void) {
 
-    // FIL fil;
     Address = APP_STAR_ADDR;
+
     UINT br;
+
+    uint16_t persen = 0;
 
     while(1) {
 
@@ -105,12 +107,11 @@ void bl_write_flash(void) {
             hal_flag.bit_read_finish = 1;
 
             break;
-        }; 
+        };
+        printf("Update..[%d]\n", (fw_size_count*100)/(hal_sd.fw_file_size/1024)); 
     }
     DEBUG_PRINT("Upload size:%ldk", fw_size_count);
 }
-
-
 
 uint8_t bl_open_update_file(void) {
 
