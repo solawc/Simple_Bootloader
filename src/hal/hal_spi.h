@@ -9,7 +9,8 @@ extern SPI_HandleTypeDef sd_hspi;
 #define W25QXX_SPI              
 
 #ifdef SD_USE_SPI
-    #define SD_CARD_SPI         SPI2
+
+    #define SD_CARD_SPI             BOARD_SD_SPI
 
     #ifdef SD_CARD_SPI
     
@@ -53,15 +54,19 @@ extern SPI_HandleTypeDef sd_hspi;
         #define SD_DET_PIN          BOARD_SD_DET_PIN
     #endif
 
-
+#ifndef _SD_GPIO_CLK_ENABLE
         #define _SD_GPIO_CLK_ENABLE()   __HAL_RCC_GPIOB_CLK_ENABLE();\
                                         __HAL_RCC_GPIOA_CLK_ENABLE();\
                                         __HAL_RCC_GPIOC_CLK_ENABLE();\
                                         __HAL_RCC_SPI2_CLK_ENABLE()
+#endif
 
+#ifndef _SD_GPIO_CLK_DISABLE
         #define _SD_GPIO_CLK_DISABLE()  __HAL_RCC_GPIOB_CLK_DISABLE();\
                                         __HAL_RCC_GPIOC_CLK_DISABLE();\
                                         __HAL_RCC_SPI2_CLK_DISABLE()
+#endif
+
     #endif
 
 #endif

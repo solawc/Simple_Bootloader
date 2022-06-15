@@ -8,6 +8,6 @@
 #define FLASH_WAITETIME  50000          //FLASH等待超时时间
 
 
-uint8_t hal_flash_erase(void);
-void hal_flash_write(uint32_t addr ,uint16_t *buff, uint32_t num);
+void mcu_flash_erase();
+
 #endif

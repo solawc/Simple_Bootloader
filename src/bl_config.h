@@ -5,8 +5,8 @@
 
 // #define CUSTOM_BOARD_NAME
 
-#define BOOTLOAD_VERSION        "V0.2"
-#define BOOTLOAD_DATE           "2022-03-02"
+#define BOOTLOAD_VERSION        "V0.3"
+#define BOOTLOAD_DATE           "2022-06-14"
 #ifndef CUSTOM_BOARD_NAME
 
 #ifdef MKS_BOARD_NAME
@@ -73,7 +73,7 @@
 #endif // HAS_SD_ON_BOARD
 
 /* Enabled and settings LCD type */
-#define LCD_DGUS_DWIN           // use 5A A5 type 
+// #define LCD_DGUS_DWIN           // use 5A A5 type 
 // #define LCD_FSMA_TFT            // use FSMC to driver LCD
 // #define LCD_SPI_TS              // use SPI to driver LCD
 #endif
