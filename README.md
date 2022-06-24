@@ -1,23 +1,62 @@
-# STM32F401 Bootload
+# Enter_bootloader
 
-## 一、描述
+## Describe
 
-这个bootload起初是为STM32F401RC设计的bootload，原程序是在IAR上进行编译的，现改造在使用Vscode进行编译下载，并且开源出来。
+On the one hand, this bootloader serves as my own functional reserve, and it will also provide the functions of a bootloader for later things.
 
-## 二、主要适配的功能
+Why would I do this? According to my own work experience and personal cognition, a bootloader should be required for the product level. The reasons are as follows:
 
-| 序号 | 功能                      | 相关宏 |
-| ---- | ------------------------- | ------ |
-| 1    | bootlaoad偏移地址设置     |        |
-| 2    | 使用SD卡检测更新          |        |
-| 3    | 使用U盘检测更新           |        |
-| 4    | 开启/关闭LCD显示进度功能  |        |
-| 5    | 开启/关闭UART DEBUG模式   |        |
-| 6    | 开启/关闭BOOT Info显示    |        |
-| 7    | 开启/关闭LCD Info显示     |        |
-| 8    | 开启/关闭蜂鸣器声音       |        |
-| 9    | 开启/禁用工厂模式出厂模式 |        |
+- 1. Customers do not have JLINK or stlink burning tools, and it is impossible for customers to buy such burning tools, which is unrealistic
 
-## 三、该项目在进行中
+- 2. On different products, the application of bootloader should be different. For example, some use SD card to update, the SD card also distinguishes spi/sdio, some need lcd/ serial port screen to display the update progress, some need USB flash disk, and finally, some need all
 
-....
+- 3. if each project is an independent bootloader project, the maintenance is quite cumbersome. Therefore, I use platformio to uniformly manage my bootloader project.
+
+- 4. It has good portability. Even if you use keil/iar and other tools to directly put the relevant source files into it, it may need to be adjusted H, but it does not need to be modified. Relevant interfaces are also reduced and released as far as possible to reduce the need to modify logic.
+
+## Support
+
+This MCU is currently in batch use, and more support will be added later.
+
+| MCU           | Manufacturer | Kernel      |
+| ------------- | ------------ | ----------- |
+| STM32F401RCTx | ST           | Cortex-M4F  |
+| STM32F407VETx | ST           | Cortex-M4F  |
+| STM32G0B0CETx | ST           | Cortex-CM0+ |
+
+## Boards support
+
+At present, only some boards I have used are supported. Of course, it is easy to add your own board settings. In this regard, you need to have a certain understanding of platformio, so that you can better operate and add new cards:
+
+- 在.ini文件中加入这样的信息：
+
+`[env:your_env_name]`
+
+`extends = stm32_common` ;if you use stm32, you can use this  
+
+`board = your_board_support`
+
+`build_unflags = ${stm32_common.build_unflags}`
+
+`build_flags = ${stm32_common.build_flags}`
+
+​       `-DHSE_VALUE=8000000 ;Frequency of crystal oscillator on main board`
+
+So you can quickly build your board
+
+`default_envs = your_env_name`
+
+In addition, you need to provide the pins file for your motherboard and name it pins_ xxx. h. There are also system startup files and three operation functions.
+
+Then you can compile normally
+
+
+
+## Development
+
+I want my bootloader to be selectable and tailorable. So I will switch many functional things through macros, and they will be written in bl_ config. H in this file.
+
+
+
+
+
