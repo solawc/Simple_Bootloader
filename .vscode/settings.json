@@ -20,6 +20,7 @@
         "hal_flash.h": "c",
         "hal_test.h": "c",
         "lcd_dgus.h": "c",
-        "stm32_f407_hal_system.h": "c"
+        "stm32_f407_hal_system.h": "c",
+        "hal_sdio.h": "c"
     }
 }

@@ -18,6 +18,11 @@
     #ifdef STM32F407xx
         #include "mcu/stm32_f407_hal_system.h"
     #endif
+
+    #ifdef STM32F429xx
+        #include "mcu/stm32_f429_hal_system.h"
+    #endif
+
 #endif
 
 /* Common header files */
@@ -28,6 +33,7 @@
 #include "hal/hal.h"
 #include "hal/hal_uart.h"
 #include "hal/hal_spi.h"
+#include "hal/hal_sdio.h"
 #include "hal/hal_flash.h"
 #include "external_device/SD/sdcard.h"
 #include "external_device//LCD/lcd_dgus.h"

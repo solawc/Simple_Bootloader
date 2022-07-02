@@ -68,15 +68,22 @@ typedef struct {
 
     uint8_t sd_type;                                /* 描述SD卡类型 */
     uint8_t is_has_sd;                              /* 0:no, 1: have */
-    uint16_t fw_file_size;                          
+    uint16_t fw_file_size;  
+    uint8_t (*sd_get_status)(void);
+    void    (*sd_init)(void);   
     uint32_t sd_trans_speed;
     uint32_t sd_slow_speed;
-    void    (*sd_set_speed)(uint32_t );
-    void    (*sd_init)(void);                        
-    uint8_t (*sd_get_status)(void);
-    uint8_t (*sd_trans_receive_data)(uint8_t );
+    void    (*sd_set_speed)(uint32_t ); 
     void    (*sd_trans_enable)(void);
-    void    (*sd_trans_disable)(void);
+    void    (*sd_trans_disable)(void);                   
+    uint8_t (*sd_trans_receive_data)(uint8_t );
+    void    (*sd_trans_data)(uint32_t *, uint32_t, uint32_t);
+    void    (*sd_receive_data)(uint32_t *, uint32_t, uint32_t);
+    void    (*sd_get_cardinfo)(HAL_SD_CardInfoTypeDef *);
+    void    (*sd_get_cardcsd)(HAL_SD_CardCSDTypeDef *);
+    uint8_t (*sd_erase)(uint32_t , uint32_t );
+
+
 }hal_sd_t;
 extern hal_sd_t hal_sd;
 

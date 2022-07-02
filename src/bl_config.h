@@ -56,8 +56,8 @@
 #define HAS_SD_ON_BOARD
 #ifdef HAS_SD_ON_BOARD
 
-    #define SD_USE_SPI
-    // #define SD_USE_SDIO
+    //#define SD_USE_SPI
+    #define SD_USE_SDIO
 
     #ifdef SD_USE_SPI
         #ifdef SD_USE_SDIO
