@@ -890,8 +890,6 @@ Discarded input sections
                 0x00000000      0x140 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_gpio.o
  .text.HAL_GPIO_ReadPin
                 0x00000000        0xe .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_gpio.o
- .text.HAL_GPIO_WritePin
-                0x00000000        0xc .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_gpio.o
  .text.HAL_GPIO_TogglePin
                 0x00000000       0x12 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_gpio.o
  .text.HAL_GPIO_LockPin
@@ -1821,15 +1819,10 @@ Discarded input sections
                 0x00000000       0x10 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_pwr_ex.o
  .text.HAL_PWREx_ControlVoltageScaling
                 0x00000000       0xc0 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_pwr_ex.o
- .text.HAL_PWREx_EnableOverDrive
-                0x00000000       0x80 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_pwr_ex.o
  .text.HAL_PWREx_DisableOverDrive
                 0x00000000       0x7c .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_pwr_ex.o
  .text.HAL_PWREx_EnterUnderDriveSTOPMode
                 0x00000000       0x6c .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_pwr_ex.o
- .comment       0x00000000       0x7f .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_pwr_ex.o
- .ARM.attributes
-                0x00000000       0x33 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_pwr_ex.o
  .text          0x00000000        0x0 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_qspi.o
  .data          0x00000000        0x0 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_qspi.o
  .bss           0x00000000        0x0 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_qspi.o
@@ -3954,7 +3947,7 @@ LOAD c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/..
                 0x08000000                g_pfnVectors
                 0x080001ac                . = ALIGN (0x4)
 
-.text           0x080001b0     0x6108
+.text           0x080001b0     0x61ec
                 0x080001b0                . = ALIGN (0x4)
  *(.text)
  .text          0x080001b0       0x40 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/crtbegin.o
@@ -4032,787 +4025,795 @@ LOAD c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/..
  .text.HAL_GPIO_Init
                 0x08000b1c      0x1ec .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_gpio.o
                 0x08000b1c                HAL_GPIO_Init
+ .text.HAL_GPIO_WritePin
+                0x08000d08        0xc .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_gpio.o
+                0x08000d08                HAL_GPIO_WritePin
+ .text.HAL_PWREx_EnableOverDrive
+                0x08000d14       0x80 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_pwr_ex.o
+                0x08000d14                HAL_PWREx_EnableOverDrive
  .text.HAL_RCC_OscConfig
-                0x08000d08      0x3f8 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_rcc.o
-                0x08000d08                HAL_RCC_OscConfig
+                0x08000d94      0x3f8 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_rcc.o
+                0x08000d94                HAL_RCC_OscConfig
  .text.HAL_RCC_GetSysClockFreq
-                0x08001100       0xd8 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_rcc.o
-                0x08001100                HAL_RCC_GetSysClockFreq
+                0x0800118c       0xd8 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_rcc.o
+                0x0800118c                HAL_RCC_GetSysClockFreq
  .text.HAL_RCC_ClockConfig
-                0x080011d8      0x160 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_rcc.o
-                0x080011d8                HAL_RCC_ClockConfig
+                0x08001264      0x160 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_rcc.o
+                0x08001264                HAL_RCC_ClockConfig
  .text.HAL_RCC_GetHCLKFreq
-                0x08001338        0xc .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_rcc.o
-                0x08001338                HAL_RCC_GetHCLKFreq
+                0x080013c4        0xc .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_rcc.o
+                0x080013c4                HAL_RCC_GetHCLKFreq
  .text.HAL_RCC_GetPCLK1Freq
-                0x08001344       0x20 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_rcc.o
-                0x08001344                HAL_RCC_GetPCLK1Freq
+                0x080013d0       0x20 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_rcc.o
+                0x080013d0                HAL_RCC_GetPCLK1Freq
  .text.HAL_RCC_GetPCLK2Freq
-                0x08001364       0x20 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_rcc.o
-                0x08001364                HAL_RCC_GetPCLK2Freq
+                0x080013f0       0x20 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_rcc.o
+                0x080013f0                HAL_RCC_GetPCLK2Freq
  .text.SD_PowerON
-                0x08001384       0xc0 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_sd.o
+                0x08001410       0xc0 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_sd.o
  .text.SD_PowerOFF
-                0x08001444        0xa .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_sd.o
+                0x080014d0        0xa .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_sd.o
  .text.SD_FindSCR
-                0x0800144e      0x10a .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_sd.o
+                0x080014da      0x10a .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_sd.o
  .text.SD_WideBus_Enable
-                0x08001558       0x56 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_sd.o
+                0x080015e4       0x56 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_sd.o
  .text.SD_WideBus_Disable
-                0x080015ae       0x56 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_sd.o
+                0x0800163a       0x56 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_sd.o
  .text.SD_SendStatus
-                0x08001604       0x2c .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_sd.o
+                0x08001690       0x2c .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_sd.o
  .text.HAL_SD_MspInit
-                0x08001630        0x2 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_sd.o
-                0x08001630                HAL_SD_MspInit
+                0x080016bc        0x2 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_sd.o
+                0x080016bc                HAL_SD_MspInit
  .text.HAL_SD_MspDeInit
-                0x08001632        0x2 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_sd.o
-                0x08001632                HAL_SD_MspDeInit
+                0x080016be        0x2 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_sd.o
+                0x080016be                HAL_SD_MspDeInit
  .text.HAL_SD_DeInit
-                0x08001634       0x24 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_sd.o
-                0x08001634                HAL_SD_DeInit
+                0x080016c0       0x24 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_sd.o
+                0x080016c0                HAL_SD_DeInit
  .text.HAL_SD_ReadBlocks
-                0x08001658      0x240 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_sd.o
-                0x08001658                HAL_SD_ReadBlocks
+                0x080016e4      0x240 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_sd.o
+                0x080016e4                HAL_SD_ReadBlocks
  .text.HAL_SD_WriteBlocks
-                0x08001898      0x1f4 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_sd.o
-                0x08001898                HAL_SD_WriteBlocks
+                0x08001924      0x1f4 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_sd.o
+                0x08001924                HAL_SD_WriteBlocks
  .text.HAL_SD_Erase
-                0x08001a8c       0xf8 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_sd.o
-                0x08001a8c                HAL_SD_Erase
+                0x08001b18       0xf8 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_sd.o
+                0x08001b18                HAL_SD_Erase
  .text.HAL_SD_GetCardCSD
-                0x08001b84      0x1bc .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_sd.o
-                0x08001b84                HAL_SD_GetCardCSD
+                0x08001c10      0x1bc .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_sd.o
+                0x08001c10                HAL_SD_GetCardCSD
  .text.SD_InitCard
-                0x08001d40      0x100 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_sd.o
+                0x08001dcc      0x100 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_sd.o
  .text.HAL_SD_InitCard
-                0x08001e40       0xa0 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_sd.o
-                0x08001e40                HAL_SD_InitCard
+                0x08001ecc       0xa0 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_sd.o
+                0x08001ecc                HAL_SD_InitCard
  .text.HAL_SD_Init
-                0x08001ee0       0x3e .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_sd.o
-                0x08001ee0                HAL_SD_Init
+                0x08001f6c       0x3e .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_sd.o
+                0x08001f6c                HAL_SD_Init
  .text.HAL_SD_GetCardInfo
-                0x08001f1e       0x24 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_sd.o
-                0x08001f1e                HAL_SD_GetCardInfo
- *fill*         0x08001f42        0x2 
+                0x08001faa       0x24 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_sd.o
+                0x08001faa                HAL_SD_GetCardInfo
+ *fill*         0x08001fce        0x2 
  .text.HAL_SD_ConfigWideBusOperation
-                0x08001f44       0xc0 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_sd.o
-                0x08001f44                HAL_SD_ConfigWideBusOperation
+                0x08001fd0       0xc0 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_sd.o
+                0x08001fd0                HAL_SD_ConfigWideBusOperation
  .text.HAL_SD_GetCardState
-                0x08002004       0x26 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_sd.o
-                0x08002004                HAL_SD_GetCardState
- *fill*         0x0800202a        0x2 
+                0x08002090       0x26 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_sd.o
+                0x08002090                HAL_SD_GetCardState
+ *fill*         0x080020b6        0x2 
  .text.UART_SetConfig
-                0x0800202c      0x134 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_uart.o
+                0x080020b8      0x134 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_uart.o
  .text.UART_WaitOnFlagUntilTimeout
-                0x08002160       0x7e .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_uart.o
+                0x080021ec       0x7e .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_uart.o
  .text.HAL_UART_MspInit
-                0x080021de        0x2 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_uart.o
-                0x080021de                HAL_UART_MspInit
+                0x0800226a        0x2 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_uart.o
+                0x0800226a                HAL_UART_MspInit
  .text.HAL_UART_Init
-                0x080021e0       0x5e .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_uart.o
-                0x080021e0                HAL_UART_Init
+                0x0800226c       0x5e .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_uart.o
+                0x0800226c                HAL_UART_Init
  .text.HAL_UART_Transmit
-                0x0800223e       0xda .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_uart.o
-                0x0800223e                HAL_UART_Transmit
+                0x080022ca       0xda .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_uart.o
+                0x080022ca                HAL_UART_Transmit
  .text.SDMMC_GetCmdError
-                0x08002318       0x38 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
+                0x080023a4       0x38 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
  .text.SDMMC_GetCmdResp2
-                0x08002350       0x60 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
+                0x080023dc       0x60 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
  .text.SDMMC_GetCmdResp3
-                0x080023b0       0x50 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
+                0x0800243c       0x50 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
  .text.SDMMC_GetCmdResp7
-                0x08002400       0x6c .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
+                0x0800248c       0x6c .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
  .text.SDIO_Init
-                0x0800246c       0x36 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
-                0x0800246c                SDIO_Init
+                0x080024f8       0x36 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
+                0x080024f8                SDIO_Init
  .text.SDIO_ReadFIFO
-                0x080024a2        0x6 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
-                0x080024a2                SDIO_ReadFIFO
+                0x0800252e        0x6 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
+                0x0800252e                SDIO_ReadFIFO
  .text.SDIO_WriteFIFO
-                0x080024a8        0xa .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
-                0x080024a8                SDIO_WriteFIFO
+                0x08002534        0xa .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
+                0x08002534                SDIO_WriteFIFO
  .text.SDIO_PowerState_ON
-                0x080024b2       0x10 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
-                0x080024b2                SDIO_PowerState_ON
+                0x0800253e       0x10 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
+                0x0800253e                SDIO_PowerState_ON
  .text.SDIO_PowerState_OFF
-                0x080024c2        0x8 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
-                0x080024c2                SDIO_PowerState_OFF
+                0x0800254e        0x8 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
+                0x0800254e                SDIO_PowerState_OFF
  .text.SDIO_GetPowerState
-                0x080024ca        0x8 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
-                0x080024ca                SDIO_GetPowerState
+                0x08002556        0x8 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
+                0x08002556                SDIO_GetPowerState
  .text.SDIO_SendCommand
-                0x080024d2       0x24 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
-                0x080024d2                SDIO_SendCommand
+                0x0800255e       0x24 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
+                0x0800255e                SDIO_SendCommand
  .text.SDIO_GetCommandResponse
-                0x080024f6        0x6 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
-                0x080024f6                SDIO_GetCommandResponse
+                0x08002582        0x6 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
+                0x08002582                SDIO_GetCommandResponse
  .text.SDIO_GetResponse
-                0x080024fc        0x6 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
-                0x080024fc                SDIO_GetResponse
- *fill*         0x08002502        0x2 
+                0x08002588        0x6 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
+                0x08002588                SDIO_GetResponse
+ *fill*         0x0800258e        0x2 
  .text.SDMMC_GetCmdResp1
-                0x08002504      0x158 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
+                0x08002590      0x158 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
  .text.SDMMC_GetCmdResp6
-                0x0800265c       0xa4 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
+                0x080026e8       0xa4 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
  .text.SDIO_ConfigData
-                0x08002700       0x24 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
-                0x08002700                SDIO_ConfigData
+                0x0800278c       0x24 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
+                0x0800278c                SDIO_ConfigData
  .text.SDMMC_CmdBlockLength
-                0x08002724       0x30 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
-                0x08002724                SDMMC_CmdBlockLength
+                0x080027b0       0x30 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
+                0x080027b0                SDMMC_CmdBlockLength
  .text.SDMMC_CmdReadSingleBlock
-                0x08002754       0x30 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
-                0x08002754                SDMMC_CmdReadSingleBlock
+                0x080027e0       0x30 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
+                0x080027e0                SDMMC_CmdReadSingleBlock
  .text.SDMMC_CmdReadMultiBlock
-                0x08002784       0x30 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
-                0x08002784                SDMMC_CmdReadMultiBlock
+                0x08002810       0x30 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
+                0x08002810                SDMMC_CmdReadMultiBlock
  .text.SDMMC_CmdWriteSingleBlock
-                0x080027b4       0x30 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
-                0x080027b4                SDMMC_CmdWriteSingleBlock
+                0x08002840       0x30 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
+                0x08002840                SDMMC_CmdWriteSingleBlock
  .text.SDMMC_CmdWriteMultiBlock
-                0x080027e4       0x30 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
-                0x080027e4                SDMMC_CmdWriteMultiBlock
+                0x08002870       0x30 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
+                0x08002870                SDMMC_CmdWriteMultiBlock
  .text.SDMMC_CmdSDEraseStartAdd
-                0x08002814       0x30 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
-                0x08002814                SDMMC_CmdSDEraseStartAdd
+                0x080028a0       0x30 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
+                0x080028a0                SDMMC_CmdSDEraseStartAdd
  .text.SDMMC_CmdSDEraseEndAdd
-                0x08002844       0x30 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
-                0x08002844                SDMMC_CmdSDEraseEndAdd
+                0x080028d0       0x30 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
+                0x080028d0                SDMMC_CmdSDEraseEndAdd
  .text.SDMMC_CmdErase
-                0x08002874       0x30 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
-                0x08002874                SDMMC_CmdErase
+                0x08002900       0x30 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
+                0x08002900                SDMMC_CmdErase
  .text.SDMMC_CmdStopTransfer
-                0x080028a4       0x34 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
-                0x080028a4                SDMMC_CmdStopTransfer
+                0x08002930       0x34 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
+                0x08002930                SDMMC_CmdStopTransfer
  .text.SDMMC_CmdSelDesel
-                0x080028d8       0x30 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
-                0x080028d8                SDMMC_CmdSelDesel
+                0x08002964       0x30 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
+                0x08002964                SDMMC_CmdSelDesel
  .text.SDMMC_CmdGoIdleState
-                0x08002908       0x26 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
-                0x08002908                SDMMC_CmdGoIdleState
+                0x08002994       0x26 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
+                0x08002994                SDMMC_CmdGoIdleState
  .text.SDMMC_CmdOperCond
-                0x0800292e       0x2e .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
-                0x0800292e                SDMMC_CmdOperCond
+                0x080029ba       0x2e .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
+                0x080029ba                SDMMC_CmdOperCond
  .text.SDMMC_CmdAppCommand
-                0x0800295c       0x30 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
-                0x0800295c                SDMMC_CmdAppCommand
+                0x080029e8       0x30 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
+                0x080029e8                SDMMC_CmdAppCommand
  .text.SDMMC_CmdAppOperCommand
-                0x0800298c       0x32 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
-                0x0800298c                SDMMC_CmdAppOperCommand
+                0x08002a18       0x32 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
+                0x08002a18                SDMMC_CmdAppOperCommand
  .text.SDMMC_CmdBusWidth
-                0x080029be       0x30 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
-                0x080029be                SDMMC_CmdBusWidth
+                0x08002a4a       0x30 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
+                0x08002a4a                SDMMC_CmdBusWidth
  .text.SDMMC_CmdSendSCR
-                0x080029ee       0x30 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
-                0x080029ee                SDMMC_CmdSendSCR
+                0x08002a7a       0x30 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
+                0x08002a7a                SDMMC_CmdSendSCR
  .text.SDMMC_CmdSendCID
-                0x08002a1e       0x2a .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
-                0x08002a1e                SDMMC_CmdSendCID
+                0x08002aaa       0x2a .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
+                0x08002aaa                SDMMC_CmdSendCID
  .text.SDMMC_CmdSendCSD
-                0x08002a48       0x2a .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
-                0x08002a48                SDMMC_CmdSendCSD
+                0x08002ad4       0x2a .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
+                0x08002ad4                SDMMC_CmdSendCSD
  .text.SDMMC_CmdSetRelAdd
-                0x08002a72       0x30 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
-                0x08002a72                SDMMC_CmdSetRelAdd
+                0x08002afe       0x30 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
+                0x08002afe                SDMMC_CmdSetRelAdd
  .text.SDMMC_CmdSendStatus
-                0x08002aa2       0x30 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
-                0x08002aa2                SDMMC_CmdSendStatus
- *fill*         0x08002ad2        0x2 
+                0x08002b2e       0x30 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
+                0x08002b2e                SDMMC_CmdSendStatus
+ *fill*         0x08002b5e        0x2 
  .text.nvic_set_vector_table
-                0x08002ad4       0x14 .pio\build\STM32F429IG_BL\src\bootloader.o
-                0x08002ad4                nvic_set_vector_table
+                0x08002b60       0x14 .pio\build\STM32F429IG_BL\src\bootloader.o
+                0x08002b60                nvic_set_vector_table
  .text.bl_erase_flash
-                0x08002ae8        0x8 .pio\build\STM32F429IG_BL\src\bootloader.o
-                0x08002ae8                bl_erase_flash
+                0x08002b74        0x8 .pio\build\STM32F429IG_BL\src\bootloader.o
+                0x08002b74                bl_erase_flash
  .text.bufferSet
-                0x08002af0       0x10 .pio\build\STM32F429IG_BL\src\bootloader.o
-                0x08002af0                bufferSet
+                0x08002b7c       0x10 .pio\build\STM32F429IG_BL\src\bootloader.o
+                0x08002b7c                bufferSet
  .text.bl_write_flash
-                0x08002b00       0xb8 .pio\build\STM32F429IG_BL\src\bootloader.o
-                0x08002b00                bl_write_flash
+                0x08002b8c       0xb8 .pio\build\STM32F429IG_BL\src\bootloader.o
+                0x08002b8c                bl_write_flash
  .text.bl_open_update_file
-                0x08002bb8       0x8c .pio\build\STM32F429IG_BL\src\bootloader.o
-                0x08002bb8                bl_open_update_file
+                0x08002c44       0x8c .pio\build\STM32F429IG_BL\src\bootloader.o
+                0x08002c44                bl_open_update_file
  .text.bl_rename_file
-                0x08002c44       0x28 .pio\build\STM32F429IG_BL\src\bootloader.o
-                0x08002c44                bl_rename_file
+                0x08002cd0       0x28 .pio\build\STM32F429IG_BL\src\bootloader.o
+                0x08002cd0                bl_rename_file
  .text.bl_jump_to_app
-                0x08002c6c       0x38 .pio\build\STM32F429IG_BL\src\bootloader.o
-                0x08002c6c                bl_jump_to_app
+                0x08002cf8       0x38 .pio\build\STM32F429IG_BL\src\bootloader.o
+                0x08002cf8                bl_jump_to_app
  .text.jump_without_update
-                0x08002ca4       0x2c .pio\build\STM32F429IG_BL\src\bootloader.o
-                0x08002ca4                jump_without_update
+                0x08002d30       0x2c .pio\build\STM32F429IG_BL\src\bootloader.o
+                0x08002d30                jump_without_update
  .text.jump_with_update
-                0x08002cd0       0x2c .pio\build\STM32F429IG_BL\src\bootloader.o
-                0x08002cd0                jump_with_update
+                0x08002d5c       0x2c .pio\build\STM32F429IG_BL\src\bootloader.o
+                0x08002d5c                jump_with_update
  .text.update_check
-                0x08002cfc       0x2c .pio\build\STM32F429IG_BL\src\bootloader.o
-                0x08002cfc                update_check
+                0x08002d88       0x2c .pio\build\STM32F429IG_BL\src\bootloader.o
+                0x08002d88                update_check
  .text.SD_GetSectorCount
-                0x08002d28       0x18 .pio\build\STM32F429IG_BL\src\external_device\SD\sdcard.o
-                0x08002d28                SD_GetSectorCount
+                0x08002db4       0x18 .pio\build\STM32F429IG_BL\src\external_device\SD\sdcard.o
+                0x08002db4                SD_GetSectorCount
  .text.SD_Initialize
-                0x08002d40       0x14 .pio\build\STM32F429IG_BL\src\external_device\SD\sdcard.o
-                0x08002d40                SD_Initialize
+                0x08002dcc       0x14 .pio\build\STM32F429IG_BL\src\external_device\SD\sdcard.o
+                0x08002dcc                SD_Initialize
  .text.SD_ReadDisk
-                0x08002d54       0x10 .pio\build\STM32F429IG_BL\src\external_device\SD\sdcard.o
-                0x08002d54                SD_ReadDisk
+                0x08002de0       0x10 .pio\build\STM32F429IG_BL\src\external_device\SD\sdcard.o
+                0x08002de0                SD_ReadDisk
  .text.SD_WriteDisk
-                0x08002d64       0x10 .pio\build\STM32F429IG_BL\src\external_device\SD\sdcard.o
-                0x08002d64                SD_WriteDisk
+                0x08002df0       0x10 .pio\build\STM32F429IG_BL\src\external_device\SD\sdcard.o
+                0x08002df0                SD_WriteDisk
  .text.printf_info_init
-                0x08002d74       0x30 .pio\build\STM32F429IG_BL\src\hal\hal.o
-                0x08002d74                printf_info_init
+                0x08002e00       0x3c .pio\build\STM32F429IG_BL\src\hal\hal.o
+                0x08002e00                printf_info_init
  .text.printf_info
-                0x08002da4       0x5c .pio\build\STM32F429IG_BL\src\hal\hal.o
-                0x08002da4                printf_info
+                0x08002e3c       0x5c .pio\build\STM32F429IG_BL\src\hal\hal.o
+                0x08002e3c                printf_info
  .text.printf_result_info
-                0x08002e00       0x6c .pio\build\STM32F429IG_BL\src\hal\hal.o
-                0x08002e00                printf_result_info
+                0x08002e98       0x6c .pio\build\STM32F429IG_BL\src\hal\hal.o
+                0x08002e98                printf_result_info
  .text.hal_flash_erase
-                0x08002e6c       0x7c .pio\build\STM32F429IG_BL\src\hal\hal_flash.o
-                0x08002e6c                hal_flash_erase
+                0x08002f04       0x7c .pio\build\STM32F429IG_BL\src\hal\hal_flash.o
+                0x08002f04                hal_flash_erase
  .text.hal_flash_write
-                0x08002ee8       0x3e .pio\build\STM32F429IG_BL\src\hal\hal_flash.o
-                0x08002ee8                hal_flash_write
- *fill*         0x08002f26        0x2 
+                0x08002f80       0x3e .pio\build\STM32F429IG_BL\src\hal\hal_flash.o
+                0x08002f80                hal_flash_write
+ *fill*         0x08002fbe        0x2 
+ .text.WIFI_PDN_INIT
+                0x08002fc0       0x4c .pio\build\STM32F429IG_BL\src\hal\hal_sdio.o
  .text.sd_sdio_pin_init
-                0x08002f28       0x88 .pio\build\STM32F429IG_BL\src\hal\hal_sdio.o
+                0x0800300c       0x8c .pio\build\STM32F429IG_BL\src\hal\hal_sdio.o
  .text.sd_sdio_init
-                0x08002fb0       0x40 .pio\build\STM32F429IG_BL\src\hal\hal_sdio.o
+                0x08003098       0x40 .pio\build\STM32F429IG_BL\src\hal\hal_sdio.o
  .text.hal_sd_init
-                0x08002ff0        0xc .pio\build\STM32F429IG_BL\src\hal\hal_sdio.o
-                0x08002ff0                hal_sd_init
+                0x080030d8        0xc .pio\build\STM32F429IG_BL\src\hal\hal_sdio.o
+                0x080030d8                hal_sd_init
  .text.hal_sd_read_block
-                0x08002ffc       0x28 .pio\build\STM32F429IG_BL\src\hal\hal_sdio.o
-                0x08002ffc                hal_sd_read_block
+                0x080030e4       0x28 .pio\build\STM32F429IG_BL\src\hal\hal_sdio.o
+                0x080030e4                hal_sd_read_block
  .text.hal_sd_write_block
-                0x08003024       0x28 .pio\build\STM32F429IG_BL\src\hal\hal_sdio.o
-                0x08003024                hal_sd_write_block
+                0x0800310c       0x28 .pio\build\STM32F429IG_BL\src\hal\hal_sdio.o
+                0x0800310c                hal_sd_write_block
  .text.hal_sd_get_cardstate
-                0x0800304c       0x14 .pio\build\STM32F429IG_BL\src\hal\hal_sdio.o
-                0x0800304c                hal_sd_get_cardstate
+                0x08003134       0x14 .pio\build\STM32F429IG_BL\src\hal\hal_sdio.o
+                0x08003134                hal_sd_get_cardstate
  .text.hal_sd_erase
-                0x08003060       0x1c .pio\build\STM32F429IG_BL\src\hal\hal_sdio.o
-                0x08003060                hal_sd_erase
+                0x08003148       0x1c .pio\build\STM32F429IG_BL\src\hal\hal_sdio.o
+                0x08003148                hal_sd_erase
  .text.hal_sd_get_cardinfo
-                0x0800307c       0x10 .pio\build\STM32F429IG_BL\src\hal\hal_sdio.o
-                0x0800307c                hal_sd_get_cardinfo
+                0x08003164       0x10 .pio\build\STM32F429IG_BL\src\hal\hal_sdio.o
+                0x08003164                hal_sd_get_cardinfo
  .text.hal_sd_get_cardcsd
-                0x0800308c       0x10 .pio\build\STM32F429IG_BL\src\hal\hal_sdio.o
-                0x0800308c                hal_sd_get_cardcsd
+                0x08003174       0x10 .pio\build\STM32F429IG_BL\src\hal\hal_sdio.o
+                0x08003174                hal_sd_get_cardcsd
  .text.hal_sd_deinit
-                0x0800309c       0x2c .pio\build\STM32F429IG_BL\src\hal\hal_sdio.o
-                0x0800309c                hal_sd_deinit
+                0x08003184       0x2c .pio\build\STM32F429IG_BL\src\hal\hal_sdio.o
+                0x08003184                hal_sd_deinit
  .text.hal_sd_register
-                0x080030c8       0x48 .pio\build\STM32F429IG_BL\src\hal\hal_sdio.o
-                0x080030c8                hal_sd_register
+                0x080031b0       0x48 .pio\build\STM32F429IG_BL\src\hal\hal_sdio.o
+                0x080031b0                hal_sd_register
  .text.hal_uart_gpio_init
-                0x08003110       0x6c .pio\build\STM32F429IG_BL\src\hal\hal_uart.o
-                0x08003110                hal_uart_gpio_init
+                0x080031f8       0x6c .pio\build\STM32F429IG_BL\src\hal\hal_uart.o
+                0x080031f8                hal_uart_gpio_init
  .text.hal_uart_init
-                0x0800317c       0x38 .pio\build\STM32F429IG_BL\src\hal\hal_uart.o
-                0x0800317c                hal_uart_init
- .text._write   0x080031b4       0x18 .pio\build\STM32F429IG_BL\src\hal\hal_uart.o
-                0x080031b4                _write
- .text.main     0x080031cc       0x68 .pio\build\STM32F429IG_BL\src\main.o
-                0x080031cc                main
+                0x08003264       0x38 .pio\build\STM32F429IG_BL\src\hal\hal_uart.o
+                0x08003264                hal_uart_init
+ .text._write   0x0800329c       0x18 .pio\build\STM32F429IG_BL\src\hal\hal_uart.o
+                0x0800329c                _write
+ .text.main     0x080032b4       0x58 .pio\build\STM32F429IG_BL\src\main.o
+                0x080032b4                main
  .text.SysTick_Handler
-                0x08003234        0x8 .pio\build\STM32F429IG_BL\src\main.o
-                0x08003234                SysTick_Handler
+                0x0800330c        0x8 .pio\build\STM32F429IG_BL\src\main.o
+                0x0800330c                SysTick_Handler
  .text.Error_Handler
-                0x0800323c        0x4 .pio\build\STM32F429IG_BL\src\mcu\stm32_f429_hal_system.o
-                0x0800323c                Error_Handler
+                0x08003314        0x4 .pio\build\STM32F429IG_BL\src\mcu\stm32_f429_hal_system.o
+                0x08003314                Error_Handler
  .text.hal_stm32f429_system_init
-                0x08003240       0xa4 .pio\build\STM32F429IG_BL\src\mcu\stm32_f429_hal_system.o
-                0x08003240                hal_stm32f429_system_init
+                0x08003318       0xb0 .pio\build\STM32F429IG_BL\src\mcu\stm32_f429_hal_system.o
+                0x08003318                hal_stm32f429_system_init
  .text.hal_get_flash_sector
-                0x080032e4       0x44 .pio\build\STM32F429IG_BL\src\mcu\stm32_f429_hal_system.o
-                0x080032e4                hal_get_flash_sector
- .text.ld_word  0x08003328        0xa .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
+                0x080033c8       0x44 .pio\build\STM32F429IG_BL\src\mcu\stm32_f429_hal_system.o
+                0x080033c8                hal_get_flash_sector
+ .text.ld_word  0x0800340c        0xa .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
  .text.ld_dword
-                0x08003332       0x16 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
- .text.st_word  0x08003348        0x8 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
+                0x08003416       0x16 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
+ .text.st_word  0x0800342c        0x8 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
  .text.st_dword
-                0x08003350       0x14 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
- .text.dbc_1st  0x08003364        0x4 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
- .text.dbc_2nd  0x08003368        0x4 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
+                0x08003434       0x14 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
+ .text.dbc_1st  0x08003448        0x4 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
+ .text.dbc_2nd  0x0800344c        0x4 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
  .text.chk_lock
-                0x0800336c       0x74 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
+                0x08003450       0x74 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
  .text.enq_lock
-                0x080033e0       0x20 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
+                0x080034c4       0x20 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
  .text.inc_lock
-                0x08003400       0xa4 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
+                0x080034e4       0xa4 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
  .text.dec_lock
-                0x080034a4       0x40 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
+                0x08003588       0x40 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
  .text.clear_lock
-                0x080034e4       0x38 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
+                0x080035c8       0x38 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
  .text.clst2sect
-                0x0800351c       0x18 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
+                0x08003600       0x18 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
  .text.clmt_clust
-                0x08003534       0x22 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
+                0x08003618       0x22 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
  .text.ld_clust
-                0x08003556       0x26 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
+                0x0800363a       0x26 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
  .text.st_clust
-                0x0800357c       0x26 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
- *fill*         0x080035a2        0x2 
+                0x08003660       0x26 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
+ *fill*         0x08003686        0x2 
  .text.pick_lfn
-                0x080035a4       0x90 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
- .text.put_lfn  0x08003634       0x78 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
- .text.sum_sfn  0x080036ac       0x1c .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
+                0x08003688       0x90 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
+ .text.put_lfn  0x08003718       0x78 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
+ .text.sum_sfn  0x08003790       0x1c .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
  .text.get_ldnumber
-                0x080036c8       0x56 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
+                0x080037ac       0x56 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
  .text.validate
-                0x0800371e       0x48 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
+                0x08003802       0x48 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
  .text.sync_window
-                0x08003766       0x50 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
+                0x0800384a       0x50 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
  .text.move_window
-                0x080037b6       0x34 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
- *fill*         0x080037ea        0x2 
+                0x0800389a       0x34 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
+ *fill*         0x080038ce        0x2 
  .text.check_fs
-                0x080037ec       0xd4 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
+                0x080038d0       0xd4 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
  .text.find_volume
-                0x080038c0       0x70 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
+                0x080039a4       0x70 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
  .text.mount_volume
-                0x08003930      0x2b4 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
- .text.put_fat  0x08003be4      0x10a .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
- .text.get_fat  0x08003cee       0xd0 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
- .text.dir_sdi  0x08003dbe       0xa2 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
+                0x08003a14      0x2b4 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
+ .text.put_fat  0x08003cc8      0x10a .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
+ .text.get_fat  0x08003dd2       0xd0 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
+ .text.dir_sdi  0x08003ea2       0xa2 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
  .text.create_chain
-                0x08003e60      0x104 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
+                0x08003f44      0x104 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
  .text.remove_chain
-                0x08003f64       0x88 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
+                0x08004048       0x88 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
  .text.dir_clear
-                0x08003fec       0x52 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
+                0x080040d0       0x52 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
  .text.dir_next
-                0x0800403e       0xc6 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
+                0x08004122       0xc6 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
  .text.dir_alloc
-                0x08004104       0x50 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
+                0x080041e8       0x50 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
  .text.dir_read
-                0x08004154       0xbc .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
+                0x08004238       0xbc .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
  .text.dir_remove
-                0x08004210       0x52 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
+                0x080042f4       0x52 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
  .text.tchar2uni
-                0x08004262       0x48 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
- *fill*         0x080042aa        0x2 
+                0x08004346       0x48 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
+ *fill*         0x0800438e        0x2 
  .text.create_name
-                0x080042ac      0x248 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
- .text.cmp_lfn  0x080044f4       0xa4 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
+                0x08004390      0x248 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
+ .text.cmp_lfn  0x080045d8       0xa4 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
  .text.dir_find
-                0x08004598       0xe6 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
+                0x0800467c       0xe6 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
  .text.follow_path
-                0x0800467e       0x8c .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
+                0x08004762       0x8c .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
  .text.gen_numname
-                0x0800470a       0xba .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
+                0x080047ee       0xba .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
  .text.dir_register
-                0x080047c4      0x148 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
- .text.sync_fs  0x0800490c       0x8c .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
- .text.f_mount  0x08004998       0x58 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
-                0x08004998                f_mount
- .text.f_read   0x080049f0      0x18c .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
-                0x080049f0                f_read
+                0x080048a8      0x148 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
+ .text.sync_fs  0x080049f0       0x8c .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
+ .text.f_mount  0x08004a7c       0x58 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
+                0x08004a7c                f_mount
+ .text.f_read   0x08004ad4      0x18c .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
+                0x08004ad4                f_read
  .text.f_unlink
-                0x08004b7c       0xc0 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
-                0x08004b7c                f_unlink
+                0x08004c60       0xc0 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
+                0x08004c60                f_unlink
  .text.f_rename
-                0x08004c3c      0x164 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
-                0x08004c3c                f_rename
+                0x08004d20      0x164 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
+                0x08004d20                f_rename
  .text.get_fattime
-                0x08004da0        0x4 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
-                0x08004da0                get_fattime
- .text.f_open   0x08004da4      0x242 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
-                0x08004da4                f_open
- .text.f_sync   0x08004fe6       0xa0 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
-                0x08004fe6                f_sync
- .text.f_close  0x08005086       0x34 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
-                0x08005086                f_close
- *fill*         0x080050ba        0x2 
+                0x08004e84        0x4 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
+                0x08004e84                get_fattime
+ .text.f_open   0x08004e88      0x242 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
+                0x08004e88                f_open
+ .text.f_sync   0x080050ca       0xa0 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
+                0x080050ca                f_sync
+ .text.f_close  0x0800516a       0x34 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
+                0x0800516a                f_close
+ *fill*         0x0800519e        0x2 
  .text.ff_uni2oem
-                0x080050bc       0x40 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ffunicode.o)
-                0x080050bc                ff_uni2oem
+                0x080051a0       0x40 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ffunicode.o)
+                0x080051a0                ff_uni2oem
  .text.ff_oem2uni
-                0x080050fc       0x2c .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ffunicode.o)
-                0x080050fc                ff_oem2uni
+                0x080051e0       0x2c .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ffunicode.o)
+                0x080051e0                ff_oem2uni
  .text.ff_wtoupper
-                0x08005128       0x9c .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ffunicode.o)
-                0x08005128                ff_wtoupper
+                0x0800520c       0x9c .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ffunicode.o)
+                0x0800520c                ff_wtoupper
  .text.disk_status
-                0x080051c4        0xc .pio\build\STM32F429IG_BL\libac9\libfatfs.a(diskio.o)
-                0x080051c4                disk_status
+                0x080052a8        0xc .pio\build\STM32F429IG_BL\libac9\libfatfs.a(diskio.o)
+                0x080052a8                disk_status
  .text.disk_initialize
-                0x080051d0       0x34 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(diskio.o)
-                0x080051d0                disk_initialize
+                0x080052b4       0x34 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(diskio.o)
+                0x080052b4                disk_initialize
  .text.disk_read
-                0x08005204       0x30 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(diskio.o)
-                0x08005204                disk_read
+                0x080052e8       0x30 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(diskio.o)
+                0x080052e8                disk_read
  .text.disk_write
-                0x08005234       0x30 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(diskio.o)
-                0x08005234                disk_write
+                0x08005318       0x30 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(diskio.o)
+                0x08005318                disk_write
  .text.disk_ioctl
-                0x08005264       0x3c .pio\build\STM32F429IG_BL\libac9\libfatfs.a(diskio.o)
-                0x08005264                disk_ioctl
+                0x08005348       0x3c .pio\build\STM32F429IG_BL\libac9\libfatfs.a(diskio.o)
+                0x08005348                disk_ioctl
  .text.__libc_init_array
-                0x080052a0       0x48 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-init.o)
-                0x080052a0                __libc_init_array
- .text.memcmp   0x080052e8       0x1e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-memcmp.o)
-                0x080052e8                memcmp
- .text.memcpy   0x08005306       0x16 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-memcpy-stub.o)
-                0x08005306                memcpy
- .text.memset   0x0800531c       0x10 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-memset.o)
-                0x0800531c                memset
- .text.printf   0x0800532c       0x30 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-printf.o)
-                0x0800532c                iprintf
-                0x0800532c                printf
- .text._puts_r  0x0800535c       0xb8 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-puts.o)
-                0x0800535c                _puts_r
- .text.puts     0x08005414       0x10 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-puts.o)
-                0x08005414                puts
- .text.strchr   0x08005424       0x1a c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-strchr.o)
-                0x08005424                strchr
- .text.strcpy   0x0800543e       0x10 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-strcpy.o)
-                0x0800543e                strcpy
- *fill*         0x0800544e        0x2 
+                0x08005384       0x48 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-init.o)
+                0x08005384                __libc_init_array
+ .text.memcmp   0x080053cc       0x1e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-memcmp.o)
+                0x080053cc                memcmp
+ .text.memcpy   0x080053ea       0x16 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-memcpy-stub.o)
+                0x080053ea                memcpy
+ .text.memset   0x08005400       0x10 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-memset.o)
+                0x08005400                memset
+ .text.printf   0x08005410       0x30 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-printf.o)
+                0x08005410                iprintf
+                0x08005410                printf
+ .text._puts_r  0x08005440       0xb8 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-puts.o)
+                0x08005440                _puts_r
+ .text.puts     0x080054f8       0x10 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-puts.o)
+                0x080054f8                puts
+ .text.strchr   0x08005508       0x1a c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-strchr.o)
+                0x08005508                strchr
+ .text.strcpy   0x08005522       0x10 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-strcpy.o)
+                0x08005522                strcpy
+ *fill*         0x08005532        0x2 
  .text.__swbuf_r
-                0x08005450       0xa4 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-wbuf.o)
-                0x08005450                __swbuf_r
+                0x08005534       0xa4 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-wbuf.o)
+                0x08005534                __swbuf_r
  .text.__swsetup_r
-                0x080054f4       0xdc c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-wsetup.o)
-                0x080054f4                __swsetup_r
+                0x080055d8       0xdc c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-wsetup.o)
+                0x080055d8                __swsetup_r
  .text.__sflush_r
-                0x080055d0      0x10c c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-fflush.o)
-                0x080055d0                __sflush_r
+                0x080056b4      0x10c c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-fflush.o)
+                0x080056b4                __sflush_r
  .text._fflush_r
-                0x080056dc       0x54 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-fflush.o)
-                0x080056dc                _fflush_r
- .text.std      0x08005730       0x48 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-findfp.o)
+                0x080057c0       0x54 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-fflush.o)
+                0x080057c0                _fflush_r
+ .text.std      0x08005814       0x48 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-findfp.o)
  .text._cleanup_r
-                0x08005778        0xc c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-findfp.o)
-                0x08005778                _cleanup_r
+                0x0800585c        0xc c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-findfp.o)
+                0x0800585c                _cleanup_r
  .text.__sfmoreglue
-                0x08005784       0x2c c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-findfp.o)
-                0x08005784                __sfmoreglue
- .text.__sinit  0x080057b0       0x60 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-findfp.o)
-                0x080057b0                __sinit
- .text.__sfp    0x08005810       0x78 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-findfp.o)
-                0x08005810                __sfp
+                0x08005868       0x2c c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-findfp.o)
+                0x08005868                __sfmoreglue
+ .text.__sinit  0x08005894       0x60 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-findfp.o)
+                0x08005894                __sinit
+ .text.__sfp    0x080058f4       0x78 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-findfp.o)
+                0x080058f4                __sfp
  .text._fwalk_reent
-                0x08005888       0x3c c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-fwalk.o)
-                0x08005888                _fwalk_reent
+                0x0800596c       0x3c c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-fwalk.o)
+                0x0800596c                _fwalk_reent
  .text.__swhatbuf_r
-                0x080058c4       0x48 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-makebuf.o)
-                0x080058c4                __swhatbuf_r
+                0x080059a8       0x48 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-makebuf.o)
+                0x080059a8                __swhatbuf_r
  .text.__smakebuf_r
-                0x0800590c       0x80 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-makebuf.o)
-                0x0800590c                __smakebuf_r
- .text._free_r  0x0800598c       0x9c c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-nano-freer.o)
-                0x0800598c                _free_r
+                0x080059f0       0x80 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-makebuf.o)
+                0x080059f0                __smakebuf_r
+ .text._free_r  0x08005a70       0x9c c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-nano-freer.o)
+                0x08005a70                _free_r
  .text._malloc_r
-                0x08005a28       0xb4 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-nano-mallocr.o)
-                0x08005a28                _malloc_r
+                0x08005b0c       0xb4 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-nano-mallocr.o)
+                0x08005b0c                _malloc_r
  .text.__sfputc_r
-                0x08005adc       0x2a c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-nano-vfprintf.o)
+                0x08005bc0       0x2a c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-nano-vfprintf.o)
  .text.__sfputs_r
-                0x08005b06       0x24 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-nano-vfprintf.o)
-                0x08005b06                __sfputs_r
- *fill*         0x08005b2a        0x2 
+                0x08005bea       0x24 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-nano-vfprintf.o)
+                0x08005bea                __sfputs_r
+ *fill*         0x08005c0e        0x2 
  .text._vfprintf_r
-                0x08005b2c      0x228 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-nano-vfprintf.o)
-                0x08005b2c                _vfprintf_r
-                0x08005b2c                _vfiprintf_r
+                0x08005c10      0x228 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-nano-vfprintf.o)
+                0x08005c10                _vfprintf_r
+                0x08005c10                _vfiprintf_r
  .text._printf_common
-                0x08005d54       0xea c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-nano-vfprintf_i.o)
-                0x08005d54                _printf_common
- *fill*         0x08005e3e        0x2 
+                0x08005e38       0xea c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-nano-vfprintf_i.o)
+                0x08005e38                _printf_common
+ *fill*         0x08005f22        0x2 
  .text._printf_i
-                0x08005e40      0x224 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-nano-vfprintf_i.o)
-                0x08005e40                _printf_i
- .text._sbrk_r  0x08006064       0x20 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-sbrkr.o)
-                0x08006064                _sbrk_r
- .text.__sread  0x08006084       0x22 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-stdio.o)
-                0x08006084                __sread
+                0x08005f24      0x224 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-nano-vfprintf_i.o)
+                0x08005f24                _printf_i
+ .text._sbrk_r  0x08006148       0x20 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-sbrkr.o)
+                0x08006148                _sbrk_r
+ .text.__sread  0x08006168       0x22 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-stdio.o)
+                0x08006168                __sread
  .text.__swrite
-                0x080060a6       0x38 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-stdio.o)
-                0x080060a6                __swrite
- .text.__sseek  0x080060de       0x24 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-stdio.o)
-                0x080060de                __sseek
+                0x0800618a       0x38 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-stdio.o)
+                0x0800618a                __swrite
+ .text.__sseek  0x080061c2       0x24 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-stdio.o)
+                0x080061c2                __sseek
  .text.__sclose
-                0x08006102        0x8 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-stdio.o)
-                0x08006102                __sclose
- *fill*         0x0800610a        0x2 
+                0x080061e6        0x8 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-stdio.o)
+                0x080061e6                __sclose
+ *fill*         0x080061ee        0x2 
  .text._write_r
-                0x0800610c       0x24 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-writer.o)
-                0x0800610c                _write_r
+                0x080061f0       0x24 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-writer.o)
+                0x080061f0                _write_r
  .text._close_r
-                0x08006130       0x20 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-closer.o)
-                0x08006130                _close_r
+                0x08006214       0x20 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-closer.o)
+                0x08006214                _close_r
  .text._fstat_r
-                0x08006150       0x24 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-fstatr.o)
-                0x08006150                _fstat_r
+                0x08006234       0x24 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-fstatr.o)
+                0x08006234                _fstat_r
  .text._isatty_r
-                0x08006174       0x20 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-isattyr.o)
-                0x08006174                _isatty_r
+                0x08006258       0x20 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-isattyr.o)
+                0x08006258                _isatty_r
  .text._lseek_r
-                0x08006194       0x24 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-lseekr.o)
-                0x08006194                _lseek_r
+                0x08006278       0x24 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-lseekr.o)
+                0x08006278                _lseek_r
  .text.__malloc_lock
-                0x080061b8        0x2 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-mlock.o)
-                0x080061b8                __malloc_lock
+                0x0800629c        0x2 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-mlock.o)
+                0x0800629c                __malloc_lock
  .text.__malloc_unlock
-                0x080061ba        0x2 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-mlock.o)
-                0x080061ba                __malloc_unlock
- .text._read_r  0x080061bc       0x24 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-readr.o)
-                0x080061bc                _read_r
- .text._close   0x080061e0       0x10 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libnosys.a(close.o)
-                0x080061e0                _close
- .text._fstat   0x080061f0       0x10 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libnosys.a(fstat.o)
-                0x080061f0                _fstat
- .text._isatty  0x08006200       0x10 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libnosys.a(isatty.o)
-                0x08006200                _isatty
- .text._lseek   0x08006210       0x10 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libnosys.a(lseek.o)
-                0x08006210                _lseek
- .text._read    0x08006220       0x10 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libnosys.a(read.o)
-                0x08006220                _read
- .text._sbrk    0x08006230       0x1c c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libnosys.a(sbrk.o)
-                0x08006230                _sbrk
+                0x0800629e        0x2 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-mlock.o)
+                0x0800629e                __malloc_unlock
+ .text._read_r  0x080062a0       0x24 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-readr.o)
+                0x080062a0                _read_r
+ .text._close   0x080062c4       0x10 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libnosys.a(close.o)
+                0x080062c4                _close
+ .text._fstat   0x080062d4       0x10 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libnosys.a(fstat.o)
+                0x080062d4                _fstat
+ .text._isatty  0x080062e4       0x10 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libnosys.a(isatty.o)
+                0x080062e4                _isatty
+ .text._lseek   0x080062f4       0x10 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libnosys.a(lseek.o)
+                0x080062f4                _lseek
+ .text._read    0x08006304       0x10 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libnosys.a(read.o)
+                0x08006304                _read
+ .text._sbrk    0x08006314       0x1c c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libnosys.a(sbrk.o)
+                0x08006314                _sbrk
  .text.Reset_Handler
-                0x0800624c       0x50 .pio\build\STM32F429IG_BL\libFrameworkCMSISDevice.a(startup_stm32f429xx.o)
-                0x0800624c                Reset_Handler
+                0x08006330       0x50 .pio\build\STM32F429IG_BL\libFrameworkCMSISDevice.a(startup_stm32f429xx.o)
+                0x08006330                Reset_Handler
  .text.Default_Handler
-                0x0800629c        0x2 .pio\build\STM32F429IG_BL\libFrameworkCMSISDevice.a(startup_stm32f429xx.o)
-                0x0800629c                RTC_Alarm_IRQHandler
-                0x0800629c                HASH_RNG_IRQHandler
-                0x0800629c                EXTI2_IRQHandler
-                0x0800629c                TIM8_CC_IRQHandler
-                0x0800629c                DebugMon_Handler
-                0x0800629c                UART8_IRQHandler
-                0x0800629c                SPI4_IRQHandler
-                0x0800629c                TIM1_CC_IRQHandler
-                0x0800629c                DMA2_Stream5_IRQHandler
-                0x0800629c                HardFault_Handler
-                0x0800629c                DMA1_Stream5_IRQHandler
-                0x0800629c                PVD_IRQHandler
-                0x0800629c                SDIO_IRQHandler
-                0x0800629c                TAMP_STAMP_IRQHandler
-                0x0800629c                PendSV_Handler
-                0x0800629c                NMI_Handler
-                0x0800629c                CAN2_RX1_IRQHandler
-                0x0800629c                EXTI3_IRQHandler
-                0x0800629c                TIM8_TRG_COM_TIM14_IRQHandler
-                0x0800629c                TIM1_UP_TIM10_IRQHandler
-                0x0800629c                TIM8_UP_TIM13_IRQHandler
-                0x0800629c                I2C3_ER_IRQHandler
-                0x0800629c                EXTI0_IRQHandler
-                0x0800629c                I2C2_EV_IRQHandler
-                0x0800629c                DMA1_Stream2_IRQHandler
-                0x0800629c                CAN1_RX0_IRQHandler
-                0x0800629c                FPU_IRQHandler
-                0x0800629c                OTG_HS_WKUP_IRQHandler
-                0x0800629c                UsageFault_Handler
-                0x0800629c                LTDC_ER_IRQHandler
-                0x0800629c                CAN2_SCE_IRQHandler
-                0x0800629c                DMA2_Stream2_IRQHandler
-                0x0800629c                SPI1_IRQHandler
-                0x0800629c                TIM6_DAC_IRQHandler
-                0x0800629c                TIM1_BRK_TIM9_IRQHandler
-                0x0800629c                DCMI_IRQHandler
-                0x0800629c                CAN2_RX0_IRQHandler
-                0x0800629c                DMA2_Stream3_IRQHandler
-                0x0800629c                USART6_IRQHandler
-                0x0800629c                USART3_IRQHandler
-                0x0800629c                CAN1_RX1_IRQHandler
-                0x0800629c                UART5_IRQHandler
-                0x0800629c                DMA2_Stream0_IRQHandler
-                0x0800629c                TIM4_IRQHandler
-                0x0800629c                I2C1_EV_IRQHandler
-                0x0800629c                DMA1_Stream6_IRQHandler
-                0x0800629c                DMA1_Stream1_IRQHandler
-                0x0800629c                UART4_IRQHandler
-                0x0800629c                TIM3_IRQHandler
-                0x0800629c                RCC_IRQHandler
-                0x0800629c                TIM8_BRK_TIM12_IRQHandler
-                0x0800629c                Default_Handler
-                0x0800629c                EXTI15_10_IRQHandler
-                0x0800629c                ADC_IRQHandler
-                0x0800629c                DMA1_Stream7_IRQHandler
-                0x0800629c                SPI5_IRQHandler
-                0x0800629c                TIM7_IRQHandler
-                0x0800629c                CAN2_TX_IRQHandler
-                0x0800629c                TIM5_IRQHandler
-                0x0800629c                DMA2_Stream7_IRQHandler
-                0x0800629c                I2C3_EV_IRQHandler
-                0x0800629c                EXTI9_5_IRQHandler
-                0x0800629c                RTC_WKUP_IRQHandler
-                0x0800629c                LTDC_IRQHandler
-                0x0800629c                ETH_WKUP_IRQHandler
-                0x0800629c                SPI2_IRQHandler
-                0x0800629c                OTG_HS_EP1_IN_IRQHandler
-                0x0800629c                MemManage_Handler
-                0x0800629c                DMA1_Stream0_IRQHandler
-                0x0800629c                CAN1_TX_IRQHandler
-                0x0800629c                SVC_Handler
-                0x0800629c                EXTI4_IRQHandler
-                0x0800629c                ETH_IRQHandler
-                0x0800629c                OTG_HS_EP1_OUT_IRQHandler
-                0x0800629c                WWDG_IRQHandler
-                0x0800629c                SPI6_IRQHandler
-                0x0800629c                TIM2_IRQHandler
-                0x0800629c                OTG_FS_WKUP_IRQHandler
-                0x0800629c                TIM1_TRG_COM_TIM11_IRQHandler
-                0x0800629c                OTG_HS_IRQHandler
-                0x0800629c                DMA2D_IRQHandler
-                0x0800629c                EXTI1_IRQHandler
-                0x0800629c                UART7_IRQHandler
-                0x0800629c                USART2_IRQHandler
-                0x0800629c                I2C2_ER_IRQHandler
-                0x0800629c                DMA2_Stream1_IRQHandler
-                0x0800629c                CAN1_SCE_IRQHandler
-                0x0800629c                FLASH_IRQHandler
-                0x0800629c                DMA2_Stream4_IRQHandler
-                0x0800629c                BusFault_Handler
-                0x0800629c                USART1_IRQHandler
-                0x0800629c                OTG_FS_IRQHandler
-                0x0800629c                SPI3_IRQHandler
-                0x0800629c                DMA1_Stream4_IRQHandler
-                0x0800629c                I2C1_ER_IRQHandler
-                0x0800629c                FMC_IRQHandler
-                0x0800629c                DMA2_Stream6_IRQHandler
-                0x0800629c                SAI1_IRQHandler
-                0x0800629c                DMA1_Stream3_IRQHandler
+                0x08006380        0x2 .pio\build\STM32F429IG_BL\libFrameworkCMSISDevice.a(startup_stm32f429xx.o)
+                0x08006380                RTC_Alarm_IRQHandler
+                0x08006380                HASH_RNG_IRQHandler
+                0x08006380                EXTI2_IRQHandler
+                0x08006380                TIM8_CC_IRQHandler
+                0x08006380                DebugMon_Handler
+                0x08006380                UART8_IRQHandler
+                0x08006380                SPI4_IRQHandler
+                0x08006380                TIM1_CC_IRQHandler
+                0x08006380                DMA2_Stream5_IRQHandler
+                0x08006380                HardFault_Handler
+                0x08006380                DMA1_Stream5_IRQHandler
+                0x08006380                PVD_IRQHandler
+                0x08006380                SDIO_IRQHandler
+                0x08006380                TAMP_STAMP_IRQHandler
+                0x08006380                PendSV_Handler
+                0x08006380                NMI_Handler
+                0x08006380                CAN2_RX1_IRQHandler
+                0x08006380                EXTI3_IRQHandler
+                0x08006380                TIM8_TRG_COM_TIM14_IRQHandler
+                0x08006380                TIM1_UP_TIM10_IRQHandler
+                0x08006380                TIM8_UP_TIM13_IRQHandler
+                0x08006380                I2C3_ER_IRQHandler
+                0x08006380                EXTI0_IRQHandler
+                0x08006380                I2C2_EV_IRQHandler
+                0x08006380                DMA1_Stream2_IRQHandler
+                0x08006380                CAN1_RX0_IRQHandler
+                0x08006380                FPU_IRQHandler
+                0x08006380                OTG_HS_WKUP_IRQHandler
+                0x08006380                UsageFault_Handler
+                0x08006380                LTDC_ER_IRQHandler
+                0x08006380                CAN2_SCE_IRQHandler
+                0x08006380                DMA2_Stream2_IRQHandler
+                0x08006380                SPI1_IRQHandler
+                0x08006380                TIM6_DAC_IRQHandler
+                0x08006380                TIM1_BRK_TIM9_IRQHandler
+                0x08006380                DCMI_IRQHandler
+                0x08006380                CAN2_RX0_IRQHandler
+                0x08006380                DMA2_Stream3_IRQHandler
+                0x08006380                USART6_IRQHandler
+                0x08006380                USART3_IRQHandler
+                0x08006380                CAN1_RX1_IRQHandler
+                0x08006380                UART5_IRQHandler
+                0x08006380                DMA2_Stream0_IRQHandler
+                0x08006380                TIM4_IRQHandler
+                0x08006380                I2C1_EV_IRQHandler
+                0x08006380                DMA1_Stream6_IRQHandler
+                0x08006380                DMA1_Stream1_IRQHandler
+                0x08006380                UART4_IRQHandler
+                0x08006380                TIM3_IRQHandler
+                0x08006380                RCC_IRQHandler
+                0x08006380                TIM8_BRK_TIM12_IRQHandler
+                0x08006380                Default_Handler
+                0x08006380                EXTI15_10_IRQHandler
+                0x08006380                ADC_IRQHandler
+                0x08006380                DMA1_Stream7_IRQHandler
+                0x08006380                SPI5_IRQHandler
+                0x08006380                TIM7_IRQHandler
+                0x08006380                CAN2_TX_IRQHandler
+                0x08006380                TIM5_IRQHandler
+                0x08006380                DMA2_Stream7_IRQHandler
+                0x08006380                I2C3_EV_IRQHandler
+                0x08006380                EXTI9_5_IRQHandler
+                0x08006380                RTC_WKUP_IRQHandler
+                0x08006380                LTDC_IRQHandler
+                0x08006380                ETH_WKUP_IRQHandler
+                0x08006380                SPI2_IRQHandler
+                0x08006380                OTG_HS_EP1_IN_IRQHandler
+                0x08006380                MemManage_Handler
+                0x08006380                DMA1_Stream0_IRQHandler
+                0x08006380                CAN1_TX_IRQHandler
+                0x08006380                SVC_Handler
+                0x08006380                EXTI4_IRQHandler
+                0x08006380                ETH_IRQHandler
+                0x08006380                OTG_HS_EP1_OUT_IRQHandler
+                0x08006380                WWDG_IRQHandler
+                0x08006380                SPI6_IRQHandler
+                0x08006380                TIM2_IRQHandler
+                0x08006380                OTG_FS_WKUP_IRQHandler
+                0x08006380                TIM1_TRG_COM_TIM11_IRQHandler
+                0x08006380                OTG_HS_IRQHandler
+                0x08006380                DMA2D_IRQHandler
+                0x08006380                EXTI1_IRQHandler
+                0x08006380                UART7_IRQHandler
+                0x08006380                USART2_IRQHandler
+                0x08006380                I2C2_ER_IRQHandler
+                0x08006380                DMA2_Stream1_IRQHandler
+                0x08006380                CAN1_SCE_IRQHandler
+                0x08006380                FLASH_IRQHandler
+                0x08006380                DMA2_Stream4_IRQHandler
+                0x08006380                BusFault_Handler
+                0x08006380                USART1_IRQHandler
+                0x08006380                OTG_FS_IRQHandler
+                0x08006380                SPI3_IRQHandler
+                0x08006380                DMA1_Stream4_IRQHandler
+                0x08006380                I2C1_ER_IRQHandler
+                0x08006380                FMC_IRQHandler
+                0x08006380                DMA2_Stream6_IRQHandler
+                0x08006380                SAI1_IRQHandler
+                0x08006380                DMA1_Stream3_IRQHandler
  .text.SystemInit
-                0x0800629e        0x2 .pio\build\STM32F429IG_BL\libFrameworkCMSISDevice.a(system_stm32f4xx.o)
-                0x0800629e                SystemInit
+                0x08006382        0x2 .pio\build\STM32F429IG_BL\libFrameworkCMSISDevice.a(system_stm32f4xx.o)
+                0x08006382                SystemInit
  *(.glue_7)
- .glue_7        0x080062a0        0x0 linker stubs
+ .glue_7        0x08006384        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x080062a0        0x0 linker stubs
+ .glue_7t       0x08006384        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x080062a0        0x0 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/crtbegin.o
+ .eh_frame      0x08006384        0x0 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/crtbegin.o
  *(.init)
- .init          0x080062a0        0x4 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/crti.o
-                0x080062a0                _init
- .init          0x080062a4        0x8 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/crtn.o
+ .init          0x08006384        0x4 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/crti.o
+                0x08006384                _init
+ .init          0x08006388        0x8 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/crtn.o
  *(.fini)
- .fini          0x080062ac        0x4 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/crti.o
-                0x080062ac                _fini
- .fini          0x080062b0        0x8 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/crtn.o
-                0x080062b8                . = ALIGN (0x4)
-                0x080062b8                _etext = .
+ .fini          0x08006390        0x4 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/crti.o
+                0x08006390                _fini
+ .fini          0x08006394        0x8 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/crtn.o
+                0x0800639c                . = ALIGN (0x4)
+                0x0800639c                _etext = .
 
-.vfp11_veneer   0x080062b8        0x0
- .vfp11_veneer  0x080062b8        0x0 linker stubs
+.vfp11_veneer   0x0800639c        0x0
+ .vfp11_veneer  0x0800639c        0x0 linker stubs
 
-.v4_bx          0x080062b8        0x0
- .v4_bx         0x080062b8        0x0 linker stubs
+.v4_bx          0x0800639c        0x0
+ .v4_bx         0x0800639c        0x0 linker stubs
 
-.iplt           0x080062b8        0x0
- .iplt          0x080062b8        0x0 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/crtbegin.o
+.iplt           0x0800639c        0x0
+ .iplt          0x0800639c        0x0 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/crtbegin.o
 
-.rodata         0x080062b8      0x648
-                0x080062b8                . = ALIGN (0x4)
+.rodata         0x0800639c      0x640
+                0x0800639c                . = ALIGN (0x4)
  *(.rodata)
  *(.rodata*)
  .rodata.bl_write_flash.str1.4
-                0x080062b8       0x23 .pio\build\STM32F429IG_BL\src\bootloader.o
- *fill*         0x080062db        0x1 
+                0x0800639c       0x23 .pio\build\STM32F429IG_BL\src\bootloader.o
+ *fill*         0x080063bf        0x1 
  .rodata.str1.4
-                0x080062dc       0x28 .pio\build\STM32F429IG_BL\src\bootloader.o
+                0x080063c0       0x28 .pio\build\STM32F429IG_BL\src\bootloader.o
  .rodata.printf_info.str1.4
-                0x08006304       0x81 .pio\build\STM32F429IG_BL\src\hal\hal.o
- *fill*         0x08006385        0x3 
+                0x080063e8       0x79 .pio\build\STM32F429IG_BL\src\hal\hal.o
+ *fill*         0x08006461        0x3 
  .rodata.printf_result_info.str1.4
-                0x08006388       0x1e .pio\build\STM32F429IG_BL\src\hal\hal.o
- *fill*         0x080063a6        0x2 
+                0x08006464       0x1e .pio\build\STM32F429IG_BL\src\hal\hal.o
+ *fill*         0x08006482        0x2 
  .rodata.main.str1.4
-                0x080063a8        0x3 .pio\build\STM32F429IG_BL\src\main.o
- *fill*         0x080063ab        0x1 
- .rodata.ExCvt  0x080063ac       0x80 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
+                0x08006484        0x3 .pio\build\STM32F429IG_BL\src\main.o
+ *fill*         0x08006487        0x1 
+ .rodata.ExCvt  0x08006488       0x80 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
  .rodata.LfnOfs
-                0x0800642c        0xd .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
- *fill*         0x08006439        0x3 
+                0x08006508        0xd .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
+ *fill*         0x08006515        0x3 
  .rodata.check_fs.str1.4
-                0x0800643c        0x9 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
- *fill*         0x08006445        0x3 
+                0x08006518        0x9 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
+ *fill*         0x08006521        0x3 
  .rodata.create_name.str1.4
-                0x08006448       0x13 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
- *fill*         0x0800645b        0x1 
+                0x08006524       0x13 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
+ *fill*         0x08006537        0x1 
  .rodata.cvt1.4389
-                0x0800645c      0x1f2 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ffunicode.o)
- *fill*         0x0800664e        0x2 
+                0x08006538      0x1f2 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ffunicode.o)
+ *fill*         0x0800672a        0x2 
  .rodata.cvt2.4390
-                0x08006650       0xbc .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ffunicode.o)
- .rodata.uc437  0x0800670c      0x100 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ffunicode.o)
+                0x0800672c       0xbc .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ffunicode.o)
+ .rodata.uc437  0x080067e8      0x100 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ffunicode.o)
  .rodata.disk_initialize.str1.4
-                0x0800680c       0x44 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(diskio.o)
+                0x080068e8       0x44 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(diskio.o)
                                  0x41 (size before relaxing)
  .rodata._global_impure_ptr
-                0x08006850        0x4 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-impure.o)
-                0x08006850                _global_impure_ptr
+                0x0800692c        0x4 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-impure.o)
+                0x0800692c                _global_impure_ptr
  .rodata.__sf_fake_stderr
-                0x08006854       0x20 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-findfp.o)
-                0x08006854                __sf_fake_stderr
+                0x08006930       0x20 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-findfp.o)
+                0x08006930                __sf_fake_stderr
  .rodata.__sf_fake_stdin
-                0x08006874       0x20 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-findfp.o)
-                0x08006874                __sf_fake_stdin
+                0x08006950       0x20 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-findfp.o)
+                0x08006950                __sf_fake_stdin
  .rodata.__sf_fake_stdout
-                0x08006894       0x20 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-findfp.o)
-                0x08006894                __sf_fake_stdout
+                0x08006970       0x20 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-findfp.o)
+                0x08006970                __sf_fake_stdout
  .rodata._vfprintf_r.str1.1
-                0x080068b4       0x11 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-nano-vfprintf.o)
+                0x08006990       0x11 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-nano-vfprintf.o)
  .rodata._printf_i.str1.1
-                0x080068c5       0x22 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-nano-vfprintf_i.o)
- *fill*         0x080068e7        0x1 
+                0x080069a1       0x22 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-nano-vfprintf_i.o)
+ *fill*         0x080069c3        0x1 
  .rodata.AHBPrescTable
-                0x080068e8       0x10 .pio\build\STM32F429IG_BL\libFrameworkCMSISDevice.a(system_stm32f4xx.o)
-                0x080068e8                AHBPrescTable
+                0x080069c4       0x10 .pio\build\STM32F429IG_BL\libFrameworkCMSISDevice.a(system_stm32f4xx.o)
+                0x080069c4                AHBPrescTable
  .rodata.APBPrescTable
-                0x080068f8        0x8 .pio\build\STM32F429IG_BL\libFrameworkCMSISDevice.a(system_stm32f4xx.o)
-                0x080068f8                APBPrescTable
-                0x08006900                . = ALIGN (0x4)
+                0x080069d4        0x8 .pio\build\STM32F429IG_BL\libFrameworkCMSISDevice.a(system_stm32f4xx.o)
+                0x080069d4                APBPrescTable
+                0x080069dc                . = ALIGN (0x4)
 
-.ARM.extab      0x08006900        0x0
-                0x08006900                . = ALIGN (0x4)
+.ARM.extab      0x080069dc        0x0
+                0x080069dc                . = ALIGN (0x4)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x08006900                . = ALIGN (0x4)
+                0x080069dc                . = ALIGN (0x4)
 
-.ARM            0x08006900        0x8
-                0x08006900                . = ALIGN (0x4)
-                0x08006900                __exidx_start = .
+.ARM            0x080069dc        0x8
+                0x080069dc                . = ALIGN (0x4)
+                0x080069dc                __exidx_start = .
  *(.ARM.exidx*)
- .ARM.exidx     0x08006900        0x8 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m\libgcc.a(_udivmoddi4.o)
-                0x08006908                __exidx_end = .
-                0x08006908                . = ALIGN (0x4)
+ .ARM.exidx     0x080069dc        0x8 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m\libgcc.a(_udivmoddi4.o)
+                0x080069e4                __exidx_end = .
+                0x080069e4                . = ALIGN (0x4)
 
-.rel.dyn        0x08006908        0x0
- .rel.iplt      0x08006908        0x0 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/crtbegin.o
+.rel.dyn        0x080069e4        0x0
+ .rel.iplt      0x080069e4        0x0 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/crtbegin.o
 
-.preinit_array  0x08006908        0x0
-                0x08006908                . = ALIGN (0x4)
-                0x08006908                PROVIDE (__preinit_array_start, .)
+.preinit_array  0x080069e4        0x0
+                0x080069e4                . = ALIGN (0x4)
+                0x080069e4                PROVIDE (__preinit_array_start, .)
  *(.preinit_array*)
-                0x08006908                PROVIDE (__preinit_array_end, .)
-                0x08006908                . = ALIGN (0x4)
+                0x080069e4                PROVIDE (__preinit_array_end, .)
+                0x080069e4                . = ALIGN (0x4)
 
-.init_array     0x08006908        0x4
-                0x08006908                . = ALIGN (0x4)
-                0x08006908                PROVIDE (__init_array_start, .)
+.init_array     0x080069e4        0x4
+                0x080069e4                . = ALIGN (0x4)
+                0x080069e4                PROVIDE (__init_array_start, .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array*)
- .init_array    0x08006908        0x4 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/crtbegin.o
-                0x0800690c                PROVIDE (__init_array_end, .)
-                0x0800690c                . = ALIGN (0x4)
+ .init_array    0x080069e4        0x4 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/crtbegin.o
+                0x080069e8                PROVIDE (__init_array_end, .)
+                0x080069e8                . = ALIGN (0x4)
 
-.fini_array     0x0800690c        0x4
-                0x0800690c                . = ALIGN (0x4)
+.fini_array     0x080069e8        0x4
+                0x080069e8                . = ALIGN (0x4)
                 [!provide]                PROVIDE (__fini_array_start, .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x0800690c        0x4 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/crtbegin.o
+ .fini_array    0x080069e8        0x4 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/crtbegin.o
                 [!provide]                PROVIDE (__fini_array_end, .)
-                0x08006910                . = ALIGN (0x4)
-                0x08006910                _sidata = LOADADDR (.data)
+                0x080069ec                . = ALIGN (0x4)
+                0x080069ec                _sidata = LOADADDR (.data)
 
-.data           0x20000000       0x7c load address 0x08006910
+.data           0x20000000       0x7c load address 0x080069ec
                 0x20000000                . = ALIGN (0x4)
                 0x20000000                _sdata = .
  *(.data)
@@ -4844,12 +4845,12 @@ LOAD c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/..
  *(.RamFunc*)
                 0x2000007c                . = ALIGN (0x4)
                 0x2000007c                _edata = .
-                0x0800698c                _siccmram = LOADADDR (.ccmram)
+                0x08006a68                _siccmram = LOADADDR (.ccmram)
 
-.igot.plt       0x2000007c        0x0 load address 0x0800698c
+.igot.plt       0x2000007c        0x0 load address 0x08006a68
  .igot.plt      0x2000007c        0x0 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/crtbegin.o
 
-.ccmram         0x10000000        0x0 load address 0x0800698c
+.ccmram         0x10000000        0x0 load address 0x08006a68
                 0x10000000                . = ALIGN (0x4)
                 0x10000000                _sccmram = .
  *(.ccmram)
@@ -4951,119 +4952,121 @@ LOAD c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/..
  .ARM.attributes
                 0x00000118       0x33 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_gpio.o
  .ARM.attributes
-                0x0000014b       0x33 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_rcc.o
+                0x0000014b       0x33 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_pwr_ex.o
  .ARM.attributes
-                0x0000017e       0x33 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_sd.o
+                0x0000017e       0x33 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_rcc.o
  .ARM.attributes
-                0x000001b1       0x33 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_uart.o
+                0x000001b1       0x33 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_sd.o
  .ARM.attributes
-                0x000001e4       0x33 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
+                0x000001e4       0x33 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_uart.o
  .ARM.attributes
-                0x00000217       0x33 .pio\build\STM32F429IG_BL\src\bootloader.o
+                0x00000217       0x33 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_ll_sdmmc.o
  .ARM.attributes
-                0x0000024a       0x33 .pio\build\STM32F429IG_BL\src\external_device\SD\sdcard.o
+                0x0000024a       0x33 .pio\build\STM32F429IG_BL\src\bootloader.o
  .ARM.attributes
-                0x0000027d       0x33 .pio\build\STM32F429IG_BL\src\hal\hal.o
+                0x0000027d       0x33 .pio\build\STM32F429IG_BL\src\external_device\SD\sdcard.o
  .ARM.attributes
-                0x000002b0       0x33 .pio\build\STM32F429IG_BL\src\hal\hal_flash.o
+                0x000002b0       0x33 .pio\build\STM32F429IG_BL\src\hal\hal.o
  .ARM.attributes
-                0x000002e3       0x33 .pio\build\STM32F429IG_BL\src\hal\hal_sdio.o
+                0x000002e3       0x33 .pio\build\STM32F429IG_BL\src\hal\hal_flash.o
  .ARM.attributes
-                0x00000316       0x33 .pio\build\STM32F429IG_BL\src\hal\hal_uart.o
+                0x00000316       0x33 .pio\build\STM32F429IG_BL\src\hal\hal_sdio.o
  .ARM.attributes
-                0x00000349       0x33 .pio\build\STM32F429IG_BL\src\main.o
+                0x00000349       0x33 .pio\build\STM32F429IG_BL\src\hal\hal_uart.o
  .ARM.attributes
-                0x0000037c       0x33 .pio\build\STM32F429IG_BL\src\mcu\stm32_f429_hal_system.o
+                0x0000037c       0x33 .pio\build\STM32F429IG_BL\src\main.o
  .ARM.attributes
-                0x000003af       0x33 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
+                0x000003af       0x33 .pio\build\STM32F429IG_BL\src\mcu\stm32_f429_hal_system.o
  .ARM.attributes
-                0x000003e2       0x33 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ffunicode.o)
+                0x000003e2       0x33 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ff.o)
  .ARM.attributes
-                0x00000415       0x33 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(diskio.o)
+                0x00000415       0x33 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(ffunicode.o)
  .ARM.attributes
-                0x00000448       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-impure.o)
+                0x00000448       0x33 .pio\build\STM32F429IG_BL\libac9\libfatfs.a(diskio.o)
  .ARM.attributes
-                0x00000476       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-init.o)
+                0x0000047b       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-impure.o)
  .ARM.attributes
-                0x000004a4       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-memcmp.o)
+                0x000004a9       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-init.o)
  .ARM.attributes
-                0x000004d2       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-memcpy-stub.o)
+                0x000004d7       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-memcmp.o)
  .ARM.attributes
-                0x00000500       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-memset.o)
+                0x00000505       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-memcpy-stub.o)
  .ARM.attributes
-                0x0000052e       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-printf.o)
+                0x00000533       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-memset.o)
  .ARM.attributes
-                0x0000055c       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-puts.o)
+                0x00000561       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-printf.o)
  .ARM.attributes
-                0x0000058a       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-strchr.o)
+                0x0000058f       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-puts.o)
  .ARM.attributes
-                0x000005b8       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-strcpy.o)
+                0x000005bd       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-strchr.o)
  .ARM.attributes
-                0x000005e6       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-wbuf.o)
+                0x000005eb       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-strcpy.o)
  .ARM.attributes
-                0x00000614       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-wsetup.o)
+                0x00000619       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-wbuf.o)
  .ARM.attributes
-                0x00000642       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-fflush.o)
+                0x00000647       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-wsetup.o)
  .ARM.attributes
-                0x00000670       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-findfp.o)
+                0x00000675       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-fflush.o)
  .ARM.attributes
-                0x0000069e       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-fwalk.o)
+                0x000006a3       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-findfp.o)
  .ARM.attributes
-                0x000006cc       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-makebuf.o)
+                0x000006d1       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-fwalk.o)
  .ARM.attributes
-                0x000006fa       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-nano-freer.o)
+                0x000006ff       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-makebuf.o)
  .ARM.attributes
-                0x00000728       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-nano-mallocr.o)
+                0x0000072d       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-nano-freer.o)
  .ARM.attributes
-                0x00000756       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-nano-vfprintf.o)
+                0x0000075b       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-nano-mallocr.o)
  .ARM.attributes
-                0x00000784       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-nano-vfprintf_i.o)
+                0x00000789       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-nano-vfprintf.o)
  .ARM.attributes
-                0x000007b2       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-sbrkr.o)
+                0x000007b7       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-nano-vfprintf_i.o)
  .ARM.attributes
-                0x000007e0       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-stdio.o)
+                0x000007e5       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-sbrkr.o)
  .ARM.attributes
-                0x0000080e       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-writer.o)
+                0x00000813       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-stdio.o)
  .ARM.attributes
-                0x0000083c       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-closer.o)
+                0x00000841       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-writer.o)
  .ARM.attributes
-                0x0000086a       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-fstatr.o)
+                0x0000086f       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-closer.o)
  .ARM.attributes
-                0x00000898       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-isattyr.o)
+                0x0000089d       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-fstatr.o)
  .ARM.attributes
-                0x000008c6       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-lseekr.o)
+                0x000008cb       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-isattyr.o)
  .ARM.attributes
-                0x000008f4       0x1c c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-memchr.o)
+                0x000008f9       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-lseekr.o)
  .ARM.attributes
-                0x00000910       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-mlock.o)
+                0x00000927       0x1c c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-memchr.o)
  .ARM.attributes
-                0x0000093e       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-readr.o)
+                0x00000943       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-mlock.o)
  .ARM.attributes
-                0x0000096c       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-reent.o)
+                0x00000971       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-readr.o)
  .ARM.attributes
-                0x0000099a       0x1e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m\libgcc.a(_aeabi_uldivmod.o)
+                0x0000099f       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-reent.o)
  .ARM.attributes
-                0x000009b8       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m\libgcc.a(_udivmoddi4.o)
+                0x000009cd       0x1e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m\libgcc.a(_aeabi_uldivmod.o)
  .ARM.attributes
-                0x000009e6       0x1e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m\libgcc.a(_dvmd_tls.o)
+                0x000009eb       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m\libgcc.a(_udivmoddi4.o)
  .ARM.attributes
-                0x00000a04       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libnosys.a(close.o)
+                0x00000a19       0x1e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m\libgcc.a(_dvmd_tls.o)
  .ARM.attributes
-                0x00000a32       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libnosys.a(fstat.o)
+                0x00000a37       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libnosys.a(close.o)
  .ARM.attributes
-                0x00000a60       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libnosys.a(isatty.o)
+                0x00000a65       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libnosys.a(fstat.o)
  .ARM.attributes
-                0x00000a8e       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libnosys.a(lseek.o)
+                0x00000a93       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libnosys.a(isatty.o)
  .ARM.attributes
-                0x00000abc       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libnosys.a(read.o)
+                0x00000ac1       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libnosys.a(lseek.o)
  .ARM.attributes
-                0x00000aea       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libnosys.a(sbrk.o)
+                0x00000aef       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libnosys.a(read.o)
  .ARM.attributes
-                0x00000b18       0x21 .pio\build\STM32F429IG_BL\libFrameworkCMSISDevice.a(startup_stm32f429xx.o)
+                0x00000b1d       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libnosys.a(sbrk.o)
  .ARM.attributes
-                0x00000b39       0x33 .pio\build\STM32F429IG_BL\libFrameworkCMSISDevice.a(system_stm32f4xx.o)
+                0x00000b4b       0x21 .pio\build\STM32F429IG_BL\libFrameworkCMSISDevice.a(startup_stm32f429xx.o)
  .ARM.attributes
-                0x00000b6c       0x1e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/crtn.o
+                0x00000b6c       0x33 .pio\build\STM32F429IG_BL\libFrameworkCMSISDevice.a(system_stm32f4xx.o)
+ .ARM.attributes
+                0x00000b9f       0x1e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/crtn.o
 OUTPUT(.pio\build\STM32F429IG_BL\firmware.elf elf32-littlearm)
 
 .comment        0x00000000       0x7e
@@ -5073,6 +5076,7 @@ OUTPUT(.pio\build\STM32F429IG_BL\firmware.elf elf32-littlearm)
  .comment       0x0000007e       0x7f .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_flash.o
  .comment       0x0000007e       0x7f .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_flash_ex.o
  .comment       0x0000007e       0x7f .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_gpio.o
+ .comment       0x0000007e       0x7f .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_pwr_ex.o
  .comment       0x0000007e       0x7f .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_rcc.o
  .comment       0x0000007e       0x7f .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_sd.o
  .comment       0x0000007e       0x7f .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal_uart.o

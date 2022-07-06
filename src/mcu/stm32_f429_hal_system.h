@@ -7,7 +7,7 @@
 
 /* Must settings */
 #define MCU_RAM         (64     *1024)
-#define MCU_FLASH       (256    *1024)
+#define MCU_FLASH       (4096   *1024)
 #define BL_SIZE         (32     *1024)
 #define BL_END_ADDR     ((uint32_t)0x8007fff) 
 #define APP_STAR_ADDR   ((uint32_t)0x8008000) 

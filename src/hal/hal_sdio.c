@@ -4,20 +4,33 @@ SD_HandleTypeDef sd_hsdio;
 
 #ifdef SD_CARD_SDIO
 
+static void WIFI_PDN_INIT(void)
+{
+	GPIO_InitTypeDef GPIO_InitStruct;
+	__HAL_RCC_GPIOG_CLK_ENABLE();															   
+	GPIO_InitStruct.Pin = GPIO_PIN_9;	
+	GPIO_InitStruct.Mode  = GPIO_MODE_OUTPUT_PP;      
+	GPIO_InitStruct.Pull  = GPIO_PULLUP;  
+	GPIO_InitStruct.Speed = GPIO_SPEED_FAST; 
+	HAL_GPIO_Init(GPIOG, &GPIO_InitStruct);	
+	HAL_GPIO_WritePin(GPIOG,GPIO_PIN_9,GPIO_PIN_RESET);  
+}
+
 static void sd_sdio_pin_init(void) {
 
     GPIO_InitTypeDef SDIO_GPIO_Init;
 
     _SD_GPIO_CLK_ENABLE();                          // Enable SDIO and GPIO Clock
 
+    WIFI_PDN_INIT();
+
     SDIO_GPIO_Init.Alternate = GPIO_AF12_SDIO;
     SDIO_GPIO_Init.Mode = GPIO_MODE_AF_PP;
-    SDIO_GPIO_Init.Pin = SD_SDIO_CMD_PIN|
-                        SD_SDIO_CLK_PIN|
-                        SD_SDIO_D0_PIN|
-                        SD_SDIO_D1_PIN|
-                        SD_SDIO_D2_PIN|
-                        SD_SDIO_D3_PIN;
+    SDIO_GPIO_Init.Pin = SD_SDIO_CLK_PIN|
+                         SD_SDIO_D0_PIN|
+                         SD_SDIO_D1_PIN|
+                         SD_SDIO_D2_PIN|
+                         SD_SDIO_D3_PIN;
     SDIO_GPIO_Init.Pull = GPIO_NOPULL;
     SDIO_GPIO_Init.Speed = GPIO_SPEED_FREQ_HIGH;
     HAL_GPIO_Init(SD_SDIO_CLK_PORT, &SDIO_GPIO_Init);
