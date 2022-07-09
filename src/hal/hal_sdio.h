@@ -38,6 +38,7 @@ extern SD_HandleTypeDef sd_hsdio;
 
 #endif
 
+static void WIFI_PDN_INIT(void);
 void hal_sd_init(void);
 void hal_sd_read_block(uint32_t *pData, uint32_t ReadAddr,uint32_t NumberOfBlocks);
 void hal_sd_write_block(uint32_t *pData, uint32_t WriteAddr,uint32_t NumberOfBlocks);
