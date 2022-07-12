@@ -1,22 +1,42 @@
 #include "bootloader.h"
-#include "core_cm4.h"
+// #include "core_cm4.h"
+// #include "core_cm0plus.h"
 
 hal_bootloader_t hal_bl;
 
-const char *FW_FILE_SD        = "1:/ZNP_ROBIN_DW.bin";
-const char *FW_OLD_FILE_SD    = "1:/ZNP_ROBIN_DW.CUR";
+#ifdef STM32G0xx
+typedef uint64_t _FLASH_SIZE_TYPE;
+#define SIZE_DIV    4
+#else 
+typedef uint32_t _FLASH_SIZE_TYPE;
+#define SIZE_DIV    2
+#endif
+
+
+#ifndef BL_NAME
+const char *FW_FILE_SD        = "1:/ROBIN_E3D_V2.bin";
+#else 
+const char *FW_FILE_SD        = BL_NAME;
+#endif
+
+#ifndef BL_OLD_NAME
+const char *FW_OLD_FILE_SD    = "1:/ROBIN_E3D_V2.CUR";
+#else
+const char *FW_OLD_FILE_SD    = BL_OLD_NAME;
+#endif
 
 char firmware_name_buff[FW_NAME_SIZE];
 char old_name_buff[FW_NAME_SIZE];
 
 uint32_t msp = 0;
 uint32_t reset = 0;
-UINT br;
+// UINT br;
 
 uint32_t EraseCounter = 0x00, Address = 0x00;//擦除计数，擦除地址
 
 uint8_t file_read_buff[1024];  // 用于装载读取回来的固件
-uint16_t *hlfP = (uint16_t *)file_read_buff;
+
+_FLASH_SIZE_TYPE *hlfP = (_FLASH_SIZE_TYPE *)file_read_buff;
 
 /* only support cortex-M */
 void nvic_set_vector_table(uint32_t NVIC_VectTab, uint32_t Offset) {
@@ -36,10 +56,21 @@ void bl_reset_systick(void) {
 
 void bl_erase_flash(void) {
 
-    hal_flash_erase();
+    /* A define at pins_xxx.h */
+    COMMON_FLASH_ERASE();
 }
 
-
+/****************************************************************************
+ * Why not use memset() ?
+ * After a certain period of testing, memset can achieve the same effect, 
+ * but when memset is executed, the array is not completely written to 0xff, 
+ * which may cause the data to be wrong. The effect is that the motherboard 
+ * cannot be powered on, and the running firmware is not completely correct.
+ * 
+ * Therefore, it is relatively stable to use the for loop to realize this 
+ * emptying function. Maybe different microcontrollers will have different 
+ * differences.
+ * *************************************************************************/
 void bufferSet(uint8_t* pBuffer, uint8_t data, uint16_t BufferLength)
 {
   uint16_t i;
@@ -53,9 +84,14 @@ uint32_t fw_size_count = 0;
 
 void bl_write_flash(void) {
 
-    FIL fil;
     Address = APP_STAR_ADDR;
-    
+
+    UINT br;
+
+    uint16_t persen = 0;
+
+    printf("[DEBUG]hal_sd.fw_file_size=%d\n",hal_sd.fw_file_size);
+
     while(1) {
 
         bufferSet(file_read_buff, 0xff, READ_FILE_PAGE_SIZE);
@@ -71,9 +107,9 @@ void bl_write_flash(void) {
             reset = *((uint32_t *)(file_read_buff + 4));
         }
 
-        hlfP = (uint16_t *)file_read_buff;
+        hlfP = (uint64_t *)file_read_buff;
 
-        hal_flash_write(Address, hlfP, READ_FILE_PAGE_SIZE / 2 );
+        COMMON_FLASH_WRITE(Address, hlfP, READ_FILE_PAGE_SIZE / SIZE_DIV);
 
 		Address += READ_FILE_PAGE_SIZE;
 
@@ -82,16 +118,15 @@ void bl_write_flash(void) {
             hal_flag.bit_read_finish = 1;
 
             break;
-        }; 
+        };
+        printf("Update..[%d]\n", (int)((fw_size_count*100)/(hal_sd.fw_file_size/1024))); 
     }
     DEBUG_PRINT("Upload size:%ldk", fw_size_count);
 }
 
-
-
 uint8_t bl_open_update_file(void) {
 
-    FIL fil;
+    // FIL fil;
     FRESULT fr;
     uint32_t file_size = 0;
 
@@ -111,7 +146,6 @@ uint8_t bl_open_update_file(void) {
         hal_sd.fw_file_size = fil.obj.objsize;
         bl_erase_flash();
         hal_flag.bit_open_file = 1;
-        
         return 0;
     }else {
         hal_flag.bit_open_file = 0;
@@ -121,8 +155,7 @@ uint8_t bl_open_update_file(void) {
 
 void bl_rename_file(void) {
 
-    FIL fil;
-
+    // FIL fil;
     f_close(&fil);
     f_unlink(hal_bl.fw_old_name_buf);
     f_rename(hal_bl.fw_name_buf, hal_bl.fw_old_name_buf);
@@ -196,7 +229,6 @@ void update_check(void) {
     is_need_update = bl_open_update_file();
 
     if(is_need_update == 0) {
-            
         hal_flag.bit_uploading = 1;
         jump_with_update();
     }
@@ -205,5 +237,3 @@ void update_check(void) {
         jump_without_update();
     }
 }
-
-

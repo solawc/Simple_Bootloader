@@ -18,8 +18,6 @@ uint8_t sd_wait_ready(void)
 	return 1;
 }
 
-
-
 void SD_DisSelect(void)
 {
 	hal_sd_disable();

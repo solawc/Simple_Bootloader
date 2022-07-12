@@ -104,6 +104,7 @@ c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/
 Allocating common symbols
 Common symbol       size              file
 
+
 hal_sd              0x38              .pio\build\STM32F429IG_BL\src\external_device\SD\sdcard.o
 debug_uart          0x44              .pio\build\STM32F429IG_BL\src\hal\hal_uart.o
 hal_flag            0x2               .pio\build\STM32F429IG_BL\src\hal\hal.o
@@ -4383,6 +4384,7 @@ FLASH            0x08000000         0x00100000         xr
 
 Linker script and memory map
 
+
 LOAD c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/crti.o
 LOAD c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/crtbegin.o
 LOAD c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/crt0.o
@@ -4516,15 +4518,19 @@ END GROUP
 LOAD c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/crtend.o
 LOAD c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/crtn.o
                 0x20030000                _estack = (ORIGIN (RAM) + LENGTH (RAM))
+
                 0x00000200                _Min_Heap_Size = 0x200
                 0x00000400                _Min_Stack_Size = 0x400
 
 .isr_vector     0x08000000      0x1ac
                 0x08000000                . = ALIGN (0x4)
  *(.isr_vector)
+
  .isr_vector    0x08000000      0x1ac .pio\build\STM32F429IG_BL\libFrameworkCMSISDevice.a(startup_stm32f429xx.o)
+
                 0x08000000                g_pfnVectors
                 0x080001ac                . = ALIGN (0x4)
+
 
 .text           0x080001b0     0x6234
                 0x080001b0                . = ALIGN (0x4)
@@ -5350,6 +5356,7 @@ LOAD c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/..
                 0x08006a1c                APBPrescTable
                 0x08006a24                . = ALIGN (0x4)
 
+
 .ARM.extab      0x08006a24        0x0
                 0x08006a24                . = ALIGN (0x4)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
@@ -5359,12 +5366,14 @@ LOAD c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/..
                 0x08006a24                . = ALIGN (0x4)
                 0x08006a24                __exidx_start = .
  *(.ARM.exidx*)
+
  .ARM.exidx     0x08006a24        0x8 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m\libgcc.a(_udivmoddi4.o)
                 0x08006a2c                __exidx_end = .
                 0x08006a2c                . = ALIGN (0x4)
 
 .rel.dyn        0x08006a2c        0x0
  .rel.iplt      0x08006a2c        0x0 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/crtbegin.o
+
 
 .preinit_array  0x08006a2c        0x0
                 0x08006a2c                . = ALIGN (0x4)
@@ -5378,16 +5387,20 @@ LOAD c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/..
                 0x08006a2c                PROVIDE (__init_array_start, .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array*)
+
  .init_array    0x08006a2c        0x4 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/crtbegin.o
                 0x08006a30                PROVIDE (__init_array_end, .)
                 0x08006a30                . = ALIGN (0x4)
+
 
 .fini_array     0x08006a30        0x4
                 0x08006a30                . = ALIGN (0x4)
                 [!provide]                PROVIDE (__fini_array_start, .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
+
  .fini_array    0x08006a30        0x4 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/crtbegin.o
+
                 [!provide]                PROVIDE (__fini_array_end, .)
                 0x08006a34                . = ALIGN (0x4)
                 0x08006a34                _sidata = LOADADDR (.data)
@@ -5398,6 +5411,7 @@ LOAD c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/..
  *(.data)
  *(.data*)
  .data.uwTickFreq
+
                 0x20000000        0x1 .pio\build\STM32F429IG_BL\FrameworkHALDriver\Src\stm32f4xx_hal.o
                 0x20000000                uwTickFreq
  *fill*         0x20000001        0x3 
@@ -5419,12 +5433,14 @@ LOAD c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/..
                 0x20000018       0x60 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m\libc_nano.a(lib_a-impure.o)
  .data.SystemCoreClock
                 0x20000078        0x4 .pio\build\STM32F429IG_BL\libFrameworkCMSISDevice.a(system_stm32f4xx.o)
+
                 0x20000078                SystemCoreClock
  *(.RamFunc)
  *(.RamFunc*)
                 0x2000007c                . = ALIGN (0x4)
                 0x2000007c                _edata = .
                 0x08006ab0                _siccmram = LOADADDR (.ccmram)
+
 
 .igot.plt       0x2000007c        0x0 load address 0x08006ab0
  .igot.plt      0x2000007c        0x0 c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/crtbegin.o
@@ -5473,10 +5489,12 @@ LOAD c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/..
  COMMON         0x20000114      0x48e .pio\build\STM32F429IG_BL\src\bootloader.o
                 0x20000114                hal_bl
                 0x20000160                br
+
                 0x20000164                old_name_buff
                 0x20000184                file_read_buff
                 0x20000584                firmware_name_buff
  *fill*         0x200005a2        0x2 
+
  COMMON         0x200005a4       0x84 .pio\build\STM32F429IG_BL\src\external_device\SD\sdcard.o
                 0x200005a4                hal_sd
                 0x200005dc                pCSD
@@ -5508,6 +5526,7 @@ LOAD c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/..
  *fill*         0x20000918      0x400 
                 0x20000d18                . = ALIGN (0x8)
 
+
 /DISCARD/
  libc.a(*)
  libm.a(*)
@@ -5517,6 +5536,7 @@ LOAD c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/..
                 0x00000000       0x2a
  *(.ARM.attributes)
  .ARM.attributes
+
                 0x00000000       0x1e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/crti.o
  .ARM.attributes
                 0x0000001e       0x2e c:/users/administrator/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/7.2.1/thumb/v7e-m/crtbegin.o

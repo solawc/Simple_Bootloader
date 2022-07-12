@@ -5,9 +5,6 @@
 
 void hal_stm32f407_system_init(void) {
 
-
-
-
 }
 
 void systick_init(void) {

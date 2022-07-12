@@ -16,7 +16,7 @@
  * speed need to set between 8M/s and 12M/s, is SD_SPI_SPEED
  *
 */
-#define SD_SPI_SPEED            SPI_BAUDRATEPRESCALER_2       
+#define SD_SPI_SPEED            SPI_BAUDRATEPRESCALER_4       
 #define SD_SPI_LOW_SPEED        SPI_BAUDRATEPRESCALER_256
 
 /* This is need to send a data to begein SPI, is a empty cmd*/
@@ -66,6 +66,7 @@
 
 typedef struct {
 
+
     uint8_t sd_type;                                /* 描述SD卡类型 */
     uint8_t is_has_sd;                              /* 0:no, 1: have */
     uint16_t fw_file_size;  
@@ -74,6 +75,19 @@ typedef struct {
     uint32_t sd_trans_speed;
     uint32_t sd_slow_speed;
     void    (*sd_set_speed)(uint32_t ); 
+
+    uint32_t sd_trans_speed;
+    uint32_t sd_slow_speed;
+
+    uint32_t fw_file_size;   
+    uint8_t sd_type;                                /* 描述SD卡类型 */
+    uint8_t is_has_sd;                              /* 0:no, 1: have */
+
+    uint8_t (*sd_get_status)(void);
+    uint8_t (*sd_trans_receive_data)(uint8_t );
+    void    (*sd_set_speed)(uint32_t );
+    void    (*sd_init)(void);                        
+
     void    (*sd_trans_enable)(void);
     void    (*sd_trans_disable)(void);                   
     uint8_t (*sd_trans_receive_data)(uint8_t );

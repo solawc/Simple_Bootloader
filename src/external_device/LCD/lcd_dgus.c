@@ -12,7 +12,7 @@ const uint8_t DGUS_CMD_READVAR = 0x83;
 
 uint8_t DGUS_RST_SCREEN = 0;
 uint8_t DGUS_STAT_SCREEN = 1;
-uint8_t DGUS_BOOT_SCREEN = 60;
+uint8_t DGUS_BOOT_SCREEN = 92;
 
 
 static void lcd_dgus_uart_gpio_init(void) {
@@ -84,7 +84,7 @@ void dgus_writeVariable(uint16_t adr, const void *values, uint8_t valueslen, boo
     dgus_write_header(adr, DGUS_CMD_WRITEVAR, valueslen);
 
     while (valueslen--) {
-    char x;
+    char x = 0;
     if (!strend) x = *myvalues++;
     if ((isstr && !x) || strend) {
       strend = true;
