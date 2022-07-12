@@ -7,7 +7,7 @@
 
 /* Must settings */
 #define MCU_RAM         (64     *1024)
-#define MCU_FLASH       (4096   *1024)
+#define MCU_FLASH       (1024   *1024)
 #define BL_SIZE         (32     *1024)
 #define BL_END_ADDR     ((uint32_t)0x8007fff) 
 #define APP_STAR_ADDR   ((uint32_t)0x8008000) 
@@ -20,6 +20,12 @@
 #define ADDR_FLASH_SECTOR_4     ((uint32_t)0x08010000) 	//扇区4起始地址, 64 Kbytes  
 #define ADDR_FLASH_SECTOR_5     ((uint32_t)0x08020000) 	//扇区5起始地址, 128 Kbytes  
 #define ADDR_FLASH_SECTOR_6     ((uint32_t)0x08040000) 	//扇区6起始地址, 128 Kbytes 
+#define ADDR_FLASH_SECTOR_7     ((uint32_t)0x08060000) 	//扇区7起始地址, 128 Kbytes 
+#define ADDR_FLASH_SECTOR_8     ((uint32_t)0x08080000) 	//扇区8起始地址, 128 Kbytes 
+#define ADDR_FLASH_SECTOR_9    ((uint32_t)0x080A0000) 	//扇区9起始地址, 128 Kbytes 
+#define ADDR_FLASH_SECTOR_10    ((uint32_t)0x080C0000) 	//扇区10起始地址, 128 Kbytes 
+#define ADDR_FLASH_SECTOR_11    ((uint32_t)0x080E0000) 	//扇区11起始地址, 128 Kbytes 
+
 
 /**************************************************************************************/
 

@@ -18,11 +18,11 @@
 #endif
 
 #ifndef MCU_RAM
-#define MCU_RAM         64*1024     // default for STM32F401RC, is 64k RAM 
+#define MCU_RAM         256*1024     // default for STM32F401RC, is 256k RAM 
 #endif
 
 #ifndef MCU_FLASH
-#define MCU_FLASH       256*1024    // default for STM32F401RC is 256k Flash
+#define MCU_FLASH       1024*1024    // default for STM32F401RC is 1024k Flash
 #endif
 
 #ifndef BL_SIZE
