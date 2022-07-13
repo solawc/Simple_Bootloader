@@ -57,7 +57,7 @@ void hal_sd_enable(void) {
     HAL_GPIO_WritePin(SD_SPI_CS_PORT, SD_SPI_CS_PIN, GPIO_PIN_RESET);
 }
 
-void hal_sd_disable(void) {
+void hal_sd_disable(void) { 
     HAL_GPIO_WritePin(SD_SPI_CS_PORT, SD_SPI_CS_PIN, GPIO_PIN_SET);
 }
 

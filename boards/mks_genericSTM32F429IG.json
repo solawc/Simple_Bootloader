@@ -1,0 +1,44 @@
+{
+    "build": {
+      "core": "stm32",
+      "cpu": "cortex-m4",
+      "extra_flags": "-DSTM32F429xx -DSTM32F4xx",
+      "f_cpu": "180000000L",
+      "framework_extra_flags": {
+        "arduino": "-D__CORTEX_SC=0"
+      },
+      "mcu": "stm32f429igt6",
+      "product_line": "STM32F429xx",
+      "variant": "STM32F4xx/F429I(E-G-I)T"
+    },
+    "debug": {
+      "default_tools": [
+        "jlink"
+      ],
+      "jlink_device": "STM32F429IG",
+      "onboard_tools": [
+        "stlink"
+      ],
+      "openocd_target": "stm32f4x",
+      "svd_path": "STM32F42x.svd"
+    },
+    "frameworks": [
+      "arduino",
+      "cmsis",
+      "stm32cube"
+    ],
+    "name": "STM32F429IG (256k RAM. 2M Flash)",
+    "upload": {
+      "maximum_ram_size": 262144,
+      "maximum_size": 2465792,
+      "protocol": "jlink",
+      "protocols": [
+        "stlink",
+        "jlink",
+        "cmsis-dap",
+        "dfu"
+      ]
+    },
+    "url": "http://www.st.com/en/microcontrollers/stm32f429ig.html",
+    "vendor": "Generic"
+  }

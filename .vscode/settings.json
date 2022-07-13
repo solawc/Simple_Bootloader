@@ -21,9 +21,14 @@
         "hal_test.h": "c",
         "lcd_dgus.h": "c",
         "stm32_f407_hal_system.h": "c",
+
+        "hal_sdio.h": "c",
+        "string.h": "c"
+
         "pins_robin_e3.h": "c",
         "pins_robin_e3d.h": "c",
         "pins_znp_robin_nano_dw.h": "c",
         "pins_dlc_lg0.h": "c"
+
     }
 }

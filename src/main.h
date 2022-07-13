@@ -25,12 +25,20 @@
     #ifdef STM32F407xx
         #include "mcu/stm32_f407_hal_system.h"
     #endif
-#elif defined(STM32G0xx)
-    #include "stm32g0xx_hal.h"
-    #ifdef DLC_LG0_V2
-        #include "mcu/stm32_g0b0_hal_system.h"
-        #include "mcu/pins_map/pins_dlc_lg0.h"
+
+
+    #ifdef STM32F429xx
+        #include "mcu/stm32_f429_hal_system.h"
     #endif
+
+
+//#elif defined(STM32G0xx)
+//   #include "stm32g0xx_hal.h"
+//    #ifdef DLC_LG0_V2
+//        #include "mcu/stm32_g0b0_hal_system.h"
+//        #include "mcu/pins_map/pins_dlc_lg0.h"
+//    #endif
+
 #endif
 
 /* Common header files */
@@ -41,6 +49,7 @@
 #include "hal/hal.h"
 #include "hal/hal_uart.h"
 #include "hal/hal_spi.h"
+#include "hal/hal_sdio.h"
 #include "hal/hal_flash.h"
 #include "external_device/SD/sdcard.h"
 #include "external_device//LCD/lcd_dgus.h"
