@@ -12,10 +12,8 @@ void printf_info_init(void) {
     hal_info.is_has_u_disk = false;
     hal_info.mcu_freq = HAL_RCC_GetHCLKFreq() / 1000000;
     hal_info.mcu_size = (MCU_FLASH / 1024);
-
     hal_info.bl_size = BL_OFFSET;
     hal_info.app_size = hal_info.mcu_size - hal_info.bl_size;
-
 }
 
 

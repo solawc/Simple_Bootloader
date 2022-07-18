@@ -22,7 +22,6 @@
 #define ADDR_FLASH_SECTOR_7     ((uint32_t)0x08060000) 	//扇区6起始地址, 128 Kbytes 
 
 
-
 #define SYSTEM_INIT()           hal_stm32f407_system_init()
 
 void hal_stm32f407_system_init(void);

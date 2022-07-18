@@ -25,7 +25,6 @@
 /**************************************************************************************/
 
 #define SYSTEM_INIT()               hal_stm32f401_system_init()
-
 #define COMMON_FLASH_ERASE()        hal_flash_erase()
 #define COMMON_FLASH_WRITE(A,B,C)   hal_flash_write(A,B,C)
 

@@ -1,6 +1,4 @@
 #include "bootloader.h"
-// #include "core_cm4.h"
-// #include "core_cm0plus.h"
 
 hal_bootloader_t hal_bl;
 
