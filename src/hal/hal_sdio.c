@@ -1,5 +1,6 @@
 #include "hal_sdio.h"
 
+#if 0
 SD_HandleTypeDef sd_hsdio;
 
 #ifdef SD_CARD_SDIO
@@ -141,7 +142,7 @@ void hal_sd_register(void) {
 
 }
 
-
+#endif
 
 #endif
 

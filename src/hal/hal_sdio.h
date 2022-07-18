@@ -3,6 +3,8 @@
 
 #include "../main.h"
 
+#if 0
+
 extern SD_HandleTypeDef sd_hsdio;
 
 #ifdef  SD_USE_SDIO
@@ -48,5 +50,7 @@ void hal_sd_get_cardinfo(HAL_SD_CardInfoTypeDef *CardInfo);
 void hal_sd_get_cardcsd(HAL_SD_CardCSDTypeDef *pCSD);
 void hal_sd_deinit(void);
 void hal_sd_register(void);
+
+#endif
 
 #endif

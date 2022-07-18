@@ -26,7 +26,6 @@
 #endif
 
 #ifndef MCU_RAM
-
 #define MCU_RAM         256*1024     // default for STM32F401RC, is 256k RAM 
 #endif
 
@@ -49,9 +48,11 @@
 #ifndef BL_END_ADDR
 #define BL_END_ADDR             ((uint32_t)0x8007fff)       // Bootload end address
 #endif
+
 #ifndef APP_STAR_ADDR
 #define APP_STAR_ADDR           ((uint32_t)0x8008000)       // Jump to this addr to star app
 #endif
+
 #ifndef BL_OFFSET
 #define BL_OFFSET               ((uint32_t)0X8000)          // Set bootloader offset      
 #endif 
@@ -66,8 +67,8 @@
 #define HAS_SD_ON_BOARD
 #ifdef HAS_SD_ON_BOARD
 
-    //#define SD_USE_SPI
-    #define SD_USE_SDIO
+    #define SD_USE_SPI
+    // #define SD_USE_SDIO
 
     #ifdef SD_USE_SPI
         #ifdef SD_USE_SDIO

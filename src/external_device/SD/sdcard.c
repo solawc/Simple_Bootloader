@@ -2,9 +2,11 @@
 
 uint8_t  SD_Type=0;
 hal_sd_t hal_sd;
+
+#if 0
 HAL_SD_CardInfoTypeDef CardInfo;
 HAL_SD_CardCSDTypeDef pCSD;
-
+#endif
 
 #ifdef SD_CARD_SPI
 uint8_t sd_wait_ready(void)

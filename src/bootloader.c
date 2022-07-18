@@ -86,8 +86,6 @@ void bl_write_flash(void) {
 
     UINT br;
 
-    uint16_t persen = 0;
-
     printf("[DEBUG]hal_sd.fw_file_size=%d\n",hal_sd.fw_file_size);
 
     while(1) {

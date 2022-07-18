@@ -32,13 +32,12 @@
     #endif
 
 
-//#elif defined(STM32G0xx)
-//   #include "stm32g0xx_hal.h"
-//    #ifdef DLC_LG0_V2
-//        #include "mcu/stm32_g0b0_hal_system.h"
-//        #include "mcu/pins_map/pins_dlc_lg0.h"
-//    #endif
-
+#elif defined(STM32G0xx)
+  #include "stm32g0xx_hal.h"
+   #ifdef DLC_LG0_V2
+       #include "mcu/stm32_g0b0_hal_system.h"
+       #include "mcu/pins_map/pins_dlc_lg0.h"
+   #endif
 #endif
 
 /* Common header files */
