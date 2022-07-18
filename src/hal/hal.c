@@ -48,3 +48,5 @@ void printf_result_info(void) {
     if(hal_flag.bit_read_finish) hal_flag.bit_flag  |= 1 << 0;
     DEBUG_PRINT("Result:0x%x", hal_flag.bit_flag);
 }
+
+
