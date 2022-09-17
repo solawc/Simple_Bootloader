@@ -88,22 +88,17 @@ void bl_write_flash(void) {
 
     UINT br;
 
-    uint16_t persen = 0;
-
-    printf("[DEBUG]hal_sd.fw_file_size=%d\n",hal_sd.fw_file_size/1024);
+    printf("[DEBUG]hal_sd.fw_file_size=%ld\n", hal_sd.fw_file_size/1024);
 
     while(1) {
 
 #ifdef BOOT_LED_PORT
-        bsp_led_on();
+        bsp_led_toggle();
 #endif
+
         bufferSet(file_read_buff, 0xff, READ_FILE_PAGE_SIZE);
 
         f_read(&fil, file_read_buff, READ_FILE_PAGE_SIZE, &br);
-
-#ifdef BOOT_LED_PORT
-        bsp_led_off();
-#endif
 
         fw_size_count++;
 
@@ -114,8 +109,9 @@ void bl_write_flash(void) {
             reset = *((uint32_t *)(file_read_buff + 4));
         }
 
-        hlfP = (uint64_t *)file_read_buff;
-
+        // hlfP = (uint64_t *)file_read_buff;
+        hlfP = (_FLASH_SIZE_TYPE *)file_read_buff;
+        
         COMMON_FLASH_WRITE(Address, hlfP, READ_FILE_PAGE_SIZE / SIZE_DIV);
 
 		Address += READ_FILE_PAGE_SIZE;
@@ -126,7 +122,7 @@ void bl_write_flash(void) {
 
             break;
         };
-        printf("Update..[%d]\n", (int)((fw_size_count*100)/(hal_sd.fw_file_size/1024))); 
+        printf("Update...[%d]\n", (int)((fw_size_count*100)/(hal_sd.fw_file_size/1024))); 
     }
     DEBUG_PRINT("Upload size:%ldk", fw_size_count);
 }
@@ -265,4 +261,10 @@ void bsp_led_on(void) {
 void bsp_led_off(void) {
     HAL_GPIO_WritePin(BOOT_LED_PORT, BOOT_LED_PIN, GPIO_PIN_RESET);
 }
+
+void bsp_led_toggle(void) {
+
+    HAL_GPIO_TogglePin(BOOT_LED_PORT, BOOT_LED_PIN);
+}
+
 #endif
