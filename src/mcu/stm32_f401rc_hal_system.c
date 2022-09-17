@@ -39,7 +39,7 @@ void hal_stm32f401_system_init(void) {
 
     if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_2) != HAL_OK)
     {
-    Error_Handler();
+        Error_Handler();
     }
 }
 

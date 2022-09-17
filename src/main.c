@@ -19,6 +19,10 @@ int main(void) {
 
     hal_uart_init();        // init uart 
 
+#ifdef BOOT_LED_PORT
+    bsp_led_init();
+#endif
+
 #ifdef LCD_DGUS_DWIN
     lcd_dgus_init();        // init dgus uart
     HAL_Delay(2000);        // wait for dwin display setup
@@ -26,17 +30,7 @@ int main(void) {
 #endif
 
     hal_sd_register();      // register sd
-#ifdef STM32F429xx
 
-    fs_res = f_mount(&fs,"1:",1);
-        if(fs_res == FR_OK){
-            hal_sd.is_has_sd = 1;
-        }else {
-             hal_sd.is_has_sd = 0;
-        }
-#endif 
-
-#ifdef STM32F401xC
     if(!hal_sd.sd_get_status()) {
         fs_res = f_mount(&fs,"1:",1);
         if(fs_res == FR_OK){
@@ -45,9 +39,8 @@ int main(void) {
              hal_sd.is_has_sd = 0;
         }
     }else{
-       hal_sd.is_has_sd = 0; 
+        hal_sd.is_has_sd = 0; 
     }
-#endif
     
     printf_info(); 
      

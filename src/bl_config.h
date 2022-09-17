@@ -3,12 +3,10 @@
 
 // set bootload version num
 
+// #define CUSTOM_BOARD_NAME
 
-//#define CUSTOM_BOARD_NAME       
-
-#define BOOTLOAD_VERSION        "V0.1"
-#define BOOTLOAD_DATE           "2022-07-06"
-
+#define BOOTLOAD_VERSION        "V0.4"
+#define BOOTLOAD_DATE           "2022-09-17"
 #ifndef CUSTOM_BOARD_NAME
 
 #ifdef MKS_BOARD_NAME
@@ -26,12 +24,12 @@
 #endif
 
 #ifndef MCU_RAM
+#define MCU_RAM                 64*1024     // default for STM32F401RC, is 64k RAM 
 
-#define MCU_RAM         256*1024     // default for STM32F401RC, is 256k RAM 
 #endif
 
 #ifndef MCU_FLASH
-#define MCU_FLASH       1024*1024    // default for STM32F401RC is 1024k Flash
+#define MCU_FLASH               256*1024    // default for STM32F401RC is 256k Flash
 
 #endif
 
@@ -66,8 +64,8 @@
 #define HAS_SD_ON_BOARD
 #ifdef HAS_SD_ON_BOARD
 
-    //#define SD_USE_SPI
-    #define SD_USE_SDIO
+    #define SD_USE_SPI
+    // #define SD_USE_SDIO
 
     #ifdef SD_USE_SPI
         #ifdef SD_USE_SDIO

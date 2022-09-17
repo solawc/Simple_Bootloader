@@ -1,4 +1,6 @@
 #include "bootloader.h"
+// #include "core_cm4.h"
+// #include "core_cm0plus.h"
 
 hal_bootloader_t hal_bl;
 
@@ -88,13 +90,20 @@ void bl_write_flash(void) {
 
     uint16_t persen = 0;
 
-    printf("[DEBUG]hal_sd.fw_file_size=%d\n",hal_sd.fw_file_size);
+    printf("[DEBUG]hal_sd.fw_file_size=%d\n",hal_sd.fw_file_size/1024);
 
     while(1) {
 
+#ifdef BOOT_LED_PORT
+        bsp_led_on();
+#endif
         bufferSet(file_read_buff, 0xff, READ_FILE_PAGE_SIZE);
 
         f_read(&fil, file_read_buff, READ_FILE_PAGE_SIZE, &br);
+
+#ifdef BOOT_LED_PORT
+        bsp_led_off();
+#endif
 
         fw_size_count++;
 
@@ -235,3 +244,25 @@ void update_check(void) {
         jump_without_update();
     }
 }
+
+#ifdef BOOT_LED_PORT
+void bsp_led_init(void) {
+
+    __HAL_RCC_GPIOB_CLK_ENABLE();
+
+    GPIO_InitTypeDef GPIO_Init;
+    GPIO_Init.Mode = GPIO_MODE_OUTPUT_PP;
+    GPIO_Init.Pin = BOOT_LED_PIN;
+    GPIO_Init.Pull = GPIO_NOPULL;
+    GPIO_Init.Speed = GPIO_SPEED_FREQ_HIGH;
+    HAL_GPIO_Init(BOOT_LED_PORT, &GPIO_Init);
+}
+
+void bsp_led_on(void) {
+    HAL_GPIO_WritePin(BOOT_LED_PORT, BOOT_LED_PIN, GPIO_PIN_SET);
+}
+
+void bsp_led_off(void) {
+    HAL_GPIO_WritePin(BOOT_LED_PORT, BOOT_LED_PIN, GPIO_PIN_RESET);
+}
+#endif
