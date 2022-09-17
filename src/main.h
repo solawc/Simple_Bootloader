@@ -19,6 +19,8 @@
             #include "mcu/pins_map/pins_robin_e3d.h"
         #elif defined(ZNP_ROBIN_DW)
             #include "mcu/pins_map/pins_znp_robin_nano_dw.h"
+        #elif defined(MKS_DLC_LG0_V3)
+            #include "mcu/pins_map/pins_mks_dlc32_lg0_v3.h"
         #endif
     #endif
 
