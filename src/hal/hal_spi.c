@@ -16,19 +16,19 @@ static void sd_spi_pin_init(void) {
                         SD_SPI_MOSI_PIN|
                         SD_SPI_SCK_PIN;
     SPI_GPIO_Init.Pull = GPIO_NOPULL;
-    SPI_GPIO_Init.Speed = GPIO_SPEED_FREQ_HIGH;
+    SPI_GPIO_Init.Speed = GPIO_SPEED_FREQ_LOW;
     HAL_GPIO_Init(SD_SPI_SCK_PORT, &SPI_GPIO_Init);
 
     SPI_GPIO_Init.Mode = GPIO_MODE_OUTPUT_PP;
     SPI_GPIO_Init.Pin = SD_SPI_CS_PIN;
     SPI_GPIO_Init.Pull = GPIO_PULLUP;
-    SPI_GPIO_Init.Speed = GPIO_SPEED_FREQ_HIGH;
+    SPI_GPIO_Init.Speed = GPIO_SPEED_FREQ_LOW;
     HAL_GPIO_Init(SD_SPI_CS_PORT, &SPI_GPIO_Init);
 
     SPI_GPIO_Init.Mode = GPIO_MODE_INPUT;
     SPI_GPIO_Init.Pin = SD_DET_PIN;
     SPI_GPIO_Init.Pull = GPIO_NOPULL;
-    SPI_GPIO_Init.Speed = GPIO_SPEED_FREQ_HIGH;
+    SPI_GPIO_Init.Speed = GPIO_SPEED_FREQ_LOW;
     HAL_GPIO_Init(SD_DET_PORT, &SPI_GPIO_Init);
 }
 
@@ -46,8 +46,7 @@ static void sd_spi_init(void) {
     sd_hspi.Init.Mode = SPI_MODE_MASTER;
     sd_hspi.Init.NSS = SPI_NSS_SOFT;
     sd_hspi.Init.TIMode = SPI_TIMODE_DISABLE;
-    if (HAL_SPI_Init(&sd_hspi) != HAL_OK)
-    {
+    if (HAL_SPI_Init(&sd_hspi) != HAL_OK) {
         Error_Handler();
     }
     __HAL_SPI_ENABLE(&sd_hspi);
@@ -57,7 +56,7 @@ void hal_sd_enable(void) {
     HAL_GPIO_WritePin(SD_SPI_CS_PORT, SD_SPI_CS_PIN, GPIO_PIN_RESET);
 }
 
-void hal_sd_disable(void) { 
+void hal_sd_disable(void) {
     HAL_GPIO_WritePin(SD_SPI_CS_PORT, SD_SPI_CS_PIN, GPIO_PIN_SET);
 }
 
@@ -95,14 +94,20 @@ uint32_t hal_sd_spi_speed_get(SPI_HandleTypeDef *hspi) {
     uint16_t get_clk = (HAL_RCC_GetHCLKFreq() / 1000000) / 2; 
 
     uint8_t sd_spi_min_clk_div = get_clk / 8;       // 8兆需要高分频
-    uint8_t sd_spi_max_clk_div = get_clk / 12;
 
-    if((sd_spi_max_clk_div>=2) && (sd_spi_min_clk_div<4)) return SPI_BAUDRATEPRESCALER_2;
-    else if((sd_spi_max_clk_div>=4) && (sd_spi_min_clk_div<8))  return SPI_BAUDRATEPRESCALER_4;
-    else if((sd_spi_max_clk_div>=8) && (sd_spi_min_clk_div<16))  return SPI_BAUDRATEPRESCALER_8;
-    else if((sd_spi_max_clk_div>=16) && (sd_spi_min_clk_div<32))  return SPI_BAUDRATEPRESCALER_16;
-    else if((sd_spi_max_clk_div>=32) && (sd_spi_min_clk_div<64))  return SPI_BAUDRATEPRESCALER_32;
-    else    return SPI_BAUDRATEPRESCALER_256;
+    // if((sd_spi_max_clk_div>=2) && (sd_spi_min_clk_div<4)) return SPI_BAUDRATEPRESCALER_2;
+    // else if((sd_spi_max_clk_div>=4) && (sd_spi_min_clk_div<8))  return SPI_BAUDRATEPRESCALER_4;
+    // else if((sd_spi_max_clk_div>=8) && (sd_spi_min_clk_div<16))  return SPI_BAUDRATEPRESCALER_8;
+    // else if((sd_spi_max_clk_div>=16) && (sd_spi_min_clk_div<32))  return SPI_BAUDRATEPRESCALER_16;
+    // else if((sd_spi_max_clk_div>=32) && (sd_spi_min_clk_div<64))  return SPI_BAUDRATEPRESCALER_32;
+    // else    return SPI_BAUDRATEPRESCALER_256;
+
+    if(sd_spi_min_clk_div <= 2)         return SPI_BAUDRATEPRESCALER_2;
+    else if(sd_spi_min_clk_div <= 4)    return SPI_BAUDRATEPRESCALER_4;
+    else if(sd_spi_min_clk_div <= 8)    return SPI_BAUDRATEPRESCALER_8;
+    else if(sd_spi_min_clk_div <= 16)    return SPI_BAUDRATEPRESCALER_16;
+    else if(sd_spi_min_clk_div <= 32)    return SPI_BAUDRATEPRESCALER_32;
+    else return SPI_BAUDRATEPRESCALER_256;
 }
 
 void hal_sd_register(void) {    
@@ -113,7 +118,7 @@ void hal_sd_register(void) {
     hal_sd.sd_trans_disable = hal_sd_disable;
     hal_sd.sd_set_speed = hal_sd_set_speed;
     hal_sd.sd_get_status = hal_sd_det_read;
-    hal_sd.sd_trans_speed = SPI_BAUDRATEPRESCALER_4; // hal_sd_spi_speed_get(&sd_hspi);
+    hal_sd.sd_trans_speed = hal_sd_spi_speed_get(&sd_hspi);
     hal_sd.sd_slow_speed = SPI_BAUDRATEPRESCALER_256;
 
     hal_sd.sd_init();

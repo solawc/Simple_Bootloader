@@ -6,6 +6,8 @@
 #define BL_NAME             "1:/DLC_LG0_V2.bin"
 #define BL_OLD_NAME         "1:/DLC_LG0_V2.CUR"
 
+
+
 #define BOARD_SD_SPI                    SPI1
 #define BOARD_SD_SCK_PORT               GPIOA
 #define BOARD_SD_SCK_PIN                GPIO_PIN_5
@@ -28,6 +30,7 @@
                                         __HAL_RCC_GPIOC_CLK_DISABLE();\
                                         __HAL_RCC_SPI1_CLK_DISABLE()
 
+
 #define DEBUG_UART		                USART2
 #define DEBUG_UART_IRQn                 UART_IRQn(USART2)
 #define DEBUG_UART_CLK_ENABLE()         __HAL_UART_CLK(USART2)
@@ -39,5 +42,8 @@
 #define DEBUG_UART_RX_PIN               GPIO_PIN_3
 #define DEBUG_UART_AF_MODE              GPIO_AF1_USART2
 #define DEBUG_UART_IRQHANDLER           USART2_IRQHandler
+
+
+
 
 #endif

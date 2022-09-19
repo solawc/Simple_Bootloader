@@ -3,39 +3,24 @@
 
 // set bootload version num
 
+// #define CUSTOM_BOARD_NAME
 
-//#define CUSTOM_BOARD_NAME       
-
-#define BOOTLOAD_VERSION        "V0.1"
-#define BOOTLOAD_DATE           "2022-07-06"
-
+#define BOOTLOAD_VERSION                "V0.4"
+#define BOOTLOAD_DATE                   "2022-09-17"
 #ifndef CUSTOM_BOARD_NAME
 
 #ifdef MKS_BOARD_NAME
-    #define BOARD_NAME              MKS_BOARD_NAME
+    #define BOARD_NAME                  MKS_BOARD_NAME
 #else
-    #define BOARD_NAME              "MKS MotherBoard"
+    #define BOARD_NAME                  "MKS MotherBoard"
 #endif
 
 #else 
-#define BOARD_NAME              "ZNP Robin Nano_DW V2.0"
+#define BOARD_NAME                      "ZNP Robin Nano_DW V2.0"
 #endif
 
 #ifndef MCU_FREQ
-#define MCU_FREQ                F_CPU
-#endif
-
-#ifndef MCU_RAM
-#define MCU_RAM         256*1024     // default for STM32F401RC, is 256k RAM 
-#endif
-
-#ifndef MCU_FLASH
-#define MCU_FLASH       1024*1024    // default for STM32F401RC is 1024k Flash
-
-#endif
-
-#ifndef BL_SIZE
-#define BL_SIZE                 32*1024
+#define MCU_FREQ                        F_CPU
 #endif
 
 /* Enabled bootload if you want know debug info. */
@@ -46,15 +31,13 @@
 
 // set bootload address   
 #ifndef BL_END_ADDR
-#define BL_END_ADDR             ((uint32_t)0x8007fff)       // Bootload end address
+#define BL_END_ADDR             ((uint32_t)0x8007fff)       /* Bootload end address */ 
 #endif
-
 #ifndef APP_STAR_ADDR
-#define APP_STAR_ADDR           ((uint32_t)0x8008000)       // Jump to this addr to star app
+#define APP_STAR_ADDR           ((uint32_t)0x8008000)       /* Jump to this addr to star app */ 
 #endif
-
 #ifndef BL_OFFSET
-#define BL_OFFSET               ((uint32_t)0X8000)          // Set bootloader offset      
+#define BL_OFFSET               ((uint32_t)0X8000)          /* Set bootloader offset */    
 #endif 
 
 /* Enabled W25qxx if need to write pic and font. */

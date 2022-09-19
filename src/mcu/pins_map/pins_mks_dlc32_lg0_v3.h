@@ -13,10 +13,10 @@
 #define BOARD_SD_MISO_PIN   GPIO_PIN_14
 #define BOARD_SD_MOSI_PORT  GPIOB
 #define BOARD_SD_MOSI_PIN   GPIO_PIN_15
-#define BOARD_SD_CS_PORT    GPIOA
-#define BOARD_SD_CS_PIN     GPIO_PIN_15
-#define BOARD_SD_DET_PORT   GPIOC
-#define BOARD_SD_DET_PIN    GPIO_PIN_10
+#define BOARD_SD_CS_PORT    GPIOB
+#define BOARD_SD_CS_PIN     GPIO_PIN_12
+#define BOARD_SD_DET_PORT   GPIOA
+#define BOARD_SD_DET_PIN    GPIO_PIN_3
 #define BOARD_SD_GPIO_AF    GPIO_AF5_SPI2
 
 #define _SD_GPIO_CLK_ENABLE()   __HAL_RCC_GPIOB_CLK_ENABLE();\
@@ -40,8 +40,7 @@
 #define DEBUG_UART_AF_MODE              GPIO_AF7_USART1
 #define DEBUG_UART_IRQHANDLER           USART1_IRQHandler
 
-
-
-
+#define BOOT_LED_PORT                   GPIOB
+#define BOOT_LED_PIN                    GPIO_PIN_2
 
 #endif

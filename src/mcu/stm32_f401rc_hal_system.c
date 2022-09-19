@@ -39,7 +39,7 @@ void hal_stm32f401_system_init(void) {
 
     if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_2) != HAL_OK)
     {
-    Error_Handler();
+        Error_Handler();
     }
 }
 
@@ -101,7 +101,7 @@ uint8_t hal_flash_erase(void) {
     return 0;
 }
 
-void hal_flash_write(uint32_t addr ,uint16_t *buff, uint32_t num) {
+void hal_flash_write(uint32_t addr ,uint32_t *buff, uint32_t num) {
 
 	HAL_StatusTypeDef FlashStatus=HAL_OK;
 	uint32_t addrx=0;
@@ -120,13 +120,12 @@ void hal_flash_write(uint32_t addr ,uint16_t *buff, uint32_t num) {
 	{
 		 while(addrx < endaddr)//写数据
 		 {
-            status = HAL_FLASH_Program(FLASH_TYPEPROGRAM_HALFWORD, addrx, *buff);
-
-			if(status != HAL_OK)//写入数据
-			{ 
-				break;	//写入异常
-			}
-			addrx += 2;
+            status = HAL_FLASH_Program(FLASH_TYPEPROGRAM_WORD, addrx, *buff);
+            
+            /* 写入数据 */
+			if(status != HAL_OK) {  break;	}   /* 写入异常 */
+			
+			addrx += 4;//2;
 			buff++;
 		}  
 	}

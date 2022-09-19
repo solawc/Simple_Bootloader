@@ -10,6 +10,8 @@ typedef uint32_t _FLASH_SIZE_TYPE;
 #define SIZE_DIV    2
 #endif
 
+typedef uint32_t MSP_TYPE;
+typedef uint32_t RST_TYPE;
 
 #ifndef BL_NAME
 const char *FW_FILE_SD        = "1:/ROBIN_E3D_V2.bin";
@@ -26,15 +28,13 @@ const char *FW_OLD_FILE_SD    = BL_OLD_NAME;
 char firmware_name_buff[FW_NAME_SIZE];
 char old_name_buff[FW_NAME_SIZE];
 
-uint32_t msp = 0;
-uint32_t reset = 0;
-// UINT br;
+MSP_TYPE msp = 0;
+RST_TYPE reset = 0;
+uint32_t Address = 0x00;       //擦除计数，擦除地址
 
-uint32_t EraseCounter = 0x00, Address = 0x00;//擦除计数，擦除地址
+// uint8_t file_read_buff[1024];  // 用于装载读取回来的固件
 
-uint8_t file_read_buff[1024];  // 用于装载读取回来的固件
-
-_FLASH_SIZE_TYPE *hlfP = (_FLASH_SIZE_TYPE *)file_read_buff;
+_FLASH_SIZE_TYPE *hlfP; //= (_FLASH_SIZE_TYPE *)file_read_buff;
 
 /* only support cortex-M */
 void nvic_set_vector_table(uint32_t NVIC_VectTab, uint32_t Offset) {
@@ -86,9 +86,18 @@ void bl_write_flash(void) {
 
     UINT br;
 
-    printf("[DEBUG]hal_sd.fw_file_size=%d\n",hal_sd.fw_file_size);
+    // printf("[DEBUG]Firmware Size=%ldK\n", hal_sd.fw_file_size/1024);
+
+    INFO_PRINT("[DEBUG]Firmware Size=%ldK\n", hal_sd.fw_file_size/1024);
+
+    uint8_t *file_read_buff;
 
     while(1) {
+
+#ifdef BOOT_LED_PORT
+        bsp_led_toggle();
+#endif
+        file_read_buff = (uint8_t *)malloc(READ_FILE_PAGE_SIZE);
 
         bufferSet(file_read_buff, 0xff, READ_FILE_PAGE_SIZE);
 
@@ -103,9 +112,11 @@ void bl_write_flash(void) {
             reset = *((uint32_t *)(file_read_buff + 4));
         }
 
-        hlfP = (uint64_t *)file_read_buff;
-
+        hlfP = (_FLASH_SIZE_TYPE *)file_read_buff;
+        
         COMMON_FLASH_WRITE(Address, hlfP, READ_FILE_PAGE_SIZE / SIZE_DIV);
+
+        free(file_read_buff);
 
 		Address += READ_FILE_PAGE_SIZE;
 
@@ -115,14 +126,12 @@ void bl_write_flash(void) {
 
             break;
         };
-        printf("Update..[%d]\n", (int)((fw_size_count*100)/(hal_sd.fw_file_size/1024))); 
+        INFO_PRINT("Update...[%d%%]", (int)(((fw_size_count) * 100) / (hal_sd.fw_file_size / 1024))); 
     }
-    DEBUG_PRINT("Upload size:%ldk", fw_size_count);
 }
 
 uint8_t bl_open_update_file(void) {
 
-    // FIL fil;
     FRESULT fr;
     uint32_t file_size = 0;
 
@@ -136,7 +145,11 @@ uint8_t bl_open_update_file(void) {
 
     file_size = fil.obj.objsize;
 
-    if(file_size > (MCU_FLASH-BL_SIZE)) return 1;
+    if(file_size > (MCU_FLASH - BL_SIZE)) {
+
+        
+        return 1;
+    }
 
     if(fr == FR_OK) {
         hal_sd.fw_file_size = fil.obj.objsize;
@@ -233,3 +246,38 @@ void update_check(void) {
         jump_without_update();
     }
 }
+
+#ifdef BOOT_LED_PORT
+void bsp_led_init(void) {
+
+    __HAL_RCC_GPIOB_CLK_ENABLE();
+
+    GPIO_InitTypeDef GPIO_Init;
+    GPIO_Init.Mode = GPIO_MODE_OUTPUT_PP;
+    GPIO_Init.Pin = BOOT_LED_PIN;
+    GPIO_Init.Pull = GPIO_NOPULL;
+    GPIO_Init.Speed = GPIO_SPEED_FREQ_HIGH;
+    HAL_GPIO_Init(BOOT_LED_PORT, &GPIO_Init);
+}
+
+void bsp_led_on(void) {
+    HAL_GPIO_WritePin(BOOT_LED_PORT, BOOT_LED_PIN, GPIO_PIN_SET);
+}
+
+void bsp_led_off(void) {
+    HAL_GPIO_WritePin(BOOT_LED_PORT, BOOT_LED_PIN, GPIO_PIN_RESET);
+}
+
+void bsp_led_toggle(void) {
+
+    static uint8_t count = 0;
+    
+    if(count < 5) {
+        count++;
+    }else {
+        HAL_GPIO_TogglePin(BOOT_LED_PORT, BOOT_LED_PIN);
+        count = 0;
+    }
+}
+
+#endif

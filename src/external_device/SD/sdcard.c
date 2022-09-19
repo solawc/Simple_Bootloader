@@ -3,17 +3,11 @@
 uint8_t  SD_Type=0;
 hal_sd_t hal_sd;
 
-#if 0
-HAL_SD_CardInfoTypeDef CardInfo;
-HAL_SD_CardCSDTypeDef pCSD;
-#endif
-
-#ifdef SD_CARD_SPI
 uint8_t sd_wait_ready(void)
 {
 	uint32_t t=0;
 	do
-	{
+	{	
 		if(hal_sd.sd_trans_receive_data(0XFF)==0XFF) return 0;
 		t++;		  	
 	}while(t<0XFFFFFF);
@@ -24,17 +18,14 @@ void SD_DisSelect(void)
 {
 	hal_sd_disable();
  	hal_sd.sd_trans_receive_data(0xff);//提供额外的8个时钟
-
 }
 
 uint8_t SD_Select(void)
 {
-
 	hal_sd_enable();
 	if(sd_wait_ready()==0)return 0;//等待成功
 	SD_DisSelect();
 	return 1;//等待失败
-
 }
 
 //等待SD卡回应
@@ -155,7 +146,6 @@ uint8_t SD_GetCSD(uint8_t *csd_data)
 	if(r1)return 1;
 	else return 0;
 }  
-#endif
 
 
 //获取SD卡的总扇区数（扇区数）   
@@ -167,8 +157,7 @@ uint32_t SD_GetSectorCount(void)
     uint8_t csd[16];
     uint32_t Capacity;  
     uint8_t n;
-	uint16_t csize;  	
-	#ifdef SD_CARD_SPI				    
+	uint16_t csize;  					    
 	//取CSD信息，如果期间出错，返回0
     if(SD_GetCSD(csd)!=0) return 0;	    
     //如果为SDHC卡，按照下面方式计算
@@ -182,14 +171,6 @@ uint32_t SD_GetSectorCount(void)
 		csize = (csd[8] >> 6) + ((uint16_t)csd[7] << 2) + ((uint16_t)(csd[6] & 3) << 10) + 1;
 		Capacity= (uint32_t)csize << (n - 9);//得到扇区数   
     }
-	#endif
-
-	#ifdef SD_CARD_SDIO
-	//if(hal_sd.sd_get_cardcsd(&pCSD) != HAL_OK) return 0;
-	hal_sd.sd_get_cardinfo(&CardInfo);
-	Capacity = CardInfo.BlockNbr;
-	#endif
-
     return Capacity;
 }
 
@@ -203,7 +184,6 @@ uint8_t SD_Initialize(void)
 
     hal_sd_init();      // 初始化为低速模式
 
-	#ifdef SD_CARD_SPI
  	for( i= 0; i < 10; i++) hal_sd.sd_trans_receive_data(0XFF);//发送最少74个脉冲
 
 	retry=20;
@@ -272,14 +252,6 @@ uint8_t SD_Initialize(void)
 	}
 
 	return 0xaa;//其他错误
-	#endif
-
-	#ifdef SD_CARD_SDIO
-	r1 = HAL_SD_Init(&sd_hsdio);
-	return r1;
-	#endif
-
-	
 }
 
 //读SD卡
@@ -289,7 +261,6 @@ uint8_t SD_Initialize(void)
 //返回值:0,ok;其他,失败.
 uint8_t SD_ReadDisk(uint8_t*buf,uint32_t sector,uint8_t cnt)
 {
-	#ifdef SD_CARD_SPI
 	uint8_t r1;
 	if(SD_Type!=SD_TYPE_V2HC)sector <<= 9;//转换为字节地址
 	if(cnt==1)
@@ -310,13 +281,7 @@ uint8_t SD_ReadDisk(uint8_t*buf,uint32_t sector,uint8_t cnt)
 		SD_SendCmd_skyblue(CMD12,0,0X01);	//发送停止命令
 	}   
 	SD_DisSelect();//取消片选
-	return r1;
-	#endif
-
-	#ifdef SD_CARD_SDIO
-	hal_sd.sd_receive_data(buf,sector,cnt);
-	#endif
-	
+	return r1;//
 }
 
 //写SD卡
@@ -326,7 +291,6 @@ uint8_t SD_ReadDisk(uint8_t*buf,uint32_t sector,uint8_t cnt)
 //返回值:0,ok;其他,失败.
 uint8_t SD_WriteDisk(uint8_t*buf,uint32_t sector,uint8_t cnt)
 {
-	#ifdef SD_CARD_SPI
 	uint8_t r1;
 	if(SD_Type!=SD_TYPE_V2HC)sector *= 512;//转换为字节地址
 	if(cnt==1)
@@ -356,12 +320,6 @@ uint8_t SD_WriteDisk(uint8_t*buf,uint32_t sector,uint8_t cnt)
 	}   
 	SD_DisSelect();//取消片选
 	return r1;//
-	#endif
-
-	#ifdef SD_CARD_SDIO
-	hal_sd.sd_trans_data(buf,sector,cnt);	
-	#endif
-
 }	
 
 
