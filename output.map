@@ -3982,7 +3982,7 @@ LOAD c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206
 .iplt           0x00000000080059e8        0x0
  .iplt          0x00000000080059e8        0x0 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp/crtbegin.o
 
-.rodata         0x00000000080059e8      0x66c
+.rodata         0x00000000080059e8      0x670
                 0x00000000080059e8                . = ALIGN (0x4)
  *(.rodata)
  *(.rodata*)
@@ -3993,102 +3993,102 @@ LOAD c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206
                 0x0000000008005a38       0x26 .pio/build/MKS_DLC_LG0_V3_BL/src/bootloader.o
  *fill*         0x0000000008005a5e        0x2 
  .rodata.printf_info.str1.4
-                0x0000000008005a60       0x79 .pio/build/MKS_DLC_LG0_V3_BL/src/hal/hal.o
- *fill*         0x0000000008005ad9        0x3 
+                0x0000000008005a60       0x7d .pio/build/MKS_DLC_LG0_V3_BL/src/hal/hal.o
+ *fill*         0x0000000008005add        0x3 
  .rodata.printf_result_info.str1.4
-                0x0000000008005adc       0x1e .pio/build/MKS_DLC_LG0_V3_BL/src/hal/hal.o
- *fill*         0x0000000008005afa        0x2 
+                0x0000000008005ae0       0x1e .pio/build/MKS_DLC_LG0_V3_BL/src/hal/hal.o
+ *fill*         0x0000000008005afe        0x2 
  .rodata.main.str1.4
-                0x0000000008005afc        0x3 .pio/build/MKS_DLC_LG0_V3_BL/src/main.o
- *fill*         0x0000000008005aff        0x1 
+                0x0000000008005b00        0x3 .pio/build/MKS_DLC_LG0_V3_BL/src/main.o
+ *fill*         0x0000000008005b03        0x1 
  .rodata.check_fs.str1.4
-                0x0000000008005b00        0x9 .pio/build/MKS_DLC_LG0_V3_BL/lib234/libfatfs.a(ff.o)
- *fill*         0x0000000008005b09        0x3 
+                0x0000000008005b04        0x9 .pio/build/MKS_DLC_LG0_V3_BL/lib234/libfatfs.a(ff.o)
+ *fill*         0x0000000008005b0d        0x3 
  .rodata.create_name.str1.4
-                0x0000000008005b0c       0x13 .pio/build/MKS_DLC_LG0_V3_BL/lib234/libfatfs.a(ff.o)
- *fill*         0x0000000008005b1f        0x1 
- .rodata.ExCvt  0x0000000008005b20       0x80 .pio/build/MKS_DLC_LG0_V3_BL/lib234/libfatfs.a(ff.o)
+                0x0000000008005b10       0x13 .pio/build/MKS_DLC_LG0_V3_BL/lib234/libfatfs.a(ff.o)
+ *fill*         0x0000000008005b23        0x1 
+ .rodata.ExCvt  0x0000000008005b24       0x80 .pio/build/MKS_DLC_LG0_V3_BL/lib234/libfatfs.a(ff.o)
  .rodata.LfnOfs
-                0x0000000008005ba0        0xd .pio/build/MKS_DLC_LG0_V3_BL/lib234/libfatfs.a(ff.o)
- *fill*         0x0000000008005bad        0x3 
+                0x0000000008005ba4        0xd .pio/build/MKS_DLC_LG0_V3_BL/lib234/libfatfs.a(ff.o)
+ *fill*         0x0000000008005bb1        0x3 
  .rodata.cvt1.4431
-                0x0000000008005bb0      0x1f2 .pio/build/MKS_DLC_LG0_V3_BL/lib234/libfatfs.a(ffunicode.o)
- *fill*         0x0000000008005da2        0x2 
+                0x0000000008005bb4      0x1f2 .pio/build/MKS_DLC_LG0_V3_BL/lib234/libfatfs.a(ffunicode.o)
+ *fill*         0x0000000008005da6        0x2 
  .rodata.cvt2.4432
-                0x0000000008005da4       0xbc .pio/build/MKS_DLC_LG0_V3_BL/lib234/libfatfs.a(ffunicode.o)
- .rodata.uc437  0x0000000008005e60      0x100 .pio/build/MKS_DLC_LG0_V3_BL/lib234/libfatfs.a(ffunicode.o)
+                0x0000000008005da8       0xbc .pio/build/MKS_DLC_LG0_V3_BL/lib234/libfatfs.a(ffunicode.o)
+ .rodata.uc437  0x0000000008005e64      0x100 .pio/build/MKS_DLC_LG0_V3_BL/lib234/libfatfs.a(ffunicode.o)
  .rodata.disk_initialize.str1.4
-                0x0000000008005f60       0x41 .pio/build/MKS_DLC_LG0_V3_BL/lib234/libfatfs.a(diskio.o)
- *fill*         0x0000000008005fa1        0x3 
+                0x0000000008005f64       0x41 .pio/build/MKS_DLC_LG0_V3_BL/lib234/libfatfs.a(diskio.o)
+ *fill*         0x0000000008005fa5        0x3 
  .rodata._global_impure_ptr
-                0x0000000008005fa4        0x4 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-impure.o)
-                0x0000000008005fa4                _global_impure_ptr
+                0x0000000008005fa8        0x4 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-impure.o)
+                0x0000000008005fa8                _global_impure_ptr
  .rodata.__sf_fake_stderr
-                0x0000000008005fa8       0x20 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-findfp.o)
-                0x0000000008005fa8                __sf_fake_stderr
+                0x0000000008005fac       0x20 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-findfp.o)
+                0x0000000008005fac                __sf_fake_stderr
  .rodata.__sf_fake_stdin
-                0x0000000008005fc8       0x20 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-findfp.o)
-                0x0000000008005fc8                __sf_fake_stdin
+                0x0000000008005fcc       0x20 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-findfp.o)
+                0x0000000008005fcc                __sf_fake_stdin
  .rodata.__sf_fake_stdout
-                0x0000000008005fe8       0x20 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-findfp.o)
-                0x0000000008005fe8                __sf_fake_stdout
+                0x0000000008005fec       0x20 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-findfp.o)
+                0x0000000008005fec                __sf_fake_stdout
  .rodata._vfprintf_r.str1.1
-                0x0000000008006008       0x11 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-nano-vfprintf.o)
+                0x000000000800600c       0x11 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-nano-vfprintf.o)
  .rodata._printf_i.str1.1
-                0x0000000008006019       0x22 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-nano-vfprintf_i.o)
- *fill*         0x000000000800603b        0x1 
+                0x000000000800601d       0x22 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-nano-vfprintf_i.o)
+ *fill*         0x000000000800603f        0x1 
  .rodata.AHBPrescTable
-                0x000000000800603c       0x10 .pio/build/MKS_DLC_LG0_V3_BL/libFrameworkCMSISDevice.a(system_stm32f4xx.o)
-                0x000000000800603c                AHBPrescTable
+                0x0000000008006040       0x10 .pio/build/MKS_DLC_LG0_V3_BL/libFrameworkCMSISDevice.a(system_stm32f4xx.o)
+                0x0000000008006040                AHBPrescTable
  .rodata.APBPrescTable
-                0x000000000800604c        0x8 .pio/build/MKS_DLC_LG0_V3_BL/libFrameworkCMSISDevice.a(system_stm32f4xx.o)
-                0x000000000800604c                APBPrescTable
-                0x0000000008006054                . = ALIGN (0x4)
+                0x0000000008006050        0x8 .pio/build/MKS_DLC_LG0_V3_BL/libFrameworkCMSISDevice.a(system_stm32f4xx.o)
+                0x0000000008006050                APBPrescTable
+                0x0000000008006058                . = ALIGN (0x4)
 
-.ARM.extab      0x0000000008006054        0x0
-                0x0000000008006054                . = ALIGN (0x4)
+.ARM.extab      0x0000000008006058        0x0
+                0x0000000008006058                . = ALIGN (0x4)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x0000000008006054                . = ALIGN (0x4)
+                0x0000000008006058                . = ALIGN (0x4)
 
-.ARM            0x0000000008006054        0x8
-                0x0000000008006054                . = ALIGN (0x4)
-                0x0000000008006054                __exidx_start = .
+.ARM            0x0000000008006058        0x8
+                0x0000000008006058                . = ALIGN (0x4)
+                0x0000000008006058                __exidx_start = .
  *(.ARM.exidx*)
  .ARM.exidx.text.__udivmoddi4
-                0x0000000008006054        0x8 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp\libgcc.a(_udivmoddi4.o)
-                0x000000000800605c                __exidx_end = .
-                0x000000000800605c                . = ALIGN (0x4)
+                0x0000000008006058        0x8 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp\libgcc.a(_udivmoddi4.o)
+                0x0000000008006060                __exidx_end = .
+                0x0000000008006060                . = ALIGN (0x4)
 
-.rel.dyn        0x000000000800605c        0x0
- .rel.iplt      0x000000000800605c        0x0 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp/crtbegin.o
+.rel.dyn        0x0000000008006060        0x0
+ .rel.iplt      0x0000000008006060        0x0 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp/crtbegin.o
 
-.preinit_array  0x000000000800605c        0x0
-                0x000000000800605c                . = ALIGN (0x4)
-                0x000000000800605c                PROVIDE (__preinit_array_start = .)
+.preinit_array  0x0000000008006060        0x0
+                0x0000000008006060                . = ALIGN (0x4)
+                0x0000000008006060                PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x000000000800605c                PROVIDE (__preinit_array_end = .)
-                0x000000000800605c                . = ALIGN (0x4)
+                0x0000000008006060                PROVIDE (__preinit_array_end = .)
+                0x0000000008006060                . = ALIGN (0x4)
 
-.init_array     0x000000000800605c        0x4
-                0x000000000800605c                . = ALIGN (0x4)
-                0x000000000800605c                PROVIDE (__init_array_start = .)
+.init_array     0x0000000008006060        0x4
+                0x0000000008006060                . = ALIGN (0x4)
+                0x0000000008006060                PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array*)
- .init_array    0x000000000800605c        0x4 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp/crtbegin.o
-                0x0000000008006060                PROVIDE (__init_array_end = .)
-                0x0000000008006060                . = ALIGN (0x4)
+ .init_array    0x0000000008006060        0x4 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp/crtbegin.o
+                0x0000000008006064                PROVIDE (__init_array_end = .)
+                0x0000000008006064                . = ALIGN (0x4)
 
-.fini_array     0x0000000008006060        0x4
-                0x0000000008006060                . = ALIGN (0x4)
+.fini_array     0x0000000008006064        0x4
+                0x0000000008006064                . = ALIGN (0x4)
                 [!provide]                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x0000000008006060        0x4 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp/crtbegin.o
+ .fini_array    0x0000000008006064        0x4 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp/crtbegin.o
                 [!provide]                        PROVIDE (__fini_array_end = .)
-                0x0000000008006064                . = ALIGN (0x4)
-                0x0000000008006064                _sidata = LOADADDR (.data)
+                0x0000000008006068                . = ALIGN (0x4)
+                0x0000000008006068                _sidata = LOADADDR (.data)
 
-.data           0x0000000020000000       0x78 load address 0x0000000008006064
+.data           0x0000000020000000       0x78 load address 0x0000000008006068
                 0x0000000020000000                . = ALIGN (0x4)
                 0x0000000020000000                _sdata = .
  *(.data)
@@ -4119,11 +4119,11 @@ LOAD c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206
                 0x0000000020000078                . = ALIGN (0x4)
                 0x0000000020000078                _edata = .
 
-.igot.plt       0x0000000020000078        0x0 load address 0x00000000080060dc
+.igot.plt       0x0000000020000078        0x0 load address 0x00000000080060e0
  .igot.plt      0x0000000020000078        0x0 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp/crtbegin.o
                 0x0000000020000078                . = ALIGN (0x4)
 
-.bss            0x0000000020000078      0x458 load address 0x00000000080060dc
+.bss            0x0000000020000078      0x458 load address 0x00000000080060e0
                 0x0000000020000078                _sbss = .
                 0x0000000020000078                __bss_start__ = _sbss
  *(.bss)
@@ -4203,7 +4203,7 @@ LOAD c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206
                 0x00000000200004d0                __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x00000000200004d0      0x600 load address 0x00000000080060dc
+                0x00000000200004d0      0x600 load address 0x00000000080060e0
                 0x00000000200004d0                . = ALIGN (0x8)
                 0x00000000200004d0                PROVIDE (end = .)
                 [!provide]                        PROVIDE (_end = .)
