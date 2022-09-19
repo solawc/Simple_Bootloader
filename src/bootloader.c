@@ -264,7 +264,14 @@ void bsp_led_off(void) {
 
 void bsp_led_toggle(void) {
 
-    HAL_GPIO_TogglePin(BOOT_LED_PORT, BOOT_LED_PIN);
+    static uint8_t count = 0;
+    
+    if(count < 5) {
+        count++;
+    }else {
+        HAL_GPIO_TogglePin(BOOT_LED_PORT, BOOT_LED_PIN);
+        count = 0;
+    }
 }
 
 #endif
