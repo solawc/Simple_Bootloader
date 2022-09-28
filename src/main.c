@@ -29,8 +29,6 @@ int main(void) {
     jump_to_rst();          // reset dwin dispaly
 #endif
 
-    hal_sd_register();      // register sd
-
     if(!hal_sd.sd_get_status()) {
         fs_res = f_mount(&fs,"1:",1);
         if(fs_res == FR_OK){

@@ -1,5 +1,8 @@
 #include "sdcard.h"
 
+#include "sd_spi_drv.h"
+#include "sd_sdio_drv.h"
+
 uint8_t  SD_Type=0;
 hal_sd_t hal_sd;
 
@@ -16,13 +19,13 @@ uint8_t sd_wait_ready(void)
 
 void SD_DisSelect(void)
 {
-	hal_sd_disable();
+	BspSdEnd();
  	hal_sd.sd_trans_receive_data(0xff);//提供额外的8个时钟
 }
 
 uint8_t SD_Select(void)
 {
-	hal_sd_enable();
+	BspSdBegin();
 	if(sd_wait_ready()==0)return 0;//等待成功
 	SD_DisSelect();
 	return 1;//等待失败
@@ -182,7 +185,7 @@ uint8_t SD_Initialize(void)
     uint8_t buf[4];  
 	uint16_t i;
 
-    hal_sd_init();      // 初始化为低速模式
+	SdSpiDrvInit();
 
  	for( i= 0; i < 10; i++) hal_sd.sd_trans_receive_data(0XFF);//发送最少74个脉冲
 

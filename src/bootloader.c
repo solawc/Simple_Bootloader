@@ -191,7 +191,9 @@ void bl_jump_to_app(uint32_t sect, uint32_t Msp, uint32_t reset_msp) {
     jump_to_star();
 #endif
 
-    hal_sd_deinit();
+    // hal_sd_deinit();
+
+    SdSpiDrvDeinit();
 
     SysTick->CTRL &= ~ SysTick_CTRL_ENABLE_Msk;
 
