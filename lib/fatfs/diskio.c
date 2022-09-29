@@ -16,7 +16,7 @@
 #define DEV_MMC		1	/* Example: Map MMC/SD card to physical drive 1 */
 // #define DEV_USB		2	/* Example: Map USB MSD to physical drive 2 */
 
-#define SD_BLOCKSIZE 512
+#define SD_BLOCKSIZE 		512
 #define FLASH_SECTOR_SIZE 	512
 
 /*-----------------------------------------------------------------------*/
@@ -51,7 +51,7 @@ DSTATUS disk_initialize (
 	int result = 0;
 	switch (pdrv) {
 		case DEV_MMC :
-			result = SD_Initialize();				/* Init SDcard */
+			result = hal_sd.sd_init(); 				/* Init SDcard */
 
 			if (result == 0) {	 stat = RES_OK;
 			}else { stat = RES_ERROR; }
@@ -79,11 +79,11 @@ DRESULT disk_read (
 	switch (pdrv) {
 
 	case DEV_MMC :
-		res = SD_ReadDisk(buff, sector, count);
+		res = hal_sd.SdReadBuffer(buff, sector, count);
 		while(res)//读出错
 		{
-			SD_Initialize();	//重新初始化SD卡
-			res = SD_ReadDisk(buff,sector,count);	
+			hal_sd.sd_init();	//重新初始化SD卡
+			res = hal_sd.SdReadBuffer(buff,sector,count);
 		}
 		// translate the reslut code here
 		if(res == 0x00) return RES_OK;
@@ -112,13 +112,11 @@ DRESULT disk_write (
 	DRESULT res;
 	switch (pdrv) {
 	case DEV_MMC :
-		// translate the arguments here
-
-		res= SD_WriteDisk((uint8_t*)buff,sector,count);
+		res = hal_sd.SdWriteBuffer((uint8_t*)buff,sector,count);
 		while(res)//写出错
 		{
-			SD_Initialize();	//重新初始化SD卡
-			res = SD_WriteDisk((uint8_t*)buff,sector,count);	
+			hal_sd.sd_init(); //重新初始化SD卡
+			res = hal_sd.SdWriteBuffer((uint8_t*)buff,sector,count);	
 		}
 		// translate the reslut code here
 		return res;
@@ -156,7 +154,7 @@ DRESULT disk_ioctl (
 				break;
 
 			case GET_SECTOR_COUNT:
-				*(DWORD*)buff = SD_GetSectorCount();
+				*(DWORD*)buff = hal_sd.SdGetSector(); // SD_GetSectorCount();
 				res = RES_OK;
 				break;
 			

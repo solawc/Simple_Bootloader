@@ -46,7 +46,6 @@ void hal_stm32f429_system_init(void) {
   {
     Error_Handler();
   }
-
 }
 
 void systick_init(void) {

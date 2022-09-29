@@ -108,7 +108,7 @@ c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/
 Allocating common symbols
 Common symbol       size              file
 
-hal_sd              0x24              .pio/build/MKS_DLC_LG0_V3_BL/src/external_device/SD/sdcard.o
+hal_sd              0x20              .pio/build/MKS_DLC_LG0_V3_BL/src/external_device/SD/sdcard.o
 __lock___atexit_recursive_mutex
                     0x1               c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-lock.o)
 __lock___arc4random_mutex
@@ -590,8 +590,6 @@ Discarded input sections
  .bss           0x0000000000000000        0x0 .pio/build/MKS_DLC_LG0_V3_BL/FrameworkHALDriver/Src/stm32f4xx_hal_gpio.o
  .text.HAL_GPIO_DeInit
                 0x0000000000000000      0x110 .pio/build/MKS_DLC_LG0_V3_BL/FrameworkHALDriver/Src/stm32f4xx_hal_gpio.o
- .text.HAL_GPIO_ReadPin
-                0x0000000000000000        0xe .pio/build/MKS_DLC_LG0_V3_BL/FrameworkHALDriver/Src/stm32f4xx_hal_gpio.o
  .text.HAL_GPIO_LockPin
                 0x0000000000000000       0x2e .pio/build/MKS_DLC_LG0_V3_BL/FrameworkHALDriver/Src/stm32f4xx_hal_gpio.o
  .text.HAL_GPIO_EXTI_Callback
@@ -1820,16 +1818,10 @@ Discarded input sections
                 0x0000000000000000       0x68 .pio/build/MKS_DLC_LG0_V3_BL/FrameworkHALDriver/Src/stm32f4xx_hal_spi.o
  .text.SPI_AbortTx_ISR
                 0x0000000000000000       0x1c .pio/build/MKS_DLC_LG0_V3_BL/FrameworkHALDriver/Src/stm32f4xx_hal_spi.o
- .text.SPI_WaitFlagStateUntilTimeout
-                0x0000000000000000       0xd0 .pio/build/MKS_DLC_LG0_V3_BL/FrameworkHALDriver/Src/stm32f4xx_hal_spi.o
- .text.SPI_EndRxTxTransaction
-                0x0000000000000000       0x68 .pio/build/MKS_DLC_LG0_V3_BL/FrameworkHALDriver/Src/stm32f4xx_hal_spi.o
  .text.SPI_EndRxTransaction
                 0x0000000000000000       0x8c .pio/build/MKS_DLC_LG0_V3_BL/FrameworkHALDriver/Src/stm32f4xx_hal_spi.o
  .text.HAL_SPI_Transmit
                 0x0000000000000000      0x1e0 .pio/build/MKS_DLC_LG0_V3_BL/FrameworkHALDriver/Src/stm32f4xx_hal_spi.o
- .text.HAL_SPI_TransmitReceive
-                0x0000000000000000      0x2e8 .pio/build/MKS_DLC_LG0_V3_BL/FrameworkHALDriver/Src/stm32f4xx_hal_spi.o
  .text.HAL_SPI_Receive
                 0x0000000000000000      0x228 .pio/build/MKS_DLC_LG0_V3_BL/FrameworkHALDriver/Src/stm32f4xx_hal_spi.o
  .text.HAL_SPI_Transmit_IT
@@ -2853,19 +2845,10 @@ Discarded input sections
  .bss           0x0000000000000000        0x0 .pio/build/MKS_DLC_LG0_V3_BL/src/external_device/SD/sd_spi_drv.o
  .text.BspSdSetSpeed
                 0x0000000000000000       0x1c .pio/build/MKS_DLC_LG0_V3_BL/src/external_device/SD/sd_spi_drv.o
- .text.BspSdSpiWait
-                0x0000000000000000       0x1a .pio/build/MKS_DLC_LG0_V3_BL/src/external_device/SD/sd_spi_drv.o
- .text.BspSdSpiReadWriteByte
-                0x0000000000000000       0x34 .pio/build/MKS_DLC_LG0_V3_BL/src/external_device/SD/sd_spi_drv.o
- .text.BspDetRead
-                0x0000000000000000       0x14 .pio/build/MKS_DLC_LG0_V3_BL/src/external_device/SD/sd_spi_drv.o
- .text.BspSpiAutoSpeed
-                0x0000000000000000       0x40 .pio/build/MKS_DLC_LG0_V3_BL/src/external_device/SD/sd_spi_drv.o
+ .text.SdGetID  0x0000000000000000       0x2a .pio/build/MKS_DLC_LG0_V3_BL/src/external_device/SD/sd_spi_drv.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_DLC_LG0_V3_BL/src/external_device/SD/sdcard.o
  .data          0x0000000000000000        0x0 .pio/build/MKS_DLC_LG0_V3_BL/src/external_device/SD/sdcard.o
  .bss           0x0000000000000000        0x0 .pio/build/MKS_DLC_LG0_V3_BL/src/external_device/SD/sdcard.o
- .text.SD_GetCID
-                0x0000000000000000       0x2a .pio/build/MKS_DLC_LG0_V3_BL/src/external_device/SD/sdcard.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_DLC_LG0_V3_BL/src/hal/hal.o
  .data          0x0000000000000000        0x0 .pio/build/MKS_DLC_LG0_V3_BL/src/hal/hal.o
  .bss           0x0000000000000000        0x0 .pio/build/MKS_DLC_LG0_V3_BL/src/hal/hal.o
@@ -3356,7 +3339,7 @@ LOAD c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206
                 0x0000000008000000                g_pfnVectors
                 0x0000000008000194                . = ALIGN (0x4)
 
-.text           0x00000000080001a0     0x530c
+.text           0x00000000080001a0     0x57d4
                 0x00000000080001a0                . = ALIGN (0x4)
  *(.text)
  .text          0x00000000080001a0       0xa0 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-memchr.o)
@@ -3435,665 +3418,684 @@ LOAD c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206
  .text.HAL_GPIO_Init
                 0x0000000008000804      0x1b0 .pio/build/MKS_DLC_LG0_V3_BL/FrameworkHALDriver/Src/stm32f4xx_hal_gpio.o
                 0x0000000008000804                HAL_GPIO_Init
+ .text.HAL_GPIO_ReadPin
+                0x00000000080009b4        0xe .pio/build/MKS_DLC_LG0_V3_BL/FrameworkHALDriver/Src/stm32f4xx_hal_gpio.o
+                0x00000000080009b4                HAL_GPIO_ReadPin
  .text.HAL_GPIO_WritePin
-                0x00000000080009b4        0xc .pio/build/MKS_DLC_LG0_V3_BL/FrameworkHALDriver/Src/stm32f4xx_hal_gpio.o
-                0x00000000080009b4                HAL_GPIO_WritePin
+                0x00000000080009c2        0xc .pio/build/MKS_DLC_LG0_V3_BL/FrameworkHALDriver/Src/stm32f4xx_hal_gpio.o
+                0x00000000080009c2                HAL_GPIO_WritePin
  .text.HAL_GPIO_TogglePin
-                0x00000000080009c0       0x12 .pio/build/MKS_DLC_LG0_V3_BL/FrameworkHALDriver/Src/stm32f4xx_hal_gpio.o
-                0x00000000080009c0                HAL_GPIO_TogglePin
- *fill*         0x00000000080009d2        0x2 
+                0x00000000080009ce       0x12 .pio/build/MKS_DLC_LG0_V3_BL/FrameworkHALDriver/Src/stm32f4xx_hal_gpio.o
+                0x00000000080009ce                HAL_GPIO_TogglePin
  .text.HAL_RCC_OscConfig
-                0x00000000080009d4      0x3f8 .pio/build/MKS_DLC_LG0_V3_BL/FrameworkHALDriver/Src/stm32f4xx_hal_rcc.o
-                0x00000000080009d4                HAL_RCC_OscConfig
+                0x00000000080009e0      0x3f8 .pio/build/MKS_DLC_LG0_V3_BL/FrameworkHALDriver/Src/stm32f4xx_hal_rcc.o
+                0x00000000080009e0                HAL_RCC_OscConfig
  .text.HAL_RCC_GetSysClockFreq
-                0x0000000008000dcc       0xcc .pio/build/MKS_DLC_LG0_V3_BL/FrameworkHALDriver/Src/stm32f4xx_hal_rcc.o
-                0x0000000008000dcc                HAL_RCC_GetSysClockFreq
+                0x0000000008000dd8       0xcc .pio/build/MKS_DLC_LG0_V3_BL/FrameworkHALDriver/Src/stm32f4xx_hal_rcc.o
+                0x0000000008000dd8                HAL_RCC_GetSysClockFreq
  .text.HAL_RCC_ClockConfig
-                0x0000000008000e98      0x160 .pio/build/MKS_DLC_LG0_V3_BL/FrameworkHALDriver/Src/stm32f4xx_hal_rcc.o
-                0x0000000008000e98                HAL_RCC_ClockConfig
+                0x0000000008000ea4      0x160 .pio/build/MKS_DLC_LG0_V3_BL/FrameworkHALDriver/Src/stm32f4xx_hal_rcc.o
+                0x0000000008000ea4                HAL_RCC_ClockConfig
  .text.HAL_RCC_GetHCLKFreq
-                0x0000000008000ff8        0xc .pio/build/MKS_DLC_LG0_V3_BL/FrameworkHALDriver/Src/stm32f4xx_hal_rcc.o
-                0x0000000008000ff8                HAL_RCC_GetHCLKFreq
+                0x0000000008001004        0xc .pio/build/MKS_DLC_LG0_V3_BL/FrameworkHALDriver/Src/stm32f4xx_hal_rcc.o
+                0x0000000008001004                HAL_RCC_GetHCLKFreq
  .text.HAL_RCC_GetPCLK1Freq
-                0x0000000008001004       0x20 .pio/build/MKS_DLC_LG0_V3_BL/FrameworkHALDriver/Src/stm32f4xx_hal_rcc.o
-                0x0000000008001004                HAL_RCC_GetPCLK1Freq
+                0x0000000008001010       0x20 .pio/build/MKS_DLC_LG0_V3_BL/FrameworkHALDriver/Src/stm32f4xx_hal_rcc.o
+                0x0000000008001010                HAL_RCC_GetPCLK1Freq
  .text.HAL_RCC_GetPCLK2Freq
-                0x0000000008001024       0x20 .pio/build/MKS_DLC_LG0_V3_BL/FrameworkHALDriver/Src/stm32f4xx_hal_rcc.o
-                0x0000000008001024                HAL_RCC_GetPCLK2Freq
+                0x0000000008001030       0x20 .pio/build/MKS_DLC_LG0_V3_BL/FrameworkHALDriver/Src/stm32f4xx_hal_rcc.o
+                0x0000000008001030                HAL_RCC_GetPCLK2Freq
+ .text.SPI_WaitFlagStateUntilTimeout
+                0x0000000008001050       0xd0 .pio/build/MKS_DLC_LG0_V3_BL/FrameworkHALDriver/Src/stm32f4xx_hal_spi.o
+ .text.SPI_EndRxTxTransaction
+                0x0000000008001120       0x68 .pio/build/MKS_DLC_LG0_V3_BL/FrameworkHALDriver/Src/stm32f4xx_hal_spi.o
  .text.HAL_SPI_MspInit
-                0x0000000008001044        0x2 .pio/build/MKS_DLC_LG0_V3_BL/FrameworkHALDriver/Src/stm32f4xx_hal_spi.o
-                0x0000000008001044                HAL_SPI_MspInit
+                0x0000000008001188        0x2 .pio/build/MKS_DLC_LG0_V3_BL/FrameworkHALDriver/Src/stm32f4xx_hal_spi.o
+                0x0000000008001188                HAL_SPI_MspInit
  .text.HAL_SPI_Init
-                0x0000000008001046       0xca .pio/build/MKS_DLC_LG0_V3_BL/FrameworkHALDriver/Src/stm32f4xx_hal_spi.o
-                0x0000000008001046                HAL_SPI_Init
+                0x000000000800118a       0xca .pio/build/MKS_DLC_LG0_V3_BL/FrameworkHALDriver/Src/stm32f4xx_hal_spi.o
+                0x000000000800118a                HAL_SPI_Init
  .text.HAL_SPI_MspDeInit
-                0x0000000008001110        0x2 .pio/build/MKS_DLC_LG0_V3_BL/FrameworkHALDriver/Src/stm32f4xx_hal_spi.o
-                0x0000000008001110                HAL_SPI_MspDeInit
+                0x0000000008001254        0x2 .pio/build/MKS_DLC_LG0_V3_BL/FrameworkHALDriver/Src/stm32f4xx_hal_spi.o
+                0x0000000008001254                HAL_SPI_MspDeInit
  .text.HAL_SPI_DeInit
-                0x0000000008001112       0x2c .pio/build/MKS_DLC_LG0_V3_BL/FrameworkHALDriver/Src/stm32f4xx_hal_spi.o
-                0x0000000008001112                HAL_SPI_DeInit
- *fill*         0x000000000800113e        0x2 
+                0x0000000008001256       0x2c .pio/build/MKS_DLC_LG0_V3_BL/FrameworkHALDriver/Src/stm32f4xx_hal_spi.o
+                0x0000000008001256                HAL_SPI_DeInit
+ .text.HAL_SPI_TransmitReceive
+                0x0000000008001282      0x2e8 .pio/build/MKS_DLC_LG0_V3_BL/FrameworkHALDriver/Src/stm32f4xx_hal_spi.o
+                0x0000000008001282                HAL_SPI_TransmitReceive
+ *fill*         0x000000000800156a        0x2 
  .text.UART_SetConfig
-                0x0000000008001140      0x11c .pio/build/MKS_DLC_LG0_V3_BL/FrameworkHALDriver/Src/stm32f4xx_hal_uart.o
+                0x000000000800156c      0x11c .pio/build/MKS_DLC_LG0_V3_BL/FrameworkHALDriver/Src/stm32f4xx_hal_uart.o
  .text.UART_WaitOnFlagUntilTimeout
-                0x000000000800125c       0x84 .pio/build/MKS_DLC_LG0_V3_BL/FrameworkHALDriver/Src/stm32f4xx_hal_uart.o
+                0x0000000008001688       0x84 .pio/build/MKS_DLC_LG0_V3_BL/FrameworkHALDriver/Src/stm32f4xx_hal_uart.o
  .text.HAL_UART_MspInit
-                0x00000000080012e0        0x2 .pio/build/MKS_DLC_LG0_V3_BL/FrameworkHALDriver/Src/stm32f4xx_hal_uart.o
-                0x00000000080012e0                HAL_UART_MspInit
+                0x000000000800170c        0x2 .pio/build/MKS_DLC_LG0_V3_BL/FrameworkHALDriver/Src/stm32f4xx_hal_uart.o
+                0x000000000800170c                HAL_UART_MspInit
  .text.HAL_UART_Init
-                0x00000000080012e2       0x5e .pio/build/MKS_DLC_LG0_V3_BL/FrameworkHALDriver/Src/stm32f4xx_hal_uart.o
-                0x00000000080012e2                HAL_UART_Init
+                0x000000000800170e       0x5e .pio/build/MKS_DLC_LG0_V3_BL/FrameworkHALDriver/Src/stm32f4xx_hal_uart.o
+                0x000000000800170e                HAL_UART_Init
  .text.HAL_UART_Transmit
-                0x0000000008001340       0xd8 .pio/build/MKS_DLC_LG0_V3_BL/FrameworkHALDriver/Src/stm32f4xx_hal_uart.o
-                0x0000000008001340                HAL_UART_Transmit
+                0x000000000800176c       0xd8 .pio/build/MKS_DLC_LG0_V3_BL/FrameworkHALDriver/Src/stm32f4xx_hal_uart.o
+                0x000000000800176c                HAL_UART_Transmit
  .text.nvic_set_vector_table
-                0x0000000008001418       0x14 .pio/build/MKS_DLC_LG0_V3_BL/src/bootloader.o
-                0x0000000008001418                nvic_set_vector_table
+                0x0000000008001844       0x14 .pio/build/MKS_DLC_LG0_V3_BL/src/bootloader.o
+                0x0000000008001844                nvic_set_vector_table
  .text.bl_erase_flash
-                0x000000000800142c        0x8 .pio/build/MKS_DLC_LG0_V3_BL/src/bootloader.o
-                0x000000000800142c                bl_erase_flash
+                0x0000000008001858        0x8 .pio/build/MKS_DLC_LG0_V3_BL/src/bootloader.o
+                0x0000000008001858                bl_erase_flash
  .text.bufferSet
-                0x0000000008001434       0x10 .pio/build/MKS_DLC_LG0_V3_BL/src/bootloader.o
-                0x0000000008001434                bufferSet
+                0x0000000008001860       0x10 .pio/build/MKS_DLC_LG0_V3_BL/src/bootloader.o
+                0x0000000008001860                bufferSet
  .text.bl_open_update_file
-                0x0000000008001444       0x8c .pio/build/MKS_DLC_LG0_V3_BL/src/bootloader.o
-                0x0000000008001444                bl_open_update_file
+                0x0000000008001870       0x8c .pio/build/MKS_DLC_LG0_V3_BL/src/bootloader.o
+                0x0000000008001870                bl_open_update_file
  .text.bl_rename_file
-                0x00000000080014d0       0x24 .pio/build/MKS_DLC_LG0_V3_BL/src/bootloader.o
-                0x00000000080014d0                bl_rename_file
+                0x00000000080018fc       0x24 .pio/build/MKS_DLC_LG0_V3_BL/src/bootloader.o
+                0x00000000080018fc                bl_rename_file
  .text.bl_jump_to_app
-                0x00000000080014f4       0x38 .pio/build/MKS_DLC_LG0_V3_BL/src/bootloader.o
-                0x00000000080014f4                bl_jump_to_app
+                0x0000000008001920       0x38 .pio/build/MKS_DLC_LG0_V3_BL/src/bootloader.o
+                0x0000000008001920                bl_jump_to_app
  .text.jump_without_update
-                0x000000000800152c       0x2c .pio/build/MKS_DLC_LG0_V3_BL/src/bootloader.o
-                0x000000000800152c                jump_without_update
+                0x0000000008001958       0x2c .pio/build/MKS_DLC_LG0_V3_BL/src/bootloader.o
+                0x0000000008001958                jump_without_update
  .text.bsp_led_init
-                0x0000000008001558       0x40 .pio/build/MKS_DLC_LG0_V3_BL/src/bootloader.o
-                0x0000000008001558                bsp_led_init
+                0x0000000008001984       0x40 .pio/build/MKS_DLC_LG0_V3_BL/src/bootloader.o
+                0x0000000008001984                bsp_led_init
  .text.bsp_led_toggle
-                0x0000000008001598       0x2c .pio/build/MKS_DLC_LG0_V3_BL/src/bootloader.o
-                0x0000000008001598                bsp_led_toggle
+                0x00000000080019c4       0x2c .pio/build/MKS_DLC_LG0_V3_BL/src/bootloader.o
+                0x00000000080019c4                bsp_led_toggle
  .text.bl_write_flash
-                0x00000000080015c4       0xe4 .pio/build/MKS_DLC_LG0_V3_BL/src/bootloader.o
-                0x00000000080015c4                bl_write_flash
+                0x00000000080019f0       0xe4 .pio/build/MKS_DLC_LG0_V3_BL/src/bootloader.o
+                0x00000000080019f0                bl_write_flash
  .text.jump_with_update
-                0x00000000080016a8       0x2c .pio/build/MKS_DLC_LG0_V3_BL/src/bootloader.o
-                0x00000000080016a8                jump_with_update
+                0x0000000008001ad4       0x2c .pio/build/MKS_DLC_LG0_V3_BL/src/bootloader.o
+                0x0000000008001ad4                jump_with_update
  .text.update_check
-                0x00000000080016d4       0x2c .pio/build/MKS_DLC_LG0_V3_BL/src/bootloader.o
-                0x00000000080016d4                update_check
+                0x0000000008001b00       0x2c .pio/build/MKS_DLC_LG0_V3_BL/src/bootloader.o
+                0x0000000008001b00                update_check
  .text.BspSdSpiGpioInit
-                0x0000000008001700       0xb0 .pio/build/MKS_DLC_LG0_V3_BL/src/external_device/SD/sd_spi_drv.o
+                0x0000000008001b2c       0xb0 .pio/build/MKS_DLC_LG0_V3_BL/src/external_device/SD/sd_spi_drv.o
  .text.BspSpiInit
-                0x00000000080017b0       0x50 .pio/build/MKS_DLC_LG0_V3_BL/src/external_device/SD/sd_spi_drv.o
+                0x0000000008001bdc       0x50 .pio/build/MKS_DLC_LG0_V3_BL/src/external_device/SD/sd_spi_drv.o
  .text.BspSdBegin
-                0x0000000008001800       0x14 .pio/build/MKS_DLC_LG0_V3_BL/src/external_device/SD/sd_spi_drv.o
-                0x0000000008001800                BspSdBegin
+                0x0000000008001c2c       0x14 .pio/build/MKS_DLC_LG0_V3_BL/src/external_device/SD/sd_spi_drv.o
+                0x0000000008001c2c                BspSdBegin
  .text.BspSdEnd
-                0x0000000008001814       0x14 .pio/build/MKS_DLC_LG0_V3_BL/src/external_device/SD/sd_spi_drv.o
-                0x0000000008001814                BspSdEnd
+                0x0000000008001c40       0x14 .pio/build/MKS_DLC_LG0_V3_BL/src/external_device/SD/sd_spi_drv.o
+                0x0000000008001c40                BspSdEnd
+ .text.BspSdSpiReadWriteByte
+                0x0000000008001c54       0x34 .pio/build/MKS_DLC_LG0_V3_BL/src/external_device/SD/sd_spi_drv.o
+                0x0000000008001c54                BspSdSpiReadWriteByte
+ .text.BspDetRead
+                0x0000000008001c88       0x14 .pio/build/MKS_DLC_LG0_V3_BL/src/external_device/SD/sd_spi_drv.o
+                0x0000000008001c88                BspDetRead
+ .text.BspSpiAutoSpeed
+                0x0000000008001c9c       0x40 .pio/build/MKS_DLC_LG0_V3_BL/src/external_device/SD/sd_spi_drv.o
+                0x0000000008001c9c                BspSpiAutoSpeed
+ .text.SdReadyWait
+                0x0000000008001cdc       0x20 .pio/build/MKS_DLC_LG0_V3_BL/src/external_device/SD/sd_spi_drv.o
+                0x0000000008001cdc                SdReadyWait
  .text.SdSpiDrvDeinit
-                0x0000000008001828       0x2c .pio/build/MKS_DLC_LG0_V3_BL/src/external_device/SD/sd_spi_drv.o
-                0x0000000008001828                SdSpiDrvDeinit
+                0x0000000008001cfc       0x2c .pio/build/MKS_DLC_LG0_V3_BL/src/external_device/SD/sd_spi_drv.o
+                0x0000000008001cfc                SdSpiDrvDeinit
  .text.SdSpiDrvInit
-                0x0000000008001854        0xc .pio/build/MKS_DLC_LG0_V3_BL/src/external_device/SD/sd_spi_drv.o
-                0x0000000008001854                SdSpiDrvInit
- .text.sd_wait_ready
-                0x0000000008001860       0x28 .pio/build/MKS_DLC_LG0_V3_BL/src/external_device/SD/sdcard.o
-                0x0000000008001860                sd_wait_ready
- .text.SD_DisSelect
-                0x0000000008001888       0x14 .pio/build/MKS_DLC_LG0_V3_BL/src/external_device/SD/sdcard.o
-                0x0000000008001888                SD_DisSelect
- .text.SD_Select
-                0x000000000800189c       0x16 .pio/build/MKS_DLC_LG0_V3_BL/src/external_device/SD/sdcard.o
-                0x000000000800189c                SD_Select
- *fill*         0x00000000080018b2        0x2 
- .text.SD_GetResponse_skyblue
-                0x00000000080018b4       0x2c .pio/build/MKS_DLC_LG0_V3_BL/src/external_device/SD/sdcard.o
-                0x00000000080018b4                SD_GetResponse_skyblue
- .text.SD_RecvData
-                0x00000000080018e0       0x40 .pio/build/MKS_DLC_LG0_V3_BL/src/external_device/SD/sdcard.o
-                0x00000000080018e0                SD_RecvData
- .text.SD_SendBlock
-                0x0000000008001920       0x5c .pio/build/MKS_DLC_LG0_V3_BL/src/external_device/SD/sdcard.o
-                0x0000000008001920                SD_SendBlock
- .text.SD_SendCmd_skyblue
-                0x000000000800197c       0x74 .pio/build/MKS_DLC_LG0_V3_BL/src/external_device/SD/sdcard.o
-                0x000000000800197c                SD_SendCmd_skyblue
- .text.SD_GetCSD
-                0x00000000080019f0       0x2a .pio/build/MKS_DLC_LG0_V3_BL/src/external_device/SD/sdcard.o
-                0x00000000080019f0                SD_GetCSD
- .text.SD_GetSectorCount
-                0x0000000008001a1a       0x74 .pio/build/MKS_DLC_LG0_V3_BL/src/external_device/SD/sdcard.o
-                0x0000000008001a1a                SD_GetSectorCount
- *fill*         0x0000000008001a8e        0x2 
- .text.SD_Initialize
-                0x0000000008001a90      0x1b4 .pio/build/MKS_DLC_LG0_V3_BL/src/external_device/SD/sdcard.o
-                0x0000000008001a90                SD_Initialize
- .text.SD_ReadDisk
-                0x0000000008001c44       0x6c .pio/build/MKS_DLC_LG0_V3_BL/src/external_device/SD/sdcard.o
-                0x0000000008001c44                SD_ReadDisk
- .text.SD_WriteDisk
-                0x0000000008001cb0       0x88 .pio/build/MKS_DLC_LG0_V3_BL/src/external_device/SD/sdcard.o
-                0x0000000008001cb0                SD_WriteDisk
+                0x0000000008001d28        0xc .pio/build/MKS_DLC_LG0_V3_BL/src/external_device/SD/sd_spi_drv.o
+                0x0000000008001d28                SdSpiDrvInit
+ .text.SdDisSelect
+                0x0000000008001d34        0xe .pio/build/MKS_DLC_LG0_V3_BL/src/external_device/SD/sd_spi_drv.o
+                0x0000000008001d34                SdDisSelect
+ .text.SdSelect
+                0x0000000008001d42       0x16 .pio/build/MKS_DLC_LG0_V3_BL/src/external_device/SD/sd_spi_drv.o
+                0x0000000008001d42                SdSelect
+ .text.SdGetResponseSkyblue
+                0x0000000008001d58       0x24 .pio/build/MKS_DLC_LG0_V3_BL/src/external_device/SD/sd_spi_drv.o
+                0x0000000008001d58                SdGetResponseSkyblue
+ .text.SdRecvData
+                0x0000000008001d7c       0x38 .pio/build/MKS_DLC_LG0_V3_BL/src/external_device/SD/sd_spi_drv.o
+                0x0000000008001d7c                SdRecvData
+ .text.SdSendBlock
+                0x0000000008001db4       0x50 .pio/build/MKS_DLC_LG0_V3_BL/src/external_device/SD/sd_spi_drv.o
+                0x0000000008001db4                SdSendBlock
+ .text.SdSendCmdSkyblue
+                0x0000000008001e04       0x68 .pio/build/MKS_DLC_LG0_V3_BL/src/external_device/SD/sd_spi_drv.o
+                0x0000000008001e04                SdSendCmdSkyblue
+ .text.SdGetCSD
+                0x0000000008001e6c       0x2a .pio/build/MKS_DLC_LG0_V3_BL/src/external_device/SD/sd_spi_drv.o
+                0x0000000008001e6c                SdGetCSD
+ .text.SdGetSectorCount
+                0x0000000008001e96       0x74 .pio/build/MKS_DLC_LG0_V3_BL/src/external_device/SD/sd_spi_drv.o
+                0x0000000008001e96                SdGetSectorCount
+ *fill*         0x0000000008001f0a        0x2 
+ .text.SdDrvInitAll
+                0x0000000008001f0c      0x1a4 .pio/build/MKS_DLC_LG0_V3_BL/src/external_device/SD/sd_spi_drv.o
+                0x0000000008001f0c                SdDrvInitAll
+ .text.SdSpiReadBuff
+                0x00000000080020b0       0x6c .pio/build/MKS_DLC_LG0_V3_BL/src/external_device/SD/sd_spi_drv.o
+                0x00000000080020b0                SdSpiReadBuff
+ .text.SdSpiWriteBuff
+                0x000000000800211c       0x88 .pio/build/MKS_DLC_LG0_V3_BL/src/external_device/SD/sd_spi_drv.o
+                0x000000000800211c                SdSpiWriteBuff
+ .text.SdcardApiReg
+                0x00000000080021a4       0x38 .pio/build/MKS_DLC_LG0_V3_BL/src/external_device/SD/sdcard.o
+                0x00000000080021a4                SdcardApiReg
  .text.printf_info_init
-                0x0000000008001d38       0x30 .pio/build/MKS_DLC_LG0_V3_BL/src/hal/hal.o
-                0x0000000008001d38                printf_info_init
+                0x00000000080021dc       0x30 .pio/build/MKS_DLC_LG0_V3_BL/src/hal/hal.o
+                0x00000000080021dc                printf_info_init
  .text.printf_info
-                0x0000000008001d68       0x5c .pio/build/MKS_DLC_LG0_V3_BL/src/hal/hal.o
-                0x0000000008001d68                printf_info
+                0x000000000800220c       0x5c .pio/build/MKS_DLC_LG0_V3_BL/src/hal/hal.o
+                0x000000000800220c                printf_info
  .text.printf_result_info
-                0x0000000008001dc4       0x80 .pio/build/MKS_DLC_LG0_V3_BL/src/hal/hal.o
-                0x0000000008001dc4                printf_result_info
+                0x0000000008002268       0x80 .pio/build/MKS_DLC_LG0_V3_BL/src/hal/hal.o
+                0x0000000008002268                printf_result_info
  .text.hal_uart_gpio_init
-                0x0000000008001e44       0x6c .pio/build/MKS_DLC_LG0_V3_BL/src/hal/hal_uart.o
-                0x0000000008001e44                hal_uart_gpio_init
+                0x00000000080022e8       0x6c .pio/build/MKS_DLC_LG0_V3_BL/src/hal/hal_uart.o
+                0x00000000080022e8                hal_uart_gpio_init
  .text.hal_uart_init
-                0x0000000008001eb0       0x38 .pio/build/MKS_DLC_LG0_V3_BL/src/hal/hal_uart.o
-                0x0000000008001eb0                hal_uart_init
- .text._write   0x0000000008001ee8       0x18 .pio/build/MKS_DLC_LG0_V3_BL/src/hal/hal_uart.o
-                0x0000000008001ee8                _write
- .text.main     0x0000000008001f00       0x68 .pio/build/MKS_DLC_LG0_V3_BL/src/main.o
-                0x0000000008001f00                main
+                0x0000000008002354       0x38 .pio/build/MKS_DLC_LG0_V3_BL/src/hal/hal_uart.o
+                0x0000000008002354                hal_uart_init
+ .text._write   0x000000000800238c       0x18 .pio/build/MKS_DLC_LG0_V3_BL/src/hal/hal_uart.o
+                0x000000000800238c                _write
+ .text.main     0x00000000080023a4       0x6c .pio/build/MKS_DLC_LG0_V3_BL/src/main.o
+                0x00000000080023a4                main
  .text.SysTick_Handler
-                0x0000000008001f68        0x8 .pio/build/MKS_DLC_LG0_V3_BL/src/main.o
-                0x0000000008001f68                SysTick_Handler
+                0x0000000008002410        0x8 .pio/build/MKS_DLC_LG0_V3_BL/src/main.o
+                0x0000000008002410                SysTick_Handler
  .text.HardFault_Handler
-                0x0000000008001f70        0x2 .pio/build/MKS_DLC_LG0_V3_BL/src/main.o
-                0x0000000008001f70                HardFault_Handler
+                0x0000000008002418        0x2 .pio/build/MKS_DLC_LG0_V3_BL/src/main.o
+                0x0000000008002418                HardFault_Handler
  .text.Error_Handler
-                0x0000000008001f72        0x4 .pio/build/MKS_DLC_LG0_V3_BL/src/mcu/stm32_f401rc_hal_system.o
-                0x0000000008001f72                Error_Handler
- *fill*         0x0000000008001f76        0x2 
+                0x000000000800241a        0x4 .pio/build/MKS_DLC_LG0_V3_BL/src/mcu/stm32_f401rc_hal_system.o
+                0x000000000800241a                Error_Handler
+ *fill*         0x000000000800241e        0x2 
  .text.hal_stm32f401_system_init
-                0x0000000008001f78       0xa4 .pio/build/MKS_DLC_LG0_V3_BL/src/mcu/stm32_f401rc_hal_system.o
-                0x0000000008001f78                hal_stm32f401_system_init
+                0x0000000008002420       0xa4 .pio/build/MKS_DLC_LG0_V3_BL/src/mcu/stm32_f401rc_hal_system.o
+                0x0000000008002420                hal_stm32f401_system_init
  .text.hal_get_flash_sector
-                0x000000000800201c       0x44 .pio/build/MKS_DLC_LG0_V3_BL/src/mcu/stm32_f401rc_hal_system.o
-                0x000000000800201c                hal_get_flash_sector
+                0x00000000080024c4       0x44 .pio/build/MKS_DLC_LG0_V3_BL/src/mcu/stm32_f401rc_hal_system.o
+                0x00000000080024c4                hal_get_flash_sector
  .text.hal_flash_erase
-                0x0000000008002060       0x78 .pio/build/MKS_DLC_LG0_V3_BL/src/mcu/stm32_f401rc_hal_system.o
-                0x0000000008002060                hal_flash_erase
+                0x0000000008002508       0x78 .pio/build/MKS_DLC_LG0_V3_BL/src/mcu/stm32_f401rc_hal_system.o
+                0x0000000008002508                hal_flash_erase
  .text.hal_flash_write
-                0x00000000080020d8       0x3e .pio/build/MKS_DLC_LG0_V3_BL/src/mcu/stm32_f401rc_hal_system.o
-                0x00000000080020d8                hal_flash_write
- .text.ld_word  0x0000000008002116        0xa .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
+                0x0000000008002580       0x3e .pio/build/MKS_DLC_LG0_V3_BL/src/mcu/stm32_f401rc_hal_system.o
+                0x0000000008002580                hal_flash_write
+ .text.ld_word  0x00000000080025be        0xa .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
  .text.ld_dword
-                0x0000000008002120       0x16 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
- .text.st_word  0x0000000008002136        0x8 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
+                0x00000000080025c8       0x16 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
+ .text.st_word  0x00000000080025de        0x8 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
  .text.st_dword
-                0x000000000800213e       0x14 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
- .text.dbc_1st  0x0000000008002152        0x4 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
- .text.dbc_2nd  0x0000000008002156        0x4 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
- *fill*         0x000000000800215a        0x2 
+                0x00000000080025e6       0x14 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
+ .text.dbc_1st  0x00000000080025fa        0x4 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
+ .text.dbc_2nd  0x00000000080025fe        0x4 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
+ *fill*         0x0000000008002602        0x2 
  .text.chk_lock
-                0x000000000800215c       0x74 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
+                0x0000000008002604       0x74 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
  .text.enq_lock
-                0x00000000080021d0       0x20 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
+                0x0000000008002678       0x20 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
  .text.inc_lock
-                0x00000000080021f0       0xa8 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
+                0x0000000008002698       0xa8 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
  .text.dec_lock
-                0x0000000008002298       0x40 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
+                0x0000000008002740       0x40 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
  .text.clear_lock
-                0x00000000080022d8       0x38 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
+                0x0000000008002780       0x38 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
  .text.clst2sect
-                0x0000000008002310       0x18 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
+                0x00000000080027b8       0x18 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
  .text.clmt_clust
-                0x0000000008002328       0x22 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
+                0x00000000080027d0       0x22 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
  .text.ld_clust
-                0x000000000800234a       0x26 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
+                0x00000000080027f2       0x26 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
  .text.st_clust
-                0x0000000008002370       0x26 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
- *fill*         0x0000000008002396        0x2 
+                0x0000000008002818       0x26 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
+ *fill*         0x000000000800283e        0x2 
  .text.pick_lfn
-                0x0000000008002398       0x84 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
- .text.put_lfn  0x000000000800241c       0x78 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
- .text.sum_sfn  0x0000000008002494       0x20 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
+                0x0000000008002840       0x84 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
+ .text.put_lfn  0x00000000080028c4       0x78 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
+ .text.sum_sfn  0x000000000800293c       0x20 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
  .text.get_ldnumber
-                0x00000000080024b4       0x56 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
+                0x000000000800295c       0x56 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
  .text.validate
-                0x000000000800250a       0x46 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
+                0x00000000080029b2       0x46 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
  .text.sync_window
-                0x0000000008002550       0x48 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
+                0x00000000080029f8       0x48 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
  .text.move_window
-                0x0000000008002598       0x36 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
- *fill*         0x00000000080025ce        0x2 
+                0x0000000008002a40       0x36 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
+ *fill*         0x0000000008002a76        0x2 
  .text.check_fs
-                0x00000000080025d0       0xd4 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
+                0x0000000008002a78       0xd4 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
  .text.find_volume
-                0x00000000080026a4       0x70 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
+                0x0000000008002b4c       0x70 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
  .text.mount_volume
-                0x0000000008002714      0x2b0 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
- .text.put_fat  0x00000000080029c4      0x10e .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
- .text.get_fat  0x0000000008002ad2       0xd0 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
- .text.dir_sdi  0x0000000008002ba2       0xac .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
+                0x0000000008002bbc      0x2b0 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
+ .text.put_fat  0x0000000008002e6c      0x10e .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
+ .text.get_fat  0x0000000008002f7a       0xd0 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
+ .text.dir_sdi  0x000000000800304a       0xac .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
  .text.create_chain
-                0x0000000008002c4e      0x10e .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
+                0x00000000080030f6      0x10e .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
  .text.remove_chain
-                0x0000000008002d5c       0x7e .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
+                0x0000000008003204       0x7e .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
  .text.dir_clear
-                0x0000000008002dda       0x52 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
+                0x0000000008003282       0x52 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
  .text.dir_next
-                0x0000000008002e2c       0xc8 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
+                0x00000000080032d4       0xc8 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
  .text.dir_alloc
-                0x0000000008002ef4       0x50 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
+                0x000000000800339c       0x50 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
  .text.dir_read
-                0x0000000008002f44       0xbc .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
+                0x00000000080033ec       0xbc .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
  .text.dir_remove
-                0x0000000008003000       0x52 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
+                0x00000000080034a8       0x52 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
  .text.tchar2uni
-                0x0000000008003052       0x4a .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
+                0x00000000080034fa       0x4a .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
  .text.create_name
-                0x000000000800309c      0x24c .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
- .text.cmp_lfn  0x00000000080032e8       0xa0 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
+                0x0000000008003544      0x24c .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
+ .text.cmp_lfn  0x0000000008003790       0xa0 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
  .text.dir_find
-                0x0000000008003388       0xe6 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
+                0x0000000008003830       0xe6 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
  .text.follow_path
-                0x000000000800346e       0x8e .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
+                0x0000000008003916       0x8e .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
  .text.gen_numname
-                0x00000000080034fc       0xbe .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
- *fill*         0x00000000080035ba        0x2 
+                0x00000000080039a4       0xbe .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
+ *fill*         0x0000000008003a62        0x2 
  .text.dir_register
-                0x00000000080035bc      0x14c .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
- .text.sync_fs  0x0000000008003708       0x8c .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
- .text.f_mount  0x0000000008003794       0x54 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
-                0x0000000008003794                f_mount
- .text.f_read   0x00000000080037e8      0x1c4 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
-                0x00000000080037e8                f_read
+                0x0000000008003a64      0x14c .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
+ .text.sync_fs  0x0000000008003bb0       0x8c .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
+ .text.f_mount  0x0000000008003c3c       0x54 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
+                0x0000000008003c3c                f_mount
+ .text.f_read   0x0000000008003c90      0x1c4 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
+                0x0000000008003c90                f_read
  .text.f_unlink
-                0x00000000080039ac       0xc0 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
-                0x00000000080039ac                f_unlink
+                0x0000000008003e54       0xc0 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
+                0x0000000008003e54                f_unlink
  .text.f_rename
-                0x0000000008003a6c      0x16c .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
-                0x0000000008003a6c                f_rename
+                0x0000000008003f14      0x16c .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
+                0x0000000008003f14                f_rename
  .text.get_fattime
-                0x0000000008003bd8        0x4 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
-                0x0000000008003bd8                get_fattime
- .text.f_open   0x0000000008003bdc      0x240 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
-                0x0000000008003bdc                f_open
- .text.f_sync   0x0000000008003e1c       0x98 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
-                0x0000000008003e1c                f_sync
- .text.f_close  0x0000000008003eb4       0x2a .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
-                0x0000000008003eb4                f_close
- *fill*         0x0000000008003ede        0x2 
+                0x0000000008004080        0x4 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
+                0x0000000008004080                get_fattime
+ .text.f_open   0x0000000008004084      0x240 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
+                0x0000000008004084                f_open
+ .text.f_sync   0x00000000080042c4       0x98 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
+                0x00000000080042c4                f_sync
+ .text.f_close  0x000000000800435c       0x2a .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
+                0x000000000800435c                f_close
+ *fill*         0x0000000008004386        0x2 
  .text.ff_uni2oem
-                0x0000000008003ee0       0x40 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ffunicode.o)
-                0x0000000008003ee0                ff_uni2oem
+                0x0000000008004388       0x40 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ffunicode.o)
+                0x0000000008004388                ff_uni2oem
  .text.ff_oem2uni
-                0x0000000008003f20       0x2c .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ffunicode.o)
-                0x0000000008003f20                ff_oem2uni
+                0x00000000080043c8       0x2c .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ffunicode.o)
+                0x00000000080043c8                ff_oem2uni
  .text.ff_wtoupper
-                0x0000000008003f4c       0x9c .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ffunicode.o)
-                0x0000000008003f4c                ff_wtoupper
+                0x00000000080043f4       0x9c .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ffunicode.o)
+                0x00000000080043f4                ff_wtoupper
  .text.disk_status
-                0x0000000008003fe8        0xc .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(diskio.o)
-                0x0000000008003fe8                disk_status
+                0x0000000008004490        0xc .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(diskio.o)
+                0x0000000008004490                disk_status
  .text.disk_initialize
-                0x0000000008003ff4       0x18 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(diskio.o)
-                0x0000000008003ff4                disk_initialize
+                0x000000000800449c       0x20 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(diskio.o)
+                0x000000000800449c                disk_initialize
  .text.disk_read
-                0x000000000800400c       0x2e .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(diskio.o)
-                0x000000000800400c                disk_read
+                0x00000000080044bc       0x38 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(diskio.o)
+                0x00000000080044bc                disk_read
  .text.disk_write
-                0x000000000800403a       0x30 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(diskio.o)
-                0x000000000800403a                disk_write
+                0x00000000080044f4       0x38 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(diskio.o)
+                0x00000000080044f4                disk_write
  .text.disk_ioctl
-                0x000000000800406a       0x3c .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(diskio.o)
-                0x000000000800406a                disk_ioctl
- *fill*         0x00000000080040a6        0x2 
+                0x000000000800452c       0x44 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(diskio.o)
+                0x000000000800452c                disk_ioctl
  .text.__libc_init_array
-                0x00000000080040a8       0x48 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-init.o)
-                0x00000000080040a8                __libc_init_array
- .text.malloc   0x00000000080040f0       0x10 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-malloc.o)
-                0x00000000080040f0                malloc
- .text.free     0x0000000008004100       0x10 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-malloc.o)
-                0x0000000008004100                free
- .text.memcmp   0x0000000008004110       0x1c c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-memcmp.o)
-                0x0000000008004110                memcmp
- .text.memcpy   0x000000000800412c       0x1c c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-memcpy-stub.o)
-                0x000000000800412c                memcpy
- .text.memset   0x0000000008004148       0x10 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-memset.o)
-                0x0000000008004148                memset
- .text._free_r  0x0000000008004158       0x9c c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-nano-freer.o)
-                0x0000000008004158                _free_r
+                0x0000000008004570       0x48 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-init.o)
+                0x0000000008004570                __libc_init_array
+ .text.malloc   0x00000000080045b8       0x10 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-malloc.o)
+                0x00000000080045b8                malloc
+ .text.free     0x00000000080045c8       0x10 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-malloc.o)
+                0x00000000080045c8                free
+ .text.memcmp   0x00000000080045d8       0x1c c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-memcmp.o)
+                0x00000000080045d8                memcmp
+ .text.memcpy   0x00000000080045f4       0x1c c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-memcpy-stub.o)
+                0x00000000080045f4                memcpy
+ .text.memset   0x0000000008004610       0x10 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-memset.o)
+                0x0000000008004610                memset
+ .text._free_r  0x0000000008004620       0x9c c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-nano-freer.o)
+                0x0000000008004620                _free_r
  .text._malloc_r
-                0x00000000080041f4       0xb4 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-nano-mallocr.o)
-                0x00000000080041f4                _malloc_r
- .text.printf   0x00000000080042a8       0x30 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-printf.o)
-                0x00000000080042a8                iprintf
-                0x00000000080042a8                printf
- .text._puts_r  0x00000000080042d8       0xdc c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-puts.o)
-                0x00000000080042d8                _puts_r
- .text.puts     0x00000000080043b4       0x10 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-puts.o)
-                0x00000000080043b4                puts
- .text._sbrk_r  0x00000000080043c4       0x20 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-sbrkr.o)
-                0x00000000080043c4                _sbrk_r
- .text.strchr   0x00000000080043e4       0x1a c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-strchr.o)
-                0x00000000080043e4                strchr
- .text.strcpy   0x00000000080043fe       0x10 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-strcpy.o)
-                0x00000000080043fe                strcpy
- *fill*         0x000000000800440e        0x2 
+                0x00000000080046bc       0xb4 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-nano-mallocr.o)
+                0x00000000080046bc                _malloc_r
+ .text.printf   0x0000000008004770       0x30 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-printf.o)
+                0x0000000008004770                iprintf
+                0x0000000008004770                printf
+ .text._puts_r  0x00000000080047a0       0xdc c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-puts.o)
+                0x00000000080047a0                _puts_r
+ .text.puts     0x000000000800487c       0x10 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-puts.o)
+                0x000000000800487c                puts
+ .text._sbrk_r  0x000000000800488c       0x20 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-sbrkr.o)
+                0x000000000800488c                _sbrk_r
+ .text.strchr   0x00000000080048ac       0x1a c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-strchr.o)
+                0x00000000080048ac                strchr
+ .text.strcpy   0x00000000080048c6       0x10 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-strcpy.o)
+                0x00000000080048c6                strcpy
+ *fill*         0x00000000080048d6        0x2 
  .text.__swbuf_r
-                0x0000000008004410       0xa4 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-wbuf.o)
-                0x0000000008004410                __swbuf_r
+                0x00000000080048d8       0xa4 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-wbuf.o)
+                0x00000000080048d8                __swbuf_r
  .text.__swsetup_r
-                0x00000000080044b4       0xdc c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-wsetup.o)
-                0x00000000080044b4                __swsetup_r
+                0x000000000800497c       0xdc c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-wsetup.o)
+                0x000000000800497c                __swsetup_r
  .text.__sflush_r
-                0x0000000008004590      0x10c c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-fflush.o)
-                0x0000000008004590                __sflush_r
+                0x0000000008004a58      0x10c c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-fflush.o)
+                0x0000000008004a58                __sflush_r
  .text._fflush_r
-                0x000000000800469c       0x78 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-fflush.o)
-                0x000000000800469c                _fflush_r
- .text.std      0x0000000008004714       0x48 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-findfp.o)
+                0x0000000008004b64       0x78 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-fflush.o)
+                0x0000000008004b64                _fflush_r
+ .text.std      0x0000000008004bdc       0x48 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-findfp.o)
  .text._cleanup_r
-                0x000000000800475c        0xc c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-findfp.o)
-                0x000000000800475c                _cleanup_r
+                0x0000000008004c24        0xc c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-findfp.o)
+                0x0000000008004c24                _cleanup_r
  .text.__sfmoreglue
-                0x0000000008004768       0x2c c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-findfp.o)
-                0x0000000008004768                __sfmoreglue
+                0x0000000008004c30       0x2c c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-findfp.o)
+                0x0000000008004c30                __sfmoreglue
  .text.__sfp_lock_acquire
-                0x0000000008004794        0xc c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-findfp.o)
-                0x0000000008004794                __sfp_lock_acquire
+                0x0000000008004c5c        0xc c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-findfp.o)
+                0x0000000008004c5c                __sfp_lock_acquire
  .text.__sfp_lock_release
-                0x00000000080047a0        0xc c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-findfp.o)
-                0x00000000080047a0                __sfp_lock_release
+                0x0000000008004c68        0xc c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-findfp.o)
+                0x0000000008004c68                __sfp_lock_release
  .text.__sinit_lock_acquire
-                0x00000000080047ac        0xc c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-findfp.o)
-                0x00000000080047ac                __sinit_lock_acquire
+                0x0000000008004c74        0xc c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-findfp.o)
+                0x0000000008004c74                __sinit_lock_acquire
  .text.__sinit_lock_release
-                0x00000000080047b8        0xc c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-findfp.o)
-                0x00000000080047b8                __sinit_lock_release
- .text.__sinit  0x00000000080047c4       0x70 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-findfp.o)
-                0x00000000080047c4                __sinit
- .text.__sfp    0x0000000008004834       0x8c c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-findfp.o)
-                0x0000000008004834                __sfp
+                0x0000000008004c80        0xc c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-findfp.o)
+                0x0000000008004c80                __sinit_lock_release
+ .text.__sinit  0x0000000008004c8c       0x70 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-findfp.o)
+                0x0000000008004c8c                __sinit
+ .text.__sfp    0x0000000008004cfc       0x8c c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-findfp.o)
+                0x0000000008004cfc                __sfp
  .text._fwalk_reent
-                0x00000000080048c0       0x3e c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-fwalk.o)
-                0x00000000080048c0                _fwalk_reent
+                0x0000000008004d88       0x3e c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-fwalk.o)
+                0x0000000008004d88                _fwalk_reent
  .text.__retarget_lock_init_recursive
-                0x00000000080048fe        0x2 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-lock.o)
-                0x00000000080048fe                __retarget_lock_init_recursive
+                0x0000000008004dc6        0x2 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-lock.o)
+                0x0000000008004dc6                __retarget_lock_init_recursive
  .text.__retarget_lock_acquire_recursive
-                0x0000000008004900        0x2 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-lock.o)
-                0x0000000008004900                __retarget_lock_acquire_recursive
+                0x0000000008004dc8        0x2 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-lock.o)
+                0x0000000008004dc8                __retarget_lock_acquire_recursive
  .text.__retarget_lock_release_recursive
-                0x0000000008004902        0x2 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-lock.o)
-                0x0000000008004902                __retarget_lock_release_recursive
+                0x0000000008004dca        0x2 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-lock.o)
+                0x0000000008004dca                __retarget_lock_release_recursive
  .text.__swhatbuf_r
-                0x0000000008004904       0x48 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-makebuf.o)
-                0x0000000008004904                __swhatbuf_r
+                0x0000000008004dcc       0x48 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-makebuf.o)
+                0x0000000008004dcc                __swhatbuf_r
  .text.__smakebuf_r
-                0x000000000800494c       0x80 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-makebuf.o)
-                0x000000000800494c                __smakebuf_r
+                0x0000000008004e14       0x80 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-makebuf.o)
+                0x0000000008004e14                __smakebuf_r
  .text.__malloc_lock
-                0x00000000080049cc        0xc c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-mlock.o)
-                0x00000000080049cc                __malloc_lock
+                0x0000000008004e94        0xc c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-mlock.o)
+                0x0000000008004e94                __malloc_lock
  .text.__malloc_unlock
-                0x00000000080049d8        0xc c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-mlock.o)
-                0x00000000080049d8                __malloc_unlock
+                0x0000000008004ea0        0xc c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-mlock.o)
+                0x0000000008004ea0                __malloc_unlock
  .text.__sfputc_r
-                0x00000000080049e4       0x2a c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-nano-vfprintf.o)
+                0x0000000008004eac       0x2a c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-nano-vfprintf.o)
  .text.__sfputs_r
-                0x0000000008004a0e       0x24 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-nano-vfprintf.o)
-                0x0000000008004a0e                __sfputs_r
- *fill*         0x0000000008004a32        0x2 
+                0x0000000008004ed6       0x24 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-nano-vfprintf.o)
+                0x0000000008004ed6                __sfputs_r
+ *fill*         0x0000000008004efa        0x2 
  .text._vfprintf_r
-                0x0000000008004a34      0x260 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-nano-vfprintf.o)
-                0x0000000008004a34                _vfprintf_r
-                0x0000000008004a34                _vfiprintf_r
+                0x0000000008004efc      0x260 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-nano-vfprintf.o)
+                0x0000000008004efc                _vfprintf_r
+                0x0000000008004efc                _vfiprintf_r
  .text._printf_common
-                0x0000000008004c94       0xda c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-nano-vfprintf_i.o)
-                0x0000000008004c94                _printf_common
- *fill*         0x0000000008004d6e        0x2 
+                0x000000000800515c       0xda c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-nano-vfprintf_i.o)
+                0x000000000800515c                _printf_common
+ *fill*         0x0000000008005236        0x2 
  .text._printf_i
-                0x0000000008004d70      0x24c c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-nano-vfprintf_i.o)
-                0x0000000008004d70                _printf_i
- .text.__sread  0x0000000008004fbc       0x22 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-stdio.o)
-                0x0000000008004fbc                __sread
+                0x0000000008005238      0x24c c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-nano-vfprintf_i.o)
+                0x0000000008005238                _printf_i
+ .text.__sread  0x0000000008005484       0x22 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-stdio.o)
+                0x0000000008005484                __sread
  .text.__swrite
-                0x0000000008004fde       0x38 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-stdio.o)
-                0x0000000008004fde                __swrite
- .text.__sseek  0x0000000008005016       0x24 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-stdio.o)
-                0x0000000008005016                __sseek
+                0x00000000080054a6       0x38 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-stdio.o)
+                0x00000000080054a6                __swrite
+ .text.__sseek  0x00000000080054de       0x24 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-stdio.o)
+                0x00000000080054de                __sseek
  .text.__sclose
-                0x000000000800503a        0x8 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-stdio.o)
-                0x000000000800503a                __sclose
- *fill*         0x0000000008005042        0x2 
+                0x0000000008005502        0x8 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-stdio.o)
+                0x0000000008005502                __sclose
+ *fill*         0x000000000800550a        0x2 
  .text._write_r
-                0x0000000008005044       0x24 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-writer.o)
-                0x0000000008005044                _write_r
+                0x000000000800550c       0x24 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-writer.o)
+                0x000000000800550c                _write_r
  .text._close_r
-                0x0000000008005068       0x20 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-closer.o)
-                0x0000000008005068                _close_r
+                0x0000000008005530       0x20 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-closer.o)
+                0x0000000008005530                _close_r
  .text._fstat_r
-                0x0000000008005088       0x24 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-fstatr.o)
-                0x0000000008005088                _fstat_r
+                0x0000000008005550       0x24 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-fstatr.o)
+                0x0000000008005550                _fstat_r
  .text._isatty_r
-                0x00000000080050ac       0x20 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-isattyr.o)
-                0x00000000080050ac                _isatty_r
+                0x0000000008005574       0x20 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-isattyr.o)
+                0x0000000008005574                _isatty_r
  .text._lseek_r
-                0x00000000080050cc       0x24 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-lseekr.o)
-                0x00000000080050cc                _lseek_r
- .text._read_r  0x00000000080050f0       0x24 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-readr.o)
-                0x00000000080050f0                _read_r
+                0x0000000008005594       0x24 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-lseekr.o)
+                0x0000000008005594                _lseek_r
+ .text._read_r  0x00000000080055b8       0x24 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-readr.o)
+                0x00000000080055b8                _read_r
  .text.__udivmoddi4
-                0x0000000008005114      0x2c0 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp\libgcc.a(_udivmoddi4.o)
-                0x0000000008005114                __udivmoddi4
- .text._close   0x00000000080053d4       0x10 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libnosys.a(close.o)
-                0x00000000080053d4                _close
- .text._fstat   0x00000000080053e4       0x10 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libnosys.a(fstat.o)
-                0x00000000080053e4                _fstat
- .text._isatty  0x00000000080053f4       0x10 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libnosys.a(isatty.o)
-                0x00000000080053f4                _isatty
- .text._lseek   0x0000000008005404       0x10 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libnosys.a(lseek.o)
-                0x0000000008005404                _lseek
- .text._read    0x0000000008005414       0x10 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libnosys.a(read.o)
-                0x0000000008005414                _read
- .text._sbrk    0x0000000008005424       0x1c c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libnosys.a(sbrk.o)
-                0x0000000008005424                _sbrk
+                0x00000000080055dc      0x2c0 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp\libgcc.a(_udivmoddi4.o)
+                0x00000000080055dc                __udivmoddi4
+ .text._close   0x000000000800589c       0x10 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libnosys.a(close.o)
+                0x000000000800589c                _close
+ .text._fstat   0x00000000080058ac       0x10 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libnosys.a(fstat.o)
+                0x00000000080058ac                _fstat
+ .text._isatty  0x00000000080058bc       0x10 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libnosys.a(isatty.o)
+                0x00000000080058bc                _isatty
+ .text._lseek   0x00000000080058cc       0x10 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libnosys.a(lseek.o)
+                0x00000000080058cc                _lseek
+ .text._read    0x00000000080058dc       0x10 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libnosys.a(read.o)
+                0x00000000080058dc                _read
+ .text._sbrk    0x00000000080058ec       0x1c c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libnosys.a(sbrk.o)
+                0x00000000080058ec                _sbrk
  .text.Reset_Handler
-                0x0000000008005440       0x50 .pio/build/MKS_DLC_LG0_V3_BL/libFrameworkCMSISDevice.a(startup_stm32f401xc.o)
-                0x0000000008005440                Reset_Handler
+                0x0000000008005908       0x50 .pio/build/MKS_DLC_LG0_V3_BL/libFrameworkCMSISDevice.a(startup_stm32f401xc.o)
+                0x0000000008005908                Reset_Handler
  .text.Default_Handler
-                0x0000000008005490        0x2 .pio/build/MKS_DLC_LG0_V3_BL/libFrameworkCMSISDevice.a(startup_stm32f401xc.o)
-                0x0000000008005490                RTC_Alarm_IRQHandler
-                0x0000000008005490                EXTI2_IRQHandler
-                0x0000000008005490                DebugMon_Handler
-                0x0000000008005490                SPI4_IRQHandler
-                0x0000000008005490                TIM1_CC_IRQHandler
-                0x0000000008005490                DMA2_Stream5_IRQHandler
-                0x0000000008005490                DMA1_Stream5_IRQHandler
-                0x0000000008005490                PVD_IRQHandler
-                0x0000000008005490                SDIO_IRQHandler
-                0x0000000008005490                TAMP_STAMP_IRQHandler
-                0x0000000008005490                PendSV_Handler
-                0x0000000008005490                NMI_Handler
-                0x0000000008005490                EXTI3_IRQHandler
-                0x0000000008005490                TIM1_UP_TIM10_IRQHandler
-                0x0000000008005490                I2C3_ER_IRQHandler
-                0x0000000008005490                EXTI0_IRQHandler
-                0x0000000008005490                I2C2_EV_IRQHandler
-                0x0000000008005490                DMA1_Stream2_IRQHandler
-                0x0000000008005490                FPU_IRQHandler
-                0x0000000008005490                UsageFault_Handler
-                0x0000000008005490                DMA2_Stream2_IRQHandler
-                0x0000000008005490                SPI1_IRQHandler
-                0x0000000008005490                TIM1_BRK_TIM9_IRQHandler
-                0x0000000008005490                DMA2_Stream3_IRQHandler
-                0x0000000008005490                USART6_IRQHandler
-                0x0000000008005490                DMA2_Stream0_IRQHandler
-                0x0000000008005490                TIM4_IRQHandler
-                0x0000000008005490                I2C1_EV_IRQHandler
-                0x0000000008005490                DMA1_Stream6_IRQHandler
-                0x0000000008005490                DMA1_Stream1_IRQHandler
-                0x0000000008005490                TIM3_IRQHandler
-                0x0000000008005490                RCC_IRQHandler
-                0x0000000008005490                Default_Handler
-                0x0000000008005490                EXTI15_10_IRQHandler
-                0x0000000008005490                ADC_IRQHandler
-                0x0000000008005490                DMA1_Stream7_IRQHandler
-                0x0000000008005490                TIM5_IRQHandler
-                0x0000000008005490                DMA2_Stream7_IRQHandler
-                0x0000000008005490                I2C3_EV_IRQHandler
-                0x0000000008005490                EXTI9_5_IRQHandler
-                0x0000000008005490                RTC_WKUP_IRQHandler
-                0x0000000008005490                SPI2_IRQHandler
-                0x0000000008005490                MemManage_Handler
-                0x0000000008005490                DMA1_Stream0_IRQHandler
-                0x0000000008005490                SVC_Handler
-                0x0000000008005490                EXTI4_IRQHandler
-                0x0000000008005490                WWDG_IRQHandler
-                0x0000000008005490                TIM2_IRQHandler
-                0x0000000008005490                OTG_FS_WKUP_IRQHandler
-                0x0000000008005490                TIM1_TRG_COM_TIM11_IRQHandler
-                0x0000000008005490                EXTI1_IRQHandler
-                0x0000000008005490                USART2_IRQHandler
-                0x0000000008005490                I2C2_ER_IRQHandler
-                0x0000000008005490                DMA2_Stream1_IRQHandler
-                0x0000000008005490                FLASH_IRQHandler
-                0x0000000008005490                DMA2_Stream4_IRQHandler
-                0x0000000008005490                BusFault_Handler
-                0x0000000008005490                USART1_IRQHandler
-                0x0000000008005490                OTG_FS_IRQHandler
-                0x0000000008005490                SPI3_IRQHandler
-                0x0000000008005490                DMA1_Stream4_IRQHandler
-                0x0000000008005490                I2C1_ER_IRQHandler
-                0x0000000008005490                DMA2_Stream6_IRQHandler
-                0x0000000008005490                DMA1_Stream3_IRQHandler
+                0x0000000008005958        0x2 .pio/build/MKS_DLC_LG0_V3_BL/libFrameworkCMSISDevice.a(startup_stm32f401xc.o)
+                0x0000000008005958                RTC_Alarm_IRQHandler
+                0x0000000008005958                EXTI2_IRQHandler
+                0x0000000008005958                DebugMon_Handler
+                0x0000000008005958                SPI4_IRQHandler
+                0x0000000008005958                TIM1_CC_IRQHandler
+                0x0000000008005958                DMA2_Stream5_IRQHandler
+                0x0000000008005958                DMA1_Stream5_IRQHandler
+                0x0000000008005958                PVD_IRQHandler
+                0x0000000008005958                SDIO_IRQHandler
+                0x0000000008005958                TAMP_STAMP_IRQHandler
+                0x0000000008005958                PendSV_Handler
+                0x0000000008005958                NMI_Handler
+                0x0000000008005958                EXTI3_IRQHandler
+                0x0000000008005958                TIM1_UP_TIM10_IRQHandler
+                0x0000000008005958                I2C3_ER_IRQHandler
+                0x0000000008005958                EXTI0_IRQHandler
+                0x0000000008005958                I2C2_EV_IRQHandler
+                0x0000000008005958                DMA1_Stream2_IRQHandler
+                0x0000000008005958                FPU_IRQHandler
+                0x0000000008005958                UsageFault_Handler
+                0x0000000008005958                DMA2_Stream2_IRQHandler
+                0x0000000008005958                SPI1_IRQHandler
+                0x0000000008005958                TIM1_BRK_TIM9_IRQHandler
+                0x0000000008005958                DMA2_Stream3_IRQHandler
+                0x0000000008005958                USART6_IRQHandler
+                0x0000000008005958                DMA2_Stream0_IRQHandler
+                0x0000000008005958                TIM4_IRQHandler
+                0x0000000008005958                I2C1_EV_IRQHandler
+                0x0000000008005958                DMA1_Stream6_IRQHandler
+                0x0000000008005958                DMA1_Stream1_IRQHandler
+                0x0000000008005958                TIM3_IRQHandler
+                0x0000000008005958                RCC_IRQHandler
+                0x0000000008005958                Default_Handler
+                0x0000000008005958                EXTI15_10_IRQHandler
+                0x0000000008005958                ADC_IRQHandler
+                0x0000000008005958                DMA1_Stream7_IRQHandler
+                0x0000000008005958                TIM5_IRQHandler
+                0x0000000008005958                DMA2_Stream7_IRQHandler
+                0x0000000008005958                I2C3_EV_IRQHandler
+                0x0000000008005958                EXTI9_5_IRQHandler
+                0x0000000008005958                RTC_WKUP_IRQHandler
+                0x0000000008005958                SPI2_IRQHandler
+                0x0000000008005958                MemManage_Handler
+                0x0000000008005958                DMA1_Stream0_IRQHandler
+                0x0000000008005958                SVC_Handler
+                0x0000000008005958                EXTI4_IRQHandler
+                0x0000000008005958                WWDG_IRQHandler
+                0x0000000008005958                TIM2_IRQHandler
+                0x0000000008005958                OTG_FS_WKUP_IRQHandler
+                0x0000000008005958                TIM1_TRG_COM_TIM11_IRQHandler
+                0x0000000008005958                EXTI1_IRQHandler
+                0x0000000008005958                USART2_IRQHandler
+                0x0000000008005958                I2C2_ER_IRQHandler
+                0x0000000008005958                DMA2_Stream1_IRQHandler
+                0x0000000008005958                FLASH_IRQHandler
+                0x0000000008005958                DMA2_Stream4_IRQHandler
+                0x0000000008005958                BusFault_Handler
+                0x0000000008005958                USART1_IRQHandler
+                0x0000000008005958                OTG_FS_IRQHandler
+                0x0000000008005958                SPI3_IRQHandler
+                0x0000000008005958                DMA1_Stream4_IRQHandler
+                0x0000000008005958                I2C1_ER_IRQHandler
+                0x0000000008005958                DMA2_Stream6_IRQHandler
+                0x0000000008005958                DMA1_Stream3_IRQHandler
  .text.SystemInit
-                0x0000000008005492        0x2 .pio/build/MKS_DLC_LG0_V3_BL/libFrameworkCMSISDevice.a(system_stm32f4xx.o)
-                0x0000000008005492                SystemInit
+                0x000000000800595a        0x2 .pio/build/MKS_DLC_LG0_V3_BL/libFrameworkCMSISDevice.a(system_stm32f4xx.o)
+                0x000000000800595a                SystemInit
  *(.glue_7)
- .glue_7        0x0000000008005494        0x0 linker stubs
+ .glue_7        0x000000000800595c        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x0000000008005494        0x0 linker stubs
+ .glue_7t       0x000000000800595c        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x0000000008005494        0x0 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp/crtbegin.o
+ .eh_frame      0x000000000800595c        0x0 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp/crtbegin.o
  *(.init)
- .init          0x0000000008005494        0x4 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp/crti.o
-                0x0000000008005494                _init
- .init          0x0000000008005498        0x8 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp/crtn.o
+ .init          0x000000000800595c        0x4 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp/crti.o
+                0x000000000800595c                _init
+ .init          0x0000000008005960        0x8 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp/crtn.o
  *(.fini)
- .fini          0x00000000080054a0        0x4 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp/crti.o
-                0x00000000080054a0                _fini
- .fini          0x00000000080054a4        0x8 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp/crtn.o
-                0x00000000080054ac                . = ALIGN (0x4)
-                0x00000000080054ac                _etext = .
+ .fini          0x0000000008005968        0x4 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp/crti.o
+                0x0000000008005968                _fini
+ .fini          0x000000000800596c        0x8 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp/crtn.o
+                0x0000000008005974                . = ALIGN (0x4)
+                0x0000000008005974                _etext = .
 
-.vfp11_veneer   0x00000000080054ac        0x0
- .vfp11_veneer  0x00000000080054ac        0x0 linker stubs
+.vfp11_veneer   0x0000000008005974        0x0
+ .vfp11_veneer  0x0000000008005974        0x0 linker stubs
 
-.v4_bx          0x00000000080054ac        0x0
- .v4_bx         0x00000000080054ac        0x0 linker stubs
+.v4_bx          0x0000000008005974        0x0
+ .v4_bx         0x0000000008005974        0x0 linker stubs
 
-.iplt           0x00000000080054ac        0x0
- .iplt          0x00000000080054ac        0x0 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp/crtbegin.o
+.iplt           0x0000000008005974        0x0
+ .iplt          0x0000000008005974        0x0 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp/crtbegin.o
 
-.rodata         0x00000000080054ac      0x62c
-                0x00000000080054ac                . = ALIGN (0x4)
+.rodata         0x0000000008005974      0x62c
+                0x0000000008005974                . = ALIGN (0x4)
  *(.rodata)
  *(.rodata*)
  .rodata.bl_write_flash.str1.4
-                0x00000000080054ac       0x4d .pio/build/MKS_DLC_LG0_V3_BL/src/bootloader.o
- *fill*         0x00000000080054f9        0x3 
+                0x0000000008005974       0x4d .pio/build/MKS_DLC_LG0_V3_BL/src/bootloader.o
+ *fill*         0x00000000080059c1        0x3 
  .rodata.str1.4
-                0x00000000080054fc       0x26 .pio/build/MKS_DLC_LG0_V3_BL/src/bootloader.o
- *fill*         0x0000000008005522        0x2 
+                0x00000000080059c4       0x26 .pio/build/MKS_DLC_LG0_V3_BL/src/bootloader.o
+ *fill*         0x00000000080059ea        0x2 
  .rodata.printf_info.str1.4
-                0x0000000008005524       0x7d .pio/build/MKS_DLC_LG0_V3_BL/src/hal/hal.o
- *fill*         0x00000000080055a1        0x3 
+                0x00000000080059ec       0x7d .pio/build/MKS_DLC_LG0_V3_BL/src/hal/hal.o
+ *fill*         0x0000000008005a69        0x3 
  .rodata.printf_result_info.str1.4
-                0x00000000080055a4       0x1e .pio/build/MKS_DLC_LG0_V3_BL/src/hal/hal.o
- *fill*         0x00000000080055c2        0x2 
+                0x0000000008005a6c       0x1e .pio/build/MKS_DLC_LG0_V3_BL/src/hal/hal.o
+ *fill*         0x0000000008005a8a        0x2 
  .rodata.main.str1.4
-                0x00000000080055c4        0x3 .pio/build/MKS_DLC_LG0_V3_BL/src/main.o
- *fill*         0x00000000080055c7        0x1 
+                0x0000000008005a8c        0x3 .pio/build/MKS_DLC_LG0_V3_BL/src/main.o
+ *fill*         0x0000000008005a8f        0x1 
  .rodata.check_fs.str1.4
-                0x00000000080055c8        0x9 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
- *fill*         0x00000000080055d1        0x3 
+                0x0000000008005a90        0x9 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
+ *fill*         0x0000000008005a99        0x3 
  .rodata.create_name.str1.4
-                0x00000000080055d4       0x13 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
- *fill*         0x00000000080055e7        0x1 
- .rodata.ExCvt  0x00000000080055e8       0x80 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
+                0x0000000008005a9c       0x13 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
+ *fill*         0x0000000008005aaf        0x1 
+ .rodata.ExCvt  0x0000000008005ab0       0x80 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
  .rodata.LfnOfs
-                0x0000000008005668        0xd .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
- *fill*         0x0000000008005675        0x3 
+                0x0000000008005b30        0xd .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
+ *fill*         0x0000000008005b3d        0x3 
  .rodata.cvt1.4431
-                0x0000000008005678      0x1f2 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ffunicode.o)
- *fill*         0x000000000800586a        0x2 
+                0x0000000008005b40      0x1f2 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ffunicode.o)
+ *fill*         0x0000000008005d32        0x2 
  .rodata.cvt2.4432
-                0x000000000800586c       0xbc .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ffunicode.o)
- .rodata.uc437  0x0000000008005928      0x100 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ffunicode.o)
+                0x0000000008005d34       0xbc .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ffunicode.o)
+ .rodata.uc437  0x0000000008005df0      0x100 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ffunicode.o)
  .rodata._global_impure_ptr
-                0x0000000008005a28        0x4 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-impure.o)
-                0x0000000008005a28                _global_impure_ptr
+                0x0000000008005ef0        0x4 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-impure.o)
+                0x0000000008005ef0                _global_impure_ptr
  .rodata.__sf_fake_stderr
-                0x0000000008005a2c       0x20 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-findfp.o)
-                0x0000000008005a2c                __sf_fake_stderr
+                0x0000000008005ef4       0x20 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-findfp.o)
+                0x0000000008005ef4                __sf_fake_stderr
  .rodata.__sf_fake_stdin
-                0x0000000008005a4c       0x20 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-findfp.o)
-                0x0000000008005a4c                __sf_fake_stdin
+                0x0000000008005f14       0x20 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-findfp.o)
+                0x0000000008005f14                __sf_fake_stdin
  .rodata.__sf_fake_stdout
-                0x0000000008005a6c       0x20 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-findfp.o)
-                0x0000000008005a6c                __sf_fake_stdout
+                0x0000000008005f34       0x20 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-findfp.o)
+                0x0000000008005f34                __sf_fake_stdout
  .rodata._vfprintf_r.str1.1
-                0x0000000008005a8c       0x11 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-nano-vfprintf.o)
+                0x0000000008005f54       0x11 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-nano-vfprintf.o)
  .rodata._printf_i.str1.1
-                0x0000000008005a9d       0x22 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-nano-vfprintf_i.o)
- *fill*         0x0000000008005abf        0x1 
+                0x0000000008005f65       0x22 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-nano-vfprintf_i.o)
+ *fill*         0x0000000008005f87        0x1 
  .rodata.AHBPrescTable
-                0x0000000008005ac0       0x10 .pio/build/MKS_DLC_LG0_V3_BL/libFrameworkCMSISDevice.a(system_stm32f4xx.o)
-                0x0000000008005ac0                AHBPrescTable
+                0x0000000008005f88       0x10 .pio/build/MKS_DLC_LG0_V3_BL/libFrameworkCMSISDevice.a(system_stm32f4xx.o)
+                0x0000000008005f88                AHBPrescTable
  .rodata.APBPrescTable
-                0x0000000008005ad0        0x8 .pio/build/MKS_DLC_LG0_V3_BL/libFrameworkCMSISDevice.a(system_stm32f4xx.o)
-                0x0000000008005ad0                APBPrescTable
-                0x0000000008005ad8                . = ALIGN (0x4)
+                0x0000000008005f98        0x8 .pio/build/MKS_DLC_LG0_V3_BL/libFrameworkCMSISDevice.a(system_stm32f4xx.o)
+                0x0000000008005f98                APBPrescTable
+                0x0000000008005fa0                . = ALIGN (0x4)
 
-.ARM.extab      0x0000000008005ad8        0x0
-                0x0000000008005ad8                . = ALIGN (0x4)
+.ARM.extab      0x0000000008005fa0        0x0
+                0x0000000008005fa0                . = ALIGN (0x4)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x0000000008005ad8                . = ALIGN (0x4)
+                0x0000000008005fa0                . = ALIGN (0x4)
 
-.ARM            0x0000000008005ad8        0x8
-                0x0000000008005ad8                . = ALIGN (0x4)
-                0x0000000008005ad8                __exidx_start = .
+.ARM            0x0000000008005fa0        0x8
+                0x0000000008005fa0                . = ALIGN (0x4)
+                0x0000000008005fa0                __exidx_start = .
  *(.ARM.exidx*)
  .ARM.exidx.text.__udivmoddi4
-                0x0000000008005ad8        0x8 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp\libgcc.a(_udivmoddi4.o)
-                0x0000000008005ae0                __exidx_end = .
-                0x0000000008005ae0                . = ALIGN (0x4)
+                0x0000000008005fa0        0x8 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp\libgcc.a(_udivmoddi4.o)
+                0x0000000008005fa8                __exidx_end = .
+                0x0000000008005fa8                . = ALIGN (0x4)
 
-.rel.dyn        0x0000000008005ae0        0x0
- .rel.iplt      0x0000000008005ae0        0x0 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp/crtbegin.o
+.rel.dyn        0x0000000008005fa8        0x0
+ .rel.iplt      0x0000000008005fa8        0x0 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp/crtbegin.o
 
-.preinit_array  0x0000000008005ae0        0x0
-                0x0000000008005ae0                . = ALIGN (0x4)
-                0x0000000008005ae0                PROVIDE (__preinit_array_start = .)
+.preinit_array  0x0000000008005fa8        0x0
+                0x0000000008005fa8                . = ALIGN (0x4)
+                0x0000000008005fa8                PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x0000000008005ae0                PROVIDE (__preinit_array_end = .)
-                0x0000000008005ae0                . = ALIGN (0x4)
+                0x0000000008005fa8                PROVIDE (__preinit_array_end = .)
+                0x0000000008005fa8                . = ALIGN (0x4)
 
-.init_array     0x0000000008005ae0        0x4
-                0x0000000008005ae0                . = ALIGN (0x4)
-                0x0000000008005ae0                PROVIDE (__init_array_start = .)
+.init_array     0x0000000008005fa8        0x4
+                0x0000000008005fa8                . = ALIGN (0x4)
+                0x0000000008005fa8                PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array*)
- .init_array    0x0000000008005ae0        0x4 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp/crtbegin.o
-                0x0000000008005ae4                PROVIDE (__init_array_end = .)
-                0x0000000008005ae4                . = ALIGN (0x4)
+ .init_array    0x0000000008005fa8        0x4 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp/crtbegin.o
+                0x0000000008005fac                PROVIDE (__init_array_end = .)
+                0x0000000008005fac                . = ALIGN (0x4)
 
-.fini_array     0x0000000008005ae4        0x4
-                0x0000000008005ae4                . = ALIGN (0x4)
+.fini_array     0x0000000008005fac        0x4
+                0x0000000008005fac                . = ALIGN (0x4)
                 [!provide]                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x0000000008005ae4        0x4 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp/crtbegin.o
+ .fini_array    0x0000000008005fac        0x4 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp/crtbegin.o
                 [!provide]                        PROVIDE (__fini_array_end = .)
-                0x0000000008005ae8                . = ALIGN (0x4)
-                0x0000000008005ae8                _sidata = LOADADDR (.data)
+                0x0000000008005fb0                . = ALIGN (0x4)
+                0x0000000008005fb0                _sidata = LOADADDR (.data)
 
-.data           0x0000000020000000       0x78 load address 0x0000000008005ae8
+.data           0x0000000020000000       0x78 load address 0x0000000008005fb0
                 0x0000000020000000                . = ALIGN (0x4)
                 0x0000000020000000                _sdata = .
  *(.data)
@@ -4124,11 +4126,11 @@ LOAD c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206
                 0x0000000020000078                . = ALIGN (0x4)
                 0x0000000020000078                _edata = .
 
-.igot.plt       0x0000000020000078        0x0 load address 0x0000000008005b60
+.igot.plt       0x0000000020000078        0x0 load address 0x0000000008006028
  .igot.plt      0x0000000020000078        0x0 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp/crtbegin.o
                 0x0000000020000078                . = ALIGN (0x4)
 
-.bss            0x0000000020000078      0x454 load address 0x0000000008005b60
+.bss            0x0000000020000078      0x450 load address 0x0000000008006028
                 0x0000000020000078                _sbss = .
                 0x0000000020000078                __bss_start__ = _sbss
  *(.bss)
@@ -4140,7 +4142,7 @@ LOAD c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206
                 0x000000002000007c       0x18 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp/crtbegin.o
  .bss.Address   0x0000000020000094        0x4 .pio/build/MKS_DLC_LG0_V3_BL/src/bootloader.o
                 0x0000000020000094                Address
- .bss.count.11292
+ .bss.count.11308
                 0x0000000020000098        0x1 .pio/build/MKS_DLC_LG0_V3_BL/src/bootloader.o
  *fill*         0x0000000020000099        0x3 
  .bss.fw_size_count
@@ -4150,7 +4152,7 @@ LOAD c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206
                 0x00000000200000a0                msp
  .bss.reset     0x00000000200000a4        0x4 .pio/build/MKS_DLC_LG0_V3_BL/src/bootloader.o
                 0x00000000200000a4                reset
- .bss.SD_Type   0x00000000200000a8        0x1 .pio/build/MKS_DLC_LG0_V3_BL/src/external_device/SD/sdcard.o
+ .bss.SD_Type   0x00000000200000a8        0x1 .pio/build/MKS_DLC_LG0_V3_BL/src/external_device/SD/sd_spi_drv.o
                 0x00000000200000a8                SD_Type
  *fill*         0x00000000200000a9        0x3 
  .bss.FatFs     0x00000000200000ac        0x8 .pio/build/MKS_DLC_LG0_V3_BL/libda0/libfatfs.a(ff.o)
@@ -4178,46 +4180,45 @@ LOAD c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206
  *fill*         0x00000000200001a6        0x2 
  COMMON         0x00000000200001a8       0x58 .pio/build/MKS_DLC_LG0_V3_BL/src/external_device/SD/sd_spi_drv.o
                 0x00000000200001a8                sd_hspi
- COMMON         0x0000000020000200       0x24 .pio/build/MKS_DLC_LG0_V3_BL/src/external_device/SD/sdcard.o
+ COMMON         0x0000000020000200       0x20 .pio/build/MKS_DLC_LG0_V3_BL/src/external_device/SD/sdcard.o
                 0x0000000020000200                hal_sd
- COMMON         0x0000000020000224        0xe .pio/build/MKS_DLC_LG0_V3_BL/src/hal/hal.o
-                0x0000000020000224                hal_flag
-                0x0000000020000228                hal_info
- *fill*         0x0000000020000232        0x2 
- COMMON         0x0000000020000234       0x44 .pio/build/MKS_DLC_LG0_V3_BL/src/hal/hal_uart.o
-                0x0000000020000234                debug_uart
- COMMON         0x0000000020000278      0x230 .pio/build/MKS_DLC_LG0_V3_BL/src/main.o
-                0x0000000020000278                fil
- COMMON         0x00000000200004a8       0x14 .pio/build/MKS_DLC_LG0_V3_BL/src/mcu/stm32_f401rc_hal_system.o
-                0x00000000200004a8                bl_flash
- COMMON         0x00000000200004bc        0x9 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-lock.o)
-                0x00000000200004bc                __lock___atexit_recursive_mutex
-                0x00000000200004bd                __lock___arc4random_mutex
-                0x00000000200004be                __lock___env_recursive_mutex
-                0x00000000200004bf                __lock___sinit_recursive_mutex
-                0x00000000200004c0                __lock___malloc_recursive_mutex
-                0x00000000200004c1                __lock___at_quick_exit_mutex
-                0x00000000200004c2                __lock___dd_hash_mutex
-                0x00000000200004c3                __lock___tz_mutex
-                0x00000000200004c4                __lock___sfp_recursive_mutex
- *fill*         0x00000000200004c5        0x3 
- COMMON         0x00000000200004c8        0x4 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-reent.o)
-                0x00000000200004c8                errno
-                0x00000000200004cc                . = ALIGN (0x4)
-                0x00000000200004cc                _ebss = .
-                0x00000000200004cc                __bss_end__ = _ebss
+ COMMON         0x0000000020000220        0xe .pio/build/MKS_DLC_LG0_V3_BL/src/hal/hal.o
+                0x0000000020000220                hal_flag
+                0x0000000020000224                hal_info
+ *fill*         0x000000002000022e        0x2 
+ COMMON         0x0000000020000230       0x44 .pio/build/MKS_DLC_LG0_V3_BL/src/hal/hal_uart.o
+                0x0000000020000230                debug_uart
+ COMMON         0x0000000020000274      0x230 .pio/build/MKS_DLC_LG0_V3_BL/src/main.o
+                0x0000000020000274                fil
+ COMMON         0x00000000200004a4       0x14 .pio/build/MKS_DLC_LG0_V3_BL/src/mcu/stm32_f401rc_hal_system.o
+                0x00000000200004a4                bl_flash
+ COMMON         0x00000000200004b8        0x9 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-lock.o)
+                0x00000000200004b8                __lock___atexit_recursive_mutex
+                0x00000000200004b9                __lock___arc4random_mutex
+                0x00000000200004ba                __lock___env_recursive_mutex
+                0x00000000200004bb                __lock___sinit_recursive_mutex
+                0x00000000200004bc                __lock___malloc_recursive_mutex
+                0x00000000200004bd                __lock___at_quick_exit_mutex
+                0x00000000200004be                __lock___dd_hash_mutex
+                0x00000000200004bf                __lock___tz_mutex
+                0x00000000200004c0                __lock___sfp_recursive_mutex
+ *fill*         0x00000000200004c1        0x3 
+ COMMON         0x00000000200004c4        0x4 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-reent.o)
+                0x00000000200004c4                errno
+                0x00000000200004c8                . = ALIGN (0x4)
+                0x00000000200004c8                _ebss = .
+                0x00000000200004c8                __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x00000000200004cc      0x604 load address 0x0000000008005b60
-                0x00000000200004d0                . = ALIGN (0x8)
- *fill*         0x00000000200004cc        0x4 
-                0x00000000200004d0                PROVIDE (end = .)
+                0x00000000200004c8      0x600 load address 0x0000000008006028
+                0x00000000200004c8                . = ALIGN (0x8)
+                0x00000000200004c8                PROVIDE (end = .)
                 [!provide]                        PROVIDE (_end = .)
-                0x00000000200006d0                . = (. + _Min_Heap_Size)
- *fill*         0x00000000200004d0      0x200 
-                0x0000000020000ad0                . = (. + _Min_Stack_Size)
- *fill*         0x00000000200006d0      0x400 
-                0x0000000020000ad0                . = ALIGN (0x8)
+                0x00000000200006c8                . = (. + _Min_Heap_Size)
+ *fill*         0x00000000200004c8      0x200 
+                0x0000000020000ac8                . = (. + _Min_Stack_Size)
+ *fill*         0x00000000200006c8      0x400 
+                0x0000000020000ac8                . = ALIGN (0x8)
 
 /DISCARD/
  libc.a(*)

@@ -46,11 +46,14 @@
 #include "hal/hal_flash.h"
 #include "external_device/SD/sdcard.h"
 #include "external_device//LCD/lcd_dgus.h"
+
+#include "external_device/SD/sd_spi_drv.h"
+#include "external_device/SD/sd_sdio_drv.h"
+
 // Fatfs 
 #include "ff.h"
 
 extern FIL fil;
-
 
 FRESULT open_append();
 

@@ -6,6 +6,9 @@
 #define BL_NAME             "1:/ROBIN_E3_V2.bin"
 #define BL_OLD_NAME         "1:/ROBIN_E3_V2.CUR"
 
+#define SD_USE_SPI   
+
+
 #define BOARD_SD_SCK_PORT   GPIOB
 #define BOARD_SD_SCK_PIN    GPIO_PIN_13
 

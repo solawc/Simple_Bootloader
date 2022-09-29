@@ -5,18 +5,18 @@
 
 // #define CUSTOM_BOARD_NAME
 
-#define BOOTLOAD_VERSION                "V0.4"
-#define BOOTLOAD_DATE                   "2022-09-17"
+#define BOOTLOAD_VERSION                "V0.5"
+#define BOOTLOAD_DATE                   "2022-09-29"
 #ifndef CUSTOM_BOARD_NAME
 
 #ifdef MKS_BOARD_NAME
     #define BOARD_NAME                  MKS_BOARD_NAME
 #else
-    #define BOARD_NAME                  "MKS MotherBoard"
+    #define BOARD_NAME                  "CustomBoard_XX"
 #endif
 
 #else 
-#define BOARD_NAME                      "ZNP Robin Nano_DW V2.0"
+#define BOARD_NAME                      "Custom"
 #endif
 
 #ifndef MCU_FREQ
@@ -50,14 +50,7 @@
 #define HAS_SD_ON_BOARD
 #ifdef HAS_SD_ON_BOARD
 
-    #define SD_USE_SPI
-    // #define SD_USE_SDIO
 
-    #ifdef SD_USE_SPI
-        #ifdef SD_USE_SDIO
-            #error:"Please undefine SD_USE_SPI! or SD_USE_SDIO!";    
-        #endif // SD_USE_SDIO
-    #endif // SD_USE_SPI
 #endif // HAS_SD_ON_BOARD
 
 /* Enabled and settings LCD type */

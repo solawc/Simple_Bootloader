@@ -88,6 +88,11 @@ void BspSdEnd();
 uint8_t BspSdSpiReadWriteByte(uint8_t data);
 uint8_t BspDetRead(void);
 uint32_t BspSpiAutoSpeed(void);
+uint8_t BspDetRead(void);
 void SdSpiDrvDeinit(void);
 void SdSpiDrvInit(void);
+uint8_t SdDrvInitAll(void);
+uint8_t SdSpiReadBuff(uint8_t*buf,uint32_t sector,uint8_t cnt);
+uint8_t SdSpiWriteBuff(uint8_t*buf,uint32_t sector,uint8_t cnt);
+uint32_t SdGetSectorCount(void);
 #endif
