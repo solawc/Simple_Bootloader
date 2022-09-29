@@ -184,8 +184,8 @@ void bl_rename_file(void) {
 */
 void bl_jump_to_app(uint32_t sect, uint32_t Msp, uint32_t reset_msp) {
 
-    uint32_t base;
-    uint32_t offset;
+    __IO uint32_t base;
+    __IO uint32_t offset;
 
 #ifdef LCD_DGUS_DWIN
     jump_to_star();
@@ -258,7 +258,7 @@ void bsp_led_init(void) {
     GPIO_Init.Mode = GPIO_MODE_OUTPUT_PP;
     GPIO_Init.Pin = BOOT_LED_PIN;
     GPIO_Init.Pull = GPIO_NOPULL;
-    GPIO_Init.Speed = GPIO_SPEED_FREQ_HIGH;
+    GPIO_Init.Speed = GPIO_SPEED_FREQ_LOW;
     HAL_GPIO_Init(BOOT_LED_PORT, &GPIO_Init);
 }
 

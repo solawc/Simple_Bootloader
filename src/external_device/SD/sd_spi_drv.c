@@ -21,7 +21,6 @@ static void BspSdSpiGpioInit(void) {
 
     _SD_GPIO_CLK_ENABLE();                          // Enable SPI and GPIO Clock
 
-
     SPI_GPIO_Init.Pin = SD_SPI_MISO_PIN|
                         SD_SPI_MOSI_PIN|
                         SD_SPI_SCK_PIN;

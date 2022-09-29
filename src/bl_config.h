@@ -24,7 +24,7 @@
 #endif
 
 /* Enabled bootload if you want know debug info. */
-#define BL_DEBUG_MODE
+#define BL_DEBUG_MODE                                       /* Flash will use about 0.5Kb, so I suggest open it */
 #ifdef BL_DEBUG_MODE
 #define DEBUG_SWITCH        1
 #endif
@@ -49,12 +49,10 @@
 /* Enabled SD Card, SD_USE_SPI use SPI mode, SD_USE_SDIO use SDIO mode. */
 #define HAS_SD_ON_BOARD
 #ifdef HAS_SD_ON_BOARD
-
-
 #endif // HAS_SD_ON_BOARD
 
 /* Enabled and settings LCD type */
-// #define LCD_DGUS_DWIN           // use 5A A5 type 
-// #define LCD_FSMA_TFT            // use FSMC to driver LCD
-// #define LCD_SPI_TS              // use SPI to driver LCD
+// #define LCD_DGUS_DWIN            /* Use 5A A5 type           */ 
+// #define LCD_FSMA_TFT             /* Use FSMC to driver LCD   */ 
+// #define LCD_SPI_TS35             /* Use SPI to driver LCD    */ 
 #endif

@@ -27,14 +27,14 @@ static void lcd_dgus_uart_gpio_init(void) {
     GPIO_Init.Mode = GPIO_MODE_AF_PP;
     GPIO_Init.Pin = LCD_DGUS_TX_PIN;
     GPIO_Init.Pull = GPIO_NOPULL;
-    GPIO_Init.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
+    GPIO_Init.Speed = GPIO_SPEED_FREQ_LOW;
     HAL_GPIO_Init(LCD_DGUS_TX_PORT, &GPIO_Init);
 
     GPIO_Init.Alternate = LCD_DGUA_RX_AF;
     GPIO_Init.Mode = GPIO_MODE_AF_PP;
     GPIO_Init.Pin = LCD_DGUS_RX_PIN;
     GPIO_Init.Pull = GPIO_NOPULL;
-    GPIO_Init.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
+    GPIO_Init.Speed = GPIO_SPEED_FREQ_LOW;
     HAL_GPIO_Init(LCD_DGUS_RX_PORT, &GPIO_Init);
 }
 
