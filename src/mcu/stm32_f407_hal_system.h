@@ -19,17 +19,18 @@
 #define ADDR_FLASH_SECTOR_3     ((uint32_t)0x0800C000) 	//扇区3起始地址, 16 Kbytes  
 #define ADDR_FLASH_SECTOR_4     ((uint32_t)0x08010000) 	//扇区4起始地址, 64 Kbytes  
 #define ADDR_FLASH_SECTOR_5     ((uint32_t)0x08020000) 	//扇区5起始地址, 128 Kbytes   
-#define ADDR_FLASH_SECTOR_7     ((uint32_t)0x08060000) 	//扇区6起始地址, 128 Kbytes 
+#define ADDR_FLASH_SECTOR_6     ((uint32_t)0x08060000) 	//扇区6起始地址, 128 Kbytes 
 
-
-
-#define SYSTEM_INIT()           hal_stm32f407_system_init()
+#define SYSTEM_INIT()                   hal_stm32f407_system_init()
+#define COMMON_FLASH_ERASE()            hal_flash_erase()
+#define COMMON_FLASH_WRITE(A,B,C)       hal_flash_write(A,B,C)
 
 void hal_stm32f407_system_init(void);
 void Error_Handler(void);
 void systick_init(void);
+uint8_t hal_flash_erase(void);
+void hal_flash_write(uint32_t addr ,uint32_t *buff, uint32_t num);
 uint8_t hal_get_flash_sector(uint32_t addr);
-
 #endif
 
 #endif

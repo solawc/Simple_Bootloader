@@ -8,7 +8,7 @@ uint8_t  SD_Type=0;
 static void BspSdSpiGpioInit(void) {
 
     GPIO_InitTypeDef SPI_GPIO_Init = {
-        .Alternate = BOARD_SD_GPIO_AF,
+        .Alternate = BOARD_SD_GPIO_AF, 
         .Mode = GPIO_MODE_AF_PP,
         .Pull = GPIO_NOPULL,
     };

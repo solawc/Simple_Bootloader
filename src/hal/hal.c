@@ -28,7 +28,7 @@ void printf_info(void) {
     DEBUG_PRINTF("-Board:%s\n", BOARD_NAME);
     DEBUG_PRINTF("-Version:%s, %s\n",BOOTLOAD_VERSION, BOOTLOAD_DATE);
     DEBUG_PRINTF("-U:%d|SD:%d\n", hal_info.is_has_u_disk, hal_sd.is_has_sd);
-    DEBUG_PRINTF("-MCU info:%dK,%dMHz\n", hal_info.mcu_size, hal_info.mcu_freq);
+    DEBUG_PRINTF("-MCU Info:%dK,%dMHz\n", hal_info.mcu_size, hal_info.mcu_freq);
 }
 
 /*********************************************************
