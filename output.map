@@ -3917,9 +3917,9 @@ LOAD c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206
  .text.HAL_UART_Transmit
                 0x0000000008001754       0xd8 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_uart.o
                 0x0000000008001754                HAL_UART_Transmit
- .text.nvic_set_vector_table
+ .text.NvicSetVectorTable
                 0x000000000800182c       0x14 .pio/build/MKS_ROBIN_NANO_V3/src/bootloader.o
-                0x000000000800182c                nvic_set_vector_table
+                0x000000000800182c                NvicSetVectorTable
  .text.bl_erase_flash
                 0x0000000008001840        0x8 .pio/build/MKS_ROBIN_NANO_V3/src/bootloader.o
                 0x0000000008001840                bl_erase_flash

@@ -35,7 +35,7 @@ uint32_t Address = 0x00;        /* 擦除计数，擦除地址   */
 _FLASH_SIZE_TYPE    *hlfP; //= (_FLASH_SIZE_TYPE *)file_read_buff;
 
 /* only support cortex-M */
-void nvic_set_vector_table(uint32_t NVIC_VectTab, uint32_t Offset) {
+void NvicSetVectorTable(uint32_t NVIC_VectTab, uint32_t Offset) {
 
     /* Check the parameters */
     assert_param(IS_NVIC_VECTTAB(NVIC_VectTab));
@@ -185,7 +185,7 @@ void bl_jump_to_app(uint32_t sect, uint32_t Msp, uint32_t reset_msp) {
 
     offset = sect-base;	
 
-    nvic_set_vector_table(base, offset);
+    NvicSetVectorTable(base, offset);
 
     __set_MSP(Msp);
 

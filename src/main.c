@@ -9,30 +9,30 @@ int main(void) {
     
     FRESULT fs_res;
 
-    nvic_set_vector_table(NVIC_VectTab_FLASH, 0x0000);
+    NvicSetVectorTable(NVIC_VectTab_FLASH, 0x0000);
 
-    HAL_Init();        
+    HAL_Init();                     /* Init STM32 HAL Lib and systick */   
 
-    SYSTEM_INIT();          // set system clock
+    SYSTEM_INIT();                  /* Config MCU Freq */     
+        
+    printf_info_init();             /* Get bootloader info */
 
-    printf_info_init();
-
-    hal_uart_init();        // init uart 
+    hal_uart_init();                /* Init UART */
 
 #ifdef BOOT_LED_PORT
     bsp_led_init();
 #endif
 
 #ifdef LCD_DGUS_DWIN
-    lcd_dgus_init();        // init dgus uart
-    HAL_Delay(2000);        // wait for dwin display setup
-    jump_to_rst();          // reset dwin dispaly
+    lcd_dgus_init();        /* Init dgus uart */ 
+    HAL_Delay(2000);        /* Wait for dwin display setup */ 
+    jump_to_rst();          /* Reset dwin dispaly */ 
 #endif
 
-    SdcardApiReg();
+    SdcardApiReg();         /* Regiest SDCard Driver for SPI or SDIO(TODO..) */
 
     if(!hal_sd.sd_get_status()) {
-        fs_res = f_mount(&fs,"1:",1);
+        fs_res = f_mount(&fs, SD_PATH, 1);
         if(fs_res == FR_OK){
             hal_sd.is_has_sd = 1;
         }else {

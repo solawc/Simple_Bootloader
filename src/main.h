@@ -62,8 +62,4 @@
 
 extern FIL fil;
 
-FRESULT open_append();
-
-void IO_test(void);
-
 #endif /* main.h */ 

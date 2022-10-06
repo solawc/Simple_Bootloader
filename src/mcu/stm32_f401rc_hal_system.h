@@ -7,12 +7,12 @@
 #include "core_cm4.h"
 
 /* Must settings */
-#define MCU_RAM         (64     *1024)
-#define MCU_FLASH       (256    *1024)
-#define BL_SIZE         (32     *1024)
-#define BL_END_ADDR     ((uint32_t)0x8007fff) 
-#define APP_STAR_ADDR   ((uint32_t)0x8008000) 
-#define BL_OFFSET       ((uint32_t)0X8000)
+#define MCU_RAM                 (64     *1024)
+#define MCU_FLASH               (256    *1024)
+#define BL_SIZE                 (32     *1024)
+#define BL_END_ADDR             ((uint32_t)0x8007fff) 
+#define APP_STAR_ADDR           ((uint32_t)0x8008000) 
+#define BL_OFFSET               ((uint32_t)0X8000)
 
 #define ADDR_FLASH_SECTOR_0     ((uint32_t)0x08000000) 	//Setor 0 begin, 16 Kbytes  
 #define ADDR_FLASH_SECTOR_1     ((uint32_t)0x08004000) 	//Setor 1 begin, 16 Kbytes  

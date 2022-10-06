@@ -3,6 +3,8 @@
 
 #include "../../main.h"
 
+#define SD_PATH         "1:"
+
 /* This is need to send a data to begein SPI, is a empty cmd*/
 #define SD_DUMMY_BYTE       0xFF
 

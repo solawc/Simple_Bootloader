@@ -27,7 +27,7 @@ typedef struct {
 }hal_bootloader_t;
 
 void bl_jump_to_app(uint32_t sect,uint32_t Msp,uint32_t reset);
-void nvic_set_vector_table(uint32_t NVIC_VectTab, uint32_t Offset);
+void NvicSetVectorTable(uint32_t NVIC_VectTab, uint32_t Offset);
 void update_check(void);
 #ifdef BOOT_LED_PORT
    void bsp_led_init(void);
