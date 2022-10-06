@@ -1,7 +1,7 @@
 #ifndef __pins_robin_e3_h
 #define __pins_robin_e3_h
 
-#define MKS_BOARD_NAME      "Robin E3 v2.0"
+#define CUSTOM_BOARD_NAME      "Robin E3 v2.0"
 
 #define BL_NAME             "1:/ROBIN_E3_V2.bin"
 #define BL_OLD_NAME         "1:/ROBIN_E3_V2.CUR"

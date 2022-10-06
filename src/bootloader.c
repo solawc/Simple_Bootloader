@@ -28,13 +28,11 @@ const char *FW_OLD_FILE_SD    = BL_OLD_NAME;
 char firmware_name_buff[FW_NAME_SIZE];
 char old_name_buff[FW_NAME_SIZE];
 
-MSP_TYPE msp = 0;
-RST_TYPE reset = 0;
-uint32_t Address = 0x00;       //擦除计数，擦除地址
+MSP_TYPE msp = 0;               /* Point to Msp         */
+RST_TYPE reset = 0;             /* Point to void*       */
+uint32_t Address = 0x00;        /* 擦除计数，擦除地址   */
 
-// uint8_t file_read_buff[1024];  // 用于装载读取回来的固件
-
-_FLASH_SIZE_TYPE *hlfP; //= (_FLASH_SIZE_TYPE *)file_read_buff;
+_FLASH_SIZE_TYPE    *hlfP; //= (_FLASH_SIZE_TYPE *)file_read_buff;
 
 /* only support cortex-M */
 void nvic_set_vector_table(uint32_t NVIC_VectTab, uint32_t Offset) {
@@ -47,15 +45,11 @@ void nvic_set_vector_table(uint32_t NVIC_VectTab, uint32_t Offset) {
 
 /* only support cortex-M */
 void bl_reset_systick(void) {
-
-    /* Disable systick */
-    SysTick->CTRL &= ~ SysTick_CTRL_ENABLE_Msk;
+    SysTick->CTRL &= ~ SysTick_CTRL_ENABLE_Msk;     /* Disable systick */
 }
 
 void bl_erase_flash(void) {
-
-    /* A define at pins_xxx.h */
-    COMMON_FLASH_ERASE();
+    COMMON_FLASH_ERASE();                           /* A define at pins_xxx.h */
 }
 
 /****************************************************************************
@@ -82,11 +76,9 @@ uint32_t fw_size_count = 0;
 
 void bl_write_flash(void) {
 
-    Address = APP_STAR_ADDR;
-
     UINT br;
 
-    // printf("[DEBUG]Firmware Size=%ldK\n", hal_sd.fw_file_size/1024);
+    Address = APP_STAR_ADDR;
 
     INFO_PRINT("[DEBUG]Firmware Size=%ldK\n", hal_sd.fw_file_size/1024);
 
@@ -145,11 +137,7 @@ uint8_t bl_open_update_file(void) {
 
     file_size = fil.obj.objsize;
 
-    if(file_size > (MCU_FLASH - BL_SIZE)) {
-
-        
-        return 1;
-    }
+    if(file_size > (MCU_FLASH - BL_SIZE)) { return 1; }
 
     if(fr == FR_OK) {
         hal_sd.fw_file_size = fil.obj.objsize;
@@ -163,8 +151,6 @@ uint8_t bl_open_update_file(void) {
 }
 
 void bl_rename_file(void) {
-
-    // FIL fil;
     f_close(&fil);
     f_unlink(hal_bl.fw_old_name_buf);
     f_rename(hal_bl.fw_name_buf, hal_bl.fw_old_name_buf);
@@ -191,8 +177,6 @@ void bl_jump_to_app(uint32_t sect, uint32_t Msp, uint32_t reset_msp) {
     jump_to_star();
 #endif
 
-    // hal_sd_deinit();
-
     SdSpiDrvDeinit();
 
     SysTick->CTRL &= ~ SysTick_CTRL_ENABLE_Msk;
@@ -218,7 +202,6 @@ void jump_without_update(void) {
 	reset = *((uint32_t *)(APP_STAR_ADDR + 4));
 
     bl_jump_to_app(APP_STAR_ADDR, msp, reset);
-
 }
 
 void jump_with_update() {

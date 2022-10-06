@@ -1,11 +1,11 @@
 Archive member included to satisfy reference by file (symbol)
 
-.pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
+.pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
                               .pio/build/MKS_ROBIN_NANO_V3/src/main.o (f_mount)
-.pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ffunicode.o)
-                              .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o) (ff_uni2oem)
-.pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(diskio.o)
-                              .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o) (disk_status)
+.pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ffunicode.o)
+                              .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o) (ff_uni2oem)
+.pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(diskio.o)
+                              .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o) (disk_status)
 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-exit.o)
                               c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/crt0.o (exit)
 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-impure.o)
@@ -15,9 +15,9 @@ c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/
 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-malloc.o)
                               .pio/build/MKS_ROBIN_NANO_V3/src/bootloader.o (malloc)
 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-memcmp.o)
-                              .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o) (memcmp)
+                              .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o) (memcmp)
 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-memcpy-stub.o)
-                              .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o) (memcpy)
+                              .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o) (memcpy)
 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-memset.o)
                               c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/crt0.o (memset)
 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-nano-freer.o)
@@ -31,7 +31,7 @@ c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/
 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-sbrkr.o)
                               c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-nano-mallocr.o) (_sbrk_r)
 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-strchr.o)
-                              .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o) (strchr)
+                              .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o) (strchr)
 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-strcpy.o)
                               .pio/build/MKS_ROBIN_NANO_V3/src/bootloader.o (strcpy)
 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-wbuf.o)
@@ -257,16 +257,7 @@ Discarded input sections
                 0x0000000000000000        0x4 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_adc.o
  .text.HAL_ADC_GetError
                 0x0000000000000000        0x4 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_adc.o
- .debug_info    0x0000000000000000      0xf7f .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_adc.o
- .debug_abbrev  0x0000000000000000      0x266 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_adc.o
- .debug_loc     0x0000000000000000      0xb43 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_adc.o
- .debug_aranges
-                0x0000000000000000       0xe8 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_adc.o
- .debug_ranges  0x0000000000000000       0xd8 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_adc.o
- .debug_line    0x0000000000000000     0x11fb .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_adc.o
- .debug_str     0x0000000000000000      0xa2f .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_adc.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_adc.o
- .debug_frame   0x0000000000000000      0x268 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_adc.o
  .ARM.attributes
                 0x0000000000000000       0x2e .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_adc.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_adc_ex.o
@@ -302,16 +293,7 @@ Discarded input sections
                 0x0000000000000000      0x20c .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_adc_ex.o
  .text.HAL_ADCEx_MultiModeConfigChannel
                 0x0000000000000000       0x58 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_adc_ex.o
- .debug_info    0x0000000000000000      0xd72 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_adc_ex.o
- .debug_abbrev  0x0000000000000000      0x2bf .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_adc_ex.o
- .debug_loc     0x0000000000000000      0xa82 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_adc_ex.o
- .debug_aranges
-                0x0000000000000000       0x90 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_adc_ex.o
- .debug_ranges  0x0000000000000000       0x80 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_adc_ex.o
- .debug_line    0x0000000000000000      0xdbe .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_adc_ex.o
- .debug_str     0x0000000000000000      0xa92 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_adc_ex.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_adc_ex.o
- .debug_frame   0x0000000000000000      0x18c .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_adc_ex.o
  .ARM.attributes
                 0x0000000000000000       0x2e .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_adc_ex.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_can.o
@@ -389,27 +371,12 @@ Discarded input sections
                 0x0000000000000000        0x4 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_can.o
  .text.HAL_CAN_ResetError
                 0x0000000000000000       0x20 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_can.o
- .debug_info    0x0000000000000000     0x133e .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_can.o
- .debug_abbrev  0x0000000000000000      0x294 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_can.o
- .debug_loc     0x0000000000000000      0xdd6 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_can.o
- .debug_aranges
-                0x0000000000000000      0x138 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_can.o
- .debug_ranges  0x0000000000000000      0x128 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_can.o
- .debug_line    0x0000000000000000     0x1230 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_can.o
- .debug_str     0x0000000000000000      0xb37 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_can.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_can.o
- .debug_frame   0x0000000000000000      0x2dc .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_can.o
  .ARM.attributes
                 0x0000000000000000       0x2e .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_can.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_cec.o
  .data          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_cec.o
  .bss           0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_cec.o
- .debug_info    0x0000000000000000      0x174 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_cec.o
- .debug_abbrev  0x0000000000000000       0x97 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_cec.o
- .debug_aranges
-                0x0000000000000000       0x18 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_cec.o
- .debug_line    0x0000000000000000      0x254 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_cec.o
- .debug_str     0x0000000000000000      0x2c2 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_cec.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_cec.o
  .ARM.attributes
                 0x0000000000000000       0x33 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_cec.o
@@ -463,39 +430,18 @@ Discarded input sections
                 0x0000000000000000       0x30 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_crc.o
  .text.HAL_CRC_GetState
                 0x0000000000000000        0x4 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_crc.o
- .debug_info    0x0000000000000000      0x4bd .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_crc.o
- .debug_abbrev  0x0000000000000000      0x201 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_crc.o
- .debug_loc     0x0000000000000000      0x1ad .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_crc.o
- .debug_aranges
-                0x0000000000000000       0x50 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_crc.o
- .debug_ranges  0x0000000000000000       0x40 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_crc.o
- .debug_line    0x0000000000000000      0x50c .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_crc.o
- .debug_str     0x0000000000000000      0x48f .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_crc.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_crc.o
- .debug_frame   0x0000000000000000       0xc0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_crc.o
  .ARM.attributes
                 0x0000000000000000       0x2e .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_crc.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_cryp.o
  .data          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_cryp.o
  .bss           0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_cryp.o
- .debug_info    0x0000000000000000      0x174 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_cryp.o
- .debug_abbrev  0x0000000000000000       0x97 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_cryp.o
- .debug_aranges
-                0x0000000000000000       0x18 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_cryp.o
- .debug_line    0x0000000000000000      0x254 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_cryp.o
- .debug_str     0x0000000000000000      0x2c3 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_cryp.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_cryp.o
  .ARM.attributes
                 0x0000000000000000       0x33 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_cryp.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_cryp_ex.o
  .data          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_cryp_ex.o
  .bss           0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_cryp_ex.o
- .debug_info    0x0000000000000000      0x174 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_cryp_ex.o
- .debug_abbrev  0x0000000000000000       0x97 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_cryp_ex.o
- .debug_aranges
-                0x0000000000000000       0x18 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_cryp_ex.o
- .debug_line    0x0000000000000000      0x254 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_cryp_ex.o
- .debug_str     0x0000000000000000      0x2c6 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_cryp_ex.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_cryp_ex.o
  .ARM.attributes
                 0x0000000000000000       0x33 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_cryp_ex.o
@@ -544,16 +490,7 @@ Discarded input sections
                 0x0000000000000000        0x4 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dac.o
  .text.HAL_DAC_GetError
                 0x0000000000000000        0x4 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dac.o
- .debug_info    0x0000000000000000      0xc1d .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dac.o
- .debug_abbrev  0x0000000000000000      0x205 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dac.o
- .debug_loc     0x0000000000000000      0x79d .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dac.o
- .debug_aranges
-                0x0000000000000000       0xc0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dac.o
- .debug_ranges  0x0000000000000000       0xb0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dac.o
- .debug_line    0x0000000000000000      0x98a .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dac.o
- .debug_str     0x0000000000000000      0x8ab .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dac.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dac.o
- .debug_frame   0x0000000000000000      0x1f4 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dac.o
  .ARM.attributes
                 0x0000000000000000       0x2e .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dac.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dac_ex.o
@@ -585,16 +522,7 @@ Discarded input sections
                 0x0000000000000000        0xa .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dac_ex.o
  .text.DAC_DMAErrorCh2
                 0x0000000000000000       0x18 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dac_ex.o
- .debug_info    0x0000000000000000      0x93b .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dac_ex.o
- .debug_abbrev  0x0000000000000000      0x237 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dac_ex.o
- .debug_loc     0x0000000000000000      0x442 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dac_ex.o
- .debug_aranges
-                0x0000000000000000       0x80 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dac_ex.o
- .debug_ranges  0x0000000000000000       0x70 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dac_ex.o
- .debug_line    0x0000000000000000      0x668 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dac_ex.o
- .debug_str     0x0000000000000000      0x7d0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dac_ex.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dac_ex.o
- .debug_frame   0x0000000000000000      0x128 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dac_ex.o
  .ARM.attributes
                 0x0000000000000000       0x2e .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dac_ex.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dcmi.o
@@ -642,16 +570,7 @@ Discarded input sections
                 0x0000000000000000        0x6 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dcmi.o
  .text.HAL_DCMI_GetError
                 0x0000000000000000        0x4 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dcmi.o
- .debug_info    0x0000000000000000      0xd13 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dcmi.o
- .debug_abbrev  0x0000000000000000      0x28a .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dcmi.o
- .debug_loc     0x0000000000000000      0x687 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dcmi.o
- .debug_aranges
-                0x0000000000000000       0xc0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dcmi.o
- .debug_ranges  0x0000000000000000       0xb0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dcmi.o
- .debug_line    0x0000000000000000      0xcd2 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dcmi.o
- .debug_str     0x0000000000000000      0x9f6 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dcmi.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dcmi.o
- .debug_frame   0x0000000000000000      0x1e4 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dcmi.o
  .ARM.attributes
                 0x0000000000000000       0x2e .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dcmi.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dcmi_ex.o
@@ -659,27 +578,12 @@ Discarded input sections
  .bss           0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dcmi_ex.o
  .text.HAL_DCMI_Init
                 0x0000000000000000       0x8e .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dcmi_ex.o
- .debug_info    0x0000000000000000      0x6ef .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dcmi_ex.o
- .debug_abbrev  0x0000000000000000      0x195 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dcmi_ex.o
- .debug_loc     0x0000000000000000       0x59 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dcmi_ex.o
- .debug_aranges
-                0x0000000000000000       0x20 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dcmi_ex.o
- .debug_ranges  0x0000000000000000       0x10 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dcmi_ex.o
- .debug_line    0x0000000000000000      0x417 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dcmi_ex.o
- .debug_str     0x0000000000000000      0x757 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dcmi_ex.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dcmi_ex.o
- .debug_frame   0x0000000000000000       0x30 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dcmi_ex.o
  .ARM.attributes
                 0x0000000000000000       0x2e .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dcmi_ex.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dfsdm.o
  .data          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dfsdm.o
  .bss           0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dfsdm.o
- .debug_info    0x0000000000000000      0x174 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dfsdm.o
- .debug_abbrev  0x0000000000000000       0x97 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dfsdm.o
- .debug_aranges
-                0x0000000000000000       0x18 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dfsdm.o
- .debug_line    0x0000000000000000      0x254 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dfsdm.o
- .debug_str     0x0000000000000000      0x2c4 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dfsdm.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dfsdm.o
  .ARM.attributes
                 0x0000000000000000       0x33 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dfsdm.o
@@ -718,27 +622,12 @@ Discarded input sections
                 0x0000000000000000        0x4 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dma.o
  .rodata.flagBitshiftOffset.10572
                 0x0000000000000000        0x8 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dma.o
- .debug_info    0x0000000000000000      0xbed .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dma.o
- .debug_abbrev  0x0000000000000000      0x2d5 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dma.o
- .debug_loc     0x0000000000000000      0xbf9 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dma.o
- .debug_aranges
-                0x0000000000000000       0x90 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dma.o
- .debug_ranges  0x0000000000000000       0x80 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dma.o
- .debug_line    0x0000000000000000      0xf6b .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dma.o
- .debug_str     0x0000000000000000      0x852 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dma.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dma.o
- .debug_frame   0x0000000000000000      0x188 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dma.o
  .ARM.attributes
                 0x0000000000000000       0x2e .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dma.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dma2d.o
  .data          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dma2d.o
  .bss           0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dma2d.o
- .debug_info    0x0000000000000000      0x174 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dma2d.o
- .debug_abbrev  0x0000000000000000       0x97 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dma2d.o
- .debug_aranges
-                0x0000000000000000       0x18 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dma2d.o
- .debug_line    0x0000000000000000      0x254 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dma2d.o
- .debug_str     0x0000000000000000      0x2c4 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dma2d.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dma2d.o
  .ARM.attributes
                 0x0000000000000000       0x33 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dma2d.o
@@ -753,27 +642,12 @@ Discarded input sections
                 0x0000000000000000      0xefc .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dma_ex.o
  .text.HAL_DMAEx_ChangeMemory
                 0x0000000000000000       0x10 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dma_ex.o
- .debug_info    0x0000000000000000      0x698 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dma_ex.o
- .debug_abbrev  0x0000000000000000      0x1f5 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dma_ex.o
- .debug_loc     0x0000000000000000      0x422 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dma_ex.o
- .debug_aranges
-                0x0000000000000000       0x38 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dma_ex.o
- .debug_ranges  0x0000000000000000       0x28 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dma_ex.o
- .debug_line    0x0000000000000000      0xb49 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dma_ex.o
- .debug_str     0x0000000000000000      0x647 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dma_ex.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dma_ex.o
- .debug_frame   0x0000000000000000       0x74 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dma_ex.o
  .ARM.attributes
                 0x0000000000000000       0x2e .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dma_ex.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dsi.o
  .data          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dsi.o
  .bss           0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dsi.o
- .debug_info    0x0000000000000000      0x174 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dsi.o
- .debug_abbrev  0x0000000000000000       0x97 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dsi.o
- .debug_aranges
-                0x0000000000000000       0x18 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dsi.o
- .debug_line    0x0000000000000000      0x254 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dsi.o
- .debug_str     0x0000000000000000      0x2c2 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dsi.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dsi.o
  .ARM.attributes
                 0x0000000000000000       0x33 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_dsi.o
@@ -844,16 +718,7 @@ Discarded input sections
                 0x0000000000000000       0xb4 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_eth.o
  .text.HAL_ETH_GetState
                 0x0000000000000000        0x6 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_eth.o
- .debug_info    0x0000000000000000     0x1b65 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_eth.o
- .debug_abbrev  0x0000000000000000      0x2c9 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_eth.o
- .debug_loc     0x0000000000000000     0x1040 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_eth.o
- .debug_aranges
-                0x0000000000000000      0x118 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_eth.o
- .debug_ranges  0x0000000000000000      0x108 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_eth.o
- .debug_line    0x0000000000000000     0x18d8 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_eth.o
- .debug_str     0x0000000000000000      0xfe2 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_eth.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_eth.o
- .debug_frame   0x0000000000000000      0x360 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_eth.o
  .ARM.attributes
                 0x0000000000000000       0x2e .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_eth.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_exti.o
@@ -877,16 +742,7 @@ Discarded input sections
                 0x0000000000000000       0x14 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_exti.o
  .text.HAL_EXTI_GenerateSWI
                 0x0000000000000000       0x14 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_exti.o
- .debug_info    0x0000000000000000      0x6b0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_exti.o
- .debug_abbrev  0x0000000000000000      0x20d .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_exti.o
- .debug_loc     0x0000000000000000      0x4ee .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_exti.o
- .debug_aranges
-                0x0000000000000000       0x60 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_exti.o
- .debug_ranges  0x0000000000000000       0x50 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_exti.o
- .debug_line    0x0000000000000000      0x74b .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_exti.o
- .debug_str     0x0000000000000000      0x4df .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_exti.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_exti.o
- .debug_frame   0x0000000000000000       0xf4 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_exti.o
  .ARM.attributes
                 0x0000000000000000       0x2e .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_exti.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_flash.o
@@ -938,60 +794,30 @@ Discarded input sections
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_flash_ramfunc.o
  .data          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_flash_ramfunc.o
  .bss           0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_flash_ramfunc.o
- .debug_info    0x0000000000000000      0x174 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_flash_ramfunc.o
- .debug_abbrev  0x0000000000000000       0x97 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_flash_ramfunc.o
- .debug_aranges
-                0x0000000000000000       0x18 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_flash_ramfunc.o
- .debug_line    0x0000000000000000      0x254 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_flash_ramfunc.o
- .debug_str     0x0000000000000000      0x2cc .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_flash_ramfunc.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_flash_ramfunc.o
  .ARM.attributes
                 0x0000000000000000       0x33 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_flash_ramfunc.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_fmpi2c.o
  .data          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_fmpi2c.o
  .bss           0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_fmpi2c.o
- .debug_info    0x0000000000000000      0x174 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_fmpi2c.o
- .debug_abbrev  0x0000000000000000       0x97 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_fmpi2c.o
- .debug_aranges
-                0x0000000000000000       0x18 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_fmpi2c.o
- .debug_line    0x0000000000000000      0x254 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_fmpi2c.o
- .debug_str     0x0000000000000000      0x2c5 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_fmpi2c.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_fmpi2c.o
  .ARM.attributes
                 0x0000000000000000       0x33 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_fmpi2c.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_fmpi2c_ex.o
  .data          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_fmpi2c_ex.o
  .bss           0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_fmpi2c_ex.o
- .debug_info    0x0000000000000000      0x174 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_fmpi2c_ex.o
- .debug_abbrev  0x0000000000000000       0x97 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_fmpi2c_ex.o
- .debug_aranges
-                0x0000000000000000       0x18 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_fmpi2c_ex.o
- .debug_line    0x0000000000000000      0x254 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_fmpi2c_ex.o
- .debug_str     0x0000000000000000      0x2c8 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_fmpi2c_ex.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_fmpi2c_ex.o
  .ARM.attributes
                 0x0000000000000000       0x33 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_fmpi2c_ex.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_fmpsmbus.o
  .data          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_fmpsmbus.o
  .bss           0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_fmpsmbus.o
- .debug_info    0x0000000000000000      0x174 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_fmpsmbus.o
- .debug_abbrev  0x0000000000000000       0x97 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_fmpsmbus.o
- .debug_aranges
-                0x0000000000000000       0x18 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_fmpsmbus.o
- .debug_line    0x0000000000000000      0x254 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_fmpsmbus.o
- .debug_str     0x0000000000000000      0x2c7 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_fmpsmbus.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_fmpsmbus.o
  .ARM.attributes
                 0x0000000000000000       0x33 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_fmpsmbus.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_fmpsmbus_ex.o
  .data          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_fmpsmbus_ex.o
  .bss           0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_fmpsmbus_ex.o
- .debug_info    0x0000000000000000      0x174 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_fmpsmbus_ex.o
- .debug_abbrev  0x0000000000000000       0x97 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_fmpsmbus_ex.o
- .debug_aranges
-                0x0000000000000000       0x18 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_fmpsmbus_ex.o
- .debug_line    0x0000000000000000      0x254 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_fmpsmbus_ex.o
- .debug_str     0x0000000000000000      0x2ca .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_fmpsmbus_ex.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_fmpsmbus_ex.o
  .ARM.attributes
                 0x0000000000000000       0x33 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_fmpsmbus_ex.o
@@ -1011,24 +837,12 @@ Discarded input sections
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_hash.o
  .data          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_hash.o
  .bss           0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_hash.o
- .debug_info    0x0000000000000000      0x174 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_hash.o
- .debug_abbrev  0x0000000000000000       0x97 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_hash.o
- .debug_aranges
-                0x0000000000000000       0x18 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_hash.o
- .debug_line    0x0000000000000000      0x254 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_hash.o
- .debug_str     0x0000000000000000      0x2c3 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_hash.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_hash.o
  .ARM.attributes
                 0x0000000000000000       0x33 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_hash.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_hash_ex.o
  .data          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_hash_ex.o
  .bss           0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_hash_ex.o
- .debug_info    0x0000000000000000      0x174 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_hash_ex.o
- .debug_abbrev  0x0000000000000000       0x97 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_hash_ex.o
- .debug_aranges
-                0x0000000000000000       0x18 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_hash_ex.o
- .debug_line    0x0000000000000000      0x254 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_hash_ex.o
- .debug_str     0x0000000000000000      0x2c6 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_hash_ex.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_hash_ex.o
  .ARM.attributes
                 0x0000000000000000       0x33 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_hash_ex.o
@@ -1091,16 +905,7 @@ Discarded input sections
                 0x0000000000000000        0xa .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_hcd.o
  .text.HAL_HCD_GetCurrentSpeed
                 0x0000000000000000        0xa .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_hcd.o
- .debug_info    0x0000000000000000     0x1585 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_hcd.o
- .debug_abbrev  0x0000000000000000      0x2ca .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_hcd.o
- .debug_loc     0x0000000000000000     0x12cb .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_hcd.o
- .debug_aranges
-                0x0000000000000000       0xf8 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_hcd.o
- .debug_ranges  0x0000000000000000       0xe8 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_hcd.o
- .debug_line    0x0000000000000000     0x1230 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_hcd.o
- .debug_str     0x0000000000000000      0xc2a .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_hcd.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_hcd.o
- .debug_frame   0x0000000000000000      0x2b0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_hcd.o
  .ARM.attributes
                 0x0000000000000000       0x2e .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_hcd.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_i2c.o
@@ -1268,27 +1073,12 @@ Discarded input sections
                 0x0000000000000000        0x6 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_i2c.o
  .text.HAL_I2C_GetError
                 0x0000000000000000        0x4 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_i2c.o
- .debug_info    0x0000000000000000     0x3a0c .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_i2c.o
- .debug_abbrev  0x0000000000000000      0x2ab .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_i2c.o
- .debug_loc     0x0000000000000000     0x4108 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_i2c.o
- .debug_aranges
-                0x0000000000000000      0x2a0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_i2c.o
- .debug_ranges  0x0000000000000000      0x2a8 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_i2c.o
- .debug_line    0x0000000000000000     0x5499 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_i2c.o
- .debug_str     0x0000000000000000     0x110c .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_i2c.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_i2c.o
- .debug_frame   0x0000000000000000      0x970 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_i2c.o
  .ARM.attributes
                 0x0000000000000000       0x2e .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_i2c.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_i2c_ex.o
  .data          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_i2c_ex.o
  .bss           0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_i2c_ex.o
- .debug_info    0x0000000000000000      0x174 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_i2c_ex.o
- .debug_abbrev  0x0000000000000000       0x97 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_i2c_ex.o
- .debug_aranges
-                0x0000000000000000       0x18 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_i2c_ex.o
- .debug_line    0x0000000000000000      0x254 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_i2c_ex.o
- .debug_str     0x0000000000000000      0x2c5 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_i2c_ex.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_i2c_ex.o
  .ARM.attributes
                 0x0000000000000000       0x33 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_i2c_ex.o
@@ -1355,16 +1145,7 @@ Discarded input sections
                 0x0000000000000000        0x6 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_i2s.o
  .text.HAL_I2S_GetError
                 0x0000000000000000        0x4 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_i2s.o
- .debug_info    0x0000000000000000     0x1299 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_i2s.o
- .debug_abbrev  0x0000000000000000      0x275 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_i2s.o
- .debug_loc     0x0000000000000000      0xf94 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_i2s.o
- .debug_aranges
-                0x0000000000000000      0x108 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_i2s.o
- .debug_ranges  0x0000000000000000      0x128 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_i2s.o
- .debug_line    0x0000000000000000     0x1504 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_i2s.o
- .debug_str     0x0000000000000000      0xa2e .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_i2s.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_i2s.o
- .debug_frame   0x0000000000000000      0x324 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_i2s.o
  .ARM.attributes
                 0x0000000000000000       0x2e .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_i2s.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_i2s_ex.o
@@ -1398,16 +1179,7 @@ Discarded input sections
                 0x0000000000000000       0x3c .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_i2s_ex.o
  .text.HAL_I2SEx_FullDuplex_IRQHandler
                 0x0000000000000000      0x1d8 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_i2s_ex.o
- .debug_info    0x0000000000000000      0xf0d .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_i2s_ex.o
- .debug_abbrev  0x0000000000000000      0x2c1 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_i2s_ex.o
- .debug_loc     0x0000000000000000      0xaeb .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_i2s_ex.o
- .debug_aranges
-                0x0000000000000000       0x88 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_i2s_ex.o
- .debug_ranges  0x0000000000000000       0x90 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_i2s_ex.o
- .debug_line    0x0000000000000000     0x1267 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_i2s_ex.o
- .debug_str     0x0000000000000000      0x96f .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_i2s_ex.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_i2s_ex.o
- .debug_frame   0x0000000000000000      0x194 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_i2s_ex.o
  .ARM.attributes
                 0x0000000000000000       0x2e .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_i2s_ex.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_irda.o
@@ -1507,16 +1279,7 @@ Discarded input sections
                 0x0000000000000000        0xc .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_irda.o
  .text.HAL_IRDA_GetError
                 0x0000000000000000        0x4 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_irda.o
- .debug_info    0x0000000000000000     0x16f7 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_irda.o
- .debug_abbrev  0x0000000000000000      0x2c0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_irda.o
- .debug_loc     0x0000000000000000     0x14da .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_irda.o
- .debug_aranges
-                0x0000000000000000      0x190 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_irda.o
- .debug_ranges  0x0000000000000000      0x180 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_irda.o
- .debug_line    0x0000000000000000     0x1813 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_irda.o
- .debug_str     0x0000000000000000      0xbfa .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_irda.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_irda.o
- .debug_frame   0x0000000000000000      0x43c .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_irda.o
  .ARM.attributes
                 0x0000000000000000       0x2e .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_irda.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_iwdg.o
@@ -1526,51 +1289,24 @@ Discarded input sections
                 0x0000000000000000       0x58 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_iwdg.o
  .text.HAL_IWDG_Refresh
                 0x0000000000000000        0xc .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_iwdg.o
- .debug_info    0x0000000000000000      0x2f8 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_iwdg.o
- .debug_abbrev  0x0000000000000000      0x157 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_iwdg.o
- .debug_loc     0x0000000000000000       0x86 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_iwdg.o
- .debug_aranges
-                0x0000000000000000       0x28 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_iwdg.o
- .debug_ranges  0x0000000000000000       0x18 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_iwdg.o
- .debug_line    0x0000000000000000      0x3b1 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_iwdg.o
- .debug_str     0x0000000000000000      0x386 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_iwdg.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_iwdg.o
- .debug_frame   0x0000000000000000       0x44 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_iwdg.o
  .ARM.attributes
                 0x0000000000000000       0x2e .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_iwdg.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_lptim.o
  .data          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_lptim.o
  .bss           0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_lptim.o
- .debug_info    0x0000000000000000      0x174 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_lptim.o
- .debug_abbrev  0x0000000000000000       0x97 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_lptim.o
- .debug_aranges
-                0x0000000000000000       0x18 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_lptim.o
- .debug_line    0x0000000000000000      0x254 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_lptim.o
- .debug_str     0x0000000000000000      0x2c4 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_lptim.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_lptim.o
  .ARM.attributes
                 0x0000000000000000       0x33 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_lptim.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_ltdc.o
  .data          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_ltdc.o
  .bss           0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_ltdc.o
- .debug_info    0x0000000000000000      0x174 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_ltdc.o
- .debug_abbrev  0x0000000000000000       0x97 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_ltdc.o
- .debug_aranges
-                0x0000000000000000       0x18 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_ltdc.o
- .debug_line    0x0000000000000000      0x254 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_ltdc.o
- .debug_str     0x0000000000000000      0x2c3 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_ltdc.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_ltdc.o
  .ARM.attributes
                 0x0000000000000000       0x33 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_ltdc.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_ltdc_ex.o
  .data          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_ltdc_ex.o
  .bss           0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_ltdc_ex.o
- .debug_info    0x0000000000000000      0x174 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_ltdc_ex.o
- .debug_abbrev  0x0000000000000000       0x97 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_ltdc_ex.o
- .debug_aranges
-                0x0000000000000000       0x18 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_ltdc_ex.o
- .debug_line    0x0000000000000000      0x254 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_ltdc_ex.o
- .debug_str     0x0000000000000000      0x2c6 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_ltdc_ex.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_ltdc_ex.o
  .ARM.attributes
                 0x0000000000000000       0x33 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_ltdc_ex.o
@@ -1653,16 +1389,7 @@ Discarded input sections
                 0x0000000000000000       0x7c .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_mmc.o
  .text.HAL_MMC_Abort_IT
                 0x0000000000000000       0x9c .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_mmc.o
- .debug_info    0x0000000000000000     0x2399 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_mmc.o
- .debug_abbrev  0x0000000000000000      0x27a .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_mmc.o
- .debug_loc     0x0000000000000000     0x1dce .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_mmc.o
- .debug_aranges
-                0x0000000000000000      0x148 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_mmc.o
- .debug_ranges  0x0000000000000000      0x138 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_mmc.o
- .debug_line    0x0000000000000000     0x2459 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_mmc.o
- .debug_str     0x0000000000000000     0x10cb .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_mmc.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_mmc.o
- .debug_frame   0x0000000000000000      0x434 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_mmc.o
  .ARM.attributes
                 0x0000000000000000       0x2e .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_mmc.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_nand.o
@@ -1716,16 +1443,7 @@ Discarded input sections
                 0x0000000000000000       0x26 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_nand.o
  .text.HAL_NAND_GetState
                 0x0000000000000000        0x6 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_nand.o
- .debug_info    0x0000000000000000     0x1475 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_nand.o
- .debug_abbrev  0x0000000000000000      0x236 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_nand.o
- .debug_loc     0x0000000000000000     0x1e44 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_nand.o
- .debug_aranges
-                0x0000000000000000       0xd8 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_nand.o
- .debug_ranges  0x0000000000000000       0xc8 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_nand.o
- .debug_line    0x0000000000000000     0x1ca5 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_nand.o
- .debug_str     0x0000000000000000      0x9bd .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_nand.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_nand.o
- .debug_frame   0x0000000000000000      0x2f4 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_nand.o
  .ARM.attributes
                 0x0000000000000000       0x2e .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_nand.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_nor.o
@@ -1769,16 +1487,7 @@ Discarded input sections
                 0x0000000000000000       0x74 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_nor.o
  .bss.uwNORMemoryDataWidth
                 0x0000000000000000        0x4 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_nor.o
- .debug_info    0x0000000000000000      0xc81 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_nor.o
- .debug_abbrev  0x0000000000000000      0x1fe .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_nor.o
- .debug_loc     0x0000000000000000      0xb9f .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_nor.o
- .debug_aranges
-                0x0000000000000000       0xa8 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_nor.o
- .debug_ranges  0x0000000000000000       0x98 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_nor.o
- .debug_line    0x0000000000000000      0xeee .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_nor.o
- .debug_str     0x0000000000000000      0x94a .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_nor.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_nor.o
- .debug_frame   0x0000000000000000      0x230 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_nor.o
  .ARM.attributes
                 0x0000000000000000       0x2e .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_nor.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_pccard.o
@@ -1812,16 +1521,7 @@ Discarded input sections
                 0x0000000000000000       0x34 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_pccard.o
  .text.HAL_PCCARD_ReadStatus
                 0x0000000000000000       0x2c .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_pccard.o
- .debug_info    0x0000000000000000      0x968 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_pccard.o
- .debug_abbrev  0x0000000000000000      0x218 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_pccard.o
- .debug_loc     0x0000000000000000      0x890 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_pccard.o
- .debug_aranges
-                0x0000000000000000       0x88 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_pccard.o
- .debug_ranges  0x0000000000000000       0x78 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_pccard.o
- .debug_line    0x0000000000000000      0xa70 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_pccard.o
- .debug_str     0x0000000000000000      0x749 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_pccard.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_pccard.o
- .debug_frame   0x0000000000000000      0x160 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_pccard.o
  .ARM.attributes
                 0x0000000000000000       0x2e .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_pccard.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_pcd.o
@@ -1899,16 +1599,7 @@ Discarded input sections
                 0x0000000000000000        0xa .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_pcd.o
  .text.HAL_PCD_GetState
                 0x0000000000000000        0x6 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_pcd.o
- .debug_info    0x0000000000000000     0x1ab0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_pcd.o
- .debug_abbrev  0x0000000000000000      0x2d3 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_pcd.o
- .debug_loc     0x0000000000000000     0x125d .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_pcd.o
- .debug_aranges
-                0x0000000000000000      0x138 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_pcd.o
- .debug_ranges  0x0000000000000000      0x128 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_pcd.o
- .debug_line    0x0000000000000000     0x14bf .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_pcd.o
- .debug_str     0x0000000000000000      0xe47 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_pcd.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_pcd.o
- .debug_frame   0x0000000000000000      0x374 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_pcd.o
  .ARM.attributes
                 0x0000000000000000       0x2e .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_pcd.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_pcd_ex.o
@@ -1922,16 +1613,7 @@ Discarded input sections
                 0x0000000000000000        0x2 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_pcd_ex.o
  .text.HAL_PCDEx_BCD_Callback
                 0x0000000000000000        0x2 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_pcd_ex.o
- .debug_info    0x0000000000000000      0x7d2 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_pcd_ex.o
- .debug_abbrev  0x0000000000000000      0x212 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_pcd_ex.o
- .debug_loc     0x0000000000000000       0xc1 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_pcd_ex.o
- .debug_aranges
-                0x0000000000000000       0x38 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_pcd_ex.o
- .debug_ranges  0x0000000000000000       0x28 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_pcd_ex.o
- .debug_line    0x0000000000000000      0x41c .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_pcd_ex.o
- .debug_str     0x0000000000000000      0x7ea .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_pcd_ex.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_pcd_ex.o
- .debug_frame   0x0000000000000000       0x5c .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_pcd_ex.o
  .ARM.attributes
                 0x0000000000000000       0x2e .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_pcd_ex.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_pwr.o
@@ -1971,15 +1653,7 @@ Discarded input sections
                 0x0000000000000000       0x10 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_pwr.o
  .text.HAL_PWR_DisableSEVOnPend
                 0x0000000000000000       0x10 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_pwr.o
- .debug_info    0x0000000000000000      0x804 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_pwr.o
- .debug_abbrev  0x0000000000000000      0x1a6 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_pwr.o
- .debug_aranges
-                0x0000000000000000       0xa0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_pwr.o
- .debug_ranges  0x0000000000000000       0x90 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_pwr.o
- .debug_line    0x0000000000000000      0x53c .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_pwr.o
- .debug_str     0x0000000000000000      0x62d .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_pwr.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_pwr.o
- .debug_frame   0x0000000000000000      0x138 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_pwr.o
  .ARM.attributes
                 0x0000000000000000       0x2e .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_pwr.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_pwr_ex.o
@@ -1997,27 +1671,12 @@ Discarded input sections
                 0x0000000000000000       0x10 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_pwr_ex.o
  .text.HAL_PWREx_ControlVoltageScaling
                 0x0000000000000000       0x64 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_pwr_ex.o
- .debug_info    0x0000000000000000      0x53a .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_pwr_ex.o
- .debug_abbrev  0x0000000000000000      0x19a .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_pwr_ex.o
- .debug_loc     0x0000000000000000       0xb5 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_pwr_ex.o
- .debug_aranges
-                0x0000000000000000       0x48 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_pwr_ex.o
- .debug_ranges  0x0000000000000000       0x38 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_pwr_ex.o
- .debug_line    0x0000000000000000      0x435 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_pwr_ex.o
- .debug_str     0x0000000000000000      0x4f0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_pwr_ex.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_pwr_ex.o
- .debug_frame   0x0000000000000000       0x90 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_pwr_ex.o
  .ARM.attributes
                 0x0000000000000000       0x2e .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_pwr_ex.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_qspi.o
  .data          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_qspi.o
  .bss           0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_qspi.o
- .debug_info    0x0000000000000000      0x174 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_qspi.o
- .debug_abbrev  0x0000000000000000       0x97 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_qspi.o
- .debug_aranges
-                0x0000000000000000       0x18 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_qspi.o
- .debug_line    0x0000000000000000      0x254 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_qspi.o
- .debug_str     0x0000000000000000      0x2c3 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_qspi.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_qspi.o
  .ARM.attributes
                 0x0000000000000000       0x33 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_qspi.o
@@ -2055,16 +1714,7 @@ Discarded input sections
                 0x0000000000000000       0x34 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_rcc_ex.o
  .text.HAL_RCC_DeInit
                 0x0000000000000000      0x13c .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_rcc_ex.o
- .debug_info    0x0000000000000000      0x740 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_rcc_ex.o
- .debug_abbrev  0x0000000000000000      0x19a .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_rcc_ex.o
- .debug_loc     0x0000000000000000      0x3cf .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_rcc_ex.o
- .debug_aranges
-                0x0000000000000000       0x48 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_rcc_ex.o
- .debug_ranges  0x0000000000000000       0x38 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_rcc_ex.o
- .debug_line    0x0000000000000000      0x724 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_rcc_ex.o
- .debug_str     0x0000000000000000      0x598 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_rcc_ex.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_rcc_ex.o
- .debug_frame   0x0000000000000000       0xa4 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_rcc_ex.o
  .ARM.attributes
                 0x0000000000000000       0x2e .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_rcc_ex.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_rng.o
@@ -2098,16 +1748,7 @@ Discarded input sections
                 0x0000000000000000        0x4 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_rng.o
  .text.HAL_RNG_GetError
                 0x0000000000000000        0x4 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_rng.o
- .debug_info    0x0000000000000000      0x65a .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_rng.o
- .debug_abbrev  0x0000000000000000      0x1e3 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_rng.o
- .debug_loc     0x0000000000000000      0x3c9 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_rng.o
- .debug_aranges
-                0x0000000000000000       0x88 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_rng.o
- .debug_ranges  0x0000000000000000       0x78 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_rng.o
- .debug_line    0x0000000000000000      0x6e2 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_rng.o
- .debug_str     0x0000000000000000      0x557 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_rng.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_rng.o
- .debug_frame   0x0000000000000000      0x128 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_rng.o
  .ARM.attributes
                 0x0000000000000000       0x2e .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_rng.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_rtc.o
@@ -2163,16 +1804,7 @@ Discarded input sections
                 0x0000000000000000       0x3c .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_rtc.o
  .text.HAL_RTC_GetAlarm
                 0x0000000000000000       0x80 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_rtc.o
- .debug_info    0x0000000000000000     0x10d6 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_rtc.o
- .debug_abbrev  0x0000000000000000      0x22c .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_rtc.o
- .debug_loc     0x0000000000000000      0xd14 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_rtc.o
- .debug_aranges
-                0x0000000000000000       0xe0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_rtc.o
- .debug_ranges  0x0000000000000000       0xd0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_rtc.o
- .debug_line    0x0000000000000000     0x11da .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_rtc.o
- .debug_str     0x0000000000000000      0x8a8 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_rtc.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_rtc.o
- .debug_frame   0x0000000000000000      0x25c .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_rtc.o
  .ARM.attributes
                 0x0000000000000000       0x2e .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_rtc.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_rtc_ex.o
@@ -2248,39 +1880,18 @@ Discarded input sections
                 0x0000000000000000        0x2 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_rtc_ex.o
  .text.HAL_RTCEx_PollForAlarmBEvent
                 0x0000000000000000       0x40 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_rtc_ex.o
- .debug_info    0x0000000000000000     0x12e1 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_rtc_ex.o
- .debug_abbrev  0x0000000000000000      0x240 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_rtc_ex.o
- .debug_loc     0x0000000000000000     0x1083 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_rtc_ex.o
- .debug_aranges
-                0x0000000000000000      0x130 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_rtc_ex.o
- .debug_ranges  0x0000000000000000      0x120 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_rtc_ex.o
- .debug_line    0x0000000000000000     0x1834 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_rtc_ex.o
- .debug_str     0x0000000000000000      0xb81 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_rtc_ex.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_rtc_ex.o
- .debug_frame   0x0000000000000000      0x390 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_rtc_ex.o
  .ARM.attributes
                 0x0000000000000000       0x2e .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_rtc_ex.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_sai.o
  .data          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_sai.o
  .bss           0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_sai.o
- .debug_info    0x0000000000000000      0x174 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_sai.o
- .debug_abbrev  0x0000000000000000       0x97 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_sai.o
- .debug_aranges
-                0x0000000000000000       0x18 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_sai.o
- .debug_line    0x0000000000000000      0x254 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_sai.o
- .debug_str     0x0000000000000000      0x2c2 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_sai.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_sai.o
  .ARM.attributes
                 0x0000000000000000       0x33 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_sai.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_sai_ex.o
  .data          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_sai_ex.o
  .bss           0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_sai_ex.o
- .debug_info    0x0000000000000000      0x174 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_sai_ex.o
- .debug_abbrev  0x0000000000000000       0x97 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_sai_ex.o
- .debug_aranges
-                0x0000000000000000       0x18 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_sai_ex.o
- .debug_line    0x0000000000000000      0x254 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_sai_ex.o
- .debug_str     0x0000000000000000      0x2c5 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_sai_ex.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_sai_ex.o
  .ARM.attributes
                 0x0000000000000000       0x33 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_sai_ex.o
@@ -2371,27 +1982,12 @@ Discarded input sections
                 0x0000000000000000       0x92 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_sd.o
  .text.HAL_SD_Abort_IT
                 0x0000000000000000       0xa8 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_sd.o
- .debug_info    0x0000000000000000     0x26fd .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_sd.o
- .debug_abbrev  0x0000000000000000      0x29f .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_sd.o
- .debug_loc     0x0000000000000000     0x218d .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_sd.o
- .debug_aranges
-                0x0000000000000000      0x168 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_sd.o
- .debug_ranges  0x0000000000000000      0x158 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_sd.o
- .debug_line    0x0000000000000000     0x2855 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_sd.o
- .debug_str     0x0000000000000000     0x11bc .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_sd.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_sd.o
- .debug_frame   0x0000000000000000      0x4c4 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_sd.o
  .ARM.attributes
                 0x0000000000000000       0x2e .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_sd.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_sdram.o
  .data          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_sdram.o
  .bss           0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_sdram.o
- .debug_info    0x0000000000000000      0x174 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_sdram.o
- .debug_abbrev  0x0000000000000000       0x97 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_sdram.o
- .debug_aranges
-                0x0000000000000000       0x18 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_sdram.o
- .debug_line    0x0000000000000000      0x254 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_sdram.o
- .debug_str     0x0000000000000000      0x2c4 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_sdram.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_sdram.o
  .ARM.attributes
                 0x0000000000000000       0x33 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_sdram.o
@@ -2478,16 +2074,7 @@ Discarded input sections
                 0x0000000000000000        0xc .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_smartcard.o
  .text.HAL_SMARTCARD_GetError
                 0x0000000000000000        0x4 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_smartcard.o
- .debug_info    0x0000000000000000     0x14b4 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_smartcard.o
- .debug_abbrev  0x0000000000000000      0x2dc .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_smartcard.o
- .debug_loc     0x0000000000000000     0x122d .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_smartcard.o
- .debug_aranges
-                0x0000000000000000      0x158 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_smartcard.o
- .debug_ranges  0x0000000000000000      0x148 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_smartcard.o
- .debug_line    0x0000000000000000     0x14cb .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_smartcard.o
- .debug_str     0x0000000000000000      0xca0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_smartcard.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_smartcard.o
- .debug_frame   0x0000000000000000      0x3a0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_smartcard.o
  .ARM.attributes
                 0x0000000000000000       0x2e .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_smartcard.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_smbus.o
@@ -2579,27 +2166,12 @@ Discarded input sections
                 0x0000000000000000        0x6 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_smbus.o
  .text.HAL_SMBUS_GetError
                 0x0000000000000000        0x4 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_smbus.o
- .debug_info    0x0000000000000000     0x15d8 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_smbus.o
- .debug_abbrev  0x0000000000000000      0x25c .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_smbus.o
- .debug_loc     0x0000000000000000     0x16df .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_smbus.o
- .debug_aranges
-                0x0000000000000000      0x170 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_smbus.o
- .debug_ranges  0x0000000000000000      0x180 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_smbus.o
- .debug_line    0x0000000000000000     0x1c74 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_smbus.o
- .debug_str     0x0000000000000000      0xb42 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_smbus.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_smbus.o
- .debug_frame   0x0000000000000000      0x404 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_smbus.o
  .ARM.attributes
                 0x0000000000000000       0x2e .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_smbus.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_spdifrx.o
  .data          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_spdifrx.o
  .bss           0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_spdifrx.o
- .debug_info    0x0000000000000000      0x174 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_spdifrx.o
- .debug_abbrev  0x0000000000000000       0x97 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_spdifrx.o
- .debug_aranges
-                0x0000000000000000       0x18 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_spdifrx.o
- .debug_line    0x0000000000000000      0x254 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_spdifrx.o
- .debug_str     0x0000000000000000      0x2c6 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_spdifrx.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_spdifrx.o
  .ARM.attributes
                 0x0000000000000000       0x33 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_spdifrx.o
@@ -2747,16 +2319,7 @@ Discarded input sections
                 0x0000000000000000       0x32 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_sram.o
  .text.HAL_SRAM_GetState
                 0x0000000000000000        0x6 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_sram.o
- .debug_info    0x0000000000000000      0xd8d .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_sram.o
- .debug_abbrev  0x0000000000000000      0x240 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_sram.o
- .debug_loc     0x0000000000000000      0x975 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_sram.o
- .debug_aranges
-                0x0000000000000000       0xa0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_sram.o
- .debug_ranges  0x0000000000000000       0x90 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_sram.o
- .debug_line    0x0000000000000000      0x9f7 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_sram.o
- .debug_str     0x0000000000000000      0xa08 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_sram.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_sram.o
- .debug_frame   0x0000000000000000      0x1b4 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_sram.o
  .ARM.attributes
                 0x0000000000000000       0x2e .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_sram.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_tim.o
@@ -3000,16 +2563,7 @@ Discarded input sections
                 0x0000000000000000      0x23c .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_tim.o
  .text.HAL_TIM_Encoder_Stop_DMA
                 0x0000000000000000      0x106 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_tim.o
- .debug_info    0x0000000000000000     0x3e3c .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_tim.o
- .debug_abbrev  0x0000000000000000      0x258 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_tim.o
- .debug_loc     0x0000000000000000     0x4fd6 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_tim.o
- .debug_aranges
-                0x0000000000000000      0x3d0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_tim.o
- .debug_ranges  0x0000000000000000      0x3c0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_tim.o
- .debug_line    0x0000000000000000     0x4c17 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_tim.o
- .debug_str     0x0000000000000000     0x17b7 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_tim.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_tim.o
- .debug_frame   0x0000000000000000      0xb18 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_tim.o
  .ARM.attributes
                 0x0000000000000000       0x2e .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_tim.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_tim_ex.o
@@ -3099,16 +2653,7 @@ Discarded input sections
                 0x0000000000000000        0x6 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_tim_ex.o
  .text.HAL_TIMEx_GetChannelNState
                 0x0000000000000000       0x2a .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_tim_ex.o
- .debug_info    0x0000000000000000     0x1bc8 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_tim_ex.o
- .debug_abbrev  0x0000000000000000      0x26e .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_tim_ex.o
- .debug_loc     0x0000000000000000     0x1c84 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_tim_ex.o
- .debug_aranges
-                0x0000000000000000      0x168 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_tim_ex.o
- .debug_ranges  0x0000000000000000      0x158 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_tim_ex.o
- .debug_line    0x0000000000000000     0x1e38 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_tim_ex.o
- .debug_str     0x0000000000000000      0xfb8 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_tim_ex.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_tim_ex.o
- .debug_frame   0x0000000000000000      0x420 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_tim_ex.o
  .ARM.attributes
                 0x0000000000000000       0x2e .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_tim_ex.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_uart.o
@@ -3317,16 +2862,7 @@ Discarded input sections
                 0x0000000000000000        0x6 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_usart.o
  .text.HAL_USART_GetError
                 0x0000000000000000        0x4 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_usart.o
- .debug_info    0x0000000000000000     0x1870 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_usart.o
- .debug_abbrev  0x0000000000000000      0x299 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_usart.o
- .debug_loc     0x0000000000000000     0x1803 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_usart.o
- .debug_aranges
-                0x0000000000000000      0x178 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_usart.o
- .debug_ranges  0x0000000000000000      0x168 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_usart.o
- .debug_line    0x0000000000000000     0x1dd2 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_usart.o
- .debug_str     0x0000000000000000      0xc3c .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_usart.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_usart.o
- .debug_frame   0x0000000000000000      0x42c .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_usart.o
  .ARM.attributes
                 0x0000000000000000       0x2e .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_usart.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_wwdg.o
@@ -3342,83 +2878,54 @@ Discarded input sections
                 0x0000000000000000        0x2 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_wwdg.o
  .text.HAL_WWDG_IRQHandler
                 0x0000000000000000       0x22 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_wwdg.o
- .debug_info    0x0000000000000000      0x37e .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_wwdg.o
- .debug_abbrev  0x0000000000000000      0x1da .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_wwdg.o
- .debug_loc     0x0000000000000000       0xa6 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_wwdg.o
- .debug_aranges
-                0x0000000000000000       0x40 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_wwdg.o
- .debug_ranges  0x0000000000000000       0x30 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_wwdg.o
- .debug_line    0x0000000000000000      0x3d8 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_wwdg.o
- .debug_str     0x0000000000000000      0x3c8 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_wwdg.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_wwdg.o
- .debug_frame   0x0000000000000000       0x74 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_wwdg.o
  .ARM.attributes
                 0x0000000000000000       0x2e .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_wwdg.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_adc.o
  .data          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_adc.o
  .bss           0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_adc.o
- .debug_line    0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_adc.o
- .debug_str     0x0000000000000000      0x13f .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_adc.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_adc.o
  .ARM.attributes
                 0x0000000000000000       0x33 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_adc.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_crc.o
  .data          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_crc.o
  .bss           0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_crc.o
- .debug_line    0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_crc.o
- .debug_str     0x0000000000000000      0x13f .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_crc.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_crc.o
  .ARM.attributes
                 0x0000000000000000       0x33 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_crc.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_dac.o
  .data          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_dac.o
  .bss           0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_dac.o
- .debug_line    0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_dac.o
- .debug_str     0x0000000000000000      0x13f .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_dac.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_dac.o
  .ARM.attributes
                 0x0000000000000000       0x33 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_dac.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_dma.o
  .data          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_dma.o
  .bss           0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_dma.o
- .debug_line    0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_dma.o
- .debug_str     0x0000000000000000      0x13f .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_dma.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_dma.o
  .ARM.attributes
                 0x0000000000000000       0x33 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_dma.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_dma2d.o
  .data          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_dma2d.o
  .bss           0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_dma2d.o
- .debug_line    0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_dma2d.o
- .debug_str     0x0000000000000000      0x141 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_dma2d.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_dma2d.o
  .ARM.attributes
                 0x0000000000000000       0x33 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_dma2d.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_exti.o
  .data          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_exti.o
  .bss           0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_exti.o
- .debug_line    0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_exti.o
- .debug_str     0x0000000000000000      0x140 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_exti.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_exti.o
  .ARM.attributes
                 0x0000000000000000       0x33 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_exti.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_fmc.o
  .data          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_fmc.o
  .bss           0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_fmc.o
- .debug_info    0x0000000000000000      0x174 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_fmc.o
- .debug_abbrev  0x0000000000000000       0x97 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_fmc.o
- .debug_aranges
-                0x0000000000000000       0x18 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_fmc.o
- .debug_line    0x0000000000000000      0x254 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_fmc.o
- .debug_str     0x0000000000000000      0x2c1 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_fmc.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_fmc.o
  .ARM.attributes
                 0x0000000000000000       0x33 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_fmc.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_fmpi2c.o
  .data          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_fmpi2c.o
  .bss           0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_fmpi2c.o
- .debug_line    0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_fmpi2c.o
- .debug_str     0x0000000000000000      0x142 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_fmpi2c.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_fmpi2c.o
  .ARM.attributes
                 0x0000000000000000       0x33 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_fmpi2c.o
@@ -3461,71 +2968,48 @@ Discarded input sections
                 0x0000000000000000       0x1c .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_fsmc.o
  .text.FSMC_PCCARD_DeInit
                 0x0000000000000000       0x1e .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_fsmc.o
- .debug_info    0x0000000000000000      0xc2d .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_fsmc.o
- .debug_abbrev  0x0000000000000000      0x1d9 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_fsmc.o
- .debug_loc     0x0000000000000000      0x7b4 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_fsmc.o
- .debug_aranges
-                0x0000000000000000       0xa8 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_fsmc.o
- .debug_ranges  0x0000000000000000       0x98 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_fsmc.o
- .debug_line    0x0000000000000000      0x9af .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_fsmc.o
- .debug_str     0x0000000000000000      0x822 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_fsmc.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_fsmc.o
- .debug_frame   0x0000000000000000      0x1b0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_fsmc.o
  .ARM.attributes
                 0x0000000000000000       0x2e .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_fsmc.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_gpio.o
  .data          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_gpio.o
  .bss           0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_gpio.o
- .debug_line    0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_gpio.o
- .debug_str     0x0000000000000000      0x140 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_gpio.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_gpio.o
  .ARM.attributes
                 0x0000000000000000       0x33 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_gpio.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_i2c.o
  .data          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_i2c.o
  .bss           0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_i2c.o
- .debug_line    0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_i2c.o
- .debug_str     0x0000000000000000      0x13f .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_i2c.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_i2c.o
  .ARM.attributes
                 0x0000000000000000       0x33 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_i2c.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_lptim.o
  .data          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_lptim.o
  .bss           0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_lptim.o
- .debug_line    0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_lptim.o
- .debug_str     0x0000000000000000      0x141 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_lptim.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_lptim.o
  .ARM.attributes
                 0x0000000000000000       0x33 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_lptim.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_pwr.o
  .data          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_pwr.o
  .bss           0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_pwr.o
- .debug_line    0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_pwr.o
- .debug_str     0x0000000000000000      0x13f .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_pwr.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_pwr.o
  .ARM.attributes
                 0x0000000000000000       0x33 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_pwr.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_rcc.o
  .data          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_rcc.o
  .bss           0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_rcc.o
- .debug_line    0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_rcc.o
- .debug_str     0x0000000000000000      0x13f .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_rcc.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_rcc.o
  .ARM.attributes
                 0x0000000000000000       0x33 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_rcc.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_rng.o
  .data          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_rng.o
  .bss           0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_rng.o
- .debug_line    0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_rng.o
- .debug_str     0x0000000000000000      0x13f .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_rng.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_rng.o
  .ARM.attributes
                 0x0000000000000000       0x33 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_rng.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_rtc.o
  .data          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_rtc.o
  .bss           0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_rtc.o
- .debug_line    0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_rtc.o
- .debug_str     0x0000000000000000      0x13f .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_rtc.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_rtc.o
  .ARM.attributes
                 0x0000000000000000       0x33 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_rtc.o
@@ -3622,39 +3106,24 @@ Discarded input sections
                 0x0000000000000000       0x30 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_sdmmc.o
  .text.SDMMC_CmdSendEXTCSD
                 0x0000000000000000       0x30 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_sdmmc.o
- .debug_info    0x0000000000000000     0x1a25 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_sdmmc.o
- .debug_abbrev  0x0000000000000000      0x22a .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_sdmmc.o
- .debug_loc     0x0000000000000000     0x107d .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_sdmmc.o
- .debug_aranges
-                0x0000000000000000      0x180 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_sdmmc.o
- .debug_ranges  0x0000000000000000      0x170 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_sdmmc.o
- .debug_line    0x0000000000000000     0x11dd .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_sdmmc.o
- .debug_str     0x0000000000000000      0x8cc .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_sdmmc.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_sdmmc.o
- .debug_frame   0x0000000000000000      0x4b8 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_sdmmc.o
  .ARM.attributes
                 0x0000000000000000       0x2e .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_sdmmc.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_spi.o
  .data          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_spi.o
  .bss           0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_spi.o
- .debug_line    0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_spi.o
- .debug_str     0x0000000000000000      0x13f .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_spi.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_spi.o
  .ARM.attributes
                 0x0000000000000000       0x33 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_spi.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_tim.o
  .data          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_tim.o
  .bss           0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_tim.o
- .debug_line    0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_tim.o
- .debug_str     0x0000000000000000      0x13f .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_tim.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_tim.o
  .ARM.attributes
                 0x0000000000000000       0x33 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_tim.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_usart.o
  .data          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_usart.o
  .bss           0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_usart.o
- .debug_line    0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_usart.o
- .debug_str     0x0000000000000000      0x141 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_usart.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_usart.o
  .ARM.attributes
                 0x0000000000000000       0x33 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_usart.o
@@ -3757,16 +3226,7 @@ Discarded input sections
                 0x0000000000000000       0x1a .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_usb.o
  .text.USB_DeActivateRemoteWakeup
                 0x0000000000000000       0x10 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_usb.o
- .debug_info    0x0000000000000000     0x1fb1 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_usb.o
- .debug_abbrev  0x0000000000000000      0x307 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_usb.o
- .debug_loc     0x0000000000000000     0x2493 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_usb.o
- .debug_aranges
-                0x0000000000000000      0x198 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_usb.o
- .debug_ranges  0x0000000000000000      0x188 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_usb.o
- .debug_line    0x0000000000000000     0x1dfd .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_usb.o
- .debug_str     0x0000000000000000      0xd60 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_usb.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_usb.o
- .debug_frame   0x0000000000000000      0x4bc .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_usb.o
  .ARM.attributes
                 0x0000000000000000       0x2e .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_usb.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_utils.o
@@ -3790,16 +3250,7 @@ Discarded input sections
                 0x0000000000000000       0x6c .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_utils.o
  .text.LL_PLL_ConfigSystemClock_HSE
                 0x0000000000000000       0x8c .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_utils.o
- .debug_info    0x0000000000000000      0xd24 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_utils.o
- .debug_abbrev  0x0000000000000000      0x27a .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_utils.o
- .debug_loc     0x0000000000000000      0x670 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_utils.o
- .debug_aranges
-                0x0000000000000000       0x60 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_utils.o
- .debug_ranges  0x0000000000000000       0x50 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_utils.o
- .debug_line    0x0000000000000000      0x920 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_utils.o
- .debug_str     0x0000000000000000      0x7db .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_utils.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_utils.o
- .debug_frame   0x0000000000000000       0xd4 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_utils.o
  .ARM.attributes
                 0x0000000000000000       0x2e .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_ll_utils.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/src/bootloader.o
@@ -3810,12 +3261,6 @@ Discarded input sections
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/src/external_device/LCD/lcd_dgus.o
  .data          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/src/external_device/LCD/lcd_dgus.o
  .bss           0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/src/external_device/LCD/lcd_dgus.o
- .debug_info    0x0000000000000000     0x135c .pio/build/MKS_ROBIN_NANO_V3/src/external_device/LCD/lcd_dgus.o
- .debug_abbrev  0x0000000000000000      0x23f .pio/build/MKS_ROBIN_NANO_V3/src/external_device/LCD/lcd_dgus.o
- .debug_aranges
-                0x0000000000000000       0x18 .pio/build/MKS_ROBIN_NANO_V3/src/external_device/LCD/lcd_dgus.o
- .debug_line    0x0000000000000000      0x466 .pio/build/MKS_ROBIN_NANO_V3/src/external_device/LCD/lcd_dgus.o
- .debug_str     0x0000000000000000      0xcdf .pio/build/MKS_ROBIN_NANO_V3/src/external_device/LCD/lcd_dgus.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/src/external_device/LCD/lcd_dgus.o
  .ARM.attributes
                 0x0000000000000000       0x33 .pio/build/MKS_ROBIN_NANO_V3/src/external_device/LCD/lcd_dgus.o
@@ -3832,16 +3277,7 @@ Discarded input sections
                 0x0000000000000000        0x4 .pio/build/MKS_ROBIN_NANO_V3/src/external_device/SD/sd_sdio_drv.o
  .text.sdSdioWriteBuff
                 0x0000000000000000        0x4 .pio/build/MKS_ROBIN_NANO_V3/src/external_device/SD/sd_sdio_drv.o
- .debug_info    0x0000000000000000     0x1440 .pio/build/MKS_ROBIN_NANO_V3/src/external_device/SD/sd_sdio_drv.o
- .debug_abbrev  0x0000000000000000      0x2dc .pio/build/MKS_ROBIN_NANO_V3/src/external_device/SD/sd_sdio_drv.o
- .debug_loc     0x0000000000000000       0x4a .pio/build/MKS_ROBIN_NANO_V3/src/external_device/SD/sd_sdio_drv.o
- .debug_aranges
-                0x0000000000000000       0x40 .pio/build/MKS_ROBIN_NANO_V3/src/external_device/SD/sd_sdio_drv.o
- .debug_ranges  0x0000000000000000       0x30 .pio/build/MKS_ROBIN_NANO_V3/src/external_device/SD/sd_sdio_drv.o
- .debug_line    0x0000000000000000      0x505 .pio/build/MKS_ROBIN_NANO_V3/src/external_device/SD/sd_sdio_drv.o
- .debug_str     0x0000000000000000      0xd45 .pio/build/MKS_ROBIN_NANO_V3/src/external_device/SD/sd_sdio_drv.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/src/external_device/SD/sd_sdio_drv.o
- .debug_frame   0x0000000000000000       0x60 .pio/build/MKS_ROBIN_NANO_V3/src/external_device/SD/sd_sdio_drv.o
  .ARM.attributes
                 0x0000000000000000       0x2e .pio/build/MKS_ROBIN_NANO_V3/src/external_device/SD/sd_sdio_drv.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/src/external_device/SD/sd_spi_drv.o
@@ -3859,36 +3295,18 @@ Discarded input sections
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/src/hal/hal_flash.o
  .data          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/src/hal/hal_flash.o
  .bss           0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/src/hal/hal_flash.o
- .debug_info    0x0000000000000000     0x135c .pio/build/MKS_ROBIN_NANO_V3/src/hal/hal_flash.o
- .debug_abbrev  0x0000000000000000      0x23f .pio/build/MKS_ROBIN_NANO_V3/src/hal/hal_flash.o
- .debug_aranges
-                0x0000000000000000       0x18 .pio/build/MKS_ROBIN_NANO_V3/src/hal/hal_flash.o
- .debug_line    0x0000000000000000      0x42d .pio/build/MKS_ROBIN_NANO_V3/src/hal/hal_flash.o
- .debug_str     0x0000000000000000      0xcd0 .pio/build/MKS_ROBIN_NANO_V3/src/hal/hal_flash.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/src/hal/hal_flash.o
  .ARM.attributes
                 0x0000000000000000       0x33 .pio/build/MKS_ROBIN_NANO_V3/src/hal/hal_flash.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/src/hal/hal_sdio.o
  .data          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/src/hal/hal_sdio.o
  .bss           0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/src/hal/hal_sdio.o
- .debug_info    0x0000000000000000     0x135c .pio/build/MKS_ROBIN_NANO_V3/src/hal/hal_sdio.o
- .debug_abbrev  0x0000000000000000      0x23f .pio/build/MKS_ROBIN_NANO_V3/src/hal/hal_sdio.o
- .debug_aranges
-                0x0000000000000000       0x18 .pio/build/MKS_ROBIN_NANO_V3/src/hal/hal_sdio.o
- .debug_line    0x0000000000000000      0x42d .pio/build/MKS_ROBIN_NANO_V3/src/hal/hal_sdio.o
- .debug_str     0x0000000000000000      0xccf .pio/build/MKS_ROBIN_NANO_V3/src/hal/hal_sdio.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/src/hal/hal_sdio.o
  .ARM.attributes
                 0x0000000000000000       0x33 .pio/build/MKS_ROBIN_NANO_V3/src/hal/hal_sdio.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/src/hal/hal_spi.o
  .data          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/src/hal/hal_spi.o
  .bss           0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/src/hal/hal_spi.o
- .debug_info    0x0000000000000000     0x135c .pio/build/MKS_ROBIN_NANO_V3/src/hal/hal_spi.o
- .debug_abbrev  0x0000000000000000      0x23f .pio/build/MKS_ROBIN_NANO_V3/src/hal/hal_spi.o
- .debug_aranges
-                0x0000000000000000       0x18 .pio/build/MKS_ROBIN_NANO_V3/src/hal/hal_spi.o
- .debug_line    0x0000000000000000      0x42d .pio/build/MKS_ROBIN_NANO_V3/src/hal/hal_spi.o
- .debug_str     0x0000000000000000      0xcce .pio/build/MKS_ROBIN_NANO_V3/src/hal/hal_spi.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/src/hal/hal_spi.o
  .ARM.attributes
                 0x0000000000000000       0x33 .pio/build/MKS_ROBIN_NANO_V3/src/hal/hal_spi.o
@@ -3903,15 +3321,7 @@ Discarded input sections
                 0x0000000000000000        0x2 .pio/build/MKS_ROBIN_NANO_V3/src/hal/hal_test.o
  .text.test_disp
                 0x0000000000000000        0x2 .pio/build/MKS_ROBIN_NANO_V3/src/hal/hal_test.o
- .debug_info    0x0000000000000000     0x13ac .pio/build/MKS_ROBIN_NANO_V3/src/hal/hal_test.o
- .debug_abbrev  0x0000000000000000      0x25b .pio/build/MKS_ROBIN_NANO_V3/src/hal/hal_test.o
- .debug_aranges
-                0x0000000000000000       0x38 .pio/build/MKS_ROBIN_NANO_V3/src/hal/hal_test.o
- .debug_ranges  0x0000000000000000       0x28 .pio/build/MKS_ROBIN_NANO_V3/src/hal/hal_test.o
- .debug_line    0x0000000000000000      0x491 .pio/build/MKS_ROBIN_NANO_V3/src/hal/hal_test.o
- .debug_str     0x0000000000000000      0xcfd .pio/build/MKS_ROBIN_NANO_V3/src/hal/hal_test.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/src/hal/hal_test.o
- .debug_frame   0x0000000000000000       0x50 .pio/build/MKS_ROBIN_NANO_V3/src/hal/hal_test.o
  .ARM.attributes
                 0x0000000000000000       0x2e .pio/build/MKS_ROBIN_NANO_V3/src/hal/hal_test.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/src/hal/hal_uart.o
@@ -3923,8 +3333,6 @@ Discarded input sections
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/src/mcu/stm32_f401rc_hal_system.o
  .data          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/src/mcu/stm32_f401rc_hal_system.o
  .bss           0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/src/mcu/stm32_f401rc_hal_system.o
- .debug_line    0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/src/mcu/stm32_f401rc_hal_system.o
- .debug_str     0x0000000000000000       0xf3 .pio/build/MKS_ROBIN_NANO_V3/src/mcu/stm32_f401rc_hal_system.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/src/mcu/stm32_f401rc_hal_system.o
  .ARM.attributes
                 0x0000000000000000       0x33 .pio/build/MKS_ROBIN_NANO_V3/src/mcu/stm32_f401rc_hal_system.o
@@ -3936,67 +3344,63 @@ Discarded input sections
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/src/mcu/stm32_f429_hal_system.o
  .data          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/src/mcu/stm32_f429_hal_system.o
  .bss           0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/src/mcu/stm32_f429_hal_system.o
- .debug_line    0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/src/mcu/stm32_f429_hal_system.o
- .debug_str     0x0000000000000000       0xf1 .pio/build/MKS_ROBIN_NANO_V3/src/mcu/stm32_f429_hal_system.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/src/mcu/stm32_f429_hal_system.o
  .ARM.attributes
                 0x0000000000000000       0x33 .pio/build/MKS_ROBIN_NANO_V3/src/mcu/stm32_f429_hal_system.o
  .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/src/mcu/stm32_g0b0_hal_system.o
  .data          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/src/mcu/stm32_g0b0_hal_system.o
  .bss           0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/src/mcu/stm32_g0b0_hal_system.o
- .debug_line    0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/src/mcu/stm32_g0b0_hal_system.o
- .debug_str     0x0000000000000000       0xf1 .pio/build/MKS_ROBIN_NANO_V3/src/mcu/stm32_g0b0_hal_system.o
  .comment       0x0000000000000000       0x67 .pio/build/MKS_ROBIN_NANO_V3/src/mcu/stm32_g0b0_hal_system.o
  .ARM.attributes
                 0x0000000000000000       0x33 .pio/build/MKS_ROBIN_NANO_V3/src/mcu/stm32_g0b0_hal_system.o
- .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
- .data          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
- .bss           0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
+ .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
+ .data          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
+ .bss           0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
  .text.putc_init
-                0x0000000000000000       0x14 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
- .text.put_utf  0x0000000000000000       0x38 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
+                0x0000000000000000       0x14 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
+ .text.put_utf  0x0000000000000000       0x38 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
  .text.get_fileinfo
-                0x0000000000000000      0x136 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
+                0x0000000000000000      0x136 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
  .text.create_partition
-                0x0000000000000000      0x13c .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
- .text.f_write  0x0000000000000000      0x200 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
+                0x0000000000000000      0x13c .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
+ .text.f_write  0x0000000000000000      0x200 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
  .text.putc_bfd
-                0x0000000000000000       0x4e .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
+                0x0000000000000000       0x4e .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
  .text.putc_flush
-                0x0000000000000000       0x3a .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
- .text.f_lseek  0x0000000000000000      0x298 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
+                0x0000000000000000       0x3a .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
+ .text.f_lseek  0x0000000000000000      0x298 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
  .text.f_opendir
-                0x0000000000000000       0x92 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
+                0x0000000000000000       0x92 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
  .text.f_closedir
-                0x0000000000000000       0x24 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
+                0x0000000000000000       0x24 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
  .text.f_readdir
-                0x0000000000000000       0x58 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
- .text.f_stat   0x0000000000000000       0x4e .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
+                0x0000000000000000       0x58 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
+ .text.f_stat   0x0000000000000000       0x4e .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
  .text.f_getfree
-                0x0000000000000000       0xdc .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
+                0x0000000000000000       0xdc .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
  .text.f_truncate
-                0x0000000000000000       0xac .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
- .text.f_gets   0x0000000000000000       0x54 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
- .text.f_putc   0x0000000000000000       0x1e .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
- .text.f_puts   0x0000000000000000       0x24 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
+                0x0000000000000000       0xac .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
+ .text.f_gets   0x0000000000000000       0x54 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
+ .text.f_putc   0x0000000000000000       0x1e .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
+ .text.f_puts   0x0000000000000000       0x24 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
  .text.f_printf
-                0x0000000000000000      0x30c .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
- .text.f_mkdir  0x0000000000000000      0x12a .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
+                0x0000000000000000      0x30c .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
+ .text.f_mkdir  0x0000000000000000      0x12a .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
  .rodata.f_mkfs.str1.4
-                0x0000000000000000       0x34 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
- .text.f_mkfs   0x0000000000000000      0x65c .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
+                0x0000000000000000       0x34 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
+ .text.f_mkfs   0x0000000000000000      0x65c .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
  .rodata.cst.5487
-                0x0000000000000000        0xe .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
+                0x0000000000000000        0xe .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
  .rodata.cst32.5488
-                0x0000000000000000        0xe .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
+                0x0000000000000000        0xe .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
  .rodata.defopt.5489
-                0x0000000000000000       0x10 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
- .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ffunicode.o)
- .data          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ffunicode.o)
- .bss           0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ffunicode.o)
- .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(diskio.o)
- .data          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(diskio.o)
- .bss           0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(diskio.o)
+                0x0000000000000000       0x10 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
+ .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ffunicode.o)
+ .data          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ffunicode.o)
+ .bss           0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ffunicode.o)
+ .text          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(diskio.o)
+ .data          0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(diskio.o)
+ .bss           0x0000000000000000        0x0 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(diskio.o)
  .text          0x0000000000000000        0x0 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-exit.o)
  .data          0x0000000000000000        0x0 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-exit.o)
  .bss           0x0000000000000000        0x0 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-exit.o)
@@ -4341,7 +3745,7 @@ LOAD .pio/build/MKS_ROBIN_NANO_V3/src/mcu/stm32_f407_hal_system.o
 LOAD .pio/build/MKS_ROBIN_NANO_V3/src/mcu/stm32_f429_hal_system.o
 LOAD .pio/build/MKS_ROBIN_NANO_V3/src/mcu/stm32_g0b0_hal_system.o
 START GROUP
-LOAD .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a
+LOAD .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a
 LOAD c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a
 LOAD c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp\libgcc.a
 LOAD c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libm.a
@@ -4351,7 +3755,6 @@ LOAD .pio/build/MKS_ROBIN_NANO_V3/libFrameworkCMSISDevice.a
 END GROUP
 START GROUP
 LOAD c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp\libgcc.a
-LOAD c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg_nano.a
 LOAD c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a
 END GROUP
 START GROUP
@@ -4650,128 +4053,128 @@ LOAD c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206
  .text.hal_flash_write
                 0x000000000800252c       0x3e .pio/build/MKS_ROBIN_NANO_V3/src/mcu/stm32_f407_hal_system.o
                 0x000000000800252c                hal_flash_write
- .text.ld_word  0x000000000800256a        0xa .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
+ .text.ld_word  0x000000000800256a        0xa .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
  .text.ld_dword
-                0x0000000008002574       0x16 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
- .text.st_word  0x000000000800258a        0x8 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
+                0x0000000008002574       0x16 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
+ .text.st_word  0x000000000800258a        0x8 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
  .text.st_dword
-                0x0000000008002592       0x14 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
- .text.dbc_1st  0x00000000080025a6        0x4 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
- .text.dbc_2nd  0x00000000080025aa        0x4 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
+                0x0000000008002592       0x14 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
+ .text.dbc_1st  0x00000000080025a6        0x4 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
+ .text.dbc_2nd  0x00000000080025aa        0x4 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
  *fill*         0x00000000080025ae        0x2 
  .text.chk_lock
-                0x00000000080025b0       0x74 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
+                0x00000000080025b0       0x74 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
  .text.enq_lock
-                0x0000000008002624       0x20 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
+                0x0000000008002624       0x20 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
  .text.inc_lock
-                0x0000000008002644       0xa8 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
+                0x0000000008002644       0xa8 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
  .text.dec_lock
-                0x00000000080026ec       0x40 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
+                0x00000000080026ec       0x40 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
  .text.clear_lock
-                0x000000000800272c       0x38 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
+                0x000000000800272c       0x38 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
  .text.clst2sect
-                0x0000000008002764       0x18 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
+                0x0000000008002764       0x18 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
  .text.clmt_clust
-                0x000000000800277c       0x22 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
+                0x000000000800277c       0x22 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
  .text.ld_clust
-                0x000000000800279e       0x26 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
+                0x000000000800279e       0x26 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
  .text.st_clust
-                0x00000000080027c4       0x26 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
+                0x00000000080027c4       0x26 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
  *fill*         0x00000000080027ea        0x2 
  .text.pick_lfn
-                0x00000000080027ec       0x84 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
- .text.put_lfn  0x0000000008002870       0x78 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
- .text.sum_sfn  0x00000000080028e8       0x20 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
+                0x00000000080027ec       0x84 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
+ .text.put_lfn  0x0000000008002870       0x78 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
+ .text.sum_sfn  0x00000000080028e8       0x20 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
  .text.get_ldnumber
-                0x0000000008002908       0x56 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
+                0x0000000008002908       0x56 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
  .text.validate
-                0x000000000800295e       0x46 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
+                0x000000000800295e       0x46 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
  .text.sync_window
-                0x00000000080029a4       0x48 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
+                0x00000000080029a4       0x48 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
  .text.move_window
-                0x00000000080029ec       0x36 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
+                0x00000000080029ec       0x36 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
  *fill*         0x0000000008002a22        0x2 
  .text.check_fs
-                0x0000000008002a24       0xd4 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
+                0x0000000008002a24       0xd4 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
  .text.find_volume
-                0x0000000008002af8       0x70 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
+                0x0000000008002af8       0x70 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
  .text.mount_volume
-                0x0000000008002b68      0x2b0 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
- .text.put_fat  0x0000000008002e18      0x10e .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
- .text.get_fat  0x0000000008002f26       0xd0 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
- .text.dir_sdi  0x0000000008002ff6       0xac .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
+                0x0000000008002b68      0x2b0 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
+ .text.put_fat  0x0000000008002e18      0x10e .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
+ .text.get_fat  0x0000000008002f26       0xd0 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
+ .text.dir_sdi  0x0000000008002ff6       0xac .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
  .text.create_chain
-                0x00000000080030a2      0x10e .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
+                0x00000000080030a2      0x10e .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
  .text.remove_chain
-                0x00000000080031b0       0x7e .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
+                0x00000000080031b0       0x7e .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
  .text.dir_clear
-                0x000000000800322e       0x52 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
+                0x000000000800322e       0x52 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
  .text.dir_next
-                0x0000000008003280       0xc8 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
+                0x0000000008003280       0xc8 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
  .text.dir_alloc
-                0x0000000008003348       0x50 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
+                0x0000000008003348       0x50 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
  .text.dir_read
-                0x0000000008003398       0xbc .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
+                0x0000000008003398       0xbc .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
  .text.dir_remove
-                0x0000000008003454       0x52 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
+                0x0000000008003454       0x52 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
  .text.tchar2uni
-                0x00000000080034a6       0x4a .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
+                0x00000000080034a6       0x4a .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
  .text.create_name
-                0x00000000080034f0      0x24c .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
- .text.cmp_lfn  0x000000000800373c       0xa0 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
+                0x00000000080034f0      0x24c .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
+ .text.cmp_lfn  0x000000000800373c       0xa0 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
  .text.dir_find
-                0x00000000080037dc       0xe6 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
+                0x00000000080037dc       0xe6 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
  .text.follow_path
-                0x00000000080038c2       0x8e .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
+                0x00000000080038c2       0x8e .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
  .text.gen_numname
-                0x0000000008003950       0xbe .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
+                0x0000000008003950       0xbe .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
  *fill*         0x0000000008003a0e        0x2 
  .text.dir_register
-                0x0000000008003a10      0x14c .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
- .text.sync_fs  0x0000000008003b5c       0x8c .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
- .text.f_mount  0x0000000008003be8       0x54 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
+                0x0000000008003a10      0x14c .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
+ .text.sync_fs  0x0000000008003b5c       0x8c .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
+ .text.f_mount  0x0000000008003be8       0x54 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
                 0x0000000008003be8                f_mount
- .text.f_read   0x0000000008003c3c      0x1c4 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
+ .text.f_read   0x0000000008003c3c      0x1c4 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
                 0x0000000008003c3c                f_read
  .text.f_unlink
-                0x0000000008003e00       0xc0 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
+                0x0000000008003e00       0xc0 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
                 0x0000000008003e00                f_unlink
  .text.f_rename
-                0x0000000008003ec0      0x16c .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
+                0x0000000008003ec0      0x16c .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
                 0x0000000008003ec0                f_rename
  .text.get_fattime
-                0x000000000800402c        0x4 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
+                0x000000000800402c        0x4 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
                 0x000000000800402c                get_fattime
- .text.f_open   0x0000000008004030      0x240 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
+ .text.f_open   0x0000000008004030      0x240 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
                 0x0000000008004030                f_open
- .text.f_sync   0x0000000008004270       0x98 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
+ .text.f_sync   0x0000000008004270       0x98 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
                 0x0000000008004270                f_sync
- .text.f_close  0x0000000008004308       0x2a .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
+ .text.f_close  0x0000000008004308       0x2a .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
                 0x0000000008004308                f_close
  *fill*         0x0000000008004332        0x2 
  .text.ff_uni2oem
-                0x0000000008004334       0x40 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ffunicode.o)
+                0x0000000008004334       0x40 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ffunicode.o)
                 0x0000000008004334                ff_uni2oem
  .text.ff_oem2uni
-                0x0000000008004374       0x2c .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ffunicode.o)
+                0x0000000008004374       0x2c .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ffunicode.o)
                 0x0000000008004374                ff_oem2uni
  .text.ff_wtoupper
-                0x00000000080043a0       0x9c .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ffunicode.o)
+                0x00000000080043a0       0x9c .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ffunicode.o)
                 0x00000000080043a0                ff_wtoupper
  .text.disk_status
-                0x000000000800443c        0xc .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(diskio.o)
+                0x000000000800443c        0xc .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(diskio.o)
                 0x000000000800443c                disk_status
  .text.disk_initialize
-                0x0000000008004448       0x20 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(diskio.o)
+                0x0000000008004448       0x20 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(diskio.o)
                 0x0000000008004448                disk_initialize
  .text.disk_read
-                0x0000000008004468       0x38 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(diskio.o)
+                0x0000000008004468       0x38 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(diskio.o)
                 0x0000000008004468                disk_read
  .text.disk_write
-                0x00000000080044a0       0x38 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(diskio.o)
+                0x00000000080044a0       0x38 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(diskio.o)
                 0x00000000080044a0                disk_write
  .text.disk_ioctl
-                0x00000000080044d8       0x44 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(diskio.o)
+                0x00000000080044d8       0x44 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(diskio.o)
                 0x00000000080044d8                disk_ioctl
  .text.__libc_init_array
                 0x000000000800451c       0x48 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-init.o)
@@ -5067,21 +4470,21 @@ LOAD c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206
                 0x0000000008005a44        0x3 .pio/build/MKS_ROBIN_NANO_V3/src/main.o
  *fill*         0x0000000008005a47        0x1 
  .rodata.check_fs.str1.4
-                0x0000000008005a48        0x9 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
+                0x0000000008005a48        0x9 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
  *fill*         0x0000000008005a51        0x3 
  .rodata.create_name.str1.4
-                0x0000000008005a54       0x13 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
+                0x0000000008005a54       0x13 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
  *fill*         0x0000000008005a67        0x1 
- .rodata.ExCvt  0x0000000008005a68       0x80 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
+ .rodata.ExCvt  0x0000000008005a68       0x80 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
  .rodata.LfnOfs
-                0x0000000008005ae8        0xd .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
+                0x0000000008005ae8        0xd .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
  *fill*         0x0000000008005af5        0x3 
  .rodata.cvt1.4431
-                0x0000000008005af8      0x1f2 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ffunicode.o)
+                0x0000000008005af8      0x1f2 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ffunicode.o)
  *fill*         0x0000000008005cea        0x2 
  .rodata.cvt2.4432
-                0x0000000008005cec       0xbc .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ffunicode.o)
- .rodata.uc437  0x0000000008005da8      0x100 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ffunicode.o)
+                0x0000000008005cec       0xbc .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ffunicode.o)
+ .rodata.uc437  0x0000000008005da8      0x100 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ffunicode.o)
  .rodata._global_impure_ptr
                 0x0000000008005ea8        0x4 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-impure.o)
                 0x0000000008005ea8                _global_impure_ptr
@@ -5216,9 +4619,9 @@ LOAD c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206
  .bss.SD_Type   0x00000000200000a4        0x1 .pio/build/MKS_ROBIN_NANO_V3/src/external_device/SD/sd_spi_drv.o
                 0x00000000200000a4                SD_Type
  *fill*         0x00000000200000a5        0x3 
- .bss.FatFs     0x00000000200000a8        0x8 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
- .bss.Files     0x00000000200000b0       0x30 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
- .bss.Fsid      0x00000000200000e0        0x2 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
+ .bss.FatFs     0x00000000200000a8        0x8 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
+ .bss.Files     0x00000000200000b0       0x30 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
+ .bss.Fsid      0x00000000200000e0        0x2 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
  *fill*         0x00000000200000e2        0x2 
  .bss.__malloc_free_list
                 0x00000000200000e4        0x4 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-nano-mallocr.o)
@@ -5325,11 +4728,11 @@ LOAD c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206
  .ARM.attributes
                 0x00000000000002d0       0x2e .pio/build/MKS_ROBIN_NANO_V3/src/mcu/stm32_f407_hal_system.o
  .ARM.attributes
-                0x00000000000002fe       0x2e .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
+                0x00000000000002fe       0x2e .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
  .ARM.attributes
-                0x000000000000032c       0x2e .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ffunicode.o)
+                0x000000000000032c       0x2e .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ffunicode.o)
  .ARM.attributes
-                0x000000000000035a       0x2e .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(diskio.o)
+                0x000000000000035a       0x2e .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(diskio.o)
  .ARM.attributes
                 0x0000000000000388       0x2e c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-impure.o)
  .ARM.attributes
@@ -5420,197 +4823,6 @@ LOAD c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206
                 0x0000000000000b03       0x1e c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp/crtn.o
 OUTPUT(.pio/build/MKS_ROBIN_NANO_V3/firmware.elf elf32-littlearm)
 
-.debug_info     0x0000000000000000    0x1d384
- .debug_info    0x0000000000000000      0xa79 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal.o
- .debug_info    0x0000000000000a79     0x1154 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_cortex.o
- .debug_info    0x0000000000001bcd      0x82e .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_flash.o
- .debug_info    0x00000000000023fb      0x922 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_flash_ex.o
- .debug_info    0x0000000000002d1d      0x884 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_gpio.o
- .debug_info    0x00000000000035a1      0xb5d .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_rcc.o
- .debug_info    0x00000000000040fe     0x221d .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_spi.o
- .debug_info    0x000000000000631b     0x42ec .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_uart.o
- .debug_info    0x000000000000a607     0x1c6e .pio/build/MKS_ROBIN_NANO_V3/src/bootloader.o
- .debug_info    0x000000000000c275     0x25ca .pio/build/MKS_ROBIN_NANO_V3/src/external_device/SD/sd_spi_drv.o
- .debug_info    0x000000000000e83f     0x139e .pio/build/MKS_ROBIN_NANO_V3/src/external_device/SD/sdcard.o
- .debug_info    0x000000000000fbdd     0x1495 .pio/build/MKS_ROBIN_NANO_V3/src/hal/hal.o
- .debug_info    0x0000000000011072     0x17eb .pio/build/MKS_ROBIN_NANO_V3/src/hal/hal_uart.o
- .debug_info    0x000000000001285d     0x1589 .pio/build/MKS_ROBIN_NANO_V3/src/main.o
- .debug_info    0x0000000000013de6     0x204a .pio/build/MKS_ROBIN_NANO_V3/src/mcu/stm32_f407_hal_system.o
- .debug_info    0x0000000000015e30     0x586d .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
- .debug_info    0x000000000001b69d      0x2ae .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ffunicode.o)
- .debug_info    0x000000000001b94b     0x1619 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(diskio.o)
- .debug_info    0x000000000001cf64       0x22 .pio/build/MKS_ROBIN_NANO_V3/libFrameworkCMSISDevice.a(startup_stm32f407xx.o)
- .debug_info    0x000000000001cf86      0x3fe .pio/build/MKS_ROBIN_NANO_V3/libFrameworkCMSISDevice.a(system_stm32f4xx.o)
-
-.debug_abbrev   0x0000000000000000     0x3633
- .debug_abbrev  0x0000000000000000      0x219 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal.o
- .debug_abbrev  0x0000000000000219      0x390 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_cortex.o
- .debug_abbrev  0x00000000000005a9      0x2ab .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_flash.o
- .debug_abbrev  0x0000000000000854      0x283 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_flash_ex.o
- .debug_abbrev  0x0000000000000ad7      0x21c .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_gpio.o
- .debug_abbrev  0x0000000000000cf3      0x2ae .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_rcc.o
- .debug_abbrev  0x0000000000000fa1      0x27a .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_spi.o
- .debug_abbrev  0x000000000000121b      0x342 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_uart.o
- .debug_abbrev  0x000000000000155d      0x435 .pio/build/MKS_ROBIN_NANO_V3/src/bootloader.o
- .debug_abbrev  0x0000000000001992      0x40c .pio/build/MKS_ROBIN_NANO_V3/src/external_device/SD/sd_spi_drv.o
- .debug_abbrev  0x0000000000001d9e      0x28c .pio/build/MKS_ROBIN_NANO_V3/src/external_device/SD/sdcard.o
- .debug_abbrev  0x000000000000202a      0x2d4 .pio/build/MKS_ROBIN_NANO_V3/src/hal/hal.o
- .debug_abbrev  0x00000000000022fe      0x311 .pio/build/MKS_ROBIN_NANO_V3/src/hal/hal_uart.o
- .debug_abbrev  0x000000000000260f      0x333 .pio/build/MKS_ROBIN_NANO_V3/src/main.o
- .debug_abbrev  0x0000000000002942      0x400 .pio/build/MKS_ROBIN_NANO_V3/src/mcu/stm32_f407_hal_system.o
- .debug_abbrev  0x0000000000002d42      0x3a8 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
- .debug_abbrev  0x00000000000030ea       0xf0 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ffunicode.o)
- .debug_abbrev  0x00000000000031da      0x2ff .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(diskio.o)
- .debug_abbrev  0x00000000000034d9       0x12 .pio/build/MKS_ROBIN_NANO_V3/libFrameworkCMSISDevice.a(startup_stm32f407xx.o)
- .debug_abbrev  0x00000000000034eb      0x148 .pio/build/MKS_ROBIN_NANO_V3/libFrameworkCMSISDevice.a(system_stm32f4xx.o)
-
-.debug_loc      0x0000000000000000    0x10129
- .debug_loc     0x0000000000000000      0x141 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal.o
- .debug_loc     0x0000000000000141      0x744 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_cortex.o
- .debug_loc     0x0000000000000885      0x3cc .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_flash.o
- .debug_loc     0x0000000000000c51      0x57f .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_flash_ex.o
- .debug_loc     0x00000000000011d0      0x513 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_gpio.o
- .debug_loc     0x00000000000016e3      0x56f .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_rcc.o
- .debug_loc     0x0000000000001c52     0x1f4e .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_spi.o
- .debug_loc     0x0000000000003ba0     0x49eb .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_uart.o
- .debug_loc     0x000000000000858b      0x1b8 .pio/build/MKS_ROBIN_NANO_V3/src/bootloader.o
- .debug_loc     0x0000000000008743      0x8b8 .pio/build/MKS_ROBIN_NANO_V3/src/external_device/SD/sd_spi_drv.o
- .debug_loc     0x0000000000008ffb       0x79 .pio/build/MKS_ROBIN_NANO_V3/src/hal/hal_uart.o
- .debug_loc     0x0000000000009074       0x15 .pio/build/MKS_ROBIN_NANO_V3/src/main.o
- .debug_loc     0x0000000000009089      0x309 .pio/build/MKS_ROBIN_NANO_V3/src/mcu/stm32_f407_hal_system.o
- .debug_loc     0x0000000000009392     0x63f6 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
- .debug_loc     0x000000000000f788      0x3f9 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ffunicode.o)
- .debug_loc     0x000000000000fb81      0x43c .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(diskio.o)
- .debug_loc     0x000000000000ffbd      0x16c .pio/build/MKS_ROBIN_NANO_V3/libFrameworkCMSISDevice.a(system_stm32f4xx.o)
-
-.debug_aranges  0x0000000000000000      0xce8
- .debug_aranges
-                0x0000000000000000       0xf0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal.o
- .debug_aranges
-                0x00000000000000f0       0xa8 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_cortex.o
- .debug_aranges
-                0x0000000000000198       0xa0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_flash.o
- .debug_aranges
-                0x0000000000000238       0x98 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_flash_ex.o
- .debug_aranges
-                0x00000000000002d0       0x58 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_gpio.o
- .debug_aranges
-                0x0000000000000328       0x88 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_rcc.o
- .debug_aranges
-                0x00000000000003b0      0x1f0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_spi.o
- .debug_aranges
-                0x00000000000005a0      0x200 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_uart.o
- .debug_aranges
-                0x00000000000007a0       0x70 .pio/build/MKS_ROBIN_NANO_V3/src/bootloader.o
- .debug_aranges
-                0x0000000000000810       0xd0 .pio/build/MKS_ROBIN_NANO_V3/src/external_device/SD/sd_spi_drv.o
- .debug_aranges
-                0x00000000000008e0       0x20 .pio/build/MKS_ROBIN_NANO_V3/src/external_device/SD/sdcard.o
- .debug_aranges
-                0x0000000000000900       0x30 .pio/build/MKS_ROBIN_NANO_V3/src/hal/hal.o
- .debug_aranges
-                0x0000000000000930       0x30 .pio/build/MKS_ROBIN_NANO_V3/src/hal/hal_uart.o
- .debug_aranges
-                0x0000000000000960       0x30 .pio/build/MKS_ROBIN_NANO_V3/src/main.o
- .debug_aranges
-                0x0000000000000990       0x48 .pio/build/MKS_ROBIN_NANO_V3/src/mcu/stm32_f407_hal_system.o
- .debug_aranges
-                0x00000000000009d8      0x250 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
- .debug_aranges
-                0x0000000000000c28       0x30 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ffunicode.o)
- .debug_aranges
-                0x0000000000000c58       0x40 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(diskio.o)
- .debug_aranges
-                0x0000000000000c98       0x28 .pio/build/MKS_ROBIN_NANO_V3/libFrameworkCMSISDevice.a(startup_stm32f407xx.o)
- .debug_aranges
-                0x0000000000000cc0       0x28 .pio/build/MKS_ROBIN_NANO_V3/libFrameworkCMSISDevice.a(system_stm32f4xx.o)
-
-.debug_ranges   0x0000000000000000      0xc40
- .debug_ranges  0x0000000000000000       0xe0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal.o
- .debug_ranges  0x00000000000000e0       0xf8 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_cortex.o
- .debug_ranges  0x00000000000001d8       0x90 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_flash.o
- .debug_ranges  0x0000000000000268       0x88 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_flash_ex.o
- .debug_ranges  0x00000000000002f0       0x48 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_gpio.o
- .debug_ranges  0x0000000000000338       0x90 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_rcc.o
- .debug_ranges  0x00000000000003c8      0x1e0 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_spi.o
- .debug_ranges  0x00000000000005a8      0x208 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_uart.o
- .debug_ranges  0x00000000000007b0       0x60 .pio/build/MKS_ROBIN_NANO_V3/src/bootloader.o
- .debug_ranges  0x0000000000000810       0xc0 .pio/build/MKS_ROBIN_NANO_V3/src/external_device/SD/sd_spi_drv.o
- .debug_ranges  0x00000000000008d0       0x10 .pio/build/MKS_ROBIN_NANO_V3/src/external_device/SD/sdcard.o
- .debug_ranges  0x00000000000008e0       0x20 .pio/build/MKS_ROBIN_NANO_V3/src/hal/hal.o
- .debug_ranges  0x0000000000000900       0x20 .pio/build/MKS_ROBIN_NANO_V3/src/hal/hal_uart.o
- .debug_ranges  0x0000000000000920       0x20 .pio/build/MKS_ROBIN_NANO_V3/src/main.o
- .debug_ranges  0x0000000000000940       0x38 .pio/build/MKS_ROBIN_NANO_V3/src/mcu/stm32_f407_hal_system.o
- .debug_ranges  0x0000000000000978      0x240 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
- .debug_ranges  0x0000000000000bb8       0x20 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ffunicode.o)
- .debug_ranges  0x0000000000000bd8       0x30 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(diskio.o)
- .debug_ranges  0x0000000000000c08       0x20 .pio/build/MKS_ROBIN_NANO_V3/libFrameworkCMSISDevice.a(startup_stm32f407xx.o)
- .debug_ranges  0x0000000000000c28       0x18 .pio/build/MKS_ROBIN_NANO_V3/libFrameworkCMSISDevice.a(system_stm32f4xx.o)
-
-.debug_line     0x0000000000000000    0x13afb
- .debug_line    0x0000000000000000      0x67f .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal.o
- .debug_line    0x000000000000067f      0x8bc .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_cortex.o
- .debug_line    0x0000000000000f3b      0x881 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_flash.o
- .debug_line    0x00000000000017bc      0x84d .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_flash_ex.o
- .debug_line    0x0000000000002009      0x849 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_gpio.o
- .debug_line    0x0000000000002852      0xc50 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_rcc.o
- .debug_line    0x00000000000034a2     0x2b68 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_spi.o
- .debug_line    0x000000000000600a     0x4718 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_uart.o
- .debug_line    0x000000000000a722      0x7bc .pio/build/MKS_ROBIN_NANO_V3/src/bootloader.o
- .debug_line    0x000000000000aede      0xedc .pio/build/MKS_ROBIN_NANO_V3/src/external_device/SD/sd_spi_drv.o
- .debug_line    0x000000000000bdba      0x4d4 .pio/build/MKS_ROBIN_NANO_V3/src/external_device/SD/sdcard.o
- .debug_line    0x000000000000c28e      0x58d .pio/build/MKS_ROBIN_NANO_V3/src/hal/hal.o
- .debug_line    0x000000000000c81b      0x56c .pio/build/MKS_ROBIN_NANO_V3/src/hal/hal_uart.o
- .debug_line    0x000000000000cd87      0x4fd .pio/build/MKS_ROBIN_NANO_V3/src/main.o
- .debug_line    0x000000000000d284      0x776 .pio/build/MKS_ROBIN_NANO_V3/src/mcu/stm32_f407_hal_system.o
- .debug_line    0x000000000000d9fa     0x52dc .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
- .debug_line    0x0000000000012cd6      0x385 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ffunicode.o)
- .debug_line    0x000000000001305b      0x5f8 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(diskio.o)
- .debug_line    0x0000000000013653       0xe7 .pio/build/MKS_ROBIN_NANO_V3/libFrameworkCMSISDevice.a(startup_stm32f407xx.o)
- .debug_line    0x000000000001373a      0x3c1 .pio/build/MKS_ROBIN_NANO_V3/libFrameworkCMSISDevice.a(system_stm32f4xx.o)
-
-.debug_str      0x0000000000000000     0x4006
- .debug_str     0x0000000000000000      0xb54 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal.o
-                                        0xbc7 (size before relaxing)
- .debug_str     0x0000000000000b54      0x4da .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_cortex.o
-                                        0xd06 (size before relaxing)
- .debug_str     0x000000000000102e      0x31d .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_flash.o
-                                        0x636 (size before relaxing)
- .debug_str     0x000000000000134b      0x26a .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_flash_ex.o
-                                        0x686 (size before relaxing)
- .debug_str     0x00000000000015b5      0x204 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_gpio.o
-                                        0x5cc (size before relaxing)
- .debug_str     0x00000000000017b9      0x320 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_rcc.o
-                                        0x7aa (size before relaxing)
- .debug_str     0x0000000000001ad9      0x9b6 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_spi.o
-                                        0xd3d (size before relaxing)
- .debug_str     0x000000000000248f      0x7d8 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_uart.o
-                                        0xe34 (size before relaxing)
- .debug_str     0x0000000000002c67      0x982 .pio/build/MKS_ROBIN_NANO_V3/src/bootloader.o
-                                       0x1136 (size before relaxing)
- .debug_str     0x00000000000035e9      0x1f5 .pio/build/MKS_ROBIN_NANO_V3/src/external_device/SD/sd_spi_drv.o
-                                       0x126c (size before relaxing)
- .debug_str     0x00000000000037de       0x2d .pio/build/MKS_ROBIN_NANO_V3/src/external_device/SD/sdcard.o
-                                        0xcf6 (size before relaxing)
- .debug_str     0x000000000000380b       0x3a .pio/build/MKS_ROBIN_NANO_V3/src/hal/hal.o
-                                        0xd29 (size before relaxing)
- .debug_str     0x0000000000003845       0x34 .pio/build/MKS_ROBIN_NANO_V3/src/hal/hal_uart.o
-                                        0xebd (size before relaxing)
- .debug_str     0x0000000000003879       0x56 .pio/build/MKS_ROBIN_NANO_V3/src/main.o
-                                        0xeb6 (size before relaxing)
- .debug_str     0x00000000000038cf       0x73 .pio/build/MKS_ROBIN_NANO_V3/src/mcu/stm32_f407_hal_system.o
-                                       0x169b (size before relaxing)
- .debug_str     0x0000000000003942      0x543 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
-                                        0xd60 (size before relaxing)
- .debug_str     0x0000000000003e85       0x26 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ffunicode.o)
-                                        0x1db (size before relaxing)
- .debug_str     0x0000000000003eab       0x1b .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(diskio.o)
-                                        0xd65 (size before relaxing)
- .debug_str     0x0000000000003ec6       0x95 .pio/build/MKS_ROBIN_NANO_V3/libFrameworkCMSISDevice.a(startup_stm32f407xx.o)
-                                         0xb6 (size before relaxing)
- .debug_str     0x0000000000003f5b       0xab .pio/build/MKS_ROBIN_NANO_V3/libFrameworkCMSISDevice.a(system_stm32f4xx.o)
-                                        0x40b (size before relaxing)
-
 .comment        0x0000000000000000       0x66
  .comment       0x0000000000000000       0x66 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal.o
                                          0x67 (size before relaxing)
@@ -5628,69 +4840,50 @@ OUTPUT(.pio/build/MKS_ROBIN_NANO_V3/firmware.elf elf32-littlearm)
  .comment       0x0000000000000066       0x67 .pio/build/MKS_ROBIN_NANO_V3/src/hal/hal_uart.o
  .comment       0x0000000000000066       0x67 .pio/build/MKS_ROBIN_NANO_V3/src/main.o
  .comment       0x0000000000000066       0x67 .pio/build/MKS_ROBIN_NANO_V3/src/mcu/stm32_f407_hal_system.o
- .comment       0x0000000000000066       0x67 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
- .comment       0x0000000000000066       0x67 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ffunicode.o)
- .comment       0x0000000000000066       0x67 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(diskio.o)
+ .comment       0x0000000000000066       0x67 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ff.o)
+ .comment       0x0000000000000066       0x67 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(ffunicode.o)
+ .comment       0x0000000000000066       0x67 .pio/build/MKS_ROBIN_NANO_V3/libda0/libfatfs.a(diskio.o)
  .comment       0x0000000000000066       0x67 .pio/build/MKS_ROBIN_NANO_V3/libFrameworkCMSISDevice.a(system_stm32f4xx.o)
 
-.debug_frame    0x0000000000000000     0x2e38
- .debug_frame   0x0000000000000000      0x1ec .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal.o
- .debug_frame   0x00000000000001ec      0x15c .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_cortex.o
- .debug_frame   0x0000000000000348      0x168 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_flash.o
- .debug_frame   0x00000000000004b0      0x170 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_flash_ex.o
- .debug_frame   0x0000000000000620       0xd8 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_gpio.o
- .debug_frame   0x00000000000006f8      0x174 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_rcc.o
- .debug_frame   0x000000000000086c      0x624 .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_spi.o
- .debug_frame   0x0000000000000e90      0x5cc .pio/build/MKS_ROBIN_NANO_V3/FrameworkHALDriver/Src/stm32f4xx_hal_uart.o
- .debug_frame   0x000000000000145c      0x118 .pio/build/MKS_ROBIN_NANO_V3/src/bootloader.o
- .debug_frame   0x0000000000001574      0x278 .pio/build/MKS_ROBIN_NANO_V3/src/external_device/SD/sd_spi_drv.o
- .debug_frame   0x00000000000017ec       0x28 .pio/build/MKS_ROBIN_NANO_V3/src/external_device/SD/sdcard.o
- .debug_frame   0x0000000000001814       0x5c .pio/build/MKS_ROBIN_NANO_V3/src/hal/hal.o
- .debug_frame   0x0000000000001870       0x5c .pio/build/MKS_ROBIN_NANO_V3/src/hal/hal_uart.o
- .debug_frame   0x00000000000018cc       0x54 .pio/build/MKS_ROBIN_NANO_V3/src/main.o
- .debug_frame   0x0000000000001920       0xa8 .pio/build/MKS_ROBIN_NANO_V3/src/mcu/stm32_f407_hal_system.o
- .debug_frame   0x00000000000019c8      0x948 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ff.o)
- .debug_frame   0x0000000000002310       0x5c .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(ffunicode.o)
- .debug_frame   0x000000000000236c       0x90 .pio/build/MKS_ROBIN_NANO_V3/libb43/libfatfs.a(diskio.o)
- .debug_frame   0x00000000000023fc       0x2c c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-init.o)
- .debug_frame   0x0000000000002428       0x30 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-malloc.o)
- .debug_frame   0x0000000000002458       0x2c c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-memcmp.o)
- .debug_frame   0x0000000000002484       0x28 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-memcpy-stub.o)
- .debug_frame   0x00000000000024ac       0x20 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-memset.o)
- .debug_frame   0x00000000000024cc       0x38 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-nano-freer.o)
- .debug_frame   0x0000000000002504       0x30 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-nano-mallocr.o)
- .debug_frame   0x0000000000002534       0x74 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-printf.o)
- .debug_frame   0x00000000000025a8       0x3c c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-puts.o)
- .debug_frame   0x00000000000025e4       0x2c c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-sbrkr.o)
- .debug_frame   0x0000000000002610       0x20 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-strchr.o)
- .debug_frame   0x0000000000002630       0x20 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-strcpy.o)
- .debug_frame   0x0000000000002650       0x40 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-wbuf.o)
- .debug_frame   0x0000000000002690       0x2c c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-wsetup.o)
- .debug_frame   0x00000000000026bc       0x5c c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-fflush.o)
- .debug_frame   0x0000000000002718      0x14c c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-findfp.o)
- .debug_frame   0x0000000000002864       0x54 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-fwalk.o)
- .debug_frame   0x00000000000028b8       0xb0 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-lock.o)
- .debug_frame   0x0000000000002968       0x58 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-makebuf.o)
- .debug_frame   0x00000000000029c0       0x30 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-mlock.o)
- .debug_frame   0x00000000000029f0       0xac c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-nano-vfprintf.o)
- .debug_frame   0x0000000000002a9c       0x60 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-nano-vfprintf_i.o)
- .debug_frame   0x0000000000002afc       0x5c c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-reent.o)
- .debug_frame   0x0000000000002b58       0x88 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-stdio.o)
- .debug_frame   0x0000000000002be0       0x2c c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-writer.o)
- .debug_frame   0x0000000000002c0c       0x2c c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-closer.o)
- .debug_frame   0x0000000000002c38       0x2c c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-fstatr.o)
- .debug_frame   0x0000000000002c64       0x2c c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-isattyr.o)
- .debug_frame   0x0000000000002c90       0x2c c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-lseekr.o)
- .debug_frame   0x0000000000002cbc       0x2c c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-readr.o)
- .debug_frame   0x0000000000002ce8       0x2c c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp\libgcc.a(_aeabi_uldivmod.o)
- .debug_frame   0x0000000000002d14       0x34 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp\libgcc.a(_udivmoddi4.o)
- .debug_frame   0x0000000000002d48       0x20 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libnosys.a(close.o)
- .debug_frame   0x0000000000002d68       0x20 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libnosys.a(fstat.o)
- .debug_frame   0x0000000000002d88       0x20 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libnosys.a(isatty.o)
- .debug_frame   0x0000000000002da8       0x20 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libnosys.a(lseek.o)
- .debug_frame   0x0000000000002dc8       0x20 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libnosys.a(read.o)
- .debug_frame   0x0000000000002de8       0x20 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libnosys.a(sbrk.o)
- .debug_frame   0x0000000000002e08       0x30 .pio/build/MKS_ROBIN_NANO_V3/libFrameworkCMSISDevice.a(system_stm32f4xx.o)
+.debug_frame    0x0000000000000000      0xa0c
+ .debug_frame   0x0000000000000000       0x2c c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-init.o)
+ .debug_frame   0x000000000000002c       0x30 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-malloc.o)
+ .debug_frame   0x000000000000005c       0x2c c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-memcmp.o)
+ .debug_frame   0x0000000000000088       0x28 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-memcpy-stub.o)
+ .debug_frame   0x00000000000000b0       0x20 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-memset.o)
+ .debug_frame   0x00000000000000d0       0x38 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-nano-freer.o)
+ .debug_frame   0x0000000000000108       0x30 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-nano-mallocr.o)
+ .debug_frame   0x0000000000000138       0x74 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-printf.o)
+ .debug_frame   0x00000000000001ac       0x3c c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-puts.o)
+ .debug_frame   0x00000000000001e8       0x2c c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-sbrkr.o)
+ .debug_frame   0x0000000000000214       0x20 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-strchr.o)
+ .debug_frame   0x0000000000000234       0x20 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-strcpy.o)
+ .debug_frame   0x0000000000000254       0x40 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-wbuf.o)
+ .debug_frame   0x0000000000000294       0x2c c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-wsetup.o)
+ .debug_frame   0x00000000000002c0       0x5c c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-fflush.o)
+ .debug_frame   0x000000000000031c      0x14c c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-findfp.o)
+ .debug_frame   0x0000000000000468       0x54 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-fwalk.o)
+ .debug_frame   0x00000000000004bc       0xb0 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-lock.o)
+ .debug_frame   0x000000000000056c       0x58 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-makebuf.o)
+ .debug_frame   0x00000000000005c4       0x30 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-mlock.o)
+ .debug_frame   0x00000000000005f4       0xac c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-nano-vfprintf.o)
+ .debug_frame   0x00000000000006a0       0x60 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-nano-vfprintf_i.o)
+ .debug_frame   0x0000000000000700       0x5c c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-reent.o)
+ .debug_frame   0x000000000000075c       0x88 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-stdio.o)
+ .debug_frame   0x00000000000007e4       0x2c c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-writer.o)
+ .debug_frame   0x0000000000000810       0x2c c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-closer.o)
+ .debug_frame   0x000000000000083c       0x2c c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-fstatr.o)
+ .debug_frame   0x0000000000000868       0x2c c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-isattyr.o)
+ .debug_frame   0x0000000000000894       0x2c c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-lseekr.o)
+ .debug_frame   0x00000000000008c0       0x2c c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-readr.o)
+ .debug_frame   0x00000000000008ec       0x2c c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp\libgcc.a(_aeabi_uldivmod.o)
+ .debug_frame   0x0000000000000918       0x34 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m/nofp\libgcc.a(_udivmoddi4.o)
+ .debug_frame   0x000000000000094c       0x20 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libnosys.a(close.o)
+ .debug_frame   0x000000000000096c       0x20 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libnosys.a(fstat.o)
+ .debug_frame   0x000000000000098c       0x20 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libnosys.a(isatty.o)
+ .debug_frame   0x00000000000009ac       0x20 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libnosys.a(lseek.o)
+ .debug_frame   0x00000000000009cc       0x20 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libnosys.a(read.o)
+ .debug_frame   0x00000000000009ec       0x20 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libnosys.a(sbrk.o)
 
 .stab           0x0000000000000000       0x84
  .stab          0x0000000000000000       0x24 c:/users/12250/.platformio/packages/toolchain-gccarmnoneeabi@1.90201.191206/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libnosys.a(close.o)

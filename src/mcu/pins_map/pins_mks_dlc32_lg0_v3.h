@@ -1,7 +1,7 @@
 #ifndef __pins_mks_dlc32_lg0_v3
 #define __pins_mks_dlc32_lg0_v3
 
-#define MKS_BOARD_NAME          "DLC LG0 V3.0"
+#define CUSTOM_BOARD_NAME          "DLC LG0 V3.0"
 
 #define BL_NAME                 "1:/DLC_LG0_V3.bin"
 #define BL_OLD_NAME             "1:/DLC_LG0_V3.CUR"

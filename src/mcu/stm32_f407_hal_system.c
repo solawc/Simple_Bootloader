@@ -83,7 +83,7 @@ uint8_t hal_flash_erase(void) {
     HAL_FLASH_Unlock();             //解锁
 
     bl_flash.TypeErase = FLASH_TYPEERASE_SECTORS;
-    bl_flash.Sector = hal_get_flash_sector(ADDR_FLASH_SECTOR_2);        //要擦除的扇区
+    bl_flash.Sector = hal_get_flash_sector(ADDR_FLASH_SECTOR_3);        //要擦除的扇区
 	  bl_flash.NbSectors = 4;                                             //一次只擦除一个扇区
 	  bl_flash.VoltageRange = FLASH_VOLTAGE_RANGE_3;
 

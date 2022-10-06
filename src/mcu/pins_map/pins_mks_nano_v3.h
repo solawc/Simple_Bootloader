@@ -1,7 +1,7 @@
 #ifndef __pins_mks_nano_v3_h
 #define __pins_mks_nano_v3_h
 
-#define MKS_BOARD_NAME                  "MKS Robin Nano V3"
+#define CUSTOM_BOARD_NAME               "MKS Robin Nano V3"
 
 #define BL_NAME                         "1:/Robin_nano_v3.bin"
 #define BL_OLD_NAME                     "1:/Robin_nano_v3.CUR"

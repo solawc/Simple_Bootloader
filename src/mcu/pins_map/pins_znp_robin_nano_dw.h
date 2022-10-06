@@ -1,7 +1,7 @@
 #ifndef __pins_znp_robin_nano_dw_h
 #define __pins_znp_robin_nano_dw_h
 
-#define MKS_BOARD_NAME      "ZNP ROBIN NANO DW"
+#define CUSTOM_BOARD_NAME      "ZNP ROBIN NANO DW"
 
 #define BL_NAME             "1:/ZNP_ROBIN_NANO.bin"
 #define BL_OLD_NAME         "1:/ZNP_ROBIN_NANO.CUR"

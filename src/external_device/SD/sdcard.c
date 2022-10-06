@@ -11,5 +11,6 @@ void SdcardApiReg(void) {
 	hal_sd.SdReadBuffer = SdSpiReadBuff;
 	hal_sd.SdWriteBuffer = SdSpiWriteBuff;
 	hal_sd.SdGetSector = SdGetSectorCount;
+	
 	hal_sd.sd_init();
 }

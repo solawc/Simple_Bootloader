@@ -6,17 +6,12 @@
 // #define CUSTOM_BOARD_NAME
 
 #define BOOTLOAD_VERSION                "V0.5"
-#define BOOTLOAD_DATE                   "2022-09-29"
-#ifndef CUSTOM_BOARD_NAME
+#define BOOTLOAD_DATE                   "2022-10-06"
 
-#ifdef MKS_BOARD_NAME
-    #define BOARD_NAME                  MKS_BOARD_NAME
+#ifdef CUSTOM_BOARD_NAME
+    #define BOARD_NAME                  CUSTOM_BOARD_NAME
 #else
-    #define BOARD_NAME                  "CustomBoard_XX"
-#endif
-
-#else 
-#define BOARD_NAME                      "Custom"
+    #define BOARD_NAME                  "Custom"
 #endif
 
 #ifndef MCU_FREQ
@@ -28,17 +23,6 @@
 #ifdef BL_DEBUG_MODE
 #define DEBUG_SWITCH        1
 #endif
-
-// set bootload address   
-#ifndef BL_END_ADDR
-#define BL_END_ADDR             ((uint32_t)0x8007fff)       /* Bootload end address */ 
-#endif
-#ifndef APP_STAR_ADDR
-#define APP_STAR_ADDR           ((uint32_t)0x8008000)       /* Jump to this addr to star app */ 
-#endif
-#ifndef BL_OFFSET
-#define BL_OFFSET               ((uint32_t)0X8000)          /* Set bootloader offset */    
-#endif 
 
 /* Enabled W25qxx if need to write pic and font. */
 //#define HAS_W25QXX_ON_BOARD
