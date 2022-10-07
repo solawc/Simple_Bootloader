@@ -1,3 +1,13 @@
+/*
+ stm32_f401rc_hal_system.c
+
+ Copyright (c) 2021-2022 sola
+
+ SimpleBootloader is an open source bootloader. It follows the open 
+ source protocol of GPL 3.0, and users can republish it based on the 
+ GPL 3.0 protocol.
+*/
+
 #include "mcu/stm32_f401rc_hal_system.h"
 
 #ifdef STM32F401xC

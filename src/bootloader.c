@@ -1,3 +1,13 @@
+/*
+ bootloader.c
+
+ Copyright (c) 2021-2022 sola
+
+ SimpleBootloader is an open source bootloader. It follows the open 
+ source protocol of GPL 3.0, and users can republish it based on the 
+ GPL 3.0 protocol.
+*/
+
 #include "bootloader.h"
 
 hal_bootloader_t hal_bl;
@@ -216,7 +226,7 @@ void jump_with_update() {
     bl_jump_to_app(APP_STAR_ADDR, msp, reset);
 }
 
-void update_check(void) {
+void UpdateCheck(void) {
 
     uint8_t is_need_update;
 

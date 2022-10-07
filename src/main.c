@@ -1,22 +1,27 @@
-#include "main.h"
+/*
+ main.c
 
+ Copyright (c) 2021-2022 sola
+
+ SimpleBootloader is an open source bootloader. It follows the open 
+ source protocol of GPL 3.0, and users can republish it based on the 
+ GPL 3.0 protocol.
+*/
+
+#include "main.h"
 
 FIL fil;
 
 int main(void) {
 
     FATFS fs;
-    
     FRESULT fs_res;
 
-    NvicSetVectorTable(NVIC_VectTab_FLASH, 0x0000);
+    NvicSetVectorTable(NVIC_VectTab_FLASH, 0x0000);     /* Set IRQn Offset 0x0000 */
 
-    HAL_Init();                     /* Init STM32 HAL Lib and systick */   
-
+    HAL_Init();                     /* Init STM32 HAL Lib and systick */  
     SYSTEM_INIT();                  /* Config MCU Freq */     
-        
     printf_info_init();             /* Get bootloader info */
-
     hal_uart_init();                /* Init UART */
 
 #ifdef BOOT_LED_PORT
@@ -59,7 +64,7 @@ int main(void) {
     **************************************************************/
     HAL_Delay(500);
 
-    update_check();
+    UpdateCheck();
 
     /* Never into here */ 
     while(1) {};

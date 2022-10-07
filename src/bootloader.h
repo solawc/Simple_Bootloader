@@ -1,3 +1,13 @@
+/*
+ bootloader.h
+
+ Copyright (c) 2021-2022 sola
+
+ SimpleBootloader is an open source bootloader. It follows the open 
+ source protocol of GPL 3.0, and users can republish it based on the 
+ GPL 3.0 protocol.
+*/
+
 #ifndef __bootloader_h
 #define __bootloader_h
 
@@ -28,7 +38,7 @@ typedef struct {
 
 void bl_jump_to_app(uint32_t sect,uint32_t Msp,uint32_t reset);
 void NvicSetVectorTable(uint32_t NVIC_VectTab, uint32_t Offset);
-void update_check(void);
+void UpdateCheck(void);
 #ifdef BOOT_LED_PORT
    void bsp_led_init(void);
    void bsp_led_on(void);
