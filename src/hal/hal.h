@@ -35,6 +35,6 @@ extern hal_info_t hal_info;
 
 
 void printf_info(void);
-void printf_info_init(void);
+void PrintInfoInit(void);
 void printf_result_info(void);
 #endif

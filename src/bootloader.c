@@ -141,7 +141,7 @@ uint8_t bl_open_update_file(void) {
     memset(old_name_buff, 0, sizeof(hal_bl.fw_old_name_buf));
 
     strcpy(hal_bl.fw_name_buf, FW_FILE_SD);
-    strcpy(hal_bl.fw_old_name_buf, FW_OLD_FILE_SD);    
+    strcpy(hal_bl.fw_old_name_buf, FW_OLD_FILE_SD);   
 
     fr = f_open(&fil, hal_bl.fw_name_buf,  FA_READ|FA_WRITE);
 

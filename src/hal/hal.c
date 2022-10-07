@@ -7,7 +7,7 @@ hal_flag_t hal_flag;
  *  Init motherboard info and get size
  * ******************************************************/
 
-void printf_info_init(void) {
+void PrintInfoInit(void) {
     hal_sd.is_has_sd = 0;
     hal_info.is_has_u_disk = false;
     hal_info.mcu_freq = HAL_RCC_GetHCLKFreq() / 1000000;

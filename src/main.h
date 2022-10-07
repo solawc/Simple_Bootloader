@@ -17,6 +17,8 @@
 #include "stdlib.h"
 #include "string.h"
 
+#include "util.h"   
+
 /* MCU HAL Lib */
 
 #ifdef STM32F4xx

@@ -21,7 +21,7 @@ int main(void) {
 
     HAL_Init();                     /* Init STM32 HAL Lib and systick */  
     SYSTEM_INIT();                  /* Config MCU Freq */     
-    printf_info_init();             /* Get bootloader info */
+    PrintInfoInit();             /* Get bootloader info */
     hal_uart_init();                /* Init UART */
 
 #ifdef BOOT_LED_PORT

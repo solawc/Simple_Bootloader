@@ -73,14 +73,12 @@ void Error_Handler(void)
 
 uint8_t hal_get_flash_sector(uint32_t addr) {
 
-  if(addr<ADDR_FLASH_SECTOR_0)return FLASH_SECTOR_0;
-  else if(addr<ADDR_FLASH_SECTOR_1)return FLASH_SECTOR_1;
-  else if(addr<ADDR_FLASH_SECTOR_2)return FLASH_SECTOR_2;
-  else if(addr<ADDR_FLASH_SECTOR_3)return FLASH_SECTOR_3;
-  else if(addr<ADDR_FLASH_SECTOR_4)return FLASH_SECTOR_4;
-  else if(addr<ADDR_FLASH_SECTOR_5)return FLASH_SECTOR_5;
-  else if(addr<ADDR_FLASH_SECTOR_6)return FLASH_SECTOR_6;
-  else return FLASH_SECTOR_7;
+  if(addr<ADDR_FLASH_SECTOR_1)return FLASH_SECTOR_0;        // 16K
+  else if(addr<ADDR_FLASH_SECTOR_2)return FLASH_SECTOR_1;   // 16k
+  else if(addr<ADDR_FLASH_SECTOR_3)return FLASH_SECTOR_2;   // 16k
+  else if(addr<ADDR_FLASH_SECTOR_4)return FLASH_SECTOR_3;   // 16k
+  else if(addr<ADDR_FLASH_SECTOR_5)return FLASH_SECTOR_4;   // 64k
+  else return FLASH_SECTOR_4;
 }
 
 
@@ -92,8 +90,8 @@ uint8_t hal_flash_erase(void) {
     HAL_FLASH_Unlock();             //解锁
 
     bl_flash.TypeErase = FLASH_TYPEERASE_SECTORS;
-    bl_flash.Sector = hal_get_flash_sector(ADDR_FLASH_SECTOR_3);        //要擦除的扇区
-	  bl_flash.NbSectors = 4;                                             //一次只擦除一个扇区
+    bl_flash.Sector = hal_get_flash_sector(ADDR_FLASH_SECTOR_2);        //要擦除的扇区
+	  bl_flash.NbSectors = 8;                                             //一次只擦除一个扇区
 	  bl_flash.VoltageRange = FLASH_VOLTAGE_RANGE_3;
 
     if(HAL_FLASHEx_Erase(&bl_flash, &SectorError)!=HAL_OK) 
