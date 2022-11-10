@@ -72,6 +72,6 @@
 // Fatfs 
 #include "ff.h"
 
-extern FIL fil;
+extern FIL bootFile;
 
 #endif /* main.h */ 

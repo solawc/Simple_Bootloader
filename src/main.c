@@ -10,42 +10,36 @@
 
 #include "main.h"
 
-FIL fil;
+FIL bootFile;
+FATFS bootFs;
 
 int main(void) {
 
-    FATFS fs;
     FRESULT fs_res;
 
+    /* if use Keil/IAR toolchain, you need set VectorTable offset at 0x0000 */
     NvicSetVectorTable(NVIC_VectTab_FLASH, 0x0000);     /* Set IRQn Offset 0x0000 */
 
-    HAL_Init();                     /* Init STM32 HAL Lib and systick */  
-    SYSTEM_INIT();                  /* Config MCU Freq */     
-    PrintInfoInit();             /* Get bootloader info */
-    hal_uart_init();                /* Init UART */
+    HAL_Init();                     /* Init STM32 HAL Lib and systick       */  
+    SYSTEM_INIT();                  /* Config MCU Freq                      */     
+    PrintInfoInit();                /* Get bootloader info                  */
+    hal_uart_init();                /* Init UART                            */
 
 #ifdef BOOT_LED_PORT
-    bsp_led_init();
+    bsp_led_init();                 /* If you need LED to show program Flash */
 #endif
 
 #ifdef LCD_DGUS_DWIN
-    lcd_dgus_init();        /* Init dgus uart */ 
-    HAL_Delay(2000);        /* Wait for dwin display setup */ 
-    jump_to_rst();          /* Reset dwin dispaly */ 
+    lcd_dgus_begin();               /* If your lcd use Dwin dgus(5A A5)     */
 #endif
 
-    SdcardApiReg();         /* Regiest SDCard Driver for SPI or SDIO(TODO..) */
+    SdcardApiReg();                 /* Regiest SDCard Driver for SPI or SDIO(TODO..) */
 
     if(!hal_sd.sd_get_status()) {
-        fs_res = f_mount(&fs, SD_PATH, 1);
-        if(fs_res == FR_OK){
-            hal_sd.is_has_sd = 1;
-        }else {
-             hal_sd.is_has_sd = 0;
-        }
-    }else{
-        hal_sd.is_has_sd = 0; 
-    }
+        fs_res = f_mount(&bootFs, SD_PATH, 1);
+        if(fs_res == FR_OK){ hal_sd.is_has_sd = 1; }
+        else { hal_sd.is_has_sd = 0; }
+    }else{ hal_sd.is_has_sd = 0; }
     
     printf_info(); 
      

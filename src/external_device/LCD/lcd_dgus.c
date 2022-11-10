@@ -58,8 +58,13 @@ static void lcd_dgus_uart_init(uint32_t baud) {
 }
  
 void lcd_dgus_init(void) {
-
     lcd_dgus_uart_init(LCD_DGUS_BAUD);
+}
+
+void lcd_dgus_begin(void) {
+    lcd_dgus_init();                /* Init dgus uart */ 
+    HAL_Delay(2000);                /* Wait for dwin display setup */ 
+    jump_to_rst();                  /* Reset dwin dispaly */ 
 }
 
 

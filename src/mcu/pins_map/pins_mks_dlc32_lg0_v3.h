@@ -6,6 +6,9 @@
 #define BL_NAME                 "1:/DLC_LG0_V3.bin"
 #define BL_OLD_NAME             "1:/DLC_LG0_V3.CUR"
 
+#define BL_FLASH_ASSER          "1:/asser.bin"
+#define BL_FLASH_ASSER_OLD      "1:/asser.CUR"
+
 #define SD_USE_SPI                  
 #define BOARD_SD_SPI            SPI2
 #define BOARD_SD_SCK_PORT       GPIOB

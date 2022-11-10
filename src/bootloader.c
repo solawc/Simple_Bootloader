@@ -103,7 +103,7 @@ void bl_write_flash(void) {
 
         bufferSet(file_read_buff, 0xff, READ_FILE_PAGE_SIZE);
 
-        f_read(&fil, file_read_buff, READ_FILE_PAGE_SIZE, &br);
+        f_read(&bootFile, file_read_buff, READ_FILE_PAGE_SIZE, &br);
 
         fw_size_count++;
 
@@ -143,14 +143,14 @@ uint8_t bl_open_update_file(void) {
     strcpy(hal_bl.fw_name_buf, FW_FILE_SD);
     strcpy(hal_bl.fw_old_name_buf, FW_OLD_FILE_SD);   
 
-    fr = f_open(&fil, hal_bl.fw_name_buf,  FA_READ|FA_WRITE);
+    fr = f_open(&bootFile, hal_bl.fw_name_buf,  FA_READ|FA_WRITE);
 
-    file_size = fil.obj.objsize;
+    file_size = bootFile.obj.objsize;
 
     if(file_size > (MCU_FLASH - BL_SIZE)) { return 1; }
 
     if(fr == FR_OK) {
-        hal_sd.fw_file_size = fil.obj.objsize;
+        hal_sd.fw_file_size = bootFile.obj.objsize;
         bl_erase_flash();
         hal_flag.bit_open_file = 1;
         return 0;
@@ -161,7 +161,7 @@ uint8_t bl_open_update_file(void) {
 }
 
 void bl_rename_file(void) {
-    f_close(&fil);
+    f_close(&bootFile);
     f_unlink(hal_bl.fw_old_name_buf);
     f_rename(hal_bl.fw_name_buf, hal_bl.fw_old_name_buf);
 }
