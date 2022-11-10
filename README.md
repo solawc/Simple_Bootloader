@@ -24,6 +24,12 @@ This MCU is currently in batch use, and more support will be added later.
 | STM32F407VETx | ST           | Cortex-M4F  |
 | STM32G0B0CETx | ST           | Cortex-CM0+ |
 
+## Platform
+
+The current compilation environment uses PlatformIO for compilation, which is a very simple environment (provided that you have a good network, in China, you may need to climb the wall? Please comply with the local VNP legal requirements). You only need to download the vscode, download the platformIO in the vscode plug-in, and then open the project with vscode. The platformIO will automatically load and download the corresponding project framework, which can be seen under vscode. After everything is ready, you can compile normally.
+
+PlatformIO is a tool that is worth taking time to learn. In my use process, it helps me quickly build projects, debug, and test. I can freely add python scripts I want, or let you gradually become familiar with makefiles from shallow to deep. Of course, this is the core. Related learning documents are linked here:https://github.com/platformio/platformio-docs
+
 ## Boards support
 
 At present, only some boards I have used are supported. Of course, it is easy to add your own board settings. In this regard, you need to have a certain understanding of platformio, so that you can better operate and add new cards:
