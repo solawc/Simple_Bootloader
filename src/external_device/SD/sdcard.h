@@ -53,14 +53,14 @@
 typedef struct {
     uint32_t sd_trans_speed;
 
-    uint32_t fw_file_size;   
-    uint8_t sd_type;                                            /* 描述SD卡类型 */
-    uint8_t is_has_sd;                                          /* 0:no, 1: have */
+    uint32_t    fw_file_size;   
+    uint8_t     sd_type;                                                /* 描述SD卡类型 */
+    uint8_t     is_has_sd;                                              /* 0:no, 1: have */
 
-    uint8_t (*sd_get_status)(void);                             /* Regiest SDCard API */
-    uint8_t    (*sd_init)(void);                                   /* Init sdcard */ 
-    uint8_t    (*SdWriteBuffer)(uint8_t*, uint32_t ,uint8_t );
-    uint8_t    (*SdReadBuffer)(uint8_t *, uint32_t, uint8_t);
+    uint8_t     (*sd_get_status)(void);                                 /* Regiest SDCard API */
+    uint8_t     (*sd_init)(void);                                       /* Init sdcard */ 
+    uint8_t     (*SdWriteBuffer)(uint8_t*, uint32_t ,uint8_t );
+    uint8_t     (*SdReadBuffer)(uint8_t *, uint32_t, uint8_t);
     uint32_t    (*SdGetSector)(void);
 
 }hal_sd_t;

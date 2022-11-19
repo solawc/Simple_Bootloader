@@ -9,7 +9,7 @@ extern UART_HandleTypeDef debug_uart;
 #define  __HAL_UART_CLK(uart)	        __HAL_RCC_##uart##_CLK_ENABLE()
 #define  UART_IRQn(uart)                uart##_IRQn
 
-#if DEBUG_SWITCH
+#ifdef DEBUG_SWITCH
 #define HAS_DEBUG_INFO
 #define DEBUG_ERROR(fmt,arg...)         do{printf("<<-ERROR->> [%d]"fmt"\r\n",__LINE__, ##arg);}while(0)
 #define DEBUG_PRINT(fmt,arg...)         do{printf("<<-DEBUG->> [%d]"fmt"\r\n",__LINE__, ##arg);}while(0)   
@@ -23,12 +23,7 @@ extern UART_HandleTypeDef debug_uart;
 #define INFO_PRINT(fmt,arg...)          do{printf("<<-INFO->> [%d]"fmt"\r\n",__LINE__, ##arg);}while(0)  
 
 
-
-
-
-
-
-
 void hal_uart_gpio_init(void);
 void hal_uart_init(void);
+
 #endif

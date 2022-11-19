@@ -23,7 +23,7 @@ void PrintInfoInit(void) {
  * - If use u disk or SD.
  * - MCU info, include Flash size and Freq.
  * ******************************************************/ 
-void printf_info(void) {
+void printInfo(void) {
     DEBUG_PRINTF("Simple Boot Info\n");
     DEBUG_PRINTF("-Board:%s\n", BOARD_NAME);
     DEBUG_PRINTF("-Version:%s, %s\n",BOOTLOAD_VERSION, BOOTLOAD_DATE);
@@ -47,3 +47,4 @@ void printf_result_info(void) {
     if(hal_flag.bit_read_finish)    hal_flag.bit_flag |= 1 << 0;
     DEBUG_PRINT("Result:0x%x", hal_flag.bit_flag);
 }
+

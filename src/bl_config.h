@@ -12,8 +12,8 @@
 #define __bl_config_h
 
 /* Bootloader version and date. */
-#define BOOTLOAD_VERSION                "V0.5"
-#define BOOTLOAD_DATE                   "2022-10-07"
+#define BOOTLOAD_VERSION                "V0.6"
+#define BOOTLOAD_DATE                   "2022-11-19"
 
 /* Board info. */
 #ifdef CUSTOM_BOARD_NAME
@@ -22,14 +22,15 @@
     #define BOARD_NAME                  "Custom"
 #endif
 
+/* You can define your CPU Freq. */
 #ifndef MCU_FREQ
-    #define MCU_FREQ                        F_CPU
+    #define MCU_FREQ                    F_CPU
 #endif
 
 /* Enabled bootload if you want know debug info. */
 #define BL_DEBUG_MODE           /* Flash will use about 0.5Kb, so I suggest open it */
 #ifdef BL_DEBUG_MODE
-#define DEBUG_SWITCH        1
+    #define DEBUG_SWITCH 
 #endif
 
 /* Enabled W25qxx if need to write pic and font. */

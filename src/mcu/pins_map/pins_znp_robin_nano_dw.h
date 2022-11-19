@@ -3,8 +3,8 @@
 
 #define CUSTOM_BOARD_NAME      "ZNP ROBIN NANO DW"
 
-#define BL_NAME             "1:/ZNP_ROBIN_NANO.bin"
-#define BL_OLD_NAME         "1:/ZNP_ROBIN_NANO.CUR"
+#define BL_NAME                 "1:/ZNP_ROBIN_NANO.bin"
+#define BL_OLD_NAME             "1:/ZNP_ROBIN_NANO.CUR"
 
 #define SD_USE_SPI   
 #define BOARD_SD_SPI            SPI2

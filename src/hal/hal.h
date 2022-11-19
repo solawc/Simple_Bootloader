@@ -7,9 +7,9 @@
 /************************************************************************************************************
  *                                                  bit_flag                                                *
  *--------------------------------------------------------------------------------------------------------- *
- * 0 | 0    |    0         |      0    |       0        |       0       |       0       |        0        | *
- *   |      | bit_size_err | bit_erase | bit_wait_finsh | bit_open_file | bit_uploading | bit_read_finish | *
- *   |      |              |           |                |               |               |                 | *
+ * 0 | 0 |    0         |      0    |       0        |       0       |       0       |        0        |    *
+ *   |   | bit_size_err | bit_erase | bit_wait_finsh | bit_open_file | bit_uploading | bit_read_finish |    *
+ *   |   |              |           |                |               |               |                 |    *
  *--------------------------------------------------------------------------------------------------------- *
 ************************************************************************************************************/
 
@@ -19,8 +19,8 @@ typedef struct {
     uint8_t bit_open_file:1;
     uint8_t bit_uploading:1;
     uint8_t bit_read_finish:1;
-    uint8_t bit_flag;
     uint8_t bit_size_err:1;
+    uint8_t bit_flag;
 }hal_flag_t;
 extern hal_flag_t hal_flag;
 
@@ -34,7 +34,7 @@ typedef struct {
 extern hal_info_t hal_info;
 
 
-void printf_info(void);
+void printInfo(void);
 void PrintInfoInit(void);
 void printf_result_info(void);
 #endif

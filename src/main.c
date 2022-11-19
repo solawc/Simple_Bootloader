@@ -10,13 +10,8 @@
 
 #include "main.h"
 
-FIL bootFile;
-FATFS bootFs;
-
 int main(void) {
-
-    FRESULT fs_res;
-
+    
     /* if use Keil/IAR toolchain, you need set VectorTable offset at 0x0000 */
     NvicSetVectorTable(NVIC_VectTab_FLASH, 0x0000);     /* Set IRQn Offset 0x0000 */
 
@@ -35,13 +30,9 @@ int main(void) {
 
     SdcardApiReg();                 /* Regiest SDCard Driver for SPI or SDIO(TODO..) */
 
-    if(!hal_sd.sd_get_status()) {
-        fs_res = f_mount(&bootFs, SD_PATH, 1);
-        if(fs_res == FR_OK){ hal_sd.is_has_sd = 1; }
-        else { hal_sd.is_has_sd = 0; }
-    }else{ hal_sd.is_has_sd = 0; }
+    m_card_mount();                 /* Mount SDCard. */
     
-    printf_info(); 
+    printInfo(); 
      
     /**************************************************************
      *             * Why is there a delay here? *
@@ -65,22 +56,15 @@ int main(void) {
 }
 
 
-/**************************************************************
- * Author:sola
- * Fix time:2022-01-20
- * Describe:
- * This is for the tick of the HAL library, 
- * using Systick's interrupt to perform the count
-**************************************************************/
-void SysTick_Handler(void)
-{
+
+void systickCallBack(void) {
+
     HAL_IncTick();
 }
 
+
 void HardFault_Handler(void) {
 
-    while(1) {
-
-
-    }
+    /* Never into here */
+    while(1) {}
 }

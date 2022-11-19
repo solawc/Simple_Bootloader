@@ -20,7 +20,6 @@
 #include "util.h"   
 
 /* MCU HAL Lib */
-
 #ifdef STM32F4xx
     #include "stm32f4xx_hal.h"
     #ifdef STM32F401xC
@@ -58,7 +57,11 @@
 #include "bl_config.h"
 #include "bootloader.h"
 
+/* Fatfs */
+#include "ff.h"
+
 /* HAL drivers files */
+#include "hal/arm_support.h"
 #include "hal/hal.h"
 #include "hal/hal_uart.h"
 #include "hal/hal_spi.h"
@@ -68,10 +71,9 @@
 
 #include "external_device/SD/sd_spi_drv.h"
 #include "external_device/SD/sd_sdio_drv.h"
+#include "external_device/FS/mid_fs.h"
 
-// Fatfs 
-#include "ff.h"
 
-extern FIL bootFile;
+// extern FIL bootFile;
 
 #endif /* main.h */ 

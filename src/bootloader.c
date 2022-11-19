@@ -35,28 +35,14 @@ const char *FW_OLD_FILE_SD    = "1:/ROBIN_E3D_V2.CUR";
 const char *FW_OLD_FILE_SD    = BL_OLD_NAME;
 #endif
 
-char firmware_name_buff[FW_NAME_SIZE];
-char old_name_buff[FW_NAME_SIZE];
+// char firmware_name_buff[FW_NAME_SIZE];
+// char old_name_buff[FW_NAME_SIZE];
 
-MSP_TYPE msp = 0;               /* Point to Msp         */
-RST_TYPE reset = 0;             /* Point to void*       */
-uint32_t Address = 0x00;        /* 擦除计数，擦除地址   */
+MSP_TYPE msp = 0;               /* Point to Msp             */
+RST_TYPE reset = 0;             /* Point to void*           */
+uint32_t Address = 0x00;        /* Eraser address           */
 
-_FLASH_SIZE_TYPE    *hlfP; //= (_FLASH_SIZE_TYPE *)file_read_buff;
-
-/* only support cortex-M */
-void NvicSetVectorTable(uint32_t NVIC_VectTab, uint32_t Offset) {
-
-    /* Check the parameters */
-    assert_param(IS_NVIC_VECTTAB(NVIC_VectTab));
-    assert_param(IS_NVIC_OFFSET(Offset)); 
-    SCB->VTOR = NVIC_VectTab | (Offset & (uint32_t)0x1FFFFF80);
-}
-
-/* only support cortex-M */
-void bl_reset_systick(void) {
-    SysTick->CTRL &= ~ SysTick_CTRL_ENABLE_Msk;     /* Disable systick */
-}
+_FLASH_SIZE_TYPE    *hlfP;      //= (_FLASH_SIZE_TYPE *)file_read_buff;
 
 void bl_erase_flash(void) {
     COMMON_FLASH_ERASE();                           /* A define at pins_xxx.h */
@@ -90,7 +76,7 @@ void bl_write_flash(void) {
 
     Address = APP_STAR_ADDR;
 
-    INFO_PRINT("[DEBUG]Firmware Size=%ldK\n", hal_sd.fw_file_size/1024);
+    INFO_PRINT("[DEBUG]Firmware Size=%ldK\n", hal_sd.fw_file_size / 1024);
 
     uint8_t *file_read_buff;
 
@@ -105,7 +91,8 @@ void bl_write_flash(void) {
 
         f_read(&bootFile, file_read_buff, READ_FILE_PAGE_SIZE, &br);
 
-        fw_size_count++;
+        // fw_size_count++;
+        fw_size_count = f_tell(&bootFile);
 
         if(msp == 0 && reset == 0)
         {
@@ -122,13 +109,13 @@ void bl_write_flash(void) {
 
 		Address += READ_FILE_PAGE_SIZE;
 
+        
+        INFO_PRINT("Update...[%d%%]", (int)((fw_size_count * 100) / (hal_sd.fw_file_size))); 
+
         if(br < READ_FILE_PAGE_SIZE) {
-
             hal_flag.bit_read_finish = 1;
-
             break;
         };
-        INFO_PRINT("Update...[%d%%]", (int)(((fw_size_count) * 100) / (hal_sd.fw_file_size / 1024))); 
     }
 }
 
@@ -137,8 +124,11 @@ uint8_t bl_open_update_file(void) {
     FRESULT fr;
     uint32_t file_size = 0;
 
-    memset(hal_bl.fw_name_buf, 0, sizeof(hal_bl.fw_name_buf));
-    memset(old_name_buff, 0, sizeof(hal_bl.fw_old_name_buf));
+    hal_bl.fw_name_buf = (char *)malloc(FW_NAME_SIZE);
+    hal_bl.fw_old_name_buf = (char *)malloc(FW_NAME_SIZE);
+
+    memset(hal_bl.fw_name_buf, 0, FW_NAME_SIZE);
+    memset(hal_bl.fw_old_name_buf, 0, FW_NAME_SIZE);
 
     strcpy(hal_bl.fw_name_buf, FW_FILE_SD);
     strcpy(hal_bl.fw_old_name_buf, FW_OLD_FILE_SD);   

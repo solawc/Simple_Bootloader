@@ -85,16 +85,21 @@ uint8_t BspDetRead(void) {
 
 uint32_t BspSpiAutoSpeed(void) {
 
+	/*******************************************
+	 * get_clk calc:
+	 * 	spi speed = ((F_CPU / 2) / 2) / 8 (Mbyte/s)  < 10Mbyte/s 
+	 */
+
     uint16_t get_clk = (HAL_RCC_GetHCLKFreq() / 1000000) / 2; 
 
-    uint8_t sd_spi_min_clk_div = get_clk / 8;       // 8兆需要高分频
+    uint8_t sd_spi_min_clk_div = ((get_clk / 2) / 8) / 10;       // 8兆需要高分频
 
     if(sd_spi_min_clk_div <= 2)         return SPI_BAUDRATEPRESCALER_2;
     else if(sd_spi_min_clk_div <= 4)    return SPI_BAUDRATEPRESCALER_4;
     else if(sd_spi_min_clk_div <= 8)    return SPI_BAUDRATEPRESCALER_8;
     else if(sd_spi_min_clk_div <= 16)    return SPI_BAUDRATEPRESCALER_16;
     else if(sd_spi_min_clk_div <= 32)    return SPI_BAUDRATEPRESCALER_32;
-    else return SPI_BAUDRATEPRESCALER_256;
+    else return SPI_BAUDRATEPRESCALER_4;
 }
 
 uint8_t SdReadyWait(void) {
