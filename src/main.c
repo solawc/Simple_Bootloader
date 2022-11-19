@@ -30,7 +30,7 @@ int main(void) {
 
     SdcardApiReg();                 /* Regiest SDCard Driver for SPI or SDIO(TODO..) */
 
-    m_card_mount();                 /* Mount SDCard. */
+    mCardMount();                 /* Mount SDCard. */
     
     printInfo(); 
      

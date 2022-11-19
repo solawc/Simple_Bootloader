@@ -7,6 +7,6 @@ extern FIL bootFile;
 extern FATFS bootFs;
 
 
-uint8_t m_card_mount(void);
+uint8_t mCardMount(void);
 
 #endif

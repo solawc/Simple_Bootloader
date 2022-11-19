@@ -4,16 +4,16 @@ FIL bootFile;
 FATFS bootFs;
 
 /* Check SDCard state. */
-uint8_t m_card_check(void) {
+uint8_t mCardCheck(void) {
     return hal_sd.sd_get_status();
 }
 
 /* Mount SDCard */
-uint8_t m_card_mount(void) {
+uint8_t mCardMount(void) {
 
     FRESULT fs_res;
 
-    if(!m_card_check()) {
+    if(!mCardCheck()) {
         fs_res = f_mount(&bootFs, SD_PATH, 1);
         if(fs_res == FR_OK){ 
             hal_sd.is_has_sd = 1; 

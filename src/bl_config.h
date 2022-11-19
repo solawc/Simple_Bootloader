@@ -47,5 +47,6 @@
 /* Enabled and settings LCD type */
 // #define LCD_DGUS_DWIN            /* Use 5A A5 type           */ 
 // #define LCD_FSMA_TFT             /* Use FSMC to driver LCD   */ 
-// #define LCD_SPI_TS35             /* Use SPI to driver LCD    */ 
+#define LCD_SPI_TS35             /* Use SPI to driver LCD    */ 
+// #define LCD_SPI_TS24             /* Use SPI to driver LCD    */
 #endif
