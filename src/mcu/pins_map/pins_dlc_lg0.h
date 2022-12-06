@@ -1,13 +1,12 @@
 #ifndef __pins_dlc_lg0_h
 #define __pins_dlc_lg0_h
 
-#define MKS_BOARD_NAME      "DLC LG0 v2.0"
+#define CUSTOM_BOARD_NAME      "DLC LG0 v2.0"
 
 #define BL_NAME             "1:/DLC_LG0_V2.bin"
 #define BL_OLD_NAME         "1:/DLC_LG0_V2.CUR"
 
-
-
+#define SD_USE_SPI    
 #define BOARD_SD_SPI                    SPI1
 #define BOARD_SD_SCK_PORT               GPIOA
 #define BOARD_SD_SCK_PIN                GPIO_PIN_5

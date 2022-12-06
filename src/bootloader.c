@@ -1,6 +1,14 @@
+/*
+ bootloader.c
+
+ Copyright (c) 2021-2022 sola
+
+ SimpleBootloader is an open source bootloader. It follows the open 
+ source protocol of GPL 3.0, and users can republish it based on the 
+ GPL 3.0 protocol.
+*/
+
 #include "bootloader.h"
-// #include "core_cm4.h"
-// #include "core_cm0plus.h"
 
 hal_bootloader_t hal_bl;
 
@@ -12,6 +20,8 @@ typedef uint32_t _FLASH_SIZE_TYPE;
 #define SIZE_DIV    2
 #endif
 
+typedef uint32_t MSP_TYPE;
+typedef uint32_t RST_TYPE;
 
 #ifndef BL_NAME
 const char *FW_FILE_SD        = "1:/ROBIN_E3D_V2.bin";
@@ -25,39 +35,17 @@ const char *FW_OLD_FILE_SD    = "1:/ROBIN_E3D_V2.CUR";
 const char *FW_OLD_FILE_SD    = BL_OLD_NAME;
 #endif
 
-char firmware_name_buff[FW_NAME_SIZE];
-char old_name_buff[FW_NAME_SIZE];
+// char firmware_name_buff[FW_NAME_SIZE];
+// char old_name_buff[FW_NAME_SIZE];
 
-uint32_t msp = 0;
-uint32_t reset = 0;
-// UINT br;
+MSP_TYPE msp = 0;               /* Point to Msp             */
+RST_TYPE reset = 0;             /* Point to void*           */
+uint32_t Address = 0x00;        /* Eraser address           */
 
-uint32_t EraseCounter = 0x00, Address = 0x00;//擦除计数，擦除地址
-
-uint8_t file_read_buff[1024];  // 用于装载读取回来的固件
-
-_FLASH_SIZE_TYPE *hlfP = (_FLASH_SIZE_TYPE *)file_read_buff;
-
-/* only support cortex-M */
-void nvic_set_vector_table(uint32_t NVIC_VectTab, uint32_t Offset) {
-
-    /* Check the parameters */
-    assert_param(IS_NVIC_VECTTAB(NVIC_VectTab));
-    assert_param(IS_NVIC_OFFSET(Offset)); 
-    SCB->VTOR = NVIC_VectTab | (Offset & (uint32_t)0x1FFFFF80);
-}
-
-/* only support cortex-M */
-void bl_reset_systick(void) {
-
-    /* Disable systick */
-    SysTick->CTRL &= ~ SysTick_CTRL_ENABLE_Msk;
-}
+_FLASH_SIZE_TYPE    *hlfP;      //= (_FLASH_SIZE_TYPE *)file_read_buff;
 
 void bl_erase_flash(void) {
-
-    /* A define at pins_xxx.h */
-    COMMON_FLASH_ERASE();
+    COMMON_FLASH_ERASE();                           /* A define at pins_xxx.h */
 }
 
 /****************************************************************************
@@ -84,23 +72,27 @@ uint32_t fw_size_count = 0;
 
 void bl_write_flash(void) {
 
-    Address = APP_STAR_ADDR;
-
     UINT br;
 
-    printf("[DEBUG]hal_sd.fw_file_size=%ld\n", hal_sd.fw_file_size/1024);
+    Address = APP_STAR_ADDR;
+
+    INFO_PRINT("[DEBUG]Firmware Size=%ldK\n", hal_sd.fw_file_size / 1024);
+
+    uint8_t *file_read_buff;
 
     while(1) {
 
 #ifdef BOOT_LED_PORT
         bsp_led_toggle();
 #endif
+        file_read_buff = (uint8_t *)malloc(READ_FILE_PAGE_SIZE);
 
         bufferSet(file_read_buff, 0xff, READ_FILE_PAGE_SIZE);
 
-        f_read(&fil, file_read_buff, READ_FILE_PAGE_SIZE, &br);
+        f_read(&bootFile, file_read_buff, READ_FILE_PAGE_SIZE, &br);
 
-        fw_size_count++;
+        // fw_size_count++;
+        fw_size_count = f_tell(&bootFile);
 
         if(msp == 0 && reset == 0)
         {
@@ -109,44 +101,46 @@ void bl_write_flash(void) {
             reset = *((uint32_t *)(file_read_buff + 4));
         }
 
-        // hlfP = (uint64_t *)file_read_buff;
         hlfP = (_FLASH_SIZE_TYPE *)file_read_buff;
         
         COMMON_FLASH_WRITE(Address, hlfP, READ_FILE_PAGE_SIZE / SIZE_DIV);
 
+        free(file_read_buff);
+
 		Address += READ_FILE_PAGE_SIZE;
 
+        
+        INFO_PRINT("Update...[%d%%]", (int)((fw_size_count * 100) / (hal_sd.fw_file_size))); 
+
         if(br < READ_FILE_PAGE_SIZE) {
-
             hal_flag.bit_read_finish = 1;
-
             break;
         };
-        printf("Update...[%d]\n", (int)((fw_size_count*100)/(hal_sd.fw_file_size/1024))); 
     }
-    DEBUG_PRINT("Upload size:%ldk", fw_size_count);
 }
 
 uint8_t bl_open_update_file(void) {
 
-    // FIL fil;
     FRESULT fr;
     uint32_t file_size = 0;
 
-    memset(hal_bl.fw_name_buf, 0, sizeof(hal_bl.fw_name_buf));
-    memset(old_name_buff, 0, sizeof(hal_bl.fw_old_name_buf));
+    hal_bl.fw_name_buf = (char *)malloc(FW_NAME_SIZE);
+    hal_bl.fw_old_name_buf = (char *)malloc(FW_NAME_SIZE);
+
+    memset(hal_bl.fw_name_buf, 0, FW_NAME_SIZE);
+    memset(hal_bl.fw_old_name_buf, 0, FW_NAME_SIZE);
 
     strcpy(hal_bl.fw_name_buf, FW_FILE_SD);
-    strcpy(hal_bl.fw_old_name_buf, FW_OLD_FILE_SD);    
+    strcpy(hal_bl.fw_old_name_buf, FW_OLD_FILE_SD);   
 
-    fr = f_open(&fil, hal_bl.fw_name_buf,  FA_READ|FA_WRITE);
+    fr = f_open(&bootFile, hal_bl.fw_name_buf,  FA_READ|FA_WRITE);
 
-    file_size = fil.obj.objsize;
+    file_size = bootFile.obj.objsize;
 
-    if(file_size > (MCU_FLASH-BL_SIZE)) return 1;
+    if(file_size > (MCU_FLASH - BL_SIZE)) { return 1; }
 
     if(fr == FR_OK) {
-        hal_sd.fw_file_size = fil.obj.objsize;
+        hal_sd.fw_file_size = bootFile.obj.objsize;
         bl_erase_flash();
         hal_flag.bit_open_file = 1;
         return 0;
@@ -157,9 +151,7 @@ uint8_t bl_open_update_file(void) {
 }
 
 void bl_rename_file(void) {
-
-    // FIL fil;
-    f_close(&fil);
+    f_close(&bootFile);
     f_unlink(hal_bl.fw_old_name_buf);
     f_rename(hal_bl.fw_name_buf, hal_bl.fw_old_name_buf);
 }
@@ -178,14 +170,14 @@ void bl_rename_file(void) {
 */
 void bl_jump_to_app(uint32_t sect, uint32_t Msp, uint32_t reset_msp) {
 
-    uint32_t base;
-    uint32_t offset;
+    __IO uint32_t base;
+    __IO uint32_t offset;
 
 #ifdef LCD_DGUS_DWIN
     jump_to_star();
 #endif
 
-    hal_sd_deinit();
+    SdSpiDrvDeinit();
 
     SysTick->CTRL &= ~ SysTick_CTRL_ENABLE_Msk;
 
@@ -193,7 +185,7 @@ void bl_jump_to_app(uint32_t sect, uint32_t Msp, uint32_t reset_msp) {
 
     offset = sect-base;	
 
-    nvic_set_vector_table(base, offset);
+    NvicSetVectorTable(base, offset);
 
     __set_MSP(Msp);
 
@@ -210,7 +202,6 @@ void jump_without_update(void) {
 	reset = *((uint32_t *)(APP_STAR_ADDR + 4));
 
     bl_jump_to_app(APP_STAR_ADDR, msp, reset);
-
 }
 
 void jump_with_update() {
@@ -225,7 +216,7 @@ void jump_with_update() {
     bl_jump_to_app(APP_STAR_ADDR, msp, reset);
 }
 
-void update_check(void) {
+void UpdateCheck(void) {
 
     uint8_t is_need_update;
 
@@ -250,7 +241,7 @@ void bsp_led_init(void) {
     GPIO_Init.Mode = GPIO_MODE_OUTPUT_PP;
     GPIO_Init.Pin = BOOT_LED_PIN;
     GPIO_Init.Pull = GPIO_NOPULL;
-    GPIO_Init.Speed = GPIO_SPEED_FREQ_HIGH;
+    GPIO_Init.Speed = GPIO_SPEED_FREQ_LOW;
     HAL_GPIO_Init(BOOT_LED_PORT, &GPIO_Init);
 }
 

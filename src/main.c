@@ -1,48 +1,38 @@
+/*
+ main.c
+
+ Copyright (c) 2021-2022 sola
+
+ SimpleBootloader is an open source bootloader. It follows the open 
+ source protocol of GPL 3.0, and users can republish it based on the 
+ GPL 3.0 protocol.
+*/
+
 #include "main.h"
 
-
-FIL fil;
-
 int main(void) {
-
-    FATFS fs;
     
-    FRESULT fs_res;
+    /* if use Keil/IAR toolchain, you need set VectorTable offset at 0x0000 */
+    NvicSetVectorTable(NVIC_VectTab_FLASH, 0x0000);     /* Set IRQn Offset 0x0000 */
 
-    nvic_set_vector_table(NVIC_VectTab_FLASH, 0x0000);
-
-    HAL_Init();        
-
-    SYSTEM_INIT();          // set system clock
-
-    printf_info_init();
-
-    hal_uart_init();        // init uart 
+    HAL_Init();                     /* Init STM32 HAL Lib and systick       */  
+    SYSTEM_INIT();                  /* Config MCU Freq                      */     
+    PrintInfoInit();                /* Get bootloader info                  */
+    hal_uart_init();                /* Init UART                            */
 
 #ifdef BOOT_LED_PORT
-    bsp_led_init();
+    bsp_led_init();                 /* If you need LED to show program Flash */
 #endif
 
 #ifdef LCD_DGUS_DWIN
-    lcd_dgus_init();        // init dgus uart
-    HAL_Delay(2000);        // wait for dwin display setup
-    jump_to_rst();          // reset dwin dispaly
+    lcd_dgus_begin();               /* If your lcd use Dwin dgus(5A A5)     */
 #endif
 
-    hal_sd_register();      // register sd
+    SdcardApiReg();                 /* Regiest SDCard Driver for SPI or SDIO(TODO..) */
 
-    if(!hal_sd.sd_get_status()) {
-        fs_res = f_mount(&fs,"1:",1);
-        if(fs_res == FR_OK){
-            hal_sd.is_has_sd = 1;
-        }else {
-             hal_sd.is_has_sd = 0;
-        }
-    }else{
-        hal_sd.is_has_sd = 0; 
-    }
+    mCardMount();                 /* Mount SDCard. */
     
-    printf_info(); 
+    printInfo(); 
      
     /**************************************************************
      *             * Why is there a delay here? *
@@ -59,30 +49,22 @@ int main(void) {
     **************************************************************/
     HAL_Delay(500);
 
-    update_check();
+    UpdateCheck();
 
     /* Never into here */ 
     while(1) {};
 }
 
 
-/**************************************************************
- * Author:sola
- * Fix time:2022-01-20
- * Describe:
- * This is for the tick of the HAL library, 
- * using Systick's interrupt to perform the count
-**************************************************************/
-void SysTick_Handler(void)
-{
+
+void systickCallBack(void) {
+
     HAL_IncTick();
-    // USART2_IRQn
 }
+
 
 void HardFault_Handler(void) {
 
-    while(1) {
-
-
-    }
+    /* Never into here */
+    while(1) {}
 }

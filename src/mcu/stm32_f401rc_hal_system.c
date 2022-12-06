@@ -1,3 +1,13 @@
+/*
+ stm32_f401rc_hal_system.c
+
+ Copyright (c) 2021-2022 sola
+
+ SimpleBootloader is an open source bootloader. It follows the open 
+ source protocol of GPL 3.0, and users can republish it based on the 
+ GPL 3.0 protocol.
+*/
+
 #include "mcu/stm32_f401rc_hal_system.h"
 
 #ifdef STM32F401xC
@@ -26,7 +36,7 @@ void hal_stm32f401_system_init(void) {
     RCC_OscInitStruct.PLL.PLLQ = 4;
     if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
     {
-    Error_Handler();
+        Error_Handler();
     }
     /** Initializes the CPU, AHB and APB buses clocks
      */
@@ -101,7 +111,7 @@ uint8_t hal_flash_erase(void) {
     return 0;
 }
 
-void hal_flash_write(uint32_t addr ,uint16_t *buff, uint32_t num) {
+void hal_flash_write(uint32_t addr ,uint32_t *buff, uint32_t num) {
 
 	HAL_StatusTypeDef FlashStatus=HAL_OK;
 	uint32_t addrx=0;
@@ -120,13 +130,12 @@ void hal_flash_write(uint32_t addr ,uint16_t *buff, uint32_t num) {
 	{
 		 while(addrx < endaddr)//写数据
 		 {
-            status = HAL_FLASH_Program(FLASH_TYPEPROGRAM_HALFWORD, addrx, *buff);
-
-			if(status != HAL_OK)//写入数据
-			{ 
-				break;	//写入异常
-			}
-			addrx += 2;
+            status = HAL_FLASH_Program(FLASH_TYPEPROGRAM_WORD, addrx, *buff);
+            
+            /* 写入数据 */
+			if(status != HAL_OK) {  break;	}   /* 写入异常 */
+			
+			addrx += 4;//2;
 			buff++;
 		}  
 	}

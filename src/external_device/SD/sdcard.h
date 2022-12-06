@@ -3,21 +3,7 @@
 
 #include "../../main.h"
 
-/*
- * How to select sd speed?
- * 1. SD support 12M/s or 48M/s
- * but we use SPI to driver SDCard, so the speed
- * will be slow, when we need to init sd to begein,
- * you must set SPI_BAUDRATEPRESCALER_256 at STM32,
- * or if you use NXP or other MCU, for example TI or
- * HC32, or AT32, you just set the most slow speed.
- * 
- * 2. When the spi need to trans data to sdcard, the 
- * speed need to set between 8M/s and 12M/s, is SD_SPI_SPEED
- *
-*/
-#define SD_SPI_SPEED            SPI_BAUDRATEPRESCALER_4       
-#define SD_SPI_LOW_SPEED        SPI_BAUDRATEPRESCALER_256
+#define SD_PATH         "1:"
 
 /* This is need to send a data to begein SPI, is a empty cmd*/
 #define SD_DUMMY_BYTE       0xFF
@@ -65,27 +51,21 @@
 #define MSD_RESPONSE_FAILURE       0xFF
 
 typedef struct {
-
-                           
     uint32_t sd_trans_speed;
-    uint32_t sd_slow_speed;
 
-    uint32_t fw_file_size;   
-    uint8_t sd_type;                                /* 描述SD卡类型 */
-    uint8_t is_has_sd;                              /* 0:no, 1: have */
+    uint32_t    fw_file_size;   
+    uint8_t     sd_type;                                                /* 描述SD卡类型 */
+    uint8_t     is_has_sd;                                              /* 0:no, 1: have */
 
-    uint8_t (*sd_get_status)(void);
-    uint8_t (*sd_trans_receive_data)(uint8_t );
-    void    (*sd_set_speed)(uint32_t );
-    void    (*sd_init)(void);                        
-    void    (*sd_trans_enable)(void);
-    void    (*sd_trans_disable)(void);
+    uint8_t     (*sd_get_status)(void);                                 /* Regiest SDCard API */
+    uint8_t     (*sd_init)(void);                                       /* Init sdcard */ 
+    uint8_t     (*SdWriteBuffer)(uint8_t*, uint32_t ,uint8_t );
+    uint8_t     (*SdReadBuffer)(uint8_t *, uint32_t, uint8_t);
+    uint32_t    (*SdGetSector)(void);
+
 }hal_sd_t;
 extern hal_sd_t hal_sd;
 
-uint8_t SD_Initialize(void);
-uint8_t SD_ReadDisk(uint8_t*buf,uint32_t sector,uint8_t cnt);
-uint8_t SD_WriteDisk(uint8_t*buf,uint32_t sector,uint8_t cnt);
-uint32_t SD_GetSectorCount(void);
+void SdcardApiReg(void);
 
 #endif

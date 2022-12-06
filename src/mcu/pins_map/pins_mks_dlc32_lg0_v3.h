@@ -1,23 +1,27 @@
 #ifndef __pins_mks_dlc32_lg0_v3
 #define __pins_mks_dlc32_lg0_v3
 
-#define MKS_BOARD_NAME      "DLC LG0 V3.0"
+#define CUSTOM_BOARD_NAME          "DLC LG0 V3.0"
 
-#define BL_NAME             "1:/DLC_LG0_V3.bin"
-#define BL_OLD_NAME         "1:/DLC_LG0_V3.CUR"
+#define BL_NAME                 "1:/DLC_LG0_V3.bin"
+#define BL_OLD_NAME             "1:/DLC_LG0_V3.CUR"
 
-#define BOARD_SD_SPI        SPI2
-#define BOARD_SD_SCK_PORT   GPIOB
-#define BOARD_SD_SCK_PIN    GPIO_PIN_13
-#define BOARD_SD_MISO_PORT  GPIOB
-#define BOARD_SD_MISO_PIN   GPIO_PIN_14
-#define BOARD_SD_MOSI_PORT  GPIOB
-#define BOARD_SD_MOSI_PIN   GPIO_PIN_15
-#define BOARD_SD_CS_PORT    GPIOB
-#define BOARD_SD_CS_PIN     GPIO_PIN_12
-#define BOARD_SD_DET_PORT   GPIOA
-#define BOARD_SD_DET_PIN    GPIO_PIN_3
-#define BOARD_SD_GPIO_AF    GPIO_AF5_SPI2
+#define BL_FLASH_ASSER          "1:/asser.bin"
+#define BL_FLASH_ASSER_OLD      "1:/asser.CUR"
+
+#define SD_USE_SPI                  
+#define BOARD_SD_SPI            SPI2
+#define BOARD_SD_SCK_PORT       GPIOB
+#define BOARD_SD_SCK_PIN        GPIO_PIN_13
+#define BOARD_SD_MISO_PORT      GPIOB
+#define BOARD_SD_MISO_PIN       GPIO_PIN_14
+#define BOARD_SD_MOSI_PORT      GPIOB
+#define BOARD_SD_MOSI_PIN       GPIO_PIN_15
+#define BOARD_SD_CS_PORT        GPIOB
+#define BOARD_SD_CS_PIN         GPIO_PIN_12
+#define BOARD_SD_DET_PORT       GPIOA
+#define BOARD_SD_DET_PIN        GPIO_PIN_3
+#define BOARD_SD_GPIO_AF        GPIO_AF5_SPI2
 
 #define _SD_GPIO_CLK_ENABLE()   __HAL_RCC_GPIOB_CLK_ENABLE();\
                                 __HAL_RCC_GPIOA_CLK_ENABLE();\

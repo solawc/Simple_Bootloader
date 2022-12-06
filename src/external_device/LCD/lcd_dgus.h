@@ -20,6 +20,7 @@
 #define LCD_DGUS_RX_PIN_CLK_EN()    __HAL_RCC_GPIOA_CLK_ENABLE()
 
 void lcd_dgus_init(void);
+void lcd_dgus_begin(void);
 void dgus_go_to_screen(uint8_t screen);
 void jump_into_boot_screen(void);
 void jump_to_rst(void);

@@ -19,8 +19,8 @@ void hal_uart_gpio_init(void) {
 	GPIO_InitStruct.Pin = DEBUG_UART_TX_PIN|DEBUG_UART_RX_PIN;
     GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
     GPIO_InitStruct.Pull = GPIO_NOPULL;
-    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
-    GPIO_InitStruct.Alternate = DEBUG_UART_AF_MODE;
+    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+    GPIO_InitStruct.Alternate = DEBUG_UART_AF_MODE;	
     HAL_GPIO_Init(DEBUG_UART_TX_PORT, &GPIO_InitStruct);
 }
 
