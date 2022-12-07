@@ -1,12 +1,12 @@
 #include "HID_boot_port.h"
 
-#define BOOT_1_PIN          GPIO_PIN_2 //DIYMROE STM32F407VGT board (Button PD15, LED PE0)
-#define BOOT_1_PORT         GPIOB
-#define BOOT_1_ENABLED      GPIO_PIN_RESET
-#define BOOT_1_CLK_EN()     __HAL_RCC_GPIOB_CLK_ENABLE()
+// #define BOOT_1_PIN          GPIO_PIN_2 //DIYMROE STM32F407VGT board (Button PD15, LED PE0)
+// #define BOOT_1_PORT         GPIOB
+// #define BOOT_1_ENABLED      GPIO_PIN_RESET
+// #define BOOT_1_CLK_EN()     __HAL_RCC_GPIOB_CLK_ENABLE()
 
-#define BOOT_LED_PIN        GPIO_PIN_0
-#define BOOT_LED_PORT       GPIOE
+// #define BOOT_HID_LED_PIN        GPIO_PIN_0
+// #define BOOT_HID_LED_PORT       GPIOE
 
 
 void usleep(uint32_t us) {
@@ -17,8 +17,11 @@ void usleep(uint32_t us) {
     }
 }
 
+extern uint32_t hidTick;
 void HID_BootDelayMs(uint32_t ms) {
-    HAL_Delay(ms);
+    // HAL_Delay(ms);
+    hidTick = ms;
+    while(hidTick--);
 }
 
 uint32_t bootGet_BAK_Register(void) {
@@ -54,9 +57,10 @@ void bootSet_BAK_Register(void) {
 
 void boot_GPIO_Init(void) {
 
+#ifdef BOOT_1_PIN
+
     GPIO_InitTypeDef GPIO_InitStruct;
 
-#ifdef BOOT_1_PIN
 
     BOOT_1_CLK_EN();
 
@@ -66,12 +70,12 @@ void boot_GPIO_Init(void) {
     HAL_GPIO_Init(BOOT_1_PORT, &GPIO_InitStruct);
 #endif
 
-#ifdef BOOT_LED_PIN
-    GPIO_InitStruct.Pin = BOOT_LED_PIN;
+#ifdef BOOT_HID_LED_PIN
+    GPIO_InitStruct.Pin = BOOT_HID_LED_PIN;
     GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_MEDIUM;
     GPIO_InitStruct.Pull = GPIO_NOPULL;
-    HAL_GPIO_Init(BOOT_LED_PORT, &GPIO_InitStruct);
+    HAL_GPIO_Init(BOOT_HID_LED_PORT, &GPIO_InitStruct);
 #endif
 }
 
@@ -92,9 +96,7 @@ void bootSet_BootLED(uint8_t ledState) {
 
 
 void bootSendReport(uint8_t *report, uint16_t len) {
-
     HAL_UART_Transmit(&debug_uart, report, len, 1000);
-
 }
 
 void boot_writeFlash() {

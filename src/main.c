@@ -28,11 +28,11 @@ int main(void) {
     lcd_dgus_begin();               /* If your lcd use Dwin dgus(5A A5)     */
 #endif
 
+#ifndef USE_HID_BOOT
     SdcardApiReg();                 /* Regiest SDCard Driver for SPI or SDIO(TODO..) */
 
-    mCardMount();                 /* Mount SDCard. */
+    mCardMount();                   /* Mount SDCard. */
 
-#ifndef USE_HID_BOOT
     printInfo(); 
 #endif
 
@@ -54,17 +54,20 @@ int main(void) {
 
 #ifndef USE_HID_BOOT
     UpdateCheck();
+#else 
+    HID_Bootloader_Task();
 #endif
 
     /* Never into here */ 
     while(1) {};
 }
 
-
+extern uint32_t hidTick;
 
 void systickCallBack(void) {
 
     HAL_IncTick();
+    hidTick--;
 }
 
 

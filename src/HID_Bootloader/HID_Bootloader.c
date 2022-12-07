@@ -33,20 +33,41 @@
 uint32_t magic_val;
 uint16_t erase_page = 1;
 
+
+
 volatile uint8_t new_data_is_received = 0;  // 用来标志是否有数据过来
+volatile uint8_t wait_ack_flag = 0;         // 用于等待有应答指令返回       
+volatile uint32_t hidTick = 0;      
 
 static uint8_t CMD_SIGNATURE[7] = {'B','T','L','D','C','M','D'};
 static uint8_t CMD_DATA_RECEIVED[8] = {'B','T','L','D','C','M','D',2};
 
+// static uint8_t CMD_RESET_PAGES[8] = {'B','T','L','D','C','M','D', 0X00};
+static uint8_t CMD_RESET_PAGES[8] = {'B','L','T','T','T','T','T','T'};
+
+static uint8_t CMD_OK_ACK[2] = {'O', 'K'};
+
 uint8_t USB_RX_Buffer[HID_RX_SIZE];
 static uint8_t pageData[SECTOR_SIZE];
 
+HID_RX_t bootRX;
+uint8_t isHaveCMD = 0;
+
 void write_flash_sector(uint32_t currentPage);
+void print_HID_Info(void);
+uint8_t compareCMD(void);
 
 void HID_Bootloader_Task(void) {
 
     /* Init bootloader GPIO. if you need. */
     boot_GPIO_Init();  
+
+    /* Print logo and info. */
+    // print_HID_Info();
+
+    /* Reset UART RX buff. */
+    memset(bootRX.hid_rx_buff, 0, sizeof(bootRX.hid_rx_buff));
+    bootRX.hid_rx_len = 0;
 
     /* Enable UART RX HandleIRQ to receive data. */ 
     hal_uart_rx_irq_enable();       
@@ -55,10 +76,17 @@ void HID_Bootloader_Task(void) {
     magic_val = bootGet_BAK_Register(); 
 
     /* wait 3s to connect bootloader */
-    HID_BootDelayMs(3000);
+    // HID_BootDelayMs(3000);
+    hidTick = 3000;
+    while(hidTick) {
+        isHaveCMD = compareCMD();
+        if(isHaveCMD) break;
+    }
 
     /* if no, jump to app now. */
-    if((magic_val != 0x424C) && (bootGet_Boot_1_Pin() != 0)) {      
+    // if((magic_val != 0x424C) && (bootGet_Boot_1_Pin() != 0)) {     
+    // if(compareCMD()) {
+    if(isHaveCMD) {    
         typedef void (*pFunction)(void);
         pFunction Jump_To_Application;
         uint32_t JumpAddress;
@@ -77,25 +105,27 @@ void HID_Bootloader_Task(void) {
     static volatile uint16_t currentPageOffset = 0;
 
     while(1) {
-
         if(new_data_is_received == 1) {     // 有buff数据
-            new_data_is_received = 0;
 
+            __disable_irq();                // 进入临界段，防止串口数据篡改
+
+            new_data_is_received = 0;
+            
             // 查询buff内是否有指令
             if (memcmp(USB_RX_Buffer, CMD_SIGNATURE, sizeof (CMD_SIGNATURE)) == 0) {
 
                 switch(USB_RX_Buffer[7]) {
                     
                     /*------------ Reset pages */
-                    case 0x00:  
+                    case 0x00: 
+                        bootSendReport(CMD_OK_ACK, 2); 
                         current_Page = 16;
                         currentPageOffset = 0;
                         erase_page = 1;
-
                     break;
 
-
                     case 0x01:
+                        bootSendReport(CMD_OK_ACK, 2); 
                         /*------------- Reset MCU */
                         if (currentPageOffset > 0) {
 
@@ -110,17 +140,19 @@ void HID_Bootloader_Task(void) {
                     break;
                 }
             }else {
-                memcpy(pageData + currentPageOffset, USB_RX_Buffer, HID_RX_SIZE);
-                currentPageOffset += HID_RX_SIZE;
-                if (currentPageOffset == SECTOR_SIZE) {
-                write_flash_sector(current_Page);
-                current_Page++;
-                currentPageOffset = 0;
-                CMD_DATA_RECEIVED[7] = 0x02;
-                // USBD_CUSTOM_HID_SendReport(&hUsbDeviceFS, CMD_DATA_RECEIVED, 8);
-                bootSendReport(CMD_DATA_RECEIVED, 8);
+                    memcpy(pageData + currentPageOffset, USB_RX_Buffer, HID_RX_SIZE);
+                    currentPageOffset += HID_RX_SIZE;
+                    if (currentPageOffset == SECTOR_SIZE) {
+                    write_flash_sector(current_Page);
+                    current_Page++;
+                    currentPageOffset = 0;
+                    CMD_DATA_RECEIVED[7] = 0x02;
+                    // USBD_CUSTOM_HID_SendReport(&hUsbDeviceFS, CMD_DATA_RECEIVED, 8);
+                    bootSendReport(CMD_DATA_RECEIVED, 8);   // 应答
                 }
             }
+
+            __enable_irq();
         }
     }
 }
@@ -133,11 +165,28 @@ void DEBUG_UART_IRQHANDLER(void) {
 
     if(hal_get_uart_rx_flag() == SET) {
         data = BspUartReadData();
-
+        bootRX.hid_rx_buff[bootRX.hid_rx_len] = data;
+        bootRX.hid_rx_len++;
+        if(bootRX.hid_rx_len == (64 - 1)) {
+            new_data_is_received = 1;
+            memcpy(USB_RX_Buffer, bootRX.hid_rx_buff, sizeof(bootRX.hid_rx_buff));
+            bootRX.hid_rx_len = 0;
+        }
     }
+
+    /* 进入串口空闲中断, 接收不定长数据 */
+    // if((hal_get_uart_idle_flag() == SET) && (bootRX.hid_rx_len != 0)) {
+    //     new_data_is_received = 1;
+    //     bootRX.hid_rx_len = 0;
+    //     memcpy(USB_RX_Buffer, bootRX.hid_rx_buff, sizeof(bootRX.hid_rx_buff));
+
+    //     __HAL_UART_CLEAR_FLAG(&debug_uart, UART_FLAG_IDLE);
+    // }
+
 
     HAL_UART_IRQHandler(&debug_uart);
 }
+
 
 
 void write_flash_sector(uint32_t currentPage) {
@@ -178,4 +227,27 @@ void write_flash_sector(uint32_t currentPage) {
   }
 //   HAL_GPIO_WritePin(LED_1_PORT, LED_1_PIN,GPIO_PIN_RESET);  
   HAL_FLASH_Lock();
+}
+
+
+void print_HID_Info(void) {
+
+    printf("\n+-----------------------------------------------------------------------+\n");
+    printf  ("|         HID-Flash v2.2.1 - STM32 HID Bootloader Flash Tool            |\n");
+    printf  ("|     (c)      2018 - Bruno Freitas       http://www.brunofreitas.com   |\n");
+    printf  ("|     (c) 2018-2019 - Vassilis Serasidis  https://www.serasidis.gr      |\n");
+    printf  ("|   Customized for STM32duino ecosystem   https://www.stm32duino.com    |\n");
+    printf  ("+-----------------------------------------------------------------------+\n\n");
+}
+
+uint8_t compareCMD(void) {
+
+    if (memcmp(bootRX.hid_rx_buff, CMD_RESET_PAGES, sizeof (CMD_RESET_PAGES)) == 0) {
+    // if (memcmp(USB_RX_Buffer, CMD_RESET_PAGES, sizeof (CMD_RESET_PAGES)) == 0) { 
+        bootSendReport(CMD_OK_ACK, 2);
+        return 1;
+    }else {
+        // printf("No boot cmd \n");
+        return 0;
+    }
 }

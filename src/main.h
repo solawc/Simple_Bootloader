@@ -73,6 +73,7 @@
 #include "external_device/SD/sd_sdio_drv.h"
 #include "external_device/FS/mid_fs.h"
 
+#include "HID_Bootloader/HID_Bootloader.h"
 
 // extern FIL bootFile;
 
