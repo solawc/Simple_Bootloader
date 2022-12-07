@@ -25,5 +25,7 @@ extern UART_HandleTypeDef debug_uart;
 
 void hal_uart_gpio_init(void);
 void hal_uart_init(void);
-
+void hal_uart_rx_irq_enable(void);
+uint32_t hal_get_uart_rx_flag(void);
+uint8_t BspUartReadData(void);
 #endif

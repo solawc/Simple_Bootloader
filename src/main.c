@@ -31,8 +31,11 @@ int main(void) {
     SdcardApiReg();                 /* Regiest SDCard Driver for SPI or SDIO(TODO..) */
 
     mCardMount();                 /* Mount SDCard. */
-    
+
+#ifndef USE_HID_BOOT
     printInfo(); 
+#endif
+
      
     /**************************************************************
      *             * Why is there a delay here? *
@@ -49,7 +52,9 @@ int main(void) {
     **************************************************************/
     HAL_Delay(500);
 
+#ifndef USE_HID_BOOT
     UpdateCheck();
+#endif
 
     /* Never into here */ 
     while(1) {};

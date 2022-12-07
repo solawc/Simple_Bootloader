@@ -41,6 +41,42 @@ void hal_uart_init(void) {
   	{
     	Error_Handler();
   	}
+
+#ifdef STM32G0B0xx
+	if (HAL_UARTEx_SetTxFifoThreshold(&laser_uart, UART_TXFIFO_THRESHOLD_1_8) != HAL_OK)
+	{
+		Error_Handler();
+	}
+	if (HAL_UARTEx_SetRxFifoThreshold(&laser_uart, UART_RXFIFO_THRESHOLD_1_8) != HAL_OK)
+	{
+		Error_Handler();
+	}
+	if (HAL_UARTEx_DisableFifoMode(&laser_uart) != HAL_OK)
+	{
+		Error_Handler();
+	}
+#endif
+}
+
+void hal_uart_rx_irq_enable(void) {
+	HAL_NVIC_SetPriority(DEBUG_UART_IRQn, 0, 0);
+    HAL_NVIC_EnableIRQ(DEBUG_UART_IRQn);
+	__HAL_UART_ENABLE_IT(&debug_uart, UART_IT_RXNE);
+}
+
+uint32_t hal_get_uart_rx_flag(void) {
+
+	return __HAL_UART_GET_FLAG(&debug_uart, UART_FLAG_RXNE);
+}
+
+#ifdef RDR
+#define USAR_READ_REG			RDR
+#else 
+#define USAR_READ_REG			DR
+#endif
+
+uint8_t BspUartReadData(void) { 
+	return debug_uart.Instance->USAR_READ_REG;
 }
 
 #ifdef __CC_ARM

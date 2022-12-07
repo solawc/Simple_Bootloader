@@ -31,7 +31,7 @@ void tft_lcd_init() {
 #elif defined LCD_SPI_TS24
 
 #else 
-    #error:"Please select LCD type at bl_config.h, LCD_SPI_TS35 or LCD_SPI_TS24."
+    // #error:"Please select LCD type at bl_config.h, LCD_SPI_TS35 or LCD_SPI_TS24."
 #endif 
 
     tft_lcd.tft_delay_ms(100);
