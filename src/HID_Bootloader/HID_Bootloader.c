@@ -76,7 +76,6 @@ void HID_Bootloader_Task(void) {
     magic_val = bootGet_BAK_Register(); 
 
     /* wait 3s to connect bootloader */
-    // HID_BootDelayMs(3000);
     hidTick = 3000;
     while(hidTick) {
         isHaveCMD = compareCMD();
@@ -107,7 +106,7 @@ void HID_Bootloader_Task(void) {
     while(1) {
         if(new_data_is_received == 1) {     // 有buff数据
 
-            __disable_irq();                // 进入临界段，防止串口数据篡改
+            // __disable_irq();                // 进入临界段，防止串口数据篡改
 
             new_data_is_received = 0;
             
@@ -152,7 +151,7 @@ void HID_Bootloader_Task(void) {
                 }
             }
 
-            __enable_irq();
+            // __enable_irq();
         }
     }
 }
@@ -242,12 +241,23 @@ void print_HID_Info(void) {
 
 uint8_t compareCMD(void) {
 
-    if (memcmp(bootRX.hid_rx_buff, CMD_RESET_PAGES, sizeof (CMD_RESET_PAGES)) == 0) {
-    // if (memcmp(USB_RX_Buffer, CMD_RESET_PAGES, sizeof (CMD_RESET_PAGES)) == 0) { 
-        bootSendReport(CMD_OK_ACK, 2);
-        return 1;
+    // if (memcmp(bootRX.hid_rx_buff, CMD_RESET_PAGES, sizeof (CMD_RESET_PAGES)) == 0) {
+    // // if (memcmp(USB_RX_Buffer, CMD_RESET_PAGES, sizeof (CMD_RESET_PAGES)) == 0) { 
+    //     bootSendReport(CMD_OK_ACK, 2);
+    //     return 1;
+    // }else {
+    //     // printf("No boot cmd \n");
+    //     return 0;
+    // }
+
+    if(new_data_is_received == 1) {
+        if (memcmp(USB_RX_Buffer, CMD_RESET_PAGES, sizeof (CMD_RESET_PAGES)) == 0) {
+            bootSendReport(CMD_OK_ACK, 2);
+            return 1;
+        }else{
+            return 0;
+        }
     }else {
-        // printf("No boot cmd \n");
         return 0;
     }
 }
