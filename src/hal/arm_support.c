@@ -17,8 +17,6 @@ void armSystickInit(void) {
 }
 
 
-__WEAK void systickCallBack(void) {}
-
 extern uint32_t hidTick;
 /**************************************************************
  * Author:sola
@@ -29,8 +27,6 @@ extern uint32_t hidTick;
 **************************************************************/
 void SysTick_Handler(void)
 {
-    // systickCallBack();
-    
     HAL_IncTick();
     hidTick--;
 }

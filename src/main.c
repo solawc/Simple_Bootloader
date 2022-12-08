@@ -62,12 +62,6 @@ int main(void) {
     while(1) {};
 }
 
-void systickCallBack(void) {
-
-    HAL_IncTick();
-}
-
-
 void HardFault_Handler(void) {
 
     /* Never into here */

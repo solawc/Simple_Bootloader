@@ -12,8 +12,8 @@
 #define __bl_config_h
 
 /* Bootloader version and date. */
-#define BOOTLOAD_VERSION                "V0.6"
-#define BOOTLOAD_DATE                   "2022-11-19"
+#define BOOTLOAD_VERSION                "V0.7"
+#define BOOTLOAD_DATE                   "2022-12-08"
 
 /* Board info. */
 #ifdef CUSTOM_BOARD_NAME
@@ -51,7 +51,7 @@
 // #define LCD_SPI_TS24             /* Use SPI to driver LCD    */
 
 /* Enabled USE_HID_BOOT */
-#define USE_HID_BOOT                /* Use HID bootloader       */
+// #define USE_HID_BOOT             /* Use HID bootloader       */
 
 
 #endif
