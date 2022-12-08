@@ -62,12 +62,9 @@ int main(void) {
     while(1) {};
 }
 
-extern uint32_t hidTick;
-
 void systickCallBack(void) {
 
     HAL_IncTick();
-    hidTick--;
 }
 
 
