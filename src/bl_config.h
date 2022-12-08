@@ -51,7 +51,7 @@
 // #define LCD_SPI_TS24             /* Use SPI to driver LCD    */
 
 /* Enabled USE_HID_BOOT */
-// #define USE_HID_BOOT             /* Use HID bootloader       */
+#define USE_HID_BOOT             /* Use HID bootloader       */
 
 
 #endif

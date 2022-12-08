@@ -17,11 +17,16 @@
 
 #include "HID_boot_port.h"
 
+#define HID_RX_SIZE         1024
+#define USER_CODE_OFFSET    0x8000
+#define SECTOR_SIZE         1024
+
+
 /* 用于管理HID BOOT接收buff */
 typedef struct {
 
-    uint8_t hid_rx_buff[64];        /* 用于存储数据                 */
-    uint32_t hid_rx_len;            /* 用于对数据进行计数           */
+    uint8_t hid_rx_buff[HID_RX_SIZE];        /* 用于存储数据                 */
+    uint32_t hid_rx_len;                    /* 用于对数据进行计数           */
 
 }HID_RX_t;
 
