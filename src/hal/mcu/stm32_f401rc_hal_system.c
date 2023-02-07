@@ -8,7 +8,7 @@
  GPL 3.0 protocol.
 */
 
-#include "mcu/stm32_f401rc_hal_system.h"
+#include "hal/mcu/stm32_f401rc_hal_system.h"
 
 #ifdef STM32F401xC
 

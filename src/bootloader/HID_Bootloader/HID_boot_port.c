@@ -91,7 +91,9 @@ uint8_t bootGet_Boot_1_Pin(void) {
 }
 
 void bootSet_BootLED(uint8_t ledState) {
+#ifdef BOOT_LED_PIN
     HAL_GPIO_WritePin(BOOT_LED_PORT, BOOT_LED_PIN, ledState);
+#endif
 }
 
 

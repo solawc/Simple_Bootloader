@@ -13,7 +13,7 @@
 
 #ifdef STM32F401xC
 
-#include "../main.h"
+#include "../../main.h"
 #include "core_cm4.h"
 
 /* Must settings */

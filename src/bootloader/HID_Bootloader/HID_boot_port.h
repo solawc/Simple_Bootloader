@@ -6,7 +6,7 @@
 #endif
 
 
-#include "../main.h"
+#include "../../main.h"
 
 /* For STM32 BreakUp Regiester addr */
 #define HID_MAGIC_NUMBER_BKP_INDEX  0x00000004U
