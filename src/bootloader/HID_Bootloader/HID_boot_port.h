@@ -5,8 +5,11 @@
  extern "C" {
 #endif
 
-
+#ifdef SIMPLE_PATH
+#include "main.h"
+#else
 #include "../../main.h"
+#endif
 
 /* For STM32 BreakUp Regiester addr */
 #define HID_MAGIC_NUMBER_BKP_INDEX  0x00000004U

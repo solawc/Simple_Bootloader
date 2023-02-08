@@ -10,6 +10,8 @@
 
 #include "bootloader.h"
 
+#ifdef FF_DEFINED
+
 hal_bootloader_t hal_bl;
 
 #ifdef STM32G0xx
@@ -20,8 +22,7 @@ typedef uint32_t _FLASH_SIZE_TYPE;
 #define SIZE_DIV    2
 #endif
 
-typedef uint32_t MSP_TYPE;
-typedef uint32_t RST_TYPE;
+
 
 #ifndef BL_NAME
 const char *FW_FILE_SD        = "1:/ROBIN_E3D_V2.bin";
@@ -38,8 +39,8 @@ const char *FW_OLD_FILE_SD    = BL_OLD_NAME;
 // char firmware_name_buff[FW_NAME_SIZE];
 // char old_name_buff[FW_NAME_SIZE];
 
-MSP_TYPE msp = 0;               /* Point to Msp             */
-RST_TYPE reset = 0;             /* Point to void*           */
+MSP_TYPE msp    = 0;               /* Point to Msp             */
+RST_TYPE reset  = 0;             /* Point to void*           */
 uint32_t Address = 0x00;        /* Eraser address           */
 
 _FLASH_SIZE_TYPE    *hlfP;      //= (_FLASH_SIZE_TYPE *)file_read_buff;
@@ -264,5 +265,6 @@ void bsp_led_toggle(void) {
         count = 0;
     }
 }
-
 #endif
+
+#endif // FF_DEFINED
