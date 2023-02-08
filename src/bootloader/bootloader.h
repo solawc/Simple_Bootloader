@@ -17,6 +17,12 @@
 #define FW_NAME_SIZE                     30
 #define READ_FILE_PAGE_SIZE             ((uint16_t)0x400)  
 
+typedef uint32_t MSP_TYPE;
+typedef uint32_t RST_TYPE;
+
+extern MSP_TYPE msp;
+extern RST_TYPE reset;
+
 typedef struct {
    char *fw_name_buf;
    char *fw_old_name_buf;
