@@ -24,9 +24,9 @@
     #include "stm32f4xx_hal.h"
     #ifdef STM32F401xC
         #include "hal/mcu/stm32_f401rc_hal_system.h"
-        #ifdef ST_MKS_E3
+        #ifdef ST_MKS_E3_V2
             #include "hal/mcu/pins_map/pins_robin_e3.h"
-        #elif defined(ST_MKS_E3D)
+        #elif defined(ST_MKS_E3D_V2)
             #include "hal/mcu/pins_map/pins_robin_e3d.h"
         #elif defined(ZNP_ROBIN_DW)
             #include "hal/mcu/pins_map/pins_znp_robin_nano_dw.h"

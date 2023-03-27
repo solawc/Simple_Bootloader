@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "pins_robin_e3.h": "c",
+        "pins_mks_dlc32_lg0_v3.h": "c"
+    }
+}
