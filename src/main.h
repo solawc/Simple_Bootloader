@@ -44,6 +44,15 @@
         #endif
     #endif
 
+#elif defined(STM32F103xE)
+    // #include "stm32f103xe.h"
+    #include "stm32f1xx_hal.h"
+    
+    #ifdef MKS_ROBIN_E3
+        #include "hal/mcu/pins_map/pins_mks_robin_e3_e3d.h"
+        #include "hal/mcu/mks_robin_e3_e3d_hal_system.h"
+    #endif
+
 
 #elif defined(STM32G0xx)
     #include "stm32g0xx_hal.h"

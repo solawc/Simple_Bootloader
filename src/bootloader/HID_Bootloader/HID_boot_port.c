@@ -28,8 +28,8 @@ uint32_t bootGet_BAK_Register(void) {
 
     register uint32_t tmp = 0U;
 
-    tmp = (uint32_t)(&(RTC->BKP0R));
-    tmp += (HID_MAGIC_NUMBER_BKP_INDEX * 4U);
+    // tmp = (uint32_t)(&(RTC->BKP0R));
+    // tmp += (HID_MAGIC_NUMBER_BKP_INDEX * 4U);
 
     /* Read the specified register */
     return (*(__IO uint32_t *)tmp);
@@ -46,8 +46,8 @@ void bootSet_DisableBkUpAccess(void) {
 void bootSet_BAK_Register(void) {
     register uint32_t tmp = 0U;
 
-  tmp = (uint32_t)(&(RTC->BKP0R));
-  tmp += (HID_MAGIC_NUMBER_BKP_INDEX * 4U);
+//   tmp = (uint32_t)(&(RTC->BKP0R));
+//   tmp += (HID_MAGIC_NUMBER_BKP_INDEX * 4U);
 
   /* Write the specified register */
   *(__IO uint32_t *)tmp = (uint32_t)0;
