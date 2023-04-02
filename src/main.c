@@ -28,11 +28,14 @@ int main(void) {
     lcd_dgus_begin();               /* If your lcd use Dwin dgus(5A A5)     */
 #endif
 
+#ifndef USE_HID_BOOT
     SdcardApiReg();                 /* Regiest SDCard Driver for SPI or SDIO(TODO..) */
 
-    mCardMount();                 /* Mount SDCard. */
-    
+    mCardMount();                   /* Mount SDCard. */
+
     printInfo(); 
+#endif
+
      
     /**************************************************************
      *             * Why is there a delay here? *
@@ -49,19 +52,15 @@ int main(void) {
     **************************************************************/
     HAL_Delay(500);
 
+#ifndef USE_HID_BOOT
     UpdateCheck();
+#else 
+    HID_Bootloader_Task();
+#endif
 
     /* Never into here */ 
     while(1) {};
 }
-
-
-
-void systickCallBack(void) {
-
-    HAL_IncTick();
-}
-
 
 void HardFault_Handler(void) {
 

@@ -13,7 +13,7 @@
 
 #ifdef STM32F429xx
 
-#include "../main.h"
+#include "../../main.h"
 
 /* Must settings */
 #define MCU_RAM         KB(64)  

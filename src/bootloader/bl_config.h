@@ -12,8 +12,8 @@
 #define __bl_config_h
 
 /* Bootloader version and date. */
-#define BOOTLOAD_VERSION                "V0.6"
-#define BOOTLOAD_DATE                   "2022-11-19"
+#define BOOTLOAD_VERSION                "V0.8"
+#define BOOTLOAD_DATE                   "2023-03-01"
 
 /* Board info. */
 #ifdef CUSTOM_BOARD_NAME
@@ -47,6 +47,11 @@
 /* Enabled and settings LCD type */
 // #define LCD_DGUS_DWIN            /* Use 5A A5 type           */ 
 // #define LCD_FSMA_TFT             /* Use FSMC to driver LCD   */ 
-#define LCD_SPI_TS35             /* Use SPI to driver LCD    */ 
+// #define LCD_SPI_TS35             /* Use SPI to driver LCD    */ 
 // #define LCD_SPI_TS24             /* Use SPI to driver LCD    */
+
+/* Enabled USE_HID_BOOT */
+// #define USE_HID_BOOT             /* Use HID bootloader       */
+
+
 #endif

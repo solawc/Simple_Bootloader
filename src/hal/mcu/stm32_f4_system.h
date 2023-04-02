@@ -1,7 +1,7 @@
 #ifndef __stm32_f4_system_h
 #define __stm32_f4_system_h
 
-#include "../main.h"
+#include "../../main.h"
 
 #ifdef STM32F4_DEBUG
 

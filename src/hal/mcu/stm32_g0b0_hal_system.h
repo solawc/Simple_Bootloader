@@ -13,7 +13,7 @@
 
 #ifdef STM32G0xx
 
-#include "../main.h"
+#include "../../main.h"
 #include "core_cm0plus.h"
 
 /* Must settings */

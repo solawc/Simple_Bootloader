@@ -17,45 +17,54 @@
 #include "stdlib.h"
 #include "string.h"
 
-#include "util.h"   
+#include "bootloader/util.h"   
 
 /* MCU HAL Lib */
 #ifdef STM32F4xx
     #include "stm32f4xx_hal.h"
     #ifdef STM32F401xC
-        #include "mcu/stm32_f401rc_hal_system.h"
-        #ifdef ST_MKS_E3
-            #include "mcu/pins_map/pins_robin_e3.h"
-        #elif defined(ST_MKS_E3D)
-            #include "mcu/pins_map/pins_robin_e3d.h"
+        #include "hal/mcu/stm32_f401rc_hal_system.h"
+        #ifdef ST_MKS_E3_V2
+            #include "hal/mcu/pins_map/pins_robin_e3.h"
+        #elif defined(ST_MKS_E3D_V2)
+            #include "hal/mcu/pins_map/pins_robin_e3d.h"
         #elif defined(ZNP_ROBIN_DW)
-            #include "mcu/pins_map/pins_znp_robin_nano_dw.h"
+            #include "hal/mcu/pins_map/pins_znp_robin_nano_dw.h"
         #elif defined(MKS_DLC_LG0_V3)
-            #include "mcu/pins_map/pins_mks_dlc32_lg0_v3.h"
+            #include "hal/mcu/pins_map/pins_mks_dlc32_lg0_v3.h"
         
         
         #endif
     #endif
 
     #ifdef STM32F407xx
-        #include "mcu/stm32_f407_hal_system.h"
+        #include "hal/mcu/stm32_f407_hal_system.h"
         #ifdef ST_MKS_NANO_V3
-            #include "mcu/pins_map/pins_mks_nano_v3.h"
+            #include "hal/mcu/pins_map/pins_mks_nano_v3.h"
         #endif
+    #endif
+
+#elif defined(STM32F103xE)
+    // #include "stm32f103xe.h"
+    #include "stm32f1xx_hal.h"
+    
+    #ifdef MKS_ROBIN_E3
+        #include "hal/mcu/pins_map/pins_mks_robin_e3_e3d.h"
+        #include "hal/mcu/mks_robin_e3_e3d_hal_system.h"
     #endif
 
 
 #elif defined(STM32G0xx)
     #include "stm32g0xx_hal.h"
     #ifdef DLC_LG0_V2
-        #include "mcu/stm32_g0b0_hal_system.h"
-        #include "mcu/pins_map/pins_dlc_lg0.h"
+        #include "hal/mcu/stm32_g0b0_hal_system.h"
+        #include "hal/mcu/pins_map/pins_dlc_lg0.h"
     #endif
 #endif
 
 /* Common header files */
-#include "bl_config.h"
-#include "bootloader.h"
+#include "bootloader/bl_config.h"
+#include "bootloader/bootloader.h"
 
 /* Fatfs */
 #include "ff.h"
@@ -73,6 +82,8 @@
 #include "external_device/SD/sd_sdio_drv.h"
 #include "external_device/FS/mid_fs.h"
 
+// #include "HID_Bootloader/HID_Bootloader.h"
+#include "bootloader/HID_Bootloader/HID_Bootloader.h"
 
 // extern FIL bootFile;
 

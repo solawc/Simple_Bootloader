@@ -17,8 +17,7 @@ void armSystickInit(void) {
 }
 
 
-__WEAK void systickCallBack(void) {}
-
+extern uint32_t hidTick;
 /**************************************************************
  * Author:sola
  * Fix time:2022-01-20
@@ -28,8 +27,8 @@ __WEAK void systickCallBack(void) {}
 **************************************************************/
 void SysTick_Handler(void)
 {
-    // systickCallBack();
     HAL_IncTick();
+    hidTick--;
 }
 
 /* only support cortex-M */
