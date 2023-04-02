@@ -13,18 +13,20 @@
 
 #include "main.h"
 
-
 #define FW_NAME_SIZE                     30
 #define READ_FILE_PAGE_SIZE             ((uint16_t)0x400)  
 
 typedef struct {
-   char *fw_name_buf;
-   char *fw_old_name_buf;
+   char *fw_name_buf;            // to use save update file name.
+   char *fw_old_name_buf;        // to use save old file name.
+   uint32_t addr_start;          // app start address.
+   uint32_t addr_end;            // app end address.
 }hal_bootloader_t;
 
 void bl_jump_to_app(uint32_t sect,uint32_t Msp,uint32_t reset);
 void NvicSetVectorTable(uint32_t NVIC_VectTab, uint32_t Offset);
 void UpdateCheck(void);
+
 #ifdef BOOT_LED_PORT
    void bsp_led_init(void);
    void bsp_led_on(void);
