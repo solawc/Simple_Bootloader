@@ -1,8 +1,7 @@
 #include "stm32_f4_system.h"
-#include <stdio.h>
-#include <math.h>
 
-#ifdef STM32F4_DEBUG
+
+#ifdef STM32F4xx
 
 uint32_t PLLN_USE = 84;    // Set STM32F4xx CPU Freq, default set low freq at 84MHz
 

@@ -6,6 +6,14 @@
 #define BL_NAME                         "1:/Robin_nano_v3.bin"
 #define BL_OLD_NAME                     "1:/Robin_nano_v3.CUR"
 
+/* Must settings */
+#define MCU_RAM                         KB(128)
+#define MCU_FLASH                       KB(512)
+#define BL_SIZE                         KB(48) 
+#define BL_OFFSET                       ((uint32_t)0XC000)
+#define BL_END_ADDR                     ((uint32_t)0x800Bfff) 
+#define APP_STAR_ADDR                   ((uint32_t)(0x8000000 + BL_OFFSET))
+
 #define SD_USE_SPI    
 #define BOARD_SD_SPI                    SPI3
 #define BOARD_SD_SCK_PORT               GPIOC

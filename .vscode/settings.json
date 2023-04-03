@@ -13,6 +13,10 @@
         "stm32_f4_system.h": "c",
         "stm32f4xx_hal.h": "c",
         "stm32_f407_hal_system.h": "c",
-        "cmath": "c"
+        "cmath": "c",
+        "util.h": "c",
+        "stdio.h": "c",
+        "stdlib.h": "c",
+        "stm32f1xx_hal.h": "c"
     }
 }

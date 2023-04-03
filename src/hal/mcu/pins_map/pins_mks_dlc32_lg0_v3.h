@@ -9,6 +9,13 @@
 #define BL_FLASH_ASSER                  "1:/asser.bin"
 #define BL_FLASH_ASSER_OLD              "1:/asser.CUR"
 
+#define MCU_RAM                         KB(64)
+#define MCU_FLASH                       KB(256)
+#define BL_SIZE                         KB(32)
+#define BL_END_ADDR                     ((uint32_t)0x8007fff) 
+#define BL_OFFSET                       ((uint32_t)0X8000)
+#define APP_STAR_ADDR                   ((uint32_t)0x8000000 + BL_OFFSET) 
+
 #define SD_USE_SPI                  
 #define BOARD_SD_SPI                    SPI2
 #define BOARD_SD_SCK_PORT               GPIOB

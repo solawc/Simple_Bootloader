@@ -16,16 +16,16 @@
 #include "stdio.h"
 #include "stdlib.h"
 #include "string.h"
+#include <math.h>
 
 #include "bootloader/util.h"   
 
 /* MCU HAL Lib */
 #ifdef STM32F4xx
+
     #include "stm32f4xx_hal.h"
     #include "hal/mcu/stm32_f4_system.h"
 
-    // #ifdef STM32F401xC
-        // #include "hal/mcu/stm32_f401rc_hal_system.h"
         #ifdef ST_MKS_E3_V2
             #include "hal/mcu/pins_map/pins_robin_e3.h"
         #elif defined(ST_MKS_E3D_V2)
@@ -34,25 +34,16 @@
             #include "hal/mcu/pins_map/pins_znp_robin_nano_dw.h"
         #elif defined(MKS_DLC_LG0_V3)
             #include "hal/mcu/pins_map/pins_mks_dlc32_lg0_v3.h"
-        
-        
-        #endif
-    // #endif
-
-    // #ifdef STM32F407xx
-        // #include "hal/mcu/stm32_f407_hal_system.h"
-        #ifdef ST_MKS_NANO_V3
+        #elif ST_MKS_NANO_V3
             #include "hal/mcu/pins_map/pins_mks_nano_v3.h"
         #endif
-    // #endif
+
 
 #elif defined(STM32F103xE)
-    // #include "stm32f103xe.h"
     #include "stm32f1xx_hal.h"
-    
+    #include "hal/mcu/stm32_f1_system.h"
     #ifdef MKS_ROBIN_E3
         #include "hal/mcu/pins_map/pins_mks_robin_e3_e3d.h"
-        #include "hal/mcu/mks_robin_e3_e3d_hal_system.h"
     #endif
 
 

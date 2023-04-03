@@ -2803,7 +2803,7 @@ Discarded input sections
                 0x0000000000000000        0x7 .pio/build/STM32F4_DEBUG/src/bootloader/HID_Bootloader/HID_Bootloader.o
  .data.hidTickTimeOut
                 0x0000000000000000        0x4 .pio/build/STM32F4_DEBUG/src/bootloader/HID_Bootloader/HID_Bootloader.o
- .data.writeAddr.11244
+ .data.writeAddr.11749
                 0x0000000000000000        0x4 .pio/build/STM32F4_DEBUG/src/bootloader/HID_Bootloader/HID_Bootloader.o
  .rodata.CMD_RESET_PAGES_BUFF
                 0x0000000000000000        0x9 .pio/build/STM32F4_DEBUG/src/bootloader/HID_Bootloader/HID_Bootloader.o
@@ -2933,30 +2933,12 @@ Discarded input sections
                 0x0000000000000000       0x24 .pio/build/STM32F4_DEBUG/src/hal/hal_uart.o
  .text.hal_get_uart_idle_flag
                 0x0000000000000000       0x10 .pio/build/STM32F4_DEBUG/src/hal/hal_uart.o
- .text          0x0000000000000000        0x0 .pio/build/STM32F4_DEBUG/src/hal/mcu/mks_robin_e3_e3d_hal_system.o
- .data          0x0000000000000000        0x0 .pio/build/STM32F4_DEBUG/src/hal/mcu/mks_robin_e3_e3d_hal_system.o
- .bss           0x0000000000000000        0x0 .pio/build/STM32F4_DEBUG/src/hal/mcu/mks_robin_e3_e3d_hal_system.o
- .comment       0x0000000000000000       0x7f .pio/build/STM32F4_DEBUG/src/hal/mcu/mks_robin_e3_e3d_hal_system.o
+ .text          0x0000000000000000        0x0 .pio/build/STM32F4_DEBUG/src/hal/mcu/stm32_f1_system.o
+ .data          0x0000000000000000        0x0 .pio/build/STM32F4_DEBUG/src/hal/mcu/stm32_f1_system.o
+ .bss           0x0000000000000000        0x0 .pio/build/STM32F4_DEBUG/src/hal/mcu/stm32_f1_system.o
+ .comment       0x0000000000000000       0x7f .pio/build/STM32F4_DEBUG/src/hal/mcu/stm32_f1_system.o
  .ARM.attributes
-                0x0000000000000000       0x33 .pio/build/STM32F4_DEBUG/src/hal/mcu/mks_robin_e3_e3d_hal_system.o
- .text          0x0000000000000000        0x0 .pio/build/STM32F4_DEBUG/src/hal/mcu/stm32_f401rc_hal_system.o
- .data          0x0000000000000000        0x0 .pio/build/STM32F4_DEBUG/src/hal/mcu/stm32_f401rc_hal_system.o
- .bss           0x0000000000000000        0x0 .pio/build/STM32F4_DEBUG/src/hal/mcu/stm32_f401rc_hal_system.o
- .comment       0x0000000000000000       0x7f .pio/build/STM32F4_DEBUG/src/hal/mcu/stm32_f401rc_hal_system.o
- .ARM.attributes
-                0x0000000000000000       0x33 .pio/build/STM32F4_DEBUG/src/hal/mcu/stm32_f401rc_hal_system.o
- .text          0x0000000000000000        0x0 .pio/build/STM32F4_DEBUG/src/hal/mcu/stm32_f407_hal_system.o
- .data          0x0000000000000000        0x0 .pio/build/STM32F4_DEBUG/src/hal/mcu/stm32_f407_hal_system.o
- .bss           0x0000000000000000        0x0 .pio/build/STM32F4_DEBUG/src/hal/mcu/stm32_f407_hal_system.o
- .comment       0x0000000000000000       0x7f .pio/build/STM32F4_DEBUG/src/hal/mcu/stm32_f407_hal_system.o
- .ARM.attributes
-                0x0000000000000000       0x33 .pio/build/STM32F4_DEBUG/src/hal/mcu/stm32_f407_hal_system.o
- .text          0x0000000000000000        0x0 .pio/build/STM32F4_DEBUG/src/hal/mcu/stm32_f429_hal_system.o
- .data          0x0000000000000000        0x0 .pio/build/STM32F4_DEBUG/src/hal/mcu/stm32_f429_hal_system.o
- .bss           0x0000000000000000        0x0 .pio/build/STM32F4_DEBUG/src/hal/mcu/stm32_f429_hal_system.o
- .comment       0x0000000000000000       0x7f .pio/build/STM32F4_DEBUG/src/hal/mcu/stm32_f429_hal_system.o
- .ARM.attributes
-                0x0000000000000000       0x33 .pio/build/STM32F4_DEBUG/src/hal/mcu/stm32_f429_hal_system.o
+                0x0000000000000000       0x33 .pio/build/STM32F4_DEBUG/src/hal/mcu/stm32_f1_system.o
  .text          0x0000000000000000        0x0 .pio/build/STM32F4_DEBUG/src/hal/mcu/stm32_f4_system.o
  .data          0x0000000000000000        0x0 .pio/build/STM32F4_DEBUG/src/hal/mcu/stm32_f4_system.o
  .bss           0x0000000000000000        0x0 .pio/build/STM32F4_DEBUG/src/hal/mcu/stm32_f4_system.o
@@ -3361,10 +3343,7 @@ LOAD .pio/build/STM32F4_DEBUG/src/hal/hal_sdio.o
 LOAD .pio/build/STM32F4_DEBUG/src/hal/hal_spi.o
 LOAD .pio/build/STM32F4_DEBUG/src/hal/hal_test.o
 LOAD .pio/build/STM32F4_DEBUG/src/hal/hal_uart.o
-LOAD .pio/build/STM32F4_DEBUG/src/hal/mcu/mks_robin_e3_e3d_hal_system.o
-LOAD .pio/build/STM32F4_DEBUG/src/hal/mcu/stm32_f401rc_hal_system.o
-LOAD .pio/build/STM32F4_DEBUG/src/hal/mcu/stm32_f407_hal_system.o
-LOAD .pio/build/STM32F4_DEBUG/src/hal/mcu/stm32_f429_hal_system.o
+LOAD .pio/build/STM32F4_DEBUG/src/hal/mcu/stm32_f1_system.o
 LOAD .pio/build/STM32F4_DEBUG/src/hal/mcu/stm32_f4_system.o
 LOAD .pio/build/STM32F4_DEBUG/src/hal/mcu/stm32_g0b0_hal_system.o
 LOAD .pio/build/STM32F4_DEBUG/src/main.o
@@ -4297,10 +4276,10 @@ LOAD /home/sola/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm
                 0x00000000200000a0        0x1 .pio/build/STM32F4_DEBUG/src/bootloader/HID_Bootloader/HID_Bootloader.o
                 0x00000000200000a0                new_data_is_received
  *fill*         0x00000000200000a1        0x3 
- .bss.on.11261  0x00000000200000a4        0x4 .pio/build/STM32F4_DEBUG/src/bootloader/HID_Bootloader/HID_Bootloader.o
+ .bss.on.11766  0x00000000200000a4        0x4 .pio/build/STM32F4_DEBUG/src/bootloader/HID_Bootloader/HID_Bootloader.o
  .bss.Address   0x00000000200000a8        0x4 .pio/build/STM32F4_DEBUG/src/bootloader/bootloader.o
                 0x00000000200000a8                Address
- .bss.count.11287
+ .bss.count.11792
                 0x00000000200000ac        0x1 .pio/build/STM32F4_DEBUG/src/bootloader/bootloader.o
  *fill*         0x00000000200000ad        0x3 
  .bss.fw_size_count
