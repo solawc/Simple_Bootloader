@@ -15,6 +15,8 @@
 
 #ifdef STM32F407xx
 
+#ifndef STM32F4_DEBUG
+
 /* Must settings */
 #define MCU_RAM                         KB(128)
 #define MCU_FLASH                       KB(512)
@@ -40,6 +42,8 @@ void systick_init(void);
 uint8_t hal_flash_erase(void);
 void hal_flash_write(uint32_t addr ,uint32_t *buff, uint32_t num);
 uint8_t hal_get_flash_sector(uint32_t addr);
+#endif
+
 #endif
 
 #endif

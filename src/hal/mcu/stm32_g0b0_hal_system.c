@@ -12,6 +12,8 @@
 
 #ifdef STM32G0xx
 
+#ifndef STM32F4_DEBUG
+
 FLASH_EraseInitTypeDef bl_flash;
 
 void hal_stm32g0b0_system_init(void) {
@@ -137,6 +139,7 @@ void hal_flash_write(uint32_t addr ,uint64_t *buff, uint32_t num) {
 	HAL_FLASH_Lock();           //上锁
 }
 
+#endif
 
 #endif
 

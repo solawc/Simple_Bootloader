@@ -12,6 +12,8 @@
 
 #ifdef STM32F429xx
 
+#ifndef STM32F4_DEBUG
+
 void hal_stm32f429_system_init(void) {
 
    RCC_OscInitTypeDef RCC_OscInitStruct = {0};
@@ -88,5 +90,7 @@ uint8_t hal_get_flash_sector(uint32_t addr) {
   else if(addr<ADDR_FLASH_SECTOR_11)return FLASH_SECTOR_10;
   else return FLASH_SECTOR_11;
 }
+
+#endif
 
 #endif

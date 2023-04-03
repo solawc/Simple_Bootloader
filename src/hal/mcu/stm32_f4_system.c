@@ -1,4 +1,6 @@
 #include "stm32_f4_system.h"
+#include <stdio.h>
+#include <math.h>
 
 #ifdef STM32F4_DEBUG
 
@@ -39,7 +41,7 @@ void HAL_STM32_F4_SYS_Init(void) {
     RCC_OscInitStruct.PLL.PLLQ = 4;
     if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
     {
-    Error_Handler();
+      Error_Handler();
     }
 
     /** Initializes the CPU, AHB and APB buses clocks
@@ -53,14 +55,79 @@ void HAL_STM32_F4_SYS_Init(void) {
 
     if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_5) != HAL_OK)
     {
-    Error_Handler();
+      Error_Handler();
     }
+}
+
+uint8_t HAL_STM32_F4_GET_SECTOR(uint32_t offset) {
+    
+    uint8_t sector = 0;
+
+    if(offset <= 64) {
+      sector = (ceil((float)offset / 16)) + 1;   // erase next sector.
+    }else {
+      sector = 5 + 1;
+      // bootloader can not more than 128K.
+    }
+    return sector;
+}
+
+uint8_t HAL_STM32_F4_GET_N_SECTOR() {
+
+  uint8_t nSector = 0;
+
+  nSector = ((MCU_FLASH / 1024) - 128) / 128;   // 计算出有多少128K的页面
+  
+  if(BL_OFFSET <= 64) {
+      nSector += (4 - (ceil(BL_OFFSET / 16)));
+  }
+
+  return nSector;
 }
 
 void HAL_STM32_F4_ERASE_CHIP(void) {
 
+    uint32_t SectorError=0;
+    
+    HAL_FLASH_Unlock();
 
+    memset(&bl_flash, 0, sizeof(bl_flash));
+    bl_flash.TypeErase = FLASH_TYPEERASE_SECTORS;
+    bl_flash.Sector = HAL_STM32_F4_GET_SECTOR(BL_OFFSET);
+    bl_flash.NbSectors = HAL_STM32_F4_GET_N_SECTOR();
+    bl_flash.VoltageRange = FLASH_VOLTAGE_RANGE_3;      // set at 2.7V to 3.6V
 
+    if(HAL_FLASHEx_Erase(&bl_flash, &SectorError)!=HAL_OK) {
+      hal_flag.bit_erase = 0;
+    }else {
+      hal_flag.bit_wait_finsh = 0;
+    }
+
+    HAL_FLASH_Lock();
+}
+
+void HAL_STM32_F4_PROGRAM_FLASH(uint32_t addr ,uint32_t *buff, uint32_t num) {
+    HAL_StatusTypeDef FlashStatus=HAL_OK;
+    uint32_t addrx=0;
+    uint32_t endaddr=0;	
+    HAL_StatusTypeDef status;
+    if( addr <STM32_FLASH_BASE || addr % 4 ) return;	//非法地址
+
+    HAL_FLASH_Unlock();               //解锁	
+
+    addrx = addr;				              //写入的起始地址
+    endaddr = addr + num * 2;	        //写入的结束地
+
+    if(FlashStatus==HAL_OK)
+    {
+      while(addrx < endaddr)//写数据
+      {
+        status = HAL_FLASH_Program(FLASH_TYPEPROGRAM_WORD, addrx, *buff); /* 写入数据 */
+        if(status != HAL_OK) {  break;	}   /* 写入异常 */
+        addrx += 4;//2;
+        buff++;
+      }  
+    }
 }
 
 /**

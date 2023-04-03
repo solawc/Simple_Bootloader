@@ -5,20 +5,21 @@
 
 #ifdef STM32F4_DEBUG
 
-#define MCU_RAM                         KB(128)
-#define MCU_FLASH                       KB(512)
-#define BL_SIZE                         KB(48) 
-#define BL_OFFSET                       ((uint32_t)0XC000)
-#define BL_END_ADDR                     ((uint32_t)0x800Bfff) 
-#define APP_STAR_ADDR                   ((uint32_t)(0x8000000 + BL_OFFSET))
-
+#define MCU_RAM                         KB(64)
+#define MCU_FLASH                       KB(256)
+#define BL_SIZE                         KB(32)
+#define BL_END_ADDR                     ((uint32_t)0x8007fff) 
+#define BL_OFFSET                       ((uint32_t)0X8000)
+#define APP_STAR_ADDR                   ((uint32_t)0x8000000 + BL_OFFSET) 
 
 void HAL_STM32_F4_SYS_Init(void);
-
+void HAL_STM32_F4_ERASE_CHIP(void);
+void HAL_STM32_F4_PROGRAM_FLASH(uint32_t addr ,uint32_t *buff, uint32_t num);
+void Error_Handler(void);
 
 #define SYSTEM_INIT()                   HAL_STM32_F4_SYS_Init()
-#define COMMON_FLASH_ERASE()            hal_flash_erase()
-#define COMMON_FLASH_WRITE(A,B,C)       hal_flash_write(A,B,C)
+#define COMMON_FLASH_ERASE()           HAL_STM32_F4_ERASE_CHIP()
+#define COMMON_FLASH_WRITE(A,B,C)       HAL_STM32_F4_PROGRAM_FLASH(A,B,C)
 
 
 
