@@ -1,5 +1,14 @@
-#include "stm32_f1_system.h"
+/*
+ stm32_f1_system.c
 
+ Copyright (c) 2021-2023 sola
+
+ SimpleBootloader is an open source bootloader. It follows the open 
+ source protocol of GPL 3.0, and users can republish it based on the 
+ GPL 3.0 protocol.
+*/
+
+#include "stm32_f1_system.h"
 
 #ifdef STM32F1
 
@@ -51,7 +60,7 @@ void HAL_STM32_F1_ERASE_CHIP(void) {
     bl_flash.TypeErase = FLASH_TYPEERASE_PAGES;
     bl_flash.PageAddress = APP_STAR_ADDR;
     bl_flash.NbPages = (MCU_FLASH - BL_OFFSET) % FLASH_PAGE_SIZE;
-    
+
     if (HAL_FLASHEx_Erase(&bl_flash, &error) != HAL_OK) {
         hal_flag.bit_erase = 0;
     }else {

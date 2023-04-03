@@ -1,3 +1,13 @@
+/*
+ stm32_f1_system.h
+
+ Copyright (c) 2021-2023 sola
+
+ SimpleBootloader is an open source bootloader. It follows the open 
+ source protocol of GPL 3.0, and users can republish it based on the 
+ GPL 3.0 protocol.
+*/
+
 #ifndef __stm32_f1_system_h
 #define __stm32_f1_system_h
 

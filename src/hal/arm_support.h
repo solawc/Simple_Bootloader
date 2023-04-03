@@ -1,7 +1,7 @@
 /*
  arm_support.h
 
- Copyright (c) 2021-2022 sola
+ Copyright (c) 2021-2023 sola
 
  SimpleBootloader is an open source bootloader. It follows the open 
  source protocol of GPL 3.0, and users can republish it based on the 
@@ -24,6 +24,6 @@
 
 void armSystickInit(void);
 void armSystickDeinit(void);
-__WEAK void systickCallBack(void);
+void armReset(void);
 void NvicSetVectorTable(uint32_t NVIC_VectTab, uint32_t Offset);
 #endif
