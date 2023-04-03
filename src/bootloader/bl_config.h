@@ -12,8 +12,8 @@
 #define __bl_config_h
 
 /* Bootloader version and date. */
-#define BOOTLOAD_VERSION                "V0.8"
-#define BOOTLOAD_DATE                   "2023-03-01"
+#define BOOTLOAD_VERSION                "V0.9"
+#define BOOTLOAD_DATE                   "2023-04-03"
 
 /* Board info. */
 #ifdef CUSTOM_BOARD_NAME
