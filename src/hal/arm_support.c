@@ -8,16 +8,15 @@
  GPL 3.0 protocol.
 */
 
-
 #include "arm_support.h"
+
+extern uint32_t hidTick;
 
 void armSystickInit(void) {
 
     SysTick_Config(SystemCoreClock / 1000);         /* Tick for 1ms. */
 }
 
-
-extern uint32_t hidTick;
 /**************************************************************
  * Author:sola
  * Fix time:2022-01-20
@@ -40,7 +39,6 @@ void armReset(void) {
 
     NVIC_SystemReset();
 }
-
 
 /* only support cortex-M */
 void NvicSetVectorTable(uint32_t NVIC_VectTab, uint32_t Offset) {

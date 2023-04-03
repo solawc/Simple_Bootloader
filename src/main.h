@@ -38,14 +38,13 @@
             #include "hal/mcu/pins_map/pins_mks_nano_v3.h"
         #endif
 
-
-#elif defined(STM32F103xE)
+#elif defined(STM32F1)
     #include "stm32f1xx_hal.h"
     #include "hal/mcu/stm32_f1_system.h"
+
     #ifdef MKS_ROBIN_E3
         #include "hal/mcu/pins_map/pins_mks_robin_e3_e3d.h"
     #endif
-
 
 #elif defined(STM32G0xx)
     #include "stm32g0xx_hal.h"
@@ -77,7 +76,5 @@
 
 // #include "HID_Bootloader/HID_Bootloader.h"
 #include "bootloader/HID_Bootloader/HID_Bootloader.h"
-
-// extern FIL bootFile;
 
 #endif /* main.h */ 

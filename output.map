@@ -2899,6 +2899,8 @@ Discarded input sections
                 0x0000000000000000       0x3c .pio/build/STM32F4_DEBUG/src/hal/arm_support.o
  .text.armSystickDeinit
                 0x0000000000000000       0x10 .pio/build/STM32F4_DEBUG/src/hal/arm_support.o
+ .text.armReset
+                0x0000000000000000       0x24 .pio/build/STM32F4_DEBUG/src/hal/arm_support.o
  .text          0x0000000000000000        0x0 .pio/build/STM32F4_DEBUG/src/hal/hal.o
  .data          0x0000000000000000        0x0 .pio/build/STM32F4_DEBUG/src/hal/hal.o
  .bss           0x0000000000000000        0x0 .pio/build/STM32F4_DEBUG/src/hal/hal.o

@@ -45,15 +45,15 @@ void hal_uart_init(void) {
   	}
 
 #ifdef STM32G0B0xx
-	if (HAL_UARTEx_SetTxFifoThreshold(&laser_uart, UART_TXFIFO_THRESHOLD_1_8) != HAL_OK)
+	if (HAL_UARTEx_SetTxFifoThreshold(&debug_uart, UART_TXFIFO_THRESHOLD_1_8) != HAL_OK)
 	{
 		Error_Handler();
 	}
-	if (HAL_UARTEx_SetRxFifoThreshold(&laser_uart, UART_RXFIFO_THRESHOLD_1_8) != HAL_OK)
+	if (HAL_UARTEx_SetRxFifoThreshold(&debug_uart, UART_RXFIFO_THRESHOLD_1_8) != HAL_OK)
 	{
 		Error_Handler();
 	}
-	if (HAL_UARTEx_DisableFifoMode(&laser_uart) != HAL_OK)
+	if (HAL_UARTEx_DisableFifoMode(&debug_uart) != HAL_OK)
 	{
 		Error_Handler();
 	}
