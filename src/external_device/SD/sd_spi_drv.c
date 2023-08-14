@@ -13,12 +13,12 @@ static void BspSdSpiGpioInit(void) {
         	.Alternate = BOARD_SD_GPIO_AF, 
 		#endif
         .Mode = GPIO_MODE_AF_PP,
-        .Pull = GPIO_NOPULL,
+        .Pull = GPIO_PULLUP,
     };
 
-    GPIO_InitTypeDef SPI_CS_GPIO_Init = {
+    GPIO_InitTypeDef SPI_DET_GPIO_Init = {
         .Mode = GPIO_MODE_INPUT,
-        .Pull = GPIO_NOPULL,
+        .Pull = GPIO_PULLUP,
         .Speed = GPIO_SPEED_FREQ_LOW,
     };
 
@@ -35,18 +35,18 @@ static void BspSdSpiGpioInit(void) {
     SPI_GPIO_Init.Pin = SD_SPI_CS_PIN;
     HAL_GPIO_Init(SD_SPI_CS_PORT, &SPI_GPIO_Init);
 
-    SPI_CS_GPIO_Init.Pin = SD_DET_PIN;
-    HAL_GPIO_Init(SD_DET_PORT, &SPI_CS_GPIO_Init);
+    SPI_DET_GPIO_Init.Pin = SD_DET_PIN;
+    HAL_GPIO_Init(SD_DET_PORT, &SPI_DET_GPIO_Init);
 }
 
 static void BspSpiInit(void) {
 
     sd_hspi.Instance = SD_CARD_SPI;
-    sd_hspi.Init.BaudRatePrescaler = SD_SPI_LOW_SPEED;
+    sd_hspi.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_8;// SD_SPI_LOW_SPEED;
     sd_hspi.Init.CLKPhase = SPI_PHASE_1EDGE;
     sd_hspi.Init.CLKPolarity = SPI_POLARITY_LOW;
     sd_hspi.Init.CRCCalculation = SPI_CRCCALCULATION_DISABLE;
-    sd_hspi.Init.CRCPolynomial = 7;
+    sd_hspi.Init.CRCPolynomial = 10;
     sd_hspi.Init.DataSize = SPI_DATASIZE_8BIT;
     sd_hspi.Init.Direction = SPI_DIRECTION_2LINES;
     sd_hspi.Init.FirstBit = SPI_FIRSTBIT_MSB;
@@ -102,7 +102,7 @@ uint32_t BspSpiAutoSpeed(void) {
     else if(sd_spi_min_clk_div <= 8)    return SPI_BAUDRATEPRESCALER_8;
     else if(sd_spi_min_clk_div <= 16)    return SPI_BAUDRATEPRESCALER_16;
     else if(sd_spi_min_clk_div <= 32)    return SPI_BAUDRATEPRESCALER_32;
-    else return SPI_BAUDRATEPRESCALER_4;
+    else return SPI_BAUDRATEPRESCALER_32;
 }
 
 uint8_t SdReadyWait(void) {
@@ -112,7 +112,7 @@ uint8_t SdReadyWait(void) {
 	{	
 		if(BspSdSpiReadWriteByte(0XFF)==0XFF) return 0;
 		t++;		  	
-	}while(t<0XFFFFFF);
+	}while(t<0XFFFFFF);  //0XFFFFFF
 	return 1;
 }
 

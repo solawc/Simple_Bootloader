@@ -16,7 +16,7 @@
  * speed need to set between 8M/s and 12M/s, is SD_SPI_SPEED
  *
 */
-#define SD_SPI_SPEED            SPI_BAUDRATEPRESCALER_4       
+#define SD_SPI_SPEED            SPI_BAUDRATEPRESCALER_8      
 #define SD_SPI_LOW_SPEED        SPI_BAUDRATEPRESCALER_256
           
 #ifdef SD_USE_SPI

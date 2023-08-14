@@ -13,17 +13,24 @@
 #ifdef STM32F4xx
 
 uint32_t PLLN_USE = 84;    // Set STM32F4xx CPU Freq, default set low freq at 84MHz
-
+uint32_t PLLM_USE = 4;
+uint32_t PLLQ_USE = 4;
+uint32_t PLLR_USE = 2;
 FLASH_EraseInitTypeDef bl_flash;
 
 void HAL_STM32_F4_SYS_Init(void) {
 
     #if defined(STM32F407xx) || defined(STM32F405xx)
-      PLLN_USE = 168;
+      PLLN_USE = 168;   // 168M
     #elif defined(STM32F427xx) || defined(STM32F437xx) || \
           defined(STM32F429xx) || defined(STM32F439xx) || \
           defined(STM32F469xx) || defined(STM32F479xx)
       PLLN_USE = 180;
+    #elif defined(STM32F446xx)
+      PLLM_USE = 15;
+      PLLN_USE = 216;
+      PLLQ_USE = 2;
+      PLLR_USE = 2;
     #else 
       PLLN_USE = 84;
     #endif
@@ -43,10 +50,11 @@ void HAL_STM32_F4_SYS_Init(void) {
     RCC_OscInitStruct.HSEState = RCC_HSE_ON;
     RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
     RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
-    RCC_OscInitStruct.PLL.PLLM = 4;
-    RCC_OscInitStruct.PLL.PLLN = PLLN_USE; // 168;
+    RCC_OscInitStruct.PLL.PLLM = PLLM_USE;
+    RCC_OscInitStruct.PLL.PLLN = PLLN_USE; 
     RCC_OscInitStruct.PLL.PLLP = RCC_PLLP_DIV2;
-    RCC_OscInitStruct.PLL.PLLQ = 4;
+    RCC_OscInitStruct.PLL.PLLQ = PLLQ_USE;
+    RCC_OscInitStruct.PLL.PLLR = PLLR_USE;
     if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
     {
       Error_Handler();

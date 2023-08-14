@@ -36,6 +36,8 @@
             #include "hal/mcu/pins_map/pins_mks_dlc32_lg0_v3.h"
         #elif ST_MKS_NANO_V3
             #include "hal/mcu/pins_map/pins_mks_nano_v3.h"
+        #elif ST_F446RC_CW
+            #include "hal/mcu/pins_map/pins_CW.h"
         #endif
 
 #elif defined(STM32F1)
