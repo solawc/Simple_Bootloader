@@ -54,7 +54,9 @@ void HAL_STM32_F4_SYS_Init(void) {
     RCC_OscInitStruct.PLL.PLLN = PLLN_USE; 
     RCC_OscInitStruct.PLL.PLLP = RCC_PLLP_DIV2;
     RCC_OscInitStruct.PLL.PLLQ = PLLQ_USE;
+  #ifdef PLLR
     RCC_OscInitStruct.PLL.PLLR = PLLR_USE;
+  #endif
     if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
     {
       Error_Handler();

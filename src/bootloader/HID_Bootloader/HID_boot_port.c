@@ -36,11 +36,11 @@ uint32_t bootGet_BAK_Register(void) {
 }
 
 void bootSet_EnableBkUpAccess(void) {
-    SET_BIT(PWR->CR, PWR_CR_DBP);
+    // SET_BIT(PWR->CR, PWR_CR_DBP);
 }
 
 void bootSet_DisableBkUpAccess(void) {
-    CLEAR_BIT(PWR->CR, PWR_CR_DBP);
+    // CLEAR_BIT(PWR->CR, PWR_CR_DBP);
 }
 
 void bootSet_BAK_Register(void) {
