@@ -24,7 +24,7 @@
 #ifdef STM32F4xx
 
     #include "stm32f4xx_hal.h"
-    #include "hal/mcu/stm32_f4_system.h"
+    #include "hal/mcu/stm32/stm32_f4_system.h"
 
         #ifdef ST_MKS_E3_V2
             #include "hal/mcu/pins_map/pins_robin_e3.h"

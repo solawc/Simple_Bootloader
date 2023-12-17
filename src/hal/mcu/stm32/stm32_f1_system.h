@@ -11,7 +11,7 @@
 #ifndef __stm32_f1_system_h
 #define __stm32_f1_system_h
 
-#include "../../main.h"
+#include "../../../main.h"
 
 #ifdef STM32F1
 
